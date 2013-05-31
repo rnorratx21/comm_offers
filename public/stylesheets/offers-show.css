@@ -1,0 +1,129 @@
+#flash { margin-bottom: 80px; } 
+#referrer { text-decoration:none; margin-bottom: 10px; position: relative; top: -40px; }
+#offers_show #contentWrap { background-color: #fff; }
+#offers_show #contentWrap { margin-bottom: 15px; }
+#offers_show #offer_content { background-color: #fff;}
+#offers_show .offer_details { width: 533px; float:left;}
+#offers_show .offer_right_panel { width: 287px; margin-left: 50px; float:left; }
+#offers_show .offer_right_panel img.redeem_pic { margin-left: -40px; margin-bottom: -20px;}
+#offers_show .offer_right_panel .redeem { margin-left: 0px; padding: 10px 10px 10px 20px; color: #000; width: 240px; }
+#offers_show .offer_right_panel .redeem .left { width: 47%; font-size: 90%; }
+#offers_show .offer_right_panel .redeem .right { width: 42%; }
+#offers_show .offer_right_panel .redeem .or { font-size: 160%; font-weight: bold; }
+#offers_show .offer_right_panel .redeem.redeem_qr { background-color: #D0EEF6; padding-top: 25px; }
+#offers_show .offer_right_panel .redeem.redeem_qr .bitly { text-align: center; }
+#offers_show .offer_right_panel .redeem.redeem_qr .bitly a { font-size: 80%; color: blue; }
+#offers_show .offer_right_panel .redeem.redeem_sms { background-color: #DDECCB; }
+#offers_show .offer_right_panel .redeem_sms .sms { color: #D86049; font-size: 135%;}
+#offers_show .offer_right_panel #driving_directions a { font-size: 120%; color: blue;}
+#offers_show #map_wrapper { margin-top: 10px; }
+/*#offers_show #map_wrapper { width: 287px; float:left; }*/
+
+/*#offer_wrapper { margin-top: -50px;}*/
+
+#offers_show #qr_wrapper p { width: 280px; }
+#offers_show h3 { font-size: 135%; }
+#offers_show h4 { font-size: 125%; }
+
+#offers_show #advertiser_logo { float: left; margin-right: 20px; }
+#offers_show #offer_info { border: 1px solid #c2c2c2; padding: 5px; margin-bottom: 20px; }
+
+#offers_show #qr_wrapper { padding-top: 20px; float:left; } /*text-align:center; } */
+#offers_show #qr_wrapper > * {padding-left: 40px;}
+#offers_show #qr_wrapper img { padding-top: 20px;}
+#offers_show #qr_wrapper a { color: #000099;}
+#offers_show #qr_wrapper span.qr_caption { color: #F26720; font-style:italic; font-weight:bold;}
+
+#offers_show #offer_info table td {	padding: 5px;}
+#offers_show #offer_info tr {	background-color: #dad8c9; border: 3px solid #fff;}
+#offers_show #offer_info .odd_row { background-color: #f3f3f1; }
+#offers_show .up { text-transform: uppercase; font-weight: bold;}
+#offers_show #title {	margin-bottom: 5px;}
+#offers_show table .model_label { color: #D85D17; width: 30%; }
+#offers_show #phone_number { color: #ab2b0d; font-size: 1.5em; margin: 0 0 -10px 0;}
+#offers_show #address * { color: inherit; display: inline; font-size: 100%; }
+#offers_show div.left_options {	float:left; width: 80%;}
+#offers_show a#print_button { 
+	background: url("/images/btn-get-offer.png") no-repeat scroll left top transparent;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	line-height: 24px;
+	padding-bottom: 6px;
+	text-align: center;
+	text-shadow: 0 1px 0 #666666;
+	width: 120px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 115%;
+}
+
+/*#offers_show a#print_button {
+	display: block;
+	width: 89px;
+	height: 33px;
+	background: url(/images/offer_print_button.gif) 0 0 no-repeat;   
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	margin: 0 0 0 0;
+}
+*/
+
+#offers_show #no_print {
+	font-size: 1.2em;
+	color: #ab2b0d;
+  border: 1px solid #c2c2c2;
+	padding: 10px;
+}
+#offers_show #contact { margin-top: 25px; float: left; }
+#offers_show #address_marker { float: left; margin: 10px 0 0 5px; }
+p.map_info { margin-top: 10px; font-style: italic; }
+#offers_show #map {	width: 305px; height: 422px; }
+#offers_show #content { margin: 20px 0 0 20px; }
+#offers_show #middle { padding-bottom: 20px; }
+#offers_show .expiry_warning {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ab2b0d;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+#offers_show #description { margin-bottom: 0; margin-top: 16px; }
+#offers_show #description ul { margin-left: 20px; }
+#offers_show #description li { list-style-type:disc; }
+#offers_show #legend { font-size: .9em; margin: 0; }
+#offers_show #links { float: right; }
+#offers_show #tabbed_out { padding: 1em 0; }
+#offers_show #tabbed_out_top { text-align:right; margin-top: 10px; }
+#offers_show #links #website { text-align: center; display: block; }
+#offers_show #sms { font-weight: bold; color: #F26720;}
+#offers_show .footnote {
+	font-size: 0.9em;
+	color: #222;
+	margin-top: 5px;
+}
+
+#offers_show #consumer { 
+	background-color: #F0FEDE; 
+	width: 85%; 
+	border: 1px #ABACAB solid; 
+	padding: 16px; 
+}
+#offers_show #consumer .consumer_wrapper { height: 71px; background-repeat: no-repeat; background-position: left center; padding-left: 90px; }
+#offers_show #consumer .consumer_wrapper.add_tracking { background-image: url('/images/favorite.png'); }
+#offers_show #consumer .consumer_wrapper.remove_tracking { background-image: url('/images/favorite_remove.png'); }
+#offers_show #consumer h3 { font-size: 150%; }
+
+#offers_show .offer_quick_tracking { padding: 10px; }
+#offers_show .offer_quick_tracking a { font-size: 130%; color:blue; }
+#offers_show .sharethis { margin: 10px 0 20px;}
+#signup-badge-title-preview {
+  border: 1px solid gray;
+  height: 50px;
+  width: 80px;
+  font-size: 0.9em;
+	margin: 0 0 2px 0;
+}

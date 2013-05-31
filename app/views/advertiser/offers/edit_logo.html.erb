@@ -1,0 +1,37 @@
+
+<% content_for :head do %>
+	<script>
+	$(function() {
+		$("#offer_alternate_logo").change(function() {
+			$("#upload").attr("disabled", false);
+		});		
+	});
+	</script>
+<% end %>
+
+<%= head_text "Offer Logo" %>
+
+<% form_for @offer, :url => update_logo_advertiser_offer_path(@offer), :html => { :method => :put, :multipart => true } do |form| %>
+		<p class="field">
+			<%= form.label :alternate_logo, "Logo File", :class => "model_label" %><br />
+			<%= form.file_field :alternate_logo %>
+		</p>
+	
+		<button type="submit" id="upload" disabled="true">Upload</button>
+
+    <div id="logo_preview" class="rounded section" style="margin-top: 30px;">
+      <% if @offer.alternate_logo? %>
+        <h3>This is How Your Logo Looks in Search Results</h3>
+        <%= image_tag @offer.alternate_logo.small.url, :class => "rounded" %>
+        <h3>This is How Your Logo Looks on Your Offer Page</h3>
+        <%= image_tag @offer.alternate_logo.normal.url, :class => "rounded" %>
+      <% else %>
+        <h3>This is How Your Logo Looks in Search Results</h3>
+        <%= image_tag @offer.advertiser.logo.small.url, :class => "rounded" %>
+        <h3>This is How Your Logo Looks on Your Offer Page</h3>
+        <%= image_tag @offer.advertiser.logo.normal.url, :class => "rounded" %>
+      <% end %>
+    </div>
+<% end %>
+
+<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>

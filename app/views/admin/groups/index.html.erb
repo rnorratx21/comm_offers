@@ -1,0 +1,6 @@
+<%= render 'admin/nav' %>
+<h2>Groups</h2>
+  <%= render :partial => 'list' , :locals => {:groups => @groups}%>
+<%if @can_create %>
+<%= link_to 'new', new_admin_group_path %>
+<%end%>

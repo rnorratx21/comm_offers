@@ -1,0 +1,11 @@
+<div id="slider">
+  <% (1..6).each do |i| %>
+    <%= image_tag "mobile_gallery/mobile_#{i}.png", :alt => '' %>
+  <% end %>
+</div>
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'jquery.nivo.slider.pack', 'mobile_gallery' %>
+<% end %>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'nivo-slider', 'nivo-co' %>
+<% end %>

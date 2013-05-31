@@ -1,0 +1,27 @@
+<h2>Change Description</h2>
+
+<h3>Change Type</h3>
+<%= @audit.action %>
+
+<h3>Change Time</h3>
+<%= @audit.created_at.to_s(:admin) %>
+
+<% if @audit.user %>
+<h3>User Account</h3>
+<%= link_to @audit.user.email, [:admin,@audit.user] %>
+<% end %>
+
+<h3>Changes</h3>
+<dl>
+  <% @audit.changes.each do |name, value| %>
+    <dt><%= name %></dt>
+    <dd>
+      <% if value.instance_of?(Array) %>
+      <%= "#{value[0]} -> #{value[1]}" %>
+      <% else %>
+      <%= value %>
+      <% end %>
+    </dd>
+  <% end %>
+</dl>
+

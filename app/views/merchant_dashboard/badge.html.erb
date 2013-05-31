@@ -1,0 +1,27 @@
+<% head_text "Offer Featured Merchant Badge - #{offer_page_title(@offer)}" %>
+<div><%= offer_return_link %></div>
+<div class='backlink'>
+  <h4>Promote Your Offer!</h4>
+  <p>Simply copy and paste the HTML below into your merchant website to offer customers an easy link back to your offer!</p>
+  <div class='backlink_code'>
+    &lt;a href=&#x27;http://communityoffers.com<%= build_offer_permalink_path(@offer) %>&#x27;&gt; <br />
+    &nbsp;&nbsp;&lt;img src=&quot;http://communityoffers.com/images/preferred_merchant.gif&quot; alt=&quot;See Our Preferred Merchant Offer!&quot;&gt;
+    <br />&lt;/a&gt;
+  </div>
+  <div class='badge_example'>
+    <h5>How Your Link Will Appear:</h5>
+    <div class='badge'><%= link_to(image_tag('preferred_merchant.gif'), build_offer_permalink_path(@offer), :target => "_blank") %></div>
+  </div>
+</div>
+<div class="offer">
+  <h3>How Your Offer Will Appear in Search Results:</h3>
+  <%= render :partial => "search/offer_badge", :locals => { :offer => @offer, :origin => @offer } %>
+  <div class='clear'></div>
+</div>
+<div><%= offer_return_link %></div>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'search-results', 'account'  %>
+  <%# stylesheet_link_tag 'search-index', 'search-results', 'offers-show', 'account' %>
+<% end %>
+

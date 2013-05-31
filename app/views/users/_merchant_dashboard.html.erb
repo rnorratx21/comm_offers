@@ -1,0 +1,68 @@
+<%= head_text "Merchant Dashboard" %>
+<% content_for :javascript do %>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $(".contract_toggle").hide();
+    $(".show_contract").click(function(){
+      $(this).siblings('.contract_toggle').slideDown();
+    });
+  });
+</script>
+<% end %>
+
+<%= user_header_name %>
+<% if @user.advertiser %>
+  <div class='step_header rounded'>
+    <h2>Activity Summary</h2>
+  </div>
+  <div id='dashboard_menu' class='right'>
+    <ul>
+      <li><%= image_tag 'dashboard/icon_profile.png' %> <%= link_to "My Profile", edit_account_path %></li>
+      <li><%= image_tag 'dashboard/icon_deals.png' %> <%= link_to "Add Offer/Location", new_advertiser_offer_path %></li>
+      <li><%= image_tag 'dashboard/icon_logout.png' %> <%= link_to "Logout", logout_path %></li>
+    </ul>
+  </div>
+  <%= render :partial => 'merchant_dashboard/offers_capsule', :locals => {:offers => @all_offers} %>
+  <div class='clear'></div>
+  <%= render(:partial => 'merchant_dashboard/dashboard_metrics', :locals => {:obj => @offer}) if @offer %>
+<% end %>
+
+<div class='clear'></div>
+<div class="section rounded" id="advertiser_info">
+	<h3 class="section">Current Advertiser Contact Info</h3>
+	<% if !@user.advertiser %>
+		<span class="not_applicable">none (you are not an advertiser)</span><br />
+	<% elsif !@user.advertiser.address %>
+	<% else %>
+		<p class="model_data">
+			<%= model_name @user.advertiser.name %>
+		</p>
+		<p class="model_data">
+			<%= stacked_model_data @user.advertiser.address.full %>
+			<%= stacked_model_data @user.advertiser.address.phone_number %>
+      <%= link_to "edit", edit_advertiser_path %>
+    </p>
+		<p class="model_data">
+			<%= stacked_model_data @user.advertiser.website_url %>
+			<%= stacked_model_data @user.advertiser.facebook_url %>
+			<%= model_data @user.advertiser.twitter_url %>
+		</p>
+		<% if @user.advertiser.group and @user.advertiser.group.name.downcase != "default" %>
+  		<p class="model_data">
+        <%= model_label "Group" %>
+        <%= model_data @user.advertiser.group.name %>
+      </p>
+	<%end%>
+	  <p><%# link_to 'change', edit_advertiser_path, :class => 'action' %></p>
+
+
+  <% end %>
+</div>
+<div class="clear"></div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'account', 'merchant' %>
+<% end %>
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'merchant' %>
+<% end %>
+

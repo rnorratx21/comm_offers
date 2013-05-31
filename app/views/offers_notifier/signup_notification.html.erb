@@ -1,0 +1,17 @@
+A new pending offer has been created and is awaiting approval.
+
+<% if @offer.contract.upgrade_request_date %>
+==========
+PLATINUM UPGRADE REQUESTED
+==========
+<% end %>
+Advertiser:  <%= @offer.advertiser.name %>
+Offer Id:    <%= @offer.id %>
+Zip Code:    <%= @offer.address.zip_code %>
+Offer Title: <%= @offer.title %>
+Headline:    <%= @offer.headline %>
+
+Contact User: <%= @offer.advertiser.users.first.first_name %> <%= @offer.advertiser.users.first.last_name %>
+Email: <%= @offer.advertiser.users.first.email %>
+
+Offer Creation Date: <%= ((@offer.created_at) + Time.zone_offset('CST')).strftime("%m/%d/%Y %H:%M:%S") %>

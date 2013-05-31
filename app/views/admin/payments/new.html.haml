@@ -1,0 +1,20 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+= render 'admin/invoices/nav'
+
+%h1 Payment
+%h2
+  New Payment for
+  = link_to "Invoice #{@invoice.id}", [:admin, @invoice]
+
+= error_messages_for :payment, :line_items
+
+- form_for @payment, :url => [:admin, @payment] do |f|
+  = render :partial => "fields", :locals => {:f => f}
+  = f.hidden_field :ledger_item_id
+  = f.hidden_field :contract_id
+  %p.actions
+    = f.submit "Save Payment"
+    or
+    = link_to "cancel and return to invoice", [:admin, @invoice]

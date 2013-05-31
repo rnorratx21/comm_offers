@@ -1,0 +1,15 @@
+<% head_text "#{@offer.name} - #{@offer.headline}" %>
+<% body_id("offers_show") %>
+
+<div>
+	<%= render "offers/advertiser_logo", :offer => @offer %>
+	<%= render "offers/advertiser_info", :offer => @offer %>
+</div>
+	
+<div class="affiliate_offer_grid">
+		<%= render @offer.view_content, :offer => @offer %>
+</div>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'affiliate_offers' %>
+<% end %>

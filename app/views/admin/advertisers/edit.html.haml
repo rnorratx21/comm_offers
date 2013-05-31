@@ -1,0 +1,5 @@
+- head_text "Edit Advertiser"
+
+- form_for @advertiser, :url => [:admin, @advertiser] do |f|
+  = render :partial => "advertiser/fields", :locals => {:f => f}
+  = submit_tag

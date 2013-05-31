@@ -1,0 +1,18 @@
+<% search_result_li(offer) do %>
+	<div class="icons">
+		<% if offer.mappable? %>
+		<div class="map_marker">
+			<%= marker_link_tag(:letter => marker_letter(marker_index)) %>
+		</div>
+		<% end %>
+		<% if offer.mobile? %>
+		<div class="mobile_service">
+			<%= image_tag("mobile_service.png") %>
+		</div>
+		<% end %>
+	</div>
+
+  <%= render :partial => "search/offer_badge", :locals => { :offer => offer, :origin => origin, :activate_go_button => true } %>
+
+	<div class="clear"></div>
+<% end %>

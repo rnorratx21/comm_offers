@@ -1,0 +1,14 @@
+<div class='coupon'><div class='scissors'></div>
+  <div class='content'>
+    <div class='special_offer'><%= image_tag('signup/special_offer.jpg', :alt => "Special Offer!", :title => "Special Offer!") %></div>
+    <div class='pitch'>
+      For Advertisers 
+      <% if defined?(group_plan) %>
+        in the <span class='city'><%= @offer.address.zip_code_obj.city %> area</span> 
+      <% end -%>
+      selecting the <span class='plan'><%= plan.name %></span>:
+    </div>
+    <div class='discount_offer'><span class='value'> <%= render_discount_value(discount,plan) %></span> for <%= discount.months %> months!</div>
+    <div class='redeem_instructions'><%= discount_entry_instructions(discount) %></div>
+  </div>
+</div>

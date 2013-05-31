@@ -1,0 +1,22 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      = sort_link 'ID', :id
+      = sort_link 'Advertiser', :advertiser_name
+      %th Offers
+      %th Salesperson
+      %th Contract Value
+      %th Outstanding
+  %tbody
+    - for contract in list
+      %tr
+        %td.title= link_to contract.id, admin_contract_path(contract)
+        %td.title= contract.advertiser.try(:name)
+        %td
+          - for offer in contract.offers
+            %div
+              = link_to offer.name, admin_offer_path(offer)
+              = "(#{offer.state})"
+        %td= contract.salesperson.display_name if contract.salesperson
+        %td= contract.total_formatted
+        %td= contract.total_outstanding_formatted

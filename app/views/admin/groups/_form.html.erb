@@ -1,0 +1,108 @@
+<script type="text/javascript">
+  $(function() {
+    $("#users").accordion({ autoHeight: false, collapsible: true, active: false });
+		$("#zip_codes").accordion({ autoHeight: false, collapsible: true, active: false });
+  });
+  </script>
+  <p>
+    <label for="name">Name  <%= f.text_field  :name, :value => @group.name  %></label>
+  </p>
+	<p>
+    <label for="parent">Parent Group <%= f.collection_select :parent_group_id, Group.admin_checked(@current_group).not_self(@group.id).all, :id, :name, {:include_blank => "None"}, :class => "stylized"  %></label>
+  </p>
+<div id="users">
+	<% unless @group_users.empty?%>
+		<h3><a href="#">Users in <%=@group.name%></a></h3>
+		<div>
+	  <% @group_users.each do |user| %>
+		  <% if user.advertiser and user.advertiser.group == @group%>
+      <p><%= check_box_tag(
+        "group[user_list][#{user.id}]", 
+        "1", 
+        @group.users.detect{|d| d == user}, :disabled=>"DISABLED")  %>
+      <%= "#{user.display_name}"%> 
+      <% if user.advertiser %>
+        ( bound by <%= "#{user.advertiser.name}"%> )
+      <% end %>
+      </p>
+			<%else%>	
+	    <p><%= check_box_tag(
+	      "group[user_list][#{user.id}]", 
+	      "1", 
+	      @group.users.detect{|d| d == user}) %>
+	    <%= "#{user.display_name}"%> 
+	    <% if user.advertiser %>
+	      ( <%= "#{user.advertiser.name}"%> )
+	    <% end %>
+			</p>
+			<% end %>
+	  <% end %>
+		</div>
+	<%end%>
+
+	 <% unless @users.empty?%>
+  <h3><a href="#">Unassigned Users</a></h3>
+	<div>
+  <% @users.each do |user| %>
+    <p><%= check_box_tag(
+      "group[user_list][#{user.id}]", 
+      "1", 
+      @group.users.detect{|d| d == user}) %>
+    <%= "#{user.display_name}"%> 
+    <% if user.advertiser %>
+      ( <%= "#{user.advertiser.name}"%> )
+		<% end %>
+   </p>
+    <% end %>
+	  </div>
+	<%end%>
+
+   <% unless @other_users.empty?%>
+  <h3><a href="#">Users Assigned to Other Groups</a></h3>
+  <div>
+  <% @other_users.each do |user| %>
+    <p><%= check_box_tag(
+      "group[user_list][#{user.id}]", 
+      "1", 
+      @group.users.detect{|d| d == user}) %>
+    <%= "#{user.display_name}"%> 
+    <% if user.groups %>(
+		  <% user.groups.each_with_index do |group, i|%>
+			<% if group != Group::DEFAULT%>
+        <%if i > 0%>
+          ,&nbsp; 
+        <%end%>
+        <%= "#{group.name}"%>
+				<%end%>
+			<%end%> )
+    <% end %>
+   </p>
+    <% end %>
+    </div>
+  <%end%>
+</div>
+<br>
+
+
+<div id="zip_codes">
+	  <% unless @group_zip_codes.empty?%>
+    <h3><a href="#">Zip Codes in <%=@group.name%></a></h3>
+    <div>
+    <% @group_zip_codes.each do |zip| %>
+      <p><%= check_box_tag(
+        "group[zip_code_list][#{zip.id}]", 
+        "1", 
+        @group.zip_codes.detect{|d| d == zip}) %>
+      <%= "#{zip.zip_code }"%> 
+      </p>
+    <% end %>
+  </div>
+  <%end%>
+  
+    <h3><a href="#">Add Zip Codes</a></h3>
+    <div>
+      <label for="name">Separate using commas <%= f.text_field  :new_zip_codes %></label>
+  </div>
+
+</div>
+<br />

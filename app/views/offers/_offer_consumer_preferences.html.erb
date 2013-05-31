@@ -1,0 +1,20 @@
+<% if show_tracked_offer_options? %>
+<div id='consumer' class='rounded'>
+  <div class='consumer_wrapper <%= (is_tracking_offer?) ? 'remove_tracking' : 'add_tracking' %>'>
+    <% if current_consumer %>
+      <h3>
+        <% if is_tracking_offer? %>
+          <%= link_to "Remove this offer from My Favorites", consumer_tracked_offer_path(current_user.is_tracking?(offer)), :method => :delete, :confirm => "Are you sure?" %>
+        <% else %>
+          <%= current_consumer.first_name %>, would you like to <%= link_to "Add this Offer to Your Favorites", quick_add_consumer_tracked_offers_path(:offer_id => @offer), {:method => :post} %>?
+        <% end %>
+      </h3>
+      <%= link_to "Go to your account", consumer_preferences_path %> to Edit Favorites and Preferences.
+    <% else %>
+      <h3><%= link_to "Sign up For a FREE account and track your favorite offers for updates and changes", new_consumer_user_path %></h3>
+      or <%= link_to "login with an existing account", login_path %> to save this offer to your favorites.
+    <% end %>
+    
+  </div>
+</div>
+<% end %>

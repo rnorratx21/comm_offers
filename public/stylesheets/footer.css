@@ -1,0 +1,14 @@
+#footer { padding-top: 40px;}
+#footer h2 { color: #fff; font-size: 140%; font-weight:normal; margin-bottom: 10px;}
+
+#footer #video h2 { font-size: 115%; }
+#footer #copyright { font-size: 90%; line-height: 1em; }
+
+#footer #pages { list-style-type: disc; margin-top: 18px;}
+#footer #pages li { margin-left: 22px; }
+#footer #pages li a { color: #fff; text-decoration:underline;}
+#footer #pages li a:hover { text-decoration: none; }
+
+#footer #inquiry li { text-align:right; margin-bottom: 7px; }
+#footer #inquiry input[type=text] { font-size: 10pt; height: 18px; width: 210px;}
+#footer #inquiry textarea { height: 100px; }

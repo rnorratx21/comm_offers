@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>	
+  <title><%= h "#{@offer.business_name} - #{@offer.headline}" %> - Community Offers</title>
+
+	<%= stylesheet_link_tag 'reset', 'text', '960', 'offers-print', :media => 'all' %>
+	<%= javascript_include_tag 'jquery-1.3.2.min', 'jquery-ui-1.7.2.custom.min', 'offer-map', 'mappable', 'search-results', 'offers-show'  %>
+	<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+
+	<script type="text/javascript">
+	$(function() {
+		initOfferDetailsMap();
+	});
+	</script>
+</head>
+<body>
+  <div class="container_16">
+  	<div class="grid_16">
+			<%= render "offers/advertiser_logo", :offer => @offer %>
+      <div id='advertiser_header'>
+  			<h2 id="advertiser" ><%= h @offer.advertiser.name %></h2>
+  			<div class="mappable" data-lat="<%= @offer.address.lat %>" data-lng="<%= @offer.address.lng %>" data-marker="<%= marker_icon %>">
+  				<div id="contact">
+  					<span id="phone_number"><%= h @offer.address.phone_number %></span><br />
+  					<span id="address" class="marker_info">
+  						<%= h @offer.address.full %>
+  					</span>
+  				</div>
+          <!-- <div class="clear"></div> -->
+  			</div>
+  		</div>
+			<div id="community_offers_logo">
+				<%= image_tag "community_offers_logo_bw.gif" %>
+			</div>
+			<div class="clear"></div>
+				
+			<h3 id="title" ><%= h "#{@offer.title} - #{@offer.headline}" %></h3>
+			<p id="description"><%= textilize_without_paragraph(@offer.description) %></p>
+			
+			<% render :layout => "offers/offer_info", :locals => { :offer => @offer, :zip_codes => true } do %>
+ 				<%= service_area_zip_codes_markup(@offer) %>
+  		<% end %>
+  		
+			<% if @offer.mappable? %>
+				<div id="map"></div>
+			<% end %>
+		</div>
+	</div>
+  <%= render "layouts/google_analytics" %>
+</body>
+</html>
+

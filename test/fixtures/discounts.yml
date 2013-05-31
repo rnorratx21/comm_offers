@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+special:
+  promo_code: i_am_special
+  percent_off: 100
+  months: 12
+  is_default: false
+  
+default:
+  amount_off: 10
+  months: 6
+  is_default: true
+
+# two:
+#   column: value

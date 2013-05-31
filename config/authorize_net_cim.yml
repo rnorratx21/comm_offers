@@ -1,0 +1,13 @@
+# Authentication for the Staging environment. 
+development:
+  username: 99AXf27Tt9Eh
+  password: 92y7GEhz47sd9F2n
+review:
+  username: 99AXf27Tt9Eh
+  password: 92y7GEhz47sd9F2n
+test:
+  username: xxx
+  password: xxx
+production:
+  username: xxx
+  password: xxx

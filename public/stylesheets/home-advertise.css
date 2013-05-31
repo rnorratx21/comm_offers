@@ -1,0 +1,27 @@
+/*h1, h2, h3, span.key { color: #0072BC; }*/
+
+div.cols .one { width: 480px; }
+div.cols .two { width: 440px; padding-left: 1.5em; }
+
+.one .main_pitch { list-style-type: disc; margin-left: 20px; margin-bottom: 15px; font-size: 130%; color: #000;}
+.one .main_pitch li { padding: 5px 10px;}
+
+.co_description { color: #000; font-style:italic; line-height: 200%;}
+
+.one .desc { color: #000; font-style: italic; }
+.one div.get_started { float:right; position:relative; top: -120px; right: 40px; margin-left: -100px; }
+.two #merchant_approved { 
+	display: none;
+	background: transparent url('/images/home/merchant_seal.gif') no-repeat; 
+	width: 142px; 
+	height: 143px;
+ 	margin-left: 363px;
+  margin-top: -110px;
+}
+.two .qr_code { text-align: right; margin-top: 3em; }
+
+.testimonials li { clear: both; margin-bottom: 20px;}
+.testimonials li img { float:left; }
+.testimonials .said { position:relative; left: 20px;}
+.testimonials li .who { font-style: italic; text-align:right; }
+.two .video { text-align: right; }

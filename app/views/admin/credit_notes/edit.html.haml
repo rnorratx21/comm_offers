@@ -1,0 +1,15 @@
+- body_id "admin"
+= render 'admin/nav'
+
+%h1
+  Edit Refund for Payment
+  = @payment.id
+  = link_to "(Invoice #{@payment.invoice.id})", [:admin, @invoice]
+  
+- form_for [:admin, @contract, @payment, @credit_note] do |f|
+  = render :partial => "fields", :locals => {:f => f}
+  %p.actions
+    = f.submit "Save credit note"
+    or
+    = link_to "cancel and return to invoice", [:admin, @invoice]
+  

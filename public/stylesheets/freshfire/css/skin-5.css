@@ -1,0 +1,124 @@
+/* LINKS */
+
+#contentWrap a {
+	color: #674d39;
+}
+
+#contentWrap a:hover {
+	color: #e0ba82;
+}
+
+#headerWrap div.right a.button.right {
+	color: #3a3a3a;
+}
+
+#headerWrap div.right a.button.left {
+	color: #ffffff;
+}
+
+/* FONT AND TEXT */
+span.highlight,
+#responses div.author {
+	color: #d16642;
+}
+
+span.highlight2 {
+	color: #e5452a;
+}
+
+/* set body bg */
+body {
+	background-image: url(../images/colors/skin-5/body-bg.png);
+}
+
+/* set body bg for homepage */
+body.home {
+	background-image: url(../images/colors/skin-5/body-homepage-bg.png);
+}
+
+/* set button sprite */
+#headerWrap .button.left {
+		background-image: url(../images/colors/skin-5/button-sprite.png);
+		background-position: top right;
+}
+
+/* set button sprite */
+#headerWrap .button.left:hover {
+		background-position: 100% -45px;
+}
+
+/* set button sprite */
+#headerWrap .button.right {
+		background-image: url(../images/colors/skin-5/button-sprite.png);
+		background-position: 100% -90px;
+}
+
+/* set button sprite */
+#headerWrap .button.right:hover {
+		background-image: url(../images/colors/skin-5/button-sprite.png);
+		background-position: 100% -135px;
+}
+
+/* set button sprite */
+#contentWrap form button.submit,
+#contentWrap a.graph,
+input.submit {
+	background-image: url(../images/colors/skin-5/button-sprite.png);
+	background-position: 0 0;
+}
+
+/* set button sprite */
+#contentWrap form button.submit:hover,
+#contentWrap a.graph:hover,
+input.submit:hover {
+	background-image: url(../images/colors/skin-5/button-sprite.png);
+	background-position: 0 -32px;
+}
+
+/* MAINMENU CSS */
+#mainMenu ul ul li a:hover,
+#mainMenu ul ul li.sfHover a  {
+	color: #ffffff;
+	background-image: url(../images/colors/skin-5/submenu-active.png);
+	background-color: #ba9968;
+}
+
+#mainMenu ul ul ul a:hover,
+#mainMenu ul ul li.sfHover ul li a:hover  {
+	background-image: url(../images/colors/skin-5/submenu-active.png) !important;
+	background-color: #ba9968;
+}
+
+#mainMenu  li.current a,
+#mainMenu  li a:hover,
+#mainMenu  li.sfHover a {
+	background-color: #ba9968;
+	color: #000000;
+}
+
+#contentWrap .submenu li.current a,
+#contentWrap .submenu li.current a:hover {
+	background: url(../images/colors/skin-5/submenu-item-active.png) no-repeat 0 0;
+	color: #ffffff;
+}	
+
+#contentWrap .submenu li a:hover {
+	color: #646464;
+}	
+
+.blog #column ul li {
+	background-image: url(../images/colors/skin-5/blog-sidebar-btn.png);
+}
+
+/* SCROLL TO TOP BTN */
+#footer #toTop {
+	background: none repeat scroll 0 0 #dd6370;
+}
+
+#footerBg {
+	background-image: url(../images/colors/skin-5/footer-bg.png);
+}
+
+#footer a {
+	color: #e6d0be;;
+}

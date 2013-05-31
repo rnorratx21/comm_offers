@@ -1,0 +1,8 @@
+@mysql_database = "communityoffers"
+@mysql_user = "root"
+@mysql_password = "d4t1ng"
+@s3_bucket = "Community_Offers_Backup"
+@aws_access_key_id = "AKIAJ2AUKJ3KLEVCJWAQ"
+@aws_secret_access_key = "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"
+@mysql_bin_log_dir = "/var/lib/mysql/binlog"
+@temp_dir = "/tmp/mysql-backup"

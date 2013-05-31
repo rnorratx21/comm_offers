@@ -1,0 +1,10 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h2>New Discount</h2>
+
+<% form_for @discount, :url=>admin_discounts_path  do |f| %>
+  <%= f.error_messages %>
+	<%= render :partial => 'form', :locals => {:f => f} %>
+      <%= f.submit 'Create' %>
+<% end %>
+

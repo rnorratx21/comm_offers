@@ -1,0 +1,72 @@
+<% body_id "advertiser_signup" %>
+<% nav_step 3 %>
+
+<% content_for :head do %>
+  <!-- LOGO UPLOAD HELPERS -->
+	<script>
+	$(function() {
+		$("#advertiser_logo").change(function() {
+			$("input#logo_upload").attr("disabled", false);
+		});		
+	});
+	</script>
+<% end %>
+
+<div class="step_header">
+  <%= signup_step_header(6, "Upload a Logo") %>
+</div>
+<p class='desc'>
+	Your logo is displayed in search results as well as on your
+	offer page. The logo should have a white or transparent background,
+	and should be either a JPG file, a GIF file, or a PNG file. 
+</p>
+<p class='desc'>
+	You will only need to upload your logo once.  We will resize your
+	logo to fit the dimensions used by the search results and on the
+	offer page. In the search results, the maximum width or height is
+	limited to 65 pixels. On your offer page, the maximum width or
+	height is limited to 165 pixels. 
+</p>
+<p class='desc'>
+	The uploaded logo image should be closer to the 165 pixel size
+	for the best resolution and clarity on the offers page. Maximum
+	upload size is <%= $image_upload_size_limit %>.
+</p>
+<p class="desc instructions">
+	NOTE: If you don't have a logo, you can skip this step and upload
+	it later. A generic image will be substituted until you place your
+	logo.  
+</p>
+<div class="clear"></div>
+
+<% signup_update_form(:multipart => true) do |form| %>	
+  <%= current_step_tag %>
+
+	<div class="grid_10">
+		<p class="field">
+			<%= form.file_field :logo %>
+		</p>
+	
+    <%= form.submit "Upload", :id => "logo_upload", :name => 'upload', :disabled => 'true' %>
+    <!-- <button type="button" id="upload" disabled="true" value="upload">Upload</button> -->
+		<% if @advertiser.logo.blank? %>
+			<button type="submit" name="signup_action" value="next">Skip this Step</button>
+		<% end %>		
+
+		<% if !@advertiser.logo.blank? %>
+			<div id="logo_preview" class="rounded section">
+					<h3>This is How Your Logo Will Look in Search Results</h3>
+					<%= image_tag @advertiser.logo.small.url, :class => "rounded" %>
+					<h3>This is How Your Logo Will Look on Your Offer Page</h3>
+					<%= image_tag @advertiser.logo.normal.url, :class => "rounded" %>
+				<div>
+          <%= form.submit "Discard Logo", :id => 'discard_upload', :name => 'discard_upload' %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+	<div class="clear"></div>
+  <%= render :partial => 'signup_form_buttons', :locals => {:form => form} %>
+<% end %>
+<div class="clear"></div>
+

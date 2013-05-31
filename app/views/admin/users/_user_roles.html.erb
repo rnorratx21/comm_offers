@@ -1,0 +1,18 @@
+<% if @user.roles.any? %>
+<ul>
+  <% @user.roles.each do |r| %>
+    <li><%= r.name %><%= " | #{link_to("Remove", remove_role_admin_user_path(:role_id => r), :method => :put)}" if is_admin? %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<% if is_admin? and @available_roles.any? %>
+<div>
+  <div class='role_adder'>
+    <% form_tag add_role_admin_user_path, :remote => true do |f| %>
+      <%= select 'roles', 'role_id', @available_roles.collect{|r| [r.name, r.id] } %>
+      <%= submit_tag "Add", :id => 'add_user_role_submit' %>
+    <% end %>
+  </div>  
+</div>
+<% end %>

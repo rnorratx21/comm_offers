@@ -1,0 +1,16 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      %th ID
+      %th Name
+      -if @can_update
+        %th Edit
+      
+  %tbody
+    - for discount in discounts
+      %tr
+        %td.title= discount.id
+        %td.title= link_to discount.promo_code, admin_discount_path(discount.id)
+        -if @can_update
+          %td= link_to "Edit", edit_admin_discount_path(discount.id)
+

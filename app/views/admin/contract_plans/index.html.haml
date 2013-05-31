@@ -1,0 +1,9 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contract_plans/nav'
+
+%h2 Contract Plans
+
+= render :partial => "admin/contract_plans/list", :object => @contract_plans
+
+= link_to "New Contract Plan", :action => :new

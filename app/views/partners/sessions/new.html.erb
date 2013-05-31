@@ -1,0 +1,12 @@
+<% head_text "Partner Login" %>
+<p>Registered Partners can login to the Community Offers system here.</p>
+<p><strong>NOTE: Registered users of the Community Offers system should <%= link_to "LOGIN HERE", login_path %></strong></p>
+<% form_for(:session, :url => partners_sessions_path) do |f| %>
+<% fields_for @partner do |u| %>
+    <div><%= u.label :username %></div>
+    <div><%= u.text_field :username %></div>
+    <div><%= u.label :password %></div>
+    <div><%= u.password_field :password %></div>
+    <div><%= f.submit "Login" %></div>
+<% end %>
+<% end %>

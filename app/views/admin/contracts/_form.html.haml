@@ -1,0 +1,62 @@
+- form_for @contract, :url => [:admin, @contract], :html => {:multipart => true} do |f|
+  
+  - if @contract.offers.any?
+    =# f.hidden_field :offer_ids
+    - for offer in @contract.offers
+      %h3
+        Offer: 
+        = offer.advertiser.name
+        &mdash;
+        = offer.title
+  - else
+    %h3 Offer: 
+    %p
+      No Offer(s) for contract
+      =# f.collection_select :advertiser_id, Advertiser.admin_checked(@current_group).with_open_offers.by_name, :id, :name, {:include_blank => "Select an advertiser"}, :class => "stylized"
+      =# f.select :offer_ids, {}, {:include_blank => "Select an offer"}#, {:multiple => true, :size => 3}
+  
+  %fieldset.invoice
+    %p
+      = f.label :notes
+      = f.text_area :notes, :rows => 3, :class => 'model_label'
+    %div
+      = f.check_box :platinum
+      = f.label :platinum, 'Platinum?', :class => 'model_label'
+    %div
+      = suggested_sales_area  
+      = f.label :sales_area_id, "Sales Area:", :class => 'model_label'
+      = select :contract, :sales_area_id, sales_area_options, :prompt => "Select: "
+    %div
+      = f.label :salesperson_id, "Salesperson:", :class => 'model_label'
+      = select :contract, :salesperson_id, salesperson_options, :prompt => "Select: "
+    %div
+      = f.label :sales_manager_id, "Sales Manager:", :class => 'model_label'
+      = select :contract, :sales_manager_id, salesperson_options, :prompt => "Select: "
+    - if current_user.admin?
+      %div
+        = f.labeled_text_field :wifi_nasid, :text => "Wifi-Soft NAS ID:"
+      %div
+        = f.labeled_text_area :wifi_login_page_message, :text => "Wifi-Soft Splash Page Message:"
+      %div
+        = f.labeled_text_area :wifi_welcome_page_message, :text => "Wifi-Soft Welcome Page Message:"
+
+
+  %p.actions
+    = f.label :file, "Scanned Image of Signed Contract"
+    %br
+    = f.file_field :file
+
+  %p.actions
+    = button_for "Save Contract"
+
+  - f.fields_for :invoices do |invoices_builder|
+    = render 'invoice_fields', :f => invoices_builder
+  %h3
+    = link_to_add_fields "Add Invoice", f, :invoices
+  .clear
+  %hr.tall
+  %p.actions
+    = button_for "Save Contract"
+    
+- content_for :stylesheet do
+  = stylesheet_link_tag 'invoices', 'forms'

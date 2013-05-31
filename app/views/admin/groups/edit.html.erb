@@ -1,0 +1,8 @@
+<%= render 'admin/nav' %>
+<h2>Edit Group</h2>
+
+<% form_for @group , :url => admin_group_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => 'form' , :locals => {:f => f}%>
+  <%= f.submit "Update" %>
+<% end %>

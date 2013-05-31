@@ -1,0 +1,92 @@
+<%= head_text "Your Offer - #{@offer.business_name}" %>
+<!-- <h2 class="feature"> %></h2> -->
+
+<p>
+	<%= link_to 'return to your account', account_path, :class => "action" %>
+</p>
+
+<div class="section rounded">
+	<h3 class="section">Offer Info</h3>
+	<%= link_to "Edit", edit_advertiser_offer_path(@offer), :class => "action" %>
+	<%= model_attribute @offer, :business_name %>
+	<%= model_attribute @offer, :headline %>
+	<%= model_attribute @offer, :title %>
+	<p class="model_data">
+	  <%= model_label "Description" %>
+	  <div class="model_data">
+	    <%= textilize(@offer.description) %>
+	  </div>
+	</p>
+	<%= model_attribute @offer, :hours %>
+	<%= model_attribute @offer, :disclaimers %>
+	<%= model_attribute @offer, :effective %>
+	<%= model_attribute @offer, :expires_on, :format => "%A, %B %d, %Y" %>
+	<p class="model_data">
+	  <%= model_label "Payment Methods" %>
+	  <%= render :partial => 'offers/payment_methods', :locals => {:offer => @offer} %>
+	</p>
+	<p class="model_data">
+	  <%= model_label "Category" %>
+	  <%= model_data @offer.category.name %>
+	</p>
+	<p class="model_data">
+		<%= model_label "Mobile" %>
+		<%= model_data @offer.mobile_uri ? @offer.mobile_uri : "No"  %>
+	</p>
+	<%= link_to "Edit", edit_advertiser_offer_path(@offer), :class => "action" %>
+</div>
+
+
+  <div id="logo_preview" class="rounded section" style="margin-top: 30px;">
+    <h3 class="section">Offer Logo</h3>
+    <% if @offer.alternate_logo? %>
+      <%= image_tag @offer.alternate_logo.normal.url, :class => "rounded" %>
+      <p>
+        <%= link_to 'revert to business logo', revert_logo_advertiser_offer_path(@offer), :class => 'action' %>
+      </p>
+    <% else %>
+      <p>
+  			<span class="model_data">
+  				This offer will use the same logo your business.
+  			</span>
+  			<br />
+        <%= image_tag @offer.advertiser.logo.normal.url, :class => "rounded" %>
+      </p>
+      <%= link_to 'change', edit_logo_advertiser_offer_path(@offer), :class => 'action' %>
+    <% end %>
+  </div>
+
+
+<div class="section rounded">
+	<h3 class="section">Offer Address</h3>
+	
+  <% if @offer.uses_advertiser_address? %>
+		<p>
+			<span class="model_data">
+				This offer doesn't have a separate address from your business address.
+			</span>
+			<br />
+			<span class="model_data">
+				<%= link_to 'Add a separate address just for this offer', new_address_advertiser_offer_path(@offer), :class => 'action' %>
+			</span>
+			
+		</p>
+	<% else %>
+		<p>
+			<%= stacked_model_data @offer.address.street %>
+			<%= model_data @offer.address.city %>
+			<%= model_data @offer.address.state %>
+			<%= stacked_model_data @offer.address.zip_code %>
+			<%= model_data @offer.address.phone_number %>
+		</p>
+		<%= link_to "change", edit_address_advertiser_offer_path(@offer), :class => "action" %>
+  <% end %>
+</div>
+
+<div class="section rounded">
+  <h3 class="section">Post about this offer to Facebook</h3>
+ <%=link_to "Update Facebook", edit_facebook_path %>
+</div>
+
+<%= link_to 'return to your account', account_path, :class => "action" %>
+

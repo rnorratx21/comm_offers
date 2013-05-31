@@ -1,0 +1,15 @@
+.invoice.payment
+  %h2
+    Status: 
+    = payment.status
+
+  = render_payment(payment)
+  
+  = render :partial => "admin/invoices/transaction_details", :object => payment
+  
+  = link_to "Issue Refund for this Payment", new_admin_contract_payment_credit_note_path(payment.contract, payment)
+  
+  .clear
+  - if payment.credit_notes.any?
+    %hr
+    = render :partial => "admin/invoices/credit_note", :collection => payment.credit_notes

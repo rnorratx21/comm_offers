@@ -1,0 +1,35 @@
+<div id='offers_capsule'>
+  <span id='num_offers'>You have <span class='count'><%= pluralize @all_offers.size, "</span> Offer" %>.</span> 
+  <%= link_to 'Add another offer.', new_advertiser_offer_path, :class => 'action' %>
+  <table class='dataset'>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Business Name / Headline</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @all_offers.each do |offer| %>
+    <tr<%= " class='selected'" if @all_offers.size > 1 and @offer and offer == @offer %>>
+      <td><%= offer.id %></td>
+      <td>
+        <%= link_to offer.business_name, advertiser_offer_path(offer) %> <br />
+        <span class='headline'><%= offer.headline %></span> <br />
+        <div><%= offer.address.full %></div>
+        <div class='url'><%= offer_url_link(offer) %></div>
+        <div class='actions'>
+          <div><%= offer_report_link(offer) if @all_offers.size > 1 %></div> 
+          <div><%= offer_badge_link(offer) %></div>
+        </div>
+      </td>
+      <td><span class='status'><%= offer.state.titleize %></span>
+        <% if offer.active? %>
+          <br />Expires: <%= offer.expires_on %>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

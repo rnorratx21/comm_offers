@@ -1,0 +1,15 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/users/nav'
+- head_text "Users"
+
+#search_query_block
+  - form_tag "", :method => "get" do
+    = text_field_tag :query, params[:query], { :maxlength => 50, :id => "admin_search_query" }
+    = submit_tag "Find", { :id => "admin_search_submit", :disabled => true  }
+
+%h2= @title
+  
+.clear
+
+= render :partial => 'users'

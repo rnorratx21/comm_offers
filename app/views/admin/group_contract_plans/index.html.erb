@@ -1,0 +1,7 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h2>Group Contract Plans</h2>
+  <%= render :partial => 'list' , :locals => {:group_contract_plans => @group_contract_plans}%>
+<%if @can_create %>
+<%= link_to 'new', new_admin_group_contract_plan_path %>
+<%end%>

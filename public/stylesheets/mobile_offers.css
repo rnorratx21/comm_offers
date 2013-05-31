@@ -1,0 +1,13 @@
+h2.mobile_offers { font-size: 1.78em; margin:30px 0;}
+#mobile_offers_wrapper {margin: 30px 30px 0 0; }
+#mobile_offers_content { width: 600px; }
+#mobile_offers_content div.qr_wrapper { margin: 20px 10px; width: 240px; text-align:center; font-weight: bold; }
+#mobile_offers_content div.qr_wrapper div.qr_url { font-family: "Courier New", "Courier", serif; }
+#mobile_offers_content span.sms { font-weight: bold; font-size: 1.5em;  }
+ol#mobile_steps li { list-style-type:none; margin-left: 0; padding-left: 65px; padding-top: 6px; min-height: 70px;}
+li#one { background: url('/images/mobile_bullet_one.png') no-repeat; }
+li#two { background: url('/images/mobile_bullet_two.png') no-repeat; }
+li#three { background: url('/images/mobile_bullet_three.png') no-repeat; }
+
+.apps { margin: 15px 0 20px; }
+#mobile_gallery_wrapper { float:right; }

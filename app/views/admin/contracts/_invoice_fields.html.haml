@@ -1,0 +1,53 @@
+- if f.object.payments.any?
+  - invoice = f.object
+  %fieldset.invoice
+    %h3 
+      Invoice #
+      = invoice.id
+      PAID
+      = invoice.payments.collect{|p| p.created_at.to_s(:short)}
+    %table.dataset
+      - for line_item in invoice.line_items
+        %tr
+          %td= line_item.quantity
+          %td= line_item.description
+          %td= line_item.net_amount_formatted
+      %tr
+        %td{:colspan => 2} Total
+        %td= invoice.total_amount_formatted
+        
+      - for payment in invoice.payments
+        %tr
+          %td{:colspan => 2} 
+            Payment on
+            = payment.created_at.to_s(:short)
+          %td
+            (
+            = payment.total_amount_formatted
+            )
+      %tr
+        %td{:colspan => 2} Outstanding amount
+        %th= invoice.outstanding_total_formatted
+- else
+  %div.fields
+    %fieldset.invoice
+      %h3 
+        Invoice
+        = link_to_remove_fields "remove invoice", f
+      
+      %div.left
+        = f.label :due_date, "Due"
+        = f.date_select :due_date
+      .left
+        = f.label :period_start, "Start"
+        = f.date_select :period_start
+      .left
+        = f.label :period_end, "Through"
+        = f.date_select :period_end
+    
+      %hr
+    
+      - f.fields_for :line_items do |line_items_builder|
+        = render 'line_item_fields', :f => line_items_builder
+      %span
+        = link_to_add_fields("add line item", f, :line_items)

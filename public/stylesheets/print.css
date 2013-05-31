@@ -1,0 +1,30 @@
+body { font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; }
+div#header, h1, ul.menu, div#footer, hr, td.edit-link
+	{ display: none; visibility: hidden; }
+a { text-decoration: none; color: black; }
+table.vertical th, table.vertical td { 
+	vertical-align: top; 
+	text-align: left; 
+	border-top: solid 1px #999; 
+	border-bottom: solid 1px #999; 
+	border-collapse: collapse; 
+	padding: 6pt 2pt; 
+	font-size: 10pt; 
+}
+table.vertical { border-collapse: collapse; margin-bottom: 20pt; width: 100%; }
+dl { margin: 0; padding: 0; }
+dd { display: block; margin: 0 0 0 .5em; padding: 0; float: left; clear: none; font-size: 10pt; }
+dt{ display: block; margin: 0; padding: 0; float: left; clear: left; font-weight: bold; font-size: 10pt; }
+table.striped th, table.striped td { 
+	vertical-align: top; 
+	text-align: left; 
+	border-bottom: solid 1px #888; 
+	border-collapse: collapse; 
+	padding: 3pt 6pt; 
+	font-size: 10pt; 
+}
+table.striped { border-collapse: collapse; width: 100%; }
+td.title { font-weight: bold; }
+small	{ font-weight: normal; color: #666; font-size: 12pt; }
+div.small { color: #666; font-size: 8pt; }
+tr.contract { visibility: hidden; display: none; }

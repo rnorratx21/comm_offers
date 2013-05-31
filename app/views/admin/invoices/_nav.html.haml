@@ -1,0 +1,9 @@
+%ul.menu.blue
+  %li= link_to("Contract #{@invoice.contract.id}", [:admin, @invoice.contract])
+  %li{:class => active_if(:controller => "invoices", :action => "show", :id => @invoice)}= link_to("Invoice #{@invoice.id}", [:admin, @invoice])
+  - unless @invoice.paid?
+    %li{:class => active_if(:controller => "invoices", :action => "edit", :id => @invoice.try(:id))}= link_to "Edit", [:edit, :admin, @contract, @invoice]
+    %li{:class => active_if(:controller => "payments", :action => "new")}= link_to "Record Manual Payment", new_admin_contract_invoice_payment_path(@contract, @invoice)
+    - if @contract.credit_card
+      %li= link_to "Pay Now (card on file)", pay_admin_contract_invoice_path(@contract, @invoice), :method => :post, :confirm => "Charge the credit card on file now?"
+    

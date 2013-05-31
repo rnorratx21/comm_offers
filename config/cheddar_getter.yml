@@ -1,0 +1,16 @@
+common: &common
+  username: dcarolan@communityoffers.com
+  password: ghghty56
+development:
+  <<: *common
+  product_code: COMMUNITY_OFFERS_TEST
+test:
+  <<: *common
+  product_code: COMMUNITY_OFFERS_TEST
+review:
+  <<: *common
+  product_code: COMMUNITY_OFFERS_TEST
+production:
+  <<: *common
+  product_code: COMMUNITY_OFFERS
+  #product_code: COMMUNITY_OFFERS_TEST

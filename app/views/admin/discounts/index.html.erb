@@ -1,0 +1,7 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h2>Discounts</h2>
+  <%= render :partial => 'list' , :locals => {:discounts => @discounts}%>
+<%if @can_create %>
+<%= link_to 'new', new_admin_discount_path %>
+<%end%>

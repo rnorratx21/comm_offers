@@ -1,0 +1,10 @@
+<%= render 'admin/nav' %>
+<h2>Roles</h2>
+
+
+
+  <%= render :partial => 'list' , :locals => {:roles => @roles}%>
+
+<% if @can_create %>
+<%= link_to 'new', new_admin_role_path %>
+<%end%>

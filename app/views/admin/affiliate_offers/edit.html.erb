@@ -1,0 +1,49 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+
+<% content_for :head do %>
+	<script>
+	$(function() {
+		$("#affiliate_offer_logo").change(function() {
+			$("#upload").attr("disabled", false);
+		});		
+	});
+	</script>
+<% end %>
+
+<h2 class="feature">Affiliate Offer</h2>
+
+<div class="rounded section">
+	<h3 class="section">Offer Info</h3>
+	
+	<% form_for [:admin, @affiliate_offer], :html => { :method => :put } do |form| %>
+
+		<%= form.labeled_text_field :name, :required => true, :hint => "eg: Verizon", :class => "narrow" %>
+		<%= form.labeled_text_field :headline, :required => true, :hint => "eg: \"10% Off\" (~3 words)", :class => "narrow" %>
+		<%= form.labeled_text_field :title, :required => true, :hint => "eg: \"Best Deal on Home Theatre\" (~8 words)" %>
+		<%= form.labeled_text_field :description, :required => true, :hint => "(~40 words)" %>
+		<%= form.labeled_text_field :website_url, :required => false, :hint => "only used in whitefence offers" %>
+		<%= form.labeled_text_area :custom_markup, :required => false, :hint => "markup from linkshare, etc. only used in custom offers" %>
+
+		<%= form.submit "Save" %>
+	<% end %>
+</div>
+
+<h2 class="feature">Logo</h2>
+
+<% form_for [:admin, @affiliate_offer], :html => { :method => :put, :multipart => true } do |form| %>
+		<p class="field">
+			<%= form.label :logo, "Logo File", :class => "model_label" %><br />
+			<%= form.file_field :logo %>
+		</p>
+	
+		<button type="submit" id="upload" disabled="true">Upload</button>
+
+    <div id="logo_preview" class="rounded section" style="margin-top: 30px;">
+      <h3>This is How the Logo Looks in Search Results</h3>
+      <%= image_tag @affiliate_offer.logo.small.url, :class => "rounded" %>
+      <h3>This is How the Logo Looks on the Offer Page</h3>
+      <%= image_tag @affiliate_offer.logo.normal.url, :class => "rounded" %>
+    </div>
+<% end %>
+

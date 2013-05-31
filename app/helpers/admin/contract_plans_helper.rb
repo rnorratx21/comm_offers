@@ -1,0 +1,2 @@
+module Admin::ContractPlansHelper
+end

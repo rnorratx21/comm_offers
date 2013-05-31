@@ -1,0 +1,11 @@
+<% hint = "<span class=\"hint\">Select all that apply</span>" %>
+<%= form_helper.label :accepted_payment_types, "Payment Methods Accepted #{hint}" %>
+
+<fieldset id='payment_method_checkboxes'>
+<% Offer::PAYMENT_TYPES.each_with_index do |type,idx| %>
+  <%= check_box_tag field_param, 
+      type, (offer.accepted_payment_types and offer.accepted_payment_types.include?(type)) %> 
+  <span id='<%= type %>'><%= payment_method(type) %></span>
+  <%= "<br />" if idx == (Offer::PAYMENT_TYPES.size/2) %>
+<% end %>
+</fieldset>

@@ -1,0 +1,17 @@
+<p class="field">
+	<%= form.model_label :email, "Email Address" %>
+	<span class="required">*</span><br />
+	<%= form.text_field :email %>
+</p>
+
+<p class="field">
+	<%= form.model_label :password, form.object.new_record? ? nil : "New Password" %>
+	<span class="required">*</span><br />
+	<%= form.password_field :password %>
+</p>
+
+<p class="field">
+	<%= form.model_label :password_confirmation, "Re-Enter Your Password" %>
+	<span class="required">*</span><br />
+	<%= form.password_field :password_confirmation %>
+</p>

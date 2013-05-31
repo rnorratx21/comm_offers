@@ -1,0 +1,36 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+
+%h2 
+  Paid Invoices 
+
+%table.dataset.jumptable
+  %thead
+    %tr
+      = sort_link 'Paid', :created_at
+      = sort_link 'Amount', :total_amount  
+      = sort_link 'Invoice ID', :ledger_item_id
+      = sort_link 'Contract ID', :invoice_contract_id
+      %th Salesperson
+      %th Offer
+      = sort_link 'Advertiser', :advertiser_name  
+  %tbody
+    - for invoice in @payments
+      %tr
+        %td.nowrap
+          = invoice.created_at.to_s(:short)
+          %br
+          %small.grey
+            = distance_of_time_in_words_to_now(invoice.created_at)
+            = ago(invoice.created_at)
+        %td.title= invoice.total_amount_formatted
+        %td= link_to invoice.id, [:admin, invoice]
+        %td= link_to invoice.contract_id, [:admin, invoice.contract]
+        %td= invoice.contract.salesperson.display_name if invoice.contract.salesperson
+        %td
+          - for offer in invoice.contract.offers
+            = link_to truncate(offer.title, :length => 16), [:admin, offer]
+        %td= link_to truncate(invoice.contract.advertiser.name, :length => 16), [:admin, invoice.contract.advertiser]
+
+= will_paginate(@payments)

@@ -1,0 +1,27 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+
+<h2 class="feature">Affiliate Offer</h2>
+
+<div class="rounded section">
+	<h3 class="section">Offer Info</h3>
+	
+	<% form_for [:admin, @affiliate_offer] do |form| %>
+
+    <p class="field">
+      <%= form.label :view_content, "Template" %>
+      <span class="required">*</span><br />
+      <%= form.select :view_content, %w{whitefence apartment_finder real_estate_book custom} %>
+    </p>
+
+		<%= form.labeled_text_field :name, :required => true, :hint => "eg: Verizon", :class => "narrow" %>
+		<%= form.labeled_text_field :headline, :required => true, :hint => "eg: \"10% Off\" (~3 words)", :class => "narrow" %>
+		<%= form.labeled_text_field :title, :required => true, :hint => "eg: \"Best Deal on Home Theatre\" (~8 words)" %>
+		<%= form.labeled_text_field :description, :required => true, :hint => "(~40 words)" %>
+		<%= form.labeled_text_field :website_url, :required => false, :hint => "only used in whitefence offers" %>
+		<%= form.labeled_text_area :custom_markup, :required => false, :hint => "markup from linkshare, etc. only used in custom offers" %>
+
+		<%= form.submit "Create" %>
+	<% end %>
+</div>
+

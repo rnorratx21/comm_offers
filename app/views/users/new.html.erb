@@ -1,0 +1,6 @@
+<h2 class="feature">Register</h2>
+
+<% form_for @user, :url => account_path do |f| %>
+  <%= render f %>
+  <%= f.submit "Register" %>
+<% end %>

@@ -1,0 +1,9 @@
+  <tr>
+    <td class='benefit'><%= text %></td>
+    <% %w[gold platinum diamond].each do |plan| %>
+    <td class='<%= plan %>_option plan'>
+      &nbsp;<%= defined?(specific_details) && specific_details[plan.to_sym] ? specific_details[plan.to_sym] : (render_plan_benefit_checkmark(plan) if plans.include?(plan)) %>
+    </td>
+    <% end -%>
+  </tr>
+

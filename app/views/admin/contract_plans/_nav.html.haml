@@ -1,0 +1,13 @@
+%ul.black.menu
+  
+  %li{:class => ("active" if params[:controller] == "admin/contract_plans")}
+    = link_to "Contract Plans", admin_contract_plans_path
+    
+  %li{:class => ("active" if params[:controller] == "admin/group_contract_plans")}
+    = link_to "Regional Plans", admin_group_contract_plans_path
+    
+  %li{:class => ("active" if params[:controller] == "admin/features")}
+    = link_to "Features", admin_features_path     
+
+  %li{:class => ("active" if params[:controller] == "admin/discounts")}
+    = link_to "Discounts", admin_discounts_path

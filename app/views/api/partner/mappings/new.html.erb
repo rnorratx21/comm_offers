@@ -1,0 +1,10 @@
+Creating a <%= @partner.name %> mapping for Offer <%= @offer.id %> - <%= @offer.business_name %>
+
+<% form_for @mapping, :url => api_partner_mappings_path do |f| %>
+  <%= f.hidden_field :offer_id %>
+  <p>
+    <%= f.label :partner_id_value, "#{current_partner.name} Id:" %> 
+    <%= f.text_field :partner_id_value %> will map to Community Offers Id <%= @offer.id %>
+  </p>
+  <%= f.submit "Save", :disable_with => 'Saving...' %> | <%= link_to "Cancel", api_offers_path %>
+<% end %>

@@ -1,0 +1,24 @@
+<div id='categories'>
+  <% if @profile.preferred_categories.any? %>
+    <div>
+      <h4>Your Preferred Categories</h4>
+        <%= link_to "Select All", "javascript:void(0)", :class => 'select_all' %> | <%= link_to "De-Select All", "javascript:void(0)", :class => 'deselect_all' %>
+        <ul id='preferred_categories'>
+          <% @profile.preferred_categories.by_name.each do |pc| %>
+            <li><%= check_box_tag "profile[remove_categories_list][]", pc.id %> <%= pc.value %></li>
+          <% end %>
+        </ul>
+        <div class='update'><%= f.submit "Remove Selected Categories" %></div>
+    </div>  
+  <% end %>
+  <div>
+    <h4>Add More Categories</h4>
+    <%= link_to "Select All", "javascript:void(0)", :class => 'select_all' %> | <%= link_to "De-Select All", "javascript:void(0)", :class => 'deselect_all' %>
+    <ul>
+      <% @categories_to_add.each do |c| %>
+        <li><%= check_box_tag "profile[add_categories_list][]", c.id %> <%= c.name %></li>
+      <% end %>  
+      <div class='update'><%= f.submit "Add Selected Categories" %></div>
+    </ul>
+  </div>
+</div>

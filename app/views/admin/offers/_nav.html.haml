@@ -1,0 +1,18 @@
+%ul.black.menu
+  %li{:class => ("active" if current_page?(with_contract_admin_offers_path))}
+    = link_to "With contract", with_contract_admin_offers_path
+  %li{:class => ("active" if current_page?(without_contract_admin_offers_path))}
+    = link_to "No contract", without_contract_admin_offers_path
+  / %li{:class => ("active" if current_page?(without_plan_admin_offers_path))}
+  /   = link_to "No plan", without_plan_admin_offers_path
+  %li{:class => ("active" if current_page?(unapproved_admin_offers_path))}
+    = link_to "Unapproved", unapproved_admin_offers_path
+  %li{:class => ("active" if current_page?(active_admin_offers_path))}
+    = link_to "Active", active_admin_offers_path
+  %li{:class => ("active" if current_page?(disabled_admin_offers_path))}
+    = link_to "Disabled", disabled_admin_offers_path
+  %li{:class => ("active" if current_page?(by_zip_code_admin_offers_path))}
+    = link_to "By Zip Code", by_zip_code_admin_offers_path
+  %li{:class => ("active" if current_page?(requesting_upgrade_admin_offers_path))}
+    = link_to "Upgrade Requested", requesting_upgrade_admin_offers_path
+.clear

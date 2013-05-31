@@ -1,0 +1,80 @@
+<% content_for :title do %>Advertise With Us | <% end %>
+<%= head_text signup_headline %>
+<div class='cols'>
+  <div class='left one'>
+    <h2>Five media. One simple platform.</h2>
+    <ul class='main_pitch'>
+      <li>Significantly increase your visibility within your neighborhood and community.</li>
+      <li>Attract new customers.</li>
+      <li>Build repeat business.</li>
+      <li>Save time and money.</li>
+      <li class='tease'>Online &amp; mobile only programs start as low as $<%= ContractPlan::QUICK_START.installment_amount %>!</li>
+    </ul>
+    <div class='get_started'>
+      <%= link_to image_tag('advertise/sign_up.png'), new_advertiser_signup_path %>
+    </div> 
+    <p class='co_description'>
+      Community Offers promotes you via web, mobile app, Facebook,
+      Twitter, loyalty cards, QR codes, SMS texting, grocery stores and
+      cross-promotion with other merchants in your area.
+    </p>
+    <p class='co_description'>
+      Multiple marketing channels integrated for efficiency and results!
+    </p>
+    <div class='clear'></div>
+    <div class='video'>
+      <iframe title="YouTube video player" width="425" height="349" src="http://www.youtube.com/embed/ySZb_V9Ak0k" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class='left two'>
+    <div style='position:absolute'><div id='merchant_approved'>&nbsp;</div></div>
+    <h2 class='testimonial_head'>Hear What our Customers Say.</h2>
+    <div class='testimonials'>
+      <ul>
+        <li>
+          <%= image_tag 'advertise/testimonials/laurenzos.png' %>
+          <div class='said'>
+            "We validated five customers who had seen our location on the Community
+            Offers site the week BEFORE our official program even startd!"
+          </div>
+          <div class='who'>--Rolando Laurenzo, Laurenzo's</div>
+        </li>
+        <li>
+          <%= image_tag 'advertise/testimonials/best_car_wash.gif' %>
+          <div class='said'>
+            "We saw people in the door the first weekend the Community Offers card 
+            hit the streets! It was unbelievable how easy and effective it was!"
+          </div>
+          <div class='who'>--Luis Escalon, Best Car Wash</div>
+        </li>
+        <li>
+          <%= image_tag 'advertise/testimonials/wing_zone.png' %>
+          <div class='said'>
+            "We had 75 redemptions in the first ten days! This program is amazing!"
+          </div>
+          <div class='who'>--Loree Smith, Wing Zone</div>
+        </li>
+      </ul>
+    </div>
+    <div class='qr_code'>
+      <%= link_to image_tag('qr_codes/co_qr_code.jpg'), mobile_community_offers_path, :target => "_blank" %>
+      <p>Download our app to scan this code to get a copy of our merchant media kit on your smartphone.</p>
+      <%= render :partial => 'shared/apps' %>
+    </div>
+    <div class='clear'></div>
+  </div>
+</div>
+<div class='clear'></div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'home-advertise' %>
+<% end %>
+<% content_for :javascript do %>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+    	setupMerchantApprovedImg();
+    });
+    function setupMerchantApprovedImg(){
+    	$('div#merchant_approved').css({'top': 160, 'left': 990}).fadeIn('slow');
+    }
+  </script>
+<% end %>

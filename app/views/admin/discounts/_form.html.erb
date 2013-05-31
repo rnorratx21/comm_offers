@@ -1,0 +1,67 @@
+<script type="text/javascript">
+  $(function() {
+    $("#group_plans").accordion({ autoHeight: false, collapsible: true, active: false });
+		$("#plans").accordion({ autoHeight: false, collapsible: true, active: false });
+  });
+  </script>
+  <p>
+    <label for="name">Promo Code  <%= f.text_field  :promo_code, :value => @discount.promo_code  %></label>
+  </p>
+  <p>
+    <label for="name">Amount off  <%= f.text_field  :amount_off, :value => @discount.amount_off , :maxlength=>'6', :style=>"width: 4em;"  %></label>
+  </p>
+	  <p>
+    <label for="name">Percent off  <%= f.text_field  :percent_off, :value => @discount.percent_off , :maxlength=>'5', :style=>"width: 3em;" %>%</label>
+  </p>
+  <p>
+    <label for="name">Months of Duration  <%= f.text_field  :months, :value => @discount.months , :maxlength=>'2', :style=>"width: 2em;" %></label>
+  </p>
+	  <p>
+    <label for="name">Description  <%= f.text_field  :description, :value => @discount.description  %></label>
+  </p>
+	<p>
+    <label for="name">Display?</label>&nbsp;
+		<%= f.radio_button :setup_display, true, :checked=>@discount.setup_display %> Yes &nbsp;
+    <%= f.radio_button :setup_display, false, :checked=>!@discount.setup_display %> No
+  </p>
+
+<div id="plans">
+	
+	  <% unless @contract_plans.empty?%>
+	  <h3><a href="#">Contract Plans accepting this discount </a></h3>
+		<div>
+	  <% @contract_plans.each do |plan| %>
+	   <p> <%= check_box_tag(
+	      "discount[plan_list][#{plan.id}]", 
+	      "1", 
+	      @discount_plans.detect{|d| d == plan}) %>
+	    <%= "#{plan.display_name}"%> 
+	    </p>
+	  <% end %>
+	</div>
+  <% end %>
+</div>
+
+<div id="group_plans">
+  
+    <% unless @group_plans.empty?%>
+    <h3><a href="#">Regional Contract Plans accepting this discount </a></h3>
+    <div>
+    <% @group_plans.each do |plan| %>
+     <p> <%= check_box_tag(
+        "discount[group_plan_list][#{plan.id}]", 
+        "1", 
+        @group_discount_plans.detect{|d| d == plan}) %>
+				<% if plan.contract_plan %>
+      <%= "#{plan.group.name} - #{plan.contract_plan.display_name}"%> 
+			<% else%>
+			<%= "#{plan.group.name} - Plan # #{plan.id}"%> 
+			<% end %>
+      </p>
+    <% end %>
+  </div>
+  <% end %>
+</div>
+
+<br>
+

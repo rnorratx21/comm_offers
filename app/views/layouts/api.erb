@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield :page_title %> Community Offers API</title>
+  <%= stylesheet_link_tag    'api/bootstrap-base.1.3.0.min', 'api/bootstrap-responsive.1.3.0.min', 'api/api' %>
+  <%= javascript_include_tag 'jquery-1.4.2.min', 'jquery.tablesorter.min', 'application' %>
+</head>
+<body class='api'>
+<div class='container-fluid'>
+  <div class='row-fluid api-header'>
+    <h1 id='logo'>
+      <%= link_to image_tag('community_offers_logo_horiz.png'), root_path, :popup => true %>
+      <span class='api'><%= link_to "API", api_index_path %></span>
+    </h1>
+    <ul class='api-nav'>
+      <li><%= link_to "Offers", api_offers_path %>
+        <ul class='submenu'>
+          <li><%= link_to "Active", api_offers_path %></li>
+          <li><%= link_to "Recently Disabled", recently_disabled_api_offers_path %></li>
+          <li><%= link_to "Attributes", attributes_api_offers_path %></li>
+        </ul>
+      </li>
+      <li><%= link_to "Categories", api_categories_path %>
+        <ul class='submenu'>
+          <li><%= link_to "Parents", parents_api_categories_path %></li>
+        </ul>
+      </li>
+    </ul>
+    <%= render :partial => 'shared/api/salutation' %>
+  </div>
+  <% unless api_flash.blank? %>
+  <div class='row-fluid'>
+    <div class='<%= api_flash_class %>'>
+      <%= api_flash %>
+    </div>
+  </div>
+  <% end %>
+  <div class='row-fluid'>
+    <%= yield %>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contract_plans/nav'
+
+%h2 Contract Plan
+
+%h3= @contract_plan.name
+
+%h3
+  = link_to "Create new contract from this plan", new_admin_contract_path(:contract_plan_id => @contract_plan.id)
+
+%p
+  Setup:
+  = formatted_currency @contract_plan.setup_amount
+  
+%p
+  = @contract_plan.installments
+  installments of
+  = formatted_currency @contract_plan.installment_amount
+  
+
+.actions
+  = link_to "Edit", edit_admin_contract_plan_path(@contract_plan)
+  
+= render :partial => "advertiser/signup/contract", :object => @contract_plan.build_contract

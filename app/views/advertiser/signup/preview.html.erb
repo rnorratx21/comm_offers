@@ -1,0 +1,59 @@
+<% body_id "advertiser_signup" %>
+
+<% content_for :head do %>
+	<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+	<script type="text/javascript">
+	$(function() {		
+		var serviceAreaMappablesData = <%= zip_code_mappables_data(@offer.zip_codes).to_json %>
+		initOfferDetailsMap(serviceAreaMappablesData);		
+	});
+	</script>
+<% end %>
+
+<div class="step_header">
+  <%= signup_step_header(9, "Preview Your Offer") %>
+</div>
+<div class='signup_content'>
+  <%= link_to "Edit Offer", offer_advertiser_signup_path %>
+  <p>
+  	Please review your offer carefully.  You can edit as needed before checking out.
+  </p>
+  <div class="clear"></div>
+  <div id="badge_preview" class='preview'>
+    <h3>Search Results Preview | <%= link_to "edit", offer_advertiser_signup_path %></h3>
+    <div class='half-page'>
+      <div id='offer_search_preview' class="offers">
+      	<div class="offer">
+      		<%= render :partial => "search/offer_badge", :locals => { :offer => @offer, :origin => @origin } %>
+          <div class="clear"></div>
+      	</div>
+      </div>    
+    </div>
+    <div class='half-page'></div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+
+  <div id='offer_preview' class='preview'>
+    <h3>
+    	Offer Preview  | <%= link_to "edit", offer_advertiser_signup_path %>
+    </h3>
+    <div id="offers_show" class="offers">
+    	<%= render "offers/show", :offer => @offer %>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div>
+  	<% signup_update_form do |advertiser_form| %>
+  	  <%= current_step_tag %>
+      <div class='form_buttons'>
+        <%= advertiser_form.submit "Go Live!", :disable_with => "Processing..." %><span class='sep'>|</span><%= link_to "Return to Edit", offer_advertiser_signup_path %>
+      </div>
+  	<% end %>
+  </div>
+  <div class="clear"></div>
+</div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'search-index', 'search-results', 'offers-show' %>
+<% end %>

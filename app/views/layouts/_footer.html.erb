@@ -1,0 +1,44 @@
+<div id="footerBg">
+  <div id='footerWrap'>
+    <div id="footer">
+      <% unless @no_links %>
+    	<div class='one-third'>        
+        <div class='video'>
+          <h2>The Community Offers&trade; Difference</h2>
+          <iframe title="YouTube video player" width="250" height="217" src="http://www.youtube.com/embed/XhxyigHw2v0?rel=0" frameborder="0" allowfullscreen></iframe>
+      		<p id='copyright'>&copy; Copyright <%= Date.today.strftime("%Y") %> communityoffers.com, All Rights Reserved.</p>
+        </div>
+    	</div>      
+    	<div class='one-third'>
+        <h2>Pages</h2>
+        <ul id='pages'>
+    			<li><%= link_to "Home", root_path %></li>
+      		<li><%= link_to "Advertise With Us", advertise_path %></li>
+    			<li><%= link_to "Company", company_path %></li>
+    			<li><%= link_to "Community Offers&trade; Mobile", mobile_offers_path %></li>
+    			<li><%= link_to "Terms &amp; Conditions", terms_path %></li>
+      		<% unless current_user %>
+      	  <li><%= link_to "Merchant Login", login_path %></li>
+      		<% end %>
+      		<li><%= link_to "Your Privacy", privacy_path %></li>
+        </ul>
+      </div>
+      <div class='one-third'>
+        <div id='inquiry'>
+          <h2>Contact Us</h2>
+          <% form_for general_inquiry_object do |f| -%>
+            <%= f.hidden_field :inquiry_type %>
+            <ul class='fields'>
+              <li><%= f.label :first_name, "First Name" %> <%= f.text_field :first_name %></li>
+              <li><%= f.label :last_name, "Last Name" %> <%= f.text_field :last_name %></li>
+              <li><%= f.label :email, "Email" %> <%= f.text_field :email %></li>
+              <li><%= f.text_area :message %></li>
+            </ul>
+            <%= f.submit "Send" %>
+          <% end -%>
+        </div>
+    	</div>
+      <% end %>
+    </div>
+  </div>
+</div>

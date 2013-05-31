@@ -1,0 +1,106 @@
+<% content_for :title do %>Company | <% end %>
+<% content_for :pageHead do %>
+<div id='headerWrap'>
+  <div class='full-page'>
+    <div class='mission_wrapper'>
+      <h2 id='mission_stmt'>
+        We created Community Offers to give consumers great information on local businesses and to offer local merchants 
+        <strong>cost-effective</strong> access to emerging media, <strong>affordable marketing</strong> and 
+        <strong>sophisticated tools</strong> to build long-term customer relationships.
+      </h2>
+    </div>
+  </div>
+</div>
+<% end %>
+<!-- <div class='hr'></div> -->
+<div class='cols'>
+  <div class='left one'>
+    <h3>We believe...</h3>
+    <ol class='we_believe'>
+      <li>All things being equal, consumers want to support local business.</li>
+      <li>If local merchants had more affordable and time-efficient methods they could compete more effectively in the market place.</li>
+      <li>Nothing replaces the importance of relationships: our relationship with our customers, their relationships with their customers 
+        and merchant relationships that encourage cross-promotion and working together for community success.
+      </li>
+    </ol>
+    <h3>Contact Community Offers</h3>
+    <span class='key'>Email:</span> info@communityoffers.com <br />
+    <span class='key'>Phone:</span> 855-2-OFFERS <br />
+    <span class='key'>Mail:</span> 12400 Hwy 71 West, Suite 350, Austin, TX 78738
+    
+    <div class='qr_wrapper'>
+      <% qr_text ="Download our app to scan this code to get a copy of our merchant media kit on your smart phone."%>
+      <%= image_tag 'qr_codes/co_qr_code.jpg', :class => 'co_qr', :alt => qr_text, :title => qr_text %>
+      <span class='qr_text'><%= qr_text %></span>
+    </div>
+    <div class='clear'></div>
+    <h3 class='investor'>Investor Inquiries</h3>
+    <span class='key'>Contact:</span> Andrew Rauch <br />
+    <span class='key'>Email:</span> <%= link_to "arauch@communityoffers.com", "mailto:arauch@communityoffers.com" %><br />
+  </div>
+  <div class='left two'>
+    <h3>Who We Are</h3> 
+    <ul class='team'>
+      <%= render :partial => "team_profile", :locals => {:name => "Philip Alva, Founder", :img_name => 'Phil',
+        :description => %{
+          Philip heads up our largest market in Houston, Texas. Prior to Community Offers, Philip owned and led a top franchise for Our Town, 
+          a leader in the new mover market. Additional experience includes Vice President of national operations for DistribuTech, 
+          the nation’s largest distributor of free consumer publications, working with the largest retail chains coast to coast.
+        }} %>
+      <%= render :partial => "team_profile", :locals => {:name => "Maria Isbell, Founder", :img_name => 'Maria', 
+        :description => %{
+        Maria oversees our general business operations, marketing and strategic partnerships. Prior to Community Offers,
+        Maria served as Vice President of National Sales/Strategic Alliances for DistribuTech, the largest distributor of free consumer publications, 
+        Vice President of Training and Development for PRIMEDIA and Chief Marketing Officer for an early-stage Web portal, 
+        an early adopter of SEO and social media practices.
+        }} %>
+      <li class='clear'></li>
+      <%= render :partial => "team_profile", :locals => {:name => "David Crawford, Founder", :img_name => 'David_Craw', 
+        :description => %{ 
+        Prior to Community Offers David served as the Chief Operating Officer and President of PRIMEDIA, heading up business operations for 
+        the Apartment Guide magazine and the New Home Guide magazine nationally. Additional experience includes Vice President of DistribuTech, 
+        the nation’s largest distributor of free consumer publications.
+      }} %>
+      <%= render :partial => "team_profile", :locals => {:name => "David Carolan", :img_name => 'David', 
+        :description => %{ 
+        David oversees our financial and accounting processes as well as directing development of e-commerce and web-based merchant interaction. 
+        David’s background is as a serial entrepreneur involved in multiple successful e-commerce and accounting software startups including 
+        two public offerings.
+      }} %>
+      <li class='clear'></li>
+      <%= render :partial => "team_profile", :locals => {:name => "Andrew Rauch", :img_name => 'Andrew', 
+        :description => %{ 
+        Andrew Rauch has more than 15 years of experience working with and serving board of directors. CEO's, executives and business owners 
+        on the matters of strategy, marketing, technology, compensation, and business and capital development.  
+        He is the Founder of ventureandphilanthropy.com, an advisory firm and online community which provides LIFE &#0153; Capital to the community of 
+        venture and philanthropy.      
+        }} %>
+      <%= render :partial => "team_profile", :locals => {:name => "Ken Keim", :img_name => 'Ken', 
+        :description => %{ 
+        Ken drives online user experience, marketing messaging, and web business strategies.  Prior to Community Offers, Ken was involved 
+        in a number of highly successful start-ups including Orbitz.com and HomeAway.com, winning numerous awards including 
+        Forbes Best of Web and Chicago Innovation Award for design, business innovation, and customer service.
+        }} %>
+      <li class='clear'></li>
+      <%= render :partial => "team_profile", :locals => {:name => "Benjamin Carolan", :img_name => 'Ben', 
+        :description => %{ 
+        Ben is the life behind our incredible sales energy. Prior to Community Offers Ben managed the Austin market for the Apartment Guide magazine
+        serving on the Board of Directors for the Austin Apartment Association. Additional experience is as a General Manager for DistribuTech, 
+        interacting with local retailers to manage distribution and merchandising for free publications in the Austin area.
+      }} %>
+      <%= render :partial => "team_profile", :locals => {:name => "Nicholas Krupa", :img_name => 'Nick', 
+        :description => %{ 
+        Nick handles the exciting challenge of managing a growing and evolving web portal, introducing new technology and ideas. 
+        Prior to Community Offers, Nick served as the founding developer, co-architect and software development director at PeopleAdmin, Inc., 
+        the leading human capital management software in the public sector.
+      }} %>
+      <li class='clear'></li>
+      
+    </ul>
+    <!-- <div class='clear'></div> -->
+  </div>
+</div>
+<div class='clear'></div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'home-company' %>
+<% end %>

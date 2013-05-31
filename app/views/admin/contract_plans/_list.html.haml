@@ -1,0 +1,26 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      %th Name
+      %th Setup Fee
+      %th Installment
+      %th Discount
+      %th Installments
+      %th Start after
+      %th Due on day
+      %th Period
+      %th Active Plan?
+
+  %tbody
+    - for plan in list
+      %tr
+        %td.title= link_to plan.name, edit_admin_contract_plan_path(plan)
+        %td.title= formatted_currency plan.setup_amount
+        %td.title= formatted_currency plan.installment_amount
+        %td.title= formatted_currency plan.discount_amount
+        %td= plan.installments
+        %td= plan.start_after
+        %td= plan.due_on_day.ordinalize
+        %td= plan.period
+        %td= yes_no plan.is_active?
+

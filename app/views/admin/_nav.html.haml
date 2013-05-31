@@ -1,0 +1,30 @@
+%ul.orange.menu
+  -roles = @current_user.view_list
+  -if roles.index("Contract")  
+    %li{:class => active_if(["admin/contracts", "admin/invoices"])}
+      = link_to "Contracts", admin_contracts_path
+  -if roles.index("Offer")   
+    %li{:class => active_if("admin/offers")}
+      = link_to "Offers", active_admin_offers_path
+  -if roles.index("User")     
+    %li{:class => active_if("admin/users")}
+      = link_to "Users", admin_users_path
+  - if @current_group.index(Group::GLOBAL.id) 
+    -if roles.index("Affiliate")  
+      %li{:class => active_if("admin/affiliate_offers")}
+        = link_to "Affiliate Offers", admin_affiliate_offers_path
+    -if roles.index("Category") 
+      %li{:class => active_if(["admin/category_types", "admin/categories"])}
+        = link_to "Categories", admin_category_types_path
+  -if roles.index("Group")       
+    %li{:class => active_if("admin/groups")}
+      = link_to "Groups", admin_groups_path
+  -if roles.index("Role")     
+    %li{:class => active_if("admin/roles")}
+      = link_to "Roles", admin_roles_path
+  %li{:class => active_if(["admin/contract_plans", "admin/invoices"])}
+    = link_to "Contract Plans", admin_contract_plans_path
+  %li{:class => active_if(["admin/sales_reporting", "admin/sales_areas"])}
+    = link_to "Sales", admin_sales_areas_path
+
+.clear

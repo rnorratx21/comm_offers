@@ -1,0 +1,10 @@
+<h1>Offer API Attributes</h1>
+
+<table class='table table-striped'>
+<thead><tr><th>Attribute</th><th>Description</th></tr></thead>
+<tbody>
+<% @attributes.each do |attr| %>
+<tr><th><%= attr.keys.first %></th><td><%= textilize attr.values.first %></td></tr>
+<% end %>
+</tbody>
+</table>

@@ -1,0 +1,40 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<h1><%= h @group.name %> </h1>
+<%if @parent%> 
+<p>Parent of <%= h @group.name %>: <%= link_to @parent.name, admin_group_path(@parent.id.to_s) %> </p>
+<%end%>
+<%unless @children.empty?%>
+<h3>Children of <%= h @group.name %> </h3>
+  <ul>
+    <% @children.each do |child| %>
+      <li><%=link_to "#{child.name}", admin_group_path(child.id.to_s)%></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h3>Users in <%= h @group.name %> </h3>
+<% if @group.users.empty? %>
+  <p>No users in this group.</p>
+<% else  %>
+  <ul>
+    <% @group.users.each do |user| %>
+      <li><%= "#{user.display_name}" %>
+      <% if user.advertiser and user.advertiser.group == @group %>
+      ( with <%="#{user.advertiser.name}"%> )
+      <% end %><br /></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%unless @group.zip_codes.empty? %>
+<h3>Zip Codes for <%= h @group.name %> </h3>
+  <ul>
+    <% @group.zip_codes.each do |zip| %>
+      <li><%= "#{zip.zip_code}"%> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%if @can_update %>
+<%=link_to "Edit", edit_admin_group_path(@group.id.to_s)%>
+<%end%>

@@ -1,0 +1,7 @@
+.advertiser_info { margin: 10px 0 15px;}
+.advertiser_info .field { margin-bottom: 8px; border-bottom: 1px #ccc solid; margin-bottom: 15px; padding-bottom: 10px;}
+/*.advertiser_info .editable { border-bottom: 1px #ccc solid; margin-bottom: 15px; padding-bottom: 10px;}*/
+.advertiser_info .current .label { font-weight: bold; width: 200px; }
+
+.advertiser_info span { display:block; float:left; }
+.advertiser_info a.edit_toggle { padding-left: 10px;}

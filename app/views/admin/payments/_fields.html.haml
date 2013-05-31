@@ -1,0 +1,30 @@
+%fieldset.invoice
+  
+  %div
+    = f.label :description
+    = f.text_field :description, :class => "text-long"
+
+  %hr
+
+  .left
+    = f.label :payment_type_id
+    = f.collection_select :payment_type_id, PaymentType.all, :id, :name, :include_blank => true
+    
+  .left
+    = f.label :issue_date, "Payment Issue Date"
+    = f.date_select :issue_date
+  %hr
+  .left
+    = f.label :check_number
+    = f.text_field :check_number, :class => "text-small"
+  .left
+    = f.label :check_date
+    = f.date_select :check_date
+
+
+%fieldset.invoice.line_items
+  - f.fields_for :line_items do |line_items_builder|
+    = render 'line_item_fields', :f => line_items_builder
+  %div
+    = link_to_add_fields "Add Line Item", f, :line_items
+

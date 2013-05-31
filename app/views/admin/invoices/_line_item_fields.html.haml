@@ -1,0 +1,10 @@
+%div.fields
+  = f.label :quantity
+  = f.text_field :quantity, :class => "tiny"
+
+  = f.label :description
+  = f.text_field :description
+
+  = f.label :net_amount
+  = f.text_field :net_amount, :class => "small"
+  = link_to_remove_fields "remove", f

@@ -1,0 +1,27 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      = sort_link 'Due', :due_date
+      = sort_link 'Amount', :total_amount  
+      = sort_link 'Invoice ID', :id
+      = sort_link 'Contract ID', :invoice_contract_id 
+      %th Offer
+      = sort_link 'Advertiser', :advertiser_name  
+  %tbody
+    - for invoice in @invoices
+      %tr
+        %td.nowrap
+          = invoice.due_date.to_s(:short)
+          %br
+          %small.grey
+            = distance_of_time_in_words_to_now(invoice.due_date)
+            = ago(invoice.due_date)
+        %td.title= invoice.total_amount_formatted
+        %td= link_to invoice.id, [:admin, invoice]
+        %td= link_to invoice.contract_id, [:admin, invoice.contract]
+        %td
+          - for offer in invoice.contract.offers
+            = link_to truncate(offer.title, :length => 16), [:admin, offer]
+        %td= link_to truncate(invoice.contract.advertiser.name, :length => 16), [:admin, invoice.contract.advertiser]
+
+= will_paginate(@invoices)

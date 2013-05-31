@@ -1,0 +1,6 @@
+<% head_text "Manage Your Merchant Account" %>
+
+<% form_for @user, :url => account_path do |f| %>
+  <%= render f %>
+  <%= f.submit "Update" %> or <%= link_to "Cancel", account_path %>
+<% end %>

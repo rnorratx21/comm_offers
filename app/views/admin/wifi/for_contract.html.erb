@@ -1,0 +1,20 @@
+<% head_text "Wifi Usage for #{@contract.offers.first.business_name}" %>
+
+<table class='dataset'>
+<thead>
+<tr>
+  <% WifiLogin::WIFI_SOFT_PARAMS.each do |attr| %>
+    <th><%= attr.upcase %></th>
+  <% end %>
+</tr>
+</thead>
+<tbody>
+<% @contract.wifi_logins.each do |login| %>
+  <tr>
+    <% WifiLogin::WIFI_SOFT_PARAMS.each do |attr| %>
+      <td><%= login.send("wifi_#{attr}") %></td>
+    <% end %>
+  </tr>
+<% end %>
+</tbody>
+</table>

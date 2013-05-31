@@ -1,0 +1,38 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h1><%= h @discount.promo_code %> </h1>
+<%if @discount.amount_off%> 
+<p>Amount off: $<%= h @discount.amount_off %></p>
+<%end%>
+<%if @discount.percent_off%> 
+<p>Percent off: <%= h @discount.percent_off %>%</p>
+<%end%>
+<%if @discount.months%> 
+<p>For <%= h @discount.months %> months</p>
+<%end%>
+<%if @discount.display%> 
+<p>Can be displayed during signup:<%= h @discount.display.to_s %></p>
+<%end%>
+<%if @discount.description%> 
+<p>Description: <%= h @discount.description %></p>
+<%end%>
+<%unless @discount.contract_plan_discounts.empty? %>
+<h3>Contract Plans for <%= h @discount.promo_code %> </h3>
+  <ul>
+    <% @discount.contract_plan_discounts.each do |plan| %>
+      <li><%= link_to "#{plan.contract_plan.display_name}", admin_contract_plan_path(plan.contract_plan.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%unless @discount.group_contract_plan_discounts.empty? %>
+<h3>Regional Contract Plans for <%= h @discount.promo_code %> </h3>
+  <ul>
+    <% @discount.group_contract_plan_discounts.each do |plan| %>
+      <li><%= link_to "#{plan.group_contract_plan.group.name} - #{plan.group_contract_plan.contract_plan.display_name}", admin_group_contract_plan_path(plan.group_contract_plan.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%if @can_update %>
+<%=link_to "Edit", edit_admin_discount_path(@discount.id.to_s)%>
+<%end%>

@@ -1,0 +1,17 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+= render 'admin/invoices/nav'
+
+%h2
+  Status: 
+  = @payment.status
+
+- if @payment.check_number
+  %dl
+    %dt Check Number
+    %dd= @payment.check_number
+    %dt Check Date
+    %dd= @payment.check_date
+
+= render_payment(@payment)

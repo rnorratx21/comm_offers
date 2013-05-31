@@ -1,0 +1,22 @@
+!!! Transitional
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %title #{yield(:title)} Community Offers
+    = render "layouts/head"
+    = yield(:head)
+  %body{ :id => body_id, :class => @body_class }
+    #wrapper
+      = render "layouts/header"
+      = yield(:pageHead)
+      #contentWrap
+        #content.full-width
+          .full-page
+            = yield :content_header
+            = yield :content_subheader
+            = render "layouts/flash", :object => flash
+            = yield
+        .clear
+        = yield :content_footer
+      = render "layouts/footer"
+      = render "shared/snapengage"
+    = render "layouts/google_analytics"

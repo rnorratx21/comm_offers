@@ -1,0 +1,48 @@
+ <!-- <h1><%= image_tag('signup/welcome_header.jpg') %></h1> -->
+<!-- <h1>Signup for an Advertiser Account</h1> -->
+<h2>Sign up is easy! Create an account to get started.</h2>
+<p>Already have an account?  <%= link_to 'Login to the site', login_path %>.</p>
+
+<div class='step_header create_account'>
+  <%= signup_step_header(1, "Create an Account") %>
+</div>
+<div id='create_account_wrapper'>
+  <div class='account_fields half-page'>
+    <% form_for @user, :url => create_user_advertiser_signup_path do |f| -%>
+    	<p class="field">
+        <%= required_label f, :email, "Email Address" %>
+    		<%= f.text_field :email %>
+    	</p>
+    	<p class="field multi_col left">
+        <%= required_label f, :password %>
+    		<%= f.password_field :password, :class => "narrow", :value => '' %>
+    	</p>
+    	<p class="field multi_col left">
+        <%= required_label f, :password_confirmation %>
+    		<%= f.password_field :password_confirmation, :class => "narrow", :value => '' %>
+    	</p>
+      <div class='clear'></div>
+    	<% f.fields_for :advertiser do |advertiser_fields| %>
+    	<p class="field">
+        <%= required_label advertiser_fields, :name, "Business Name" %>
+    		<%= advertiser_fields.text_field :name, :class => "narrow" %>
+    	</p>
+      <% end -%>
+    	<p class="field multi_col left">
+        <%= required_label f, :first_name %>
+    		<%= f.text_field :first_name, :class => "narrow" %>
+    	</p>
+    	<p class="field multi_col left">
+        <%= required_label f, :last_name %>
+    		<%= f.text_field :last_name, :class => "narrow" %>
+    	</p>
+      <div class='clear'></div>
+    
+      <%= f.submit "Next" %>
+    <% end -%>
+  </div>
+  <div class='half-page signup_fairy'>
+    <%= render :partial => 'advertiser/signup/signup_fairy', :locals => {:step => 'one'} %>
+  </div>
+  <div class='clear'></div>
+</div>

@@ -1,0 +1,28 @@
+.invoice.credit_note
+  %h2
+    Credit Note Status: 
+    = credit_note.status
+
+  %h1.invoice
+    Credit Note
+    
+  %table.invoice.line-items
+    %tr
+      %th Quantity
+      %th Description
+      %th Net Amount Credited
+    
+    - for line_item in credit_note.line_items
+      %tr
+        %td= line_item.quantity
+        %td= line_item.description
+        %td= line_item.net_amount_formatted
+    %tr
+      %th{:colspan => 2} Total Refunded
+      %th= credit_note.total_amount_formatted
+    
+  = link_to "edit", [:edit, :admin, @contract, credit_note.payment, credit_note]
+  
+  = render :partial => "admin/invoices/transaction_details", :object => credit_note
+  
+  .clear

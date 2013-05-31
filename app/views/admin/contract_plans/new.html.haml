@@ -1,0 +1,12 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contract_plans/nav'
+%h1 New Contract Plan
+
+- form_for :contract_plan, @contract_plan, :url => admin_contract_plans_path do |f|
+  = render :partial => "fields", :locals => {:f => f}
+  = render :partial => "features_discounts", :locals => {:f => f}
+  .actions
+    = f.submit "Save Contract Plan"
+    or 
+    = link_to "back to index", admin_contract_plans_path

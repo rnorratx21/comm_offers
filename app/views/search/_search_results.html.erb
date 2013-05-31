@@ -1,0 +1,8 @@
+<ul class="offers">
+  <% marker_index = 0 %>
+  <% search_results.offers.each do |offer| %>
+    <%= render :partial => "search/search_result", :locals => { :offer => offer, :origin => search_results.origin, :marker_index => marker_index, :activate_go_button => true } %>
+    <% marker_index += 1 if offer.mappable? %>
+  <% end %>
+</ul>
+

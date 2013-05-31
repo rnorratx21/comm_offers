@@ -1,0 +1,9 @@
+<li>
+  <div class='img_wrapper'><%= link_to(image_tag("home/featured_actions/#{action_name}.png"), "javascript:void(0)", :class => "#{action_name} open_panel") %></div>
+  <h3><%= link_to text, "javascript:void(0)", :class => "#{action_name} open_panel" %></h3>
+  <div class='panel'>
+    <div class='close'><%= link_to "Close", "javascript:void(0)", :class => "close_panel" %></div>
+    <%= render :partial => "home/featured_action/#{action_name}" %>
+    <div class='close'><%= link_to "Close", "javascript:void(0)", :class => "close_panel" %></div>
+  </div>
+</li>

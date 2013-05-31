@@ -1,0 +1,26 @@
+/*h2, h3, span.key { color: #0072BC; }*/
+/*div.mission_wrapper { width: 100%; margin-bottom: 2.1em; }*/
+#contentWrap { padding-top: 0; }
+#contentWrap h3 { font-size: 150%; margin-top: 10px; }
+#contentWrap h4 { font-size: 130%; }
+
+h2#mission_stmt { font-size: 150%; color: #fff; margin: 7px auto 0; font-weight: normal; line-height: 1.5em; }
+div.cols .one { width: 330px; }
+div.cols .two { width: 620px; padding-left: 1.5em; }
+
+.two { border-left: 3px solid #51799C; }
+
+ol.we_believe { border-bottom: 8px solid #51799C; }
+.we_believe li { margin-bottom: 2em; font-size: .92em; margin-left: 1.4em; padding-right: 3em;}
+
+span.key { font-weight: bold; }
+.qr_wrapper { margin-top: 2em; }
+img.co_qr { float:left; margin-right: 1em;}
+#contentWrap h3.investor { margin-top: 30px;}
+
+ul.team { list-style-type: none; }
+ul.team li { float:left; width: 48%; margin-left: 0; margin-right: 10px;}
+ul.team li h4 { font-size: 1.05em; margin:0;}
+ul.team div.photo { width: 100px; }
+ul.team div.profile { width: 174px; margin-left: 10px;}
+ul.team div.profile p.desc { font-size: .85em; }

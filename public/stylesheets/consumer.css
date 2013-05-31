@@ -1,0 +1,15 @@
+.wrapper { background: transparent url('/public/co_personalize_logo.png') no-repeat top left; }
+.to_wrap { background-image: url('/images/favorite.png'); }
+.so_wrap { background-image: url('/images/04_maps.png'); }
+.wrapper > div { margin-left: 75px; padding: 20px 0;}
+.links { margin: 15px 0;}
+
+#terms_content ul { list-style-type: disc; margin-left:30px;}
+#terms_content h3 { margin: 20px 0; }
+
+div#modal_wrapper { padding: 1.25em 2em; width: 800px; border: 3px solid #999; background-color: #fff; color: #444; }
+div#modal_wrapper h2 { font-size: 170%; font-weight:bold;}
+div#modal_wrapper h3 { font-size: 150%; font-weight:bold;}
+div#modal_wrapper p, div#modal_wrapper li { font-size: 115%;}
+
+tr.to_updated td.updated_at { background-color: #990000; color: #fff; font-weight:bold; }

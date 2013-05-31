@@ -1,0 +1,29 @@
+<%= head_text "Login" %>
+
+<% form_for @user_session, :url => user_session_path do |f| %>
+	<p class="field">
+		<%= f.model_label :email, "Email Address" %>
+		<span class="required">*</span><br />
+		<%= f.text_field :email %>
+	</p>
+
+	<p class="field">
+		<%= f.label :password, nil, :class => "model_label" %>
+		<span class="required">*</span><br />
+		<%= f.password_field :password %>
+	</p>
+	<p>
+  <%= f.check_box :remember_me %><%= f.label :remember_me, nil, :class => "model_label" %>
+  </p>
+	<p>
+	  <%= f.submit "Login" %>
+	</p>
+<% end %>
+<div class='hr'></div>
+<p>
+  Trouble logging in?
+  <%= link_to "Reset Your Password", new_password_reset_path, :class => "action" %>
+</p>
+<p>
+  <%= link_to "Sign Up for a FREE consumer account", new_consumer_user_path, :class => "action" %> so you can track offers and receive regular email updates based on your preferences!
+</p>

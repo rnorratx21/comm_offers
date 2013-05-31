@@ -1,0 +1,92 @@
+<% @body_class = "home" %>
+<% content_for :pageHead do %>
+<div id='headerWrap'>
+  <div class='banner_content right'>
+    <h1>Local Deals. Simplified.</h1>
+    <p>No need to subscribe. Just enter your Zip Code or "City, ST" to find great deals in your neighborhood that are available NOW!</p>
+    <% form_for @search, :url => search_path, :html => { :method => :get } do |form| %>
+        <div id='home_search'>
+          <%= form.text_field :search_text, :name => :search_text, :class => "text" %>
+          <%= link_to "<span class='hidden'>FIND DEALS</span>", "javascript:void(0)", :id => "search_submit", :class => "button right" %>
+        </div>
+        <div class='clear'></div>
+    <% end %>
+  </div>
+  <div id='home_featured_offer_wrapper' class='right'>
+    <%= render :partial => 'offers/featured_offer_capsule', :locals => {:featured_offer_title => 'Featured Merchants'} %>
+  </div> 
+  <div class='clear'></div>
+</div>
+<% end %>
+
+<div id='row_two'>
+  <div class='two-third'>
+    <div class='left_panel'>
+      <h2>Get the deals you want now, the way you want them.</h2>
+      <ul id='featured_actions'>
+        <%= render :partial => 'featured_action', 
+                   :locals => {:action_name => "download", :text => "Download the App"} %>
+        <%= render :partial => 'featured_action', 
+                    :locals => {:action_name => "use", :text => "Use the Card"} %>
+        <%= render :partial => 'featured_action', 
+                   :locals => {:action_name => "print", :text => "Print Coupons"} %>
+        <%= render :partial => 'featured_action', 
+                   :locals => {:action_name => "scan", :text => "Scan Codes"} %>
+        <%= render :partial => 'featured_action', 
+                    :locals => {:action_name => "text", :text => "Text It"} %>
+      </ul>
+      <div class='clear'></div>
+    </div>
+    <div class='left_panel'>
+      <h3>Do you like Community Offers? Share us with friends and family!</h3>
+      <div>
+        <span class='st_twitter_large' ></span><span  class='st_facebook_large' ></span><span  class='st_yahoo_large' ></span><span  class='st_gbuzz_large' ></span><span  class='st_email_large' ></span><span  class='st_sharethis_large' ></span>
+      </div>
+    </div>
+    <div class='left_panel add_your_business'>
+      <h2>Add your business to Community Offers&trade;.</h2>
+      <%= image_tag "home/add_your_business.png" %>
+      <div class='line_one'>New Customers. Repeat Customers. Profitable Customers.</div>
+      <div class='line_two'>Five Different Media. One Simple Platform.</div>
+      <div class='main_text'>Our programs start as low as $<%= ContractPlan::QUICK_START.installment_amount %> per month with no transaction fees or hidden costs. <%= link_to "Read More >>", advertise_path %></div>
+    </div>
+  </div>
+  <div class='one-third'>
+    <div class='right_panel' id='facebook_wrapper'>
+      <iframe src="http://www.facebook.com/plugins/activity.php?site=communityoffers.com&amp;width=270&amp;height=300&amp;header=true&amp;colorscheme=light&amp;font=lucida+grande&amp;recommendations=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px;" allowTransparency="true"></iframe>
+      <div class='fb_like'>
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FCommunityOffers&amp;layout=standard&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+      </div>
+    </div>
+    <div class='right_panel two'>
+      <h3>Our Featured Partners</h3>
+      <div id='featured_partners'>
+        <div>
+          <%= link_for_featured_partner 'tabbed_out.gif', "http://www.tabbedout.com/" %>
+          <%= link_for_featured_partner 'apt_finder.jpg', affiliate_offer_path(12) %>
+        </div>
+        <div>
+          <%= link_for_featured_partner 'century.gif', offer_path(415) %>    
+          <%= link_for_featured_partner 'reb.jpg', affiliate_offer_path(13) %>
+        </div>
+        <div>
+          <%= link_for_featured_partner 'gabriel_does.png', 'http://www.gabrieldoes.com' %>    
+        </div>
+      </div>
+    </div>
+        
+  </div>
+  <div class='clear'></div>
+</div>
+
+
+<% content_for :head do %>
+  <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'372115d6-a746-4ca1-95af-9207f6de91da'});</script>
+<% end %>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'home' %>
+<% end %>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'home-index', 'featured_offer_capsule' %>
+<% end %>

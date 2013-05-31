@@ -1,0 +1,8 @@
+<%= render 'admin/nav' %>
+<% head_text "Edit Role" %>
+
+<% form_for @role , :url => admin_role_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => 'form' , :locals => {:f => f}%>
+  <%= f.submit "Update" %>
+<% end %>

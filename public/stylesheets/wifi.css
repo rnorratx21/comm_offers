@@ -1,0 +1,9 @@
+.featured_offer_panel { width: 35%; }
+.app_teaser { width: 25%; }
+.app_teaser div { margin-bottom: 6px; color: #000; font-weight: bold; text-align: center;}
+#contentWrap .featured_offer_panel #featured_offer { width: 250px; height: 240px; padding-top: 0; }
+
+form.edit_wifi_login p { margin-top: 15px; } 
+form.edit_wifi_login p label { font-size: 130%; }
+form.edit_wifi_login p input[type=text] {font-size: 150%; } 
+form.edit_wifi_login p.submit_btn { margin-top: 20px; }

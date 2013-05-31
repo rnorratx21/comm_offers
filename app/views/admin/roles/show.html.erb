@@ -1,0 +1,30 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<h1><%= h @role.name %> </h1>
+<h2>Permissions for <%=@role.name%></h2>
+<% @activities.each do |k,v|%>
+<h3><%=Concept.find(k).name%></h3>
+<%v.each_with_index do |a,i|%>
+<%if i >0%>
+,&nbsp;
+<%end%>
+<%=Activity.find(a).name%>
+<%end%>
+<hr>
+
+<%end%>
+
+<br>
+<h3>Users in <%= h @role.name %> </h3>
+<% if @role.users.empty? %>
+  <p>No users in this group.</p>
+<% else  %>
+  <ul>
+    <% @role.users.each do |user| %>
+      <li><%= "#{user.display_name}" %><br /></li>
+    <% end %>
+  </ul>
+<% end %>
+<%if @can_update %>
+<%=link_to "Edit", edit_admin_role_path(@role.id.to_s)%>
+<%end%>

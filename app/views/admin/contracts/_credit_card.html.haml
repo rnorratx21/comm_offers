@@ -1,0 +1,16 @@
+- if credit_card
+  %h4.short Credit card on file: 
+  %dl
+    %dt Name: 
+    %dd= credit_card.name
+    %dt Authorization: 
+    %dd= credit_card.authorization
+    %dt Vault Token:
+    %dd= link_to credit_card.billing_token, "https://vault.trustcommerce.com/report-billingid.php?reportURL=citadel.php&billingid=#{credit_card.billing_token}"
+    %dt Card Number: 
+    %dd= credit_card.display_number
+    %dt Expiration: 
+    %dd= credit_card.expires_on.to_s(:expires_on)
+- else
+  .red
+    No billing information available

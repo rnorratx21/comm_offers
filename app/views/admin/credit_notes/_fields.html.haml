@@ -1,0 +1,43 @@
+%dl
+  %dt Amount: 
+  %dd= @payment.total_amount_formatted
+  %dt Date:
+  %dd= @payment.created_at.to_s(:short)
+%dl
+  %dt Transaction ID: 
+  %dd= link_to @payment.authorization, "https://vault.trustcommerce.com/report-transid.php?transid=#{@payment.authorization}"
+- if @invoice.contract.credit_card
+  %strong Credit Card details:
+  = render :partial => "admin/contracts/credit_card", :object => @invoice.contract.credit_card
+%hr
+
+
+= error_messages_for :credit_note
+
+%fieldset.invoice
+  .left
+    = f.label :payment_type_id, "Refund Type"
+    = f.collection_select :payment_type_id, PaymentType.all, :id, :name, :include_blank => true
+    
+  .left
+    = f.label :issue_date, "Refund Issue Date"
+    = f.date_select :issue_date
+  %hr
+  .left
+    = f.label :check_number
+    = f.text_field :check_number, :class => "text-small"
+  .left
+    = f.label :check_date
+    = f.date_select :check_date
+
+%h4
+  A maximum of 
+  = @payment.total_amount_formatted
+  can be refunded for this payment.
+
+%fieldset.invoice.line_items
+  - f.fields_for :line_items do |line_items_builder|
+    = render 'line_item_fields', :f => line_items_builder
+  %div
+    = link_to_add_fields "Add Line Item", f, :line_items
+

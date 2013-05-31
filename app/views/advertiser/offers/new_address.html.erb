@@ -1,0 +1,58 @@
+
+<% content_for :head do %>
+<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+<script>
+$(document).ready(function() {
+	var mapManager = new MapManager( { 
+		divId: 'map_canvas', 
+		lngInputId: 'address_lng', 
+		latInputId: 'address_lat', 
+		lat:<%= (@offer_address.lat) ? @offer_address.lat : 30 %>, 
+		lng:<%= (@offer_address.lng) ? @offer_address.lng : -97 %>, 
+		supportMarkerDragging: true, 
+		locateAddressId: 'locateAddress', 
+		getCurrentAddress: function() {  
+			var address = $('#address_street').val();
+			var state = $('#address_state').val();
+			var city = $('#address_city').val();
+			return address + ", " + city + ", " + state + ", USA"; 
+		} 
+	} );
+});
+</script>
+<% end %>
+
+<h2 class="feature">New Offer Address</h2>
+
+<p>
+	<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>
+</p>
+
+<% form_for [:advertiser, @offer], :url => create_address_advertiser_offer_path(@offer), :html => { :method => :put } do |form| %>
+
+	<div class="rounded section">
+		<h3 class="section">Your Offer's Address</h3>
+
+		<% fields_for :address, @offer_address do |address| %>
+			<%= address.labeled_text_field :street, :text => "Address", :required => true %>
+			<p class="field">
+				<%= address.check_box :lat_lng_set_manually %>
+				<%= address.label :lat_lng_set_manually, "Set address on the map" %>
+			</p>
+				<%= address.hidden_field :lat %>
+				<%= address.hidden_field :lng %>
+				<a id="locateAddress" href="javascript:void(0);">Show on the map</a>
+			<div id="map_canvas" style="height: 300px; width: 450px; "></div>
+			<%= address.labeled_text_field :city, :required => true %>
+			<%= address.labeled_select_field :state, state_select_options, :required => true %>
+			<p class="field">
+				<%= address.field_label :zip_code %>
+				<%= address.text_field :zip_code %>
+			</p>
+			<%= address.labeled_text_field :phone_number, :text=> "Phone Number", :required => true, :class => "narrow phone_number" %>
+		<% end %>
+		<%= form.submit "Save" %>
+	</div>
+<% end %>
+
+<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>

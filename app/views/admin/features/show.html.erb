@@ -1,0 +1,38 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h1><%= h @feature.title %> </h1>
+<%if @feature.amount%> 
+<p>Amount: $<%= h @feature.amount %></p>
+<%end%>
+<%if @feature.description%> 
+<p>Description: <%= h @feature.description %></p>
+<%end%>
+
+<%unless @feature.contract_plan_features.empty? %>
+<h3>Contract Plans for <%= h @feature.title %> </h3>
+  <ul>
+    <% @feature.contract_plan_features.each do |plan| %>
+		<% addon = ""%>
+    <% if plan.addon %>
+      <% addon = " (Addon)"%>
+    <%end%> 
+      <li><%= link_to "#{plan.contract_plan.display_name} #{addon}", admin_contract_plan_path(plan.contract_plan.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%unless @feature.group_contract_plan_features.empty? %>
+<h3>Regional Contract Plans for <%= h @feature.title %> </h3>
+  <ul>
+    <% @feature.group_contract_plan_features.each do |plan| %>
+		<% addon = ""%>
+		<% if plan.addon %>
+		  <% addon = " (Addon)"%>
+		<%end%>	
+      <li><%= link_to "#{plan.group_contract_plan.group.name} - #{plan.group_contract_plan.contract_plan.display_name} #{addon}", admin_group_contract_plan_path(plan.group_contract_plan.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%if @can_update %>
+<%=link_to "Edit", edit_admin_feature_path(@feature.id.to_s)%>
+<%end%>

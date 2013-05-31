@@ -1,0 +1,29 @@
+.salutation { font-size: 175%; color: #000;}
+.offer { background-image: none; }
+#offers ul li { border: 2px solid #999; padding: 10px; }
+.past_due { background-color: #990000; color: #fff; padding: 10px; }
+#contentWrap .past_due a { color: #fff; text-decoration: underline;}
+#contentWrap .past_due a:hover { text-decoration: none;}
+
+.add_offer { text-align: right;}
+.edit a {font-size: 175%; }
+
+#contract_toggle { border: 1px soild #999; background-color: #fff; width: 90%; margin: 0 auto;}
+
+.contract_new_window { font-size: 90%; text-align:right; margin: 7px;}
+
+#contentWrap .backlink h4 { font-style:italic; font-size: 120%; margin-top: 15px;}
+#contentWrap .backlink .badge_example h5 {font-size: 108%; }
+#contentWrap .backlink .backlink_code { 
+	float:left; 
+	width: 700px; 
+	padding: 10px; 
+	margin-right: 20px;
+	border: 1px dashed #999; 
+	background-color: #fff; 
+	color: #000; 
+	font-family: "Courier New", Courier, fixed-width; 
+	font-size: 90%; 
+}
+#contentWrap .badge_example .badge { width: 100%; text-align:center;}
+

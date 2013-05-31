@@ -1,0 +1,15 @@
+<% head_text "Wifi Usage Data" %>
+
+<ul>
+<% @advertisers.each do |advertiser| %>
+  <li>
+    <h4><%= advertiser.name %></h4>
+    <% advertiser.contracts.with_wifi.each do |contract| %>
+      <div>Contract: <%= contract.id %> - NASID: <%= contract.wifi_nasid %></div>
+      <div>Wifi Logins: <%= contract.wifi_logins.size %></div>
+      <div><%= link_to "Usage Details", for_contract_admin_wifi_path(:contract_id => contract) %></div>
+    <% end %>
+    
+  </li>
+<% end %>
+</ul>

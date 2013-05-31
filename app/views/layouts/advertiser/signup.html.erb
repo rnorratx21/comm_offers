@@ -1,0 +1,14 @@
+<% content_for :content do %>
+<%= head_text signup_headline %>
+
+	<%= yield %>
+
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'signup' %>
+<% end -%>
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'signup', 'jquery.simplemodal-1.3.5.min.js' %>
+<% end -%>
+<%= render :file => 'layouts/application' %> 

@@ -1,0 +1,161 @@
+<% head_text "Post to Facebook - #{@offer.business_name}" %>
+<!-- <h2 class="feature"></h2> -->
+<% form_for 'facebook', :url => facebook_path, :html => { :method => :put } do |form| %>
+  <%= form.label :uri, "1. Log in to Facebook", :class => "model_label" %><br /><br />
+    <p><fb:login-button autologoutlink="false" perms="publish_stream"></fb:login-button></p>
+    <%hidden_field_tag id, @offer.id %>
+    
+    <p class="field">
+      <%= form.label :uri, "2. 'Like' the Community Offers pages on Facebook you will post to.", :class => "model_label" %><br />
+      <table>
+      	<tr>
+      		<td>
+      			Community Offers:
+      		</td>
+      		<td>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCommunityOffers%2F176643562398&amp;layout=button_count&amp;show_faces=true&amp;width=200&amp;action=like&amp;colorscheme=light&amp;height=21" 
+              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true">
+            </iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Houston Community Offers:
+          </td>
+          <td>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCommunity-Offers-Houston%2F170047386366061&amp;layout=button_count&amp;show_faces=true&amp;width=200&amp;action=like&amp;colorscheme=light&amp;height=21" 
+              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true">
+            </iframe>
+          </td>
+        </tr>
+      	<tr>
+          <td>
+            Austin Community Offers:
+          </td>
+          <td>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCommunity-Offers-Austin%2F148967435124494&amp;layout=button_count&amp;show_faces=true&amp;width=200&amp;action=like&amp;colorscheme=light&amp;height=21" 
+              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;" allowTransparency="true">
+            </iframe>
+        </tr>
+      </table>
+    </p>
+
+    <p class="field">
+      <%= form.label :uri, "3. Select Facebook Page", :class => "model_label" %><br />
+      
+      <br><%= radio_button_tag 'msg_select', "176643562398", @offer.facebook_url == 'http://www.facebook.com/pages/CommunityOffers/176643562398' %>
+      Community Offers
+			<br><%= radio_button_tag 'msg_select', "170047386366061", @offer.facebook_url == 'http://www.facebook.com/pages/Community-Offers-Houston/170047386366061' %>
+      Houston Community Offers
+      <br><%= radio_button_tag 'msg_select', "148967435124494", @offer.facebook_url == 'http://www.facebook.com/pages/Community-Offers-Austin/148967435124494' %>
+      Austin Community Offers
+      <br><%= radio_button_tag 'msg_select', "custom" %>  
+      Your own Facebook Page <%= form.text_field :uri, :id=>"uri", :value => @offer.facebook_url || "http://www.facebook.com/pages/CommunityOffers/176643562398"%>
+    </p>
+  
+
+
+
+  
+          <p class="field">
+      <%= form.label :message, "3. Write your message", :class => "model_label" %><br /><br />
+      <% display = @offer.business_name + ", " + @offer.headline + ". "%>
+      <% display += "To get this coupon go to: http://communityoffers.com#{build_offer_permalink_path(@offer) } " %>
+      <% display +=  @offer.phone_number + ", " + @offer.address.street + ", " + @offer.address.city + " " + @offer.address.state + ", " + @offer.address.zip_code %>
+      <%= form.text_area :message, :rows => "3", :cols => "40" ,:id=>"message", :value=> display%>
+    </p>
+		<button type="submit" id="update" onclick="graphStreamPublish();" >Post</button>
+    <a href="#" onclick="graphStreamPublish(); return false;" >  Debugging Link </a>
+<% end %>
+
+  
+          <div id="fb-root"></div>
+        <script type="text/javascript">
+            window.fbAsyncInit = function() {
+                FB.init({appId: '134607969918588', status: true, cookie: true, xfbml: true});
+
+                /* All the events registered */
+                FB.Event.subscribe('auth.login', function(response) {
+                    // do something with response
+                    login();
+                });
+                FB.Event.subscribe('auth.logout', function(response) {
+                    // do something with response
+                    logout();
+                });
+
+                FB.getLoginStatus(function(response) {
+                    if (response.session) {
+                        // logged in and connected user, someone you know
+                        login();
+                    }
+                });
+            };
+            (function() {
+                var e = document.createElement('script');
+                e.type = 'text/javascript';
+                e.src = document.location.protocol +
+                    '//connect.facebook.net/en_US/all.js';
+                e.async = true;
+                document.getElementById('fb-root').appendChild(e);
+            }());
+
+            function login(){
+                FB.api('/me', function(response) {
+                    document.getElementById('login').style.display = "block";
+                    document.getElementById('login').innerHTML = response.name + " succsessfully logged in!";
+                });
+            }
+            function logout(){
+                document.getElementById('login').style.display = "none";
+            }
+
+            function graphStreamPublish(){
+            
+              var page_uri = '';
+              var have_uri = false;
+              
+              if(document.getElementById('msg_select_176643562398').checked){
+                page_uri = '/' + '176643562398' + '/feed'; 
+              }
+							if(document.getElementById('msg_select_170047386366061').checked){
+                page_uri = '/' + '170047386366061' + '/feed'; 
+              }
+							if(document.getElementById('msg_select_148967435124494').checked){
+								page_uri = '/' + '148967435124494' + '/feed'; 
+							}
+              if (document.getElementById('msg_select_custom').checked) {
+                uri = document.getElementById('uri').value;
+                var happy_left = uri.split("id=");
+                if (happy_left[1] != undefined) {
+                  page_uri = '/' + happy_left[1] + '/feed';
+                  have_uri = true;
+                }
+                else {
+                  var rest_left = uri.split("/");
+                  if (rest_left.length > 1) {
+                    last_param = rest_left.pop();
+                    last_param_left = last_param.split("?");
+                    page_uri = '/' + last_param_left[0]+ '/feed';
+                    have_uri = true;
+                  }
+                  
+                }
+                if (have_uri == false) {
+                  var fb_id = uri.match(/\d/g);
+                  fb_id = fb_id.join("");
+                  page_uri = '/' + fb_id + '/feed'; 
+                }
+              }
+                var body =  document.getElementById('message').value;
+                FB.api(page_uri, 'post', { message: body }, function(response) {
+                    if (!response || response.error) {
+                      alert(response.error.message);
+                        
+                    } else {
+                        alert('Post ID: ' + response.id);
+                    }
+                });
+            }
+</script>
+<div><%= link_to "Back to Dashboard", account_path %></div>

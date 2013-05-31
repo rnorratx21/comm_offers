@@ -1,0 +1,92 @@
+<% content_for :head do %>
+  <link rel="image_src" href="<%= offer.normal_logo_url %>" />
+  <meta property="og:image" content="http://communityoffers.com<%= offer.normal_logo_url %>" />
+  <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'372115d6-a746-4ca1-95af-9207f6de91da'});</script>
+<% end %>
+<div class="offer_details">
+	<%= render "offers/advertiser_logo", :offer => offer %>
+	<%= render "offers/advertiser_info", :offer => offer %>
+  <div id="links">
+  	<%= link_to "Merchant Website", offer.website_url, :id => "website", :target => "_blank" if !offer.skip_website_url and !offer.website_url.blank? %>
+
+  <% unless offer.twitter_url.blank? and offer.facebook_url.blank? and offer.advertiser.feed_url.blank? %>
+  	<ul class="social_networks">
+  		<% if !offer.skip_twitter_url? and !offer.twitter_url.blank? %>
+  		<li class="twitter"><%= link_to "Twitter", offer.twitter_url, :target => "_blank" %></li>
+  		<% end %>
+  		<% if !offer.skip_facebook_url? and !offer.facebook_url.blank? %>
+  		<li class="facebook"><%= link_to "Facebook", offer.facebook_url, :target => "_blank" %></li>
+  		<% end %>
+  		<% unless offer.advertiser.feed_url.blank? %>
+  		<li class="rss"><%= link_to "RSS", offer.advertiser.feed_url, :target => "_blank" %></li>
+  		<% end %>
+  	</ul>
+  <% end %>
+  </div>
+	<div class='clear'></div>
+	<%= render "offers/offer_info", :offer => offer %>
+  <% if !@offer.is_a?(AffiliateOffer) and @offer.category %>
+  <h3><%= @offer.category.category_type.name %> - <%= @offer.category.name%></h3>
+  <% end %>
+
+  <% if offer.zip_codes? %>
+  	<div id="legend">
+  		Service areas are indicated on the map <%= marker_tag :kind => :service_area %>
+  	</div>
+  <% end %>
+</div> 
+
+<div class='offer_right_panel'>
+<% if offer.active? and !(offer.expired?) %>
+  <%= link_to image_tag("offer_redeem.png", :class => 'redeem_pic'), print_offer_path(offer), :target => "_blank"  %>
+  <% if !offer.new_record? and !offer.draft? and offer.mobile_uri %>
+  <div class='redeem redeem_qr'>
+    <div class='or'>OR</div>
+    <div class='left'>
+      Scan this code with your smartphone to take this offer with you in a mobile-friendly page 
+      and to download our app.
+    </div>
+    <div class='right'>
+      <%= link_to image_tag(pervasive_image_url(offer)) , offer.mobile_uri %> 
+    </div>
+    <div class='clear'></div>
+    <div class='bitly'><%= link_to  offer.mobile_uri , offer.mobile_uri %></div>
+  </div>
+  <% end %>
+	<% unless offer.sms_marketing_info.blank? %>
+  <div class='redeem redeem_sms'>
+    <div class='or'>OR</div>
+    <div class='left'>
+      Send the following to get this offer via text message. *
+    </div>
+    <div class='right sms'>Text: <%= offer.sms_marketing_info %></div>
+    <div class='clear'></div>
+  </div>
+	<div class="footnote">
+    *Community Offers does not charge for text messages.
+		Your standard cell phone rates will apply.
+	</div>
+  <!-- <div class="clear"></div> -->
+  <% end %>
+  <%= render :partial => "offer_quick_tracking", :locals => {:offer => @offer} %>
+<% end # if offer.active? %>
+<% if offer.expired? %>
+	<div class="warning" id="no_print">Expired offers can't be printed</div>
+<% end %>
+<% unless offer.draft? %>
+  <div class='sharethis'>
+    <h4>Share this Offer:</h4>
+    <span class='st_twitter_large' ></span><span  class='st_facebook_large' ></span><span  class='st_yahoo_large' ></span><span  class='st_gbuzz_large' ></span><span  class='st_email_large' ></span><span  class='st_sharethis_large' ></span>
+  </div>
+<% end %>
+  <div id='driving_directions'><%= google_driving_directions_link(offer) %></div>
+  <div id="map_wrapper">
+  	<% map_height = offer.zip_codes? ? '498px' : '478px' %>
+  	<%= content_tag :div, nil, :id => "map", :style => "height: #{map_height};" %>
+  </div>
+</div>
+<div class='clear'></div>
+<%= render :partial => 'offer_consumer_preferences', :locals => {:offer => offer} unless offer.draft? %>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'offers-show' %>
+<% end %>

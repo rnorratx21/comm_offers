@@ -1,0 +1,13 @@
+<%- if offer.contract -%>
+
+<% if offer.contract.has_balance_due? %>
+<div class='past_due'>
+  <%= link_to "#{offer.contract.total_balance_due_formatted} in Payments Due ", [:advertiser, offer.contract] %>
+</div>
+<% else %>
+<div>
+  Balance Paid in Full To-Date.  <%= link_to "See Contract and Invoices", [:advertiser, offer.contract] %>.
+</div>
+<% end %>
+
+<%- end -%>

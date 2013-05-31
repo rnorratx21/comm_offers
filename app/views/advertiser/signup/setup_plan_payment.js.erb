@@ -1,0 +1,9 @@
+$.modal("<%= escape_javascript(render(:partial => "advertiser/signup/plan_payment_form")) %>",{ 
+  opacity: 25, 
+  overlayCss: {backgroundColor:"#000"},
+  overlayClose: true
+});
+
+$("#close_payment_modal").click(function(){
+  $.modal.close();
+});

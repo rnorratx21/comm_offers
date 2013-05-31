@@ -1,0 +1,33 @@
+<h2 id="offer_headline"><%= h "#{offer.headline}" %></h2>
+<h3 id="advertiser"><%= h "#{offer.business_name}" %></h3>
+<h4 id="title"><%= h "#{offer.title}" %></h4>
+<% if offer.mappable? %>
+  <div class="<%= 'mappable' if offer.mappable? %>" data-lat="<%= offer.address.lat %>" data-lng="<%= offer.address.lng %>">
+  	<div id="contact">
+  		<span id="phone_number"><%= h offer.address.phone_number %></span><br />
+  		<div id="address" class="marker_info">
+  			<div><%= h offer.address.street %></div>
+  			<h3><%= h offer.address.city %></h3>, <div><%= h offer.address.state %> <%= offer.address.zip_code %></div>
+  			<%# h offer.address.full %>
+  		</div>
+  	</div>
+  	<% if offer.mappable? %>
+  	  <div id="address_marker">
+  		  <%= marker_link_tag %> 
+  	  </div>
+  	<% end %>
+  </div>
+  <div class='clear'></div> <!-- clear logo -->
+<% end %>
+
+
+<% if offer.is_tabbed_out_customer? %>
+  <div id='tabbed_out_top'><%= tabbed_out_image(offer) %></div> 
+<% end %>
+
+<% unless offer.draft? %>
+  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.communityoffers.com<%=build_offer_permalink_path(offer)%>&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=40" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:40px;" allowTransparency="true"></iframe>  
+<% end %>
+
+<div id="description"><%= textilize_without_paragraph(offer.description) %></div>
+

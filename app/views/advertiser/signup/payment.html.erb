@@ -1,0 +1,96 @@
+<div class='step_header create_account'>
+  <%= signup_step_header(2, "Choose your plan options") %>
+</div>
+
+<div class='half-page'>
+  <div class='plan_grid'>
+    <table class='grid'>
+      <tr>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th class='plan_head'>$<%= ContractPlan::QUICK_START.installment_amount %>/mo</span></th>
+        <th class='plan_head'>$<%= ContractPlan::ENHANCED.installment_amount %>/mo</span></th>
+        <th class='plan_head'>$<%= ContractPlan::BRAND_BUILDER.installment_amount %>/mo</span></th>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'computer' %>)'></td>
+        <td class='title'>Web Offer</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'mobile' %>)'></td>
+        <td class='title'>Mobile App</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'qr' %>)'></td>
+        <td class='title'>QR Code</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'people' %>)'></td>
+        <td class='title'>Social Media</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'pos' %>)'></td>
+        <td class='title'>Point of Sale Materials</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'dashboard' %>)'></td>
+        <td class='title'>Merchant Dashboard</td>
+        <td><%= render_plan_benefit_checkmark("Quick Start") %></td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'note' %>)'></td>
+        <td class='title'>Text Messaging</td>
+        <td>&nbsp;</td>
+        <td><%= render_plan_benefit_checkmark("Enhanced") %></td>
+        <td><%= render_plan_benefit_checkmark("Brand Builder") %></td>
+      </tr>
+      <tr>
+        <td class='icon' style='background-image: url(<%= payment_icon 'card' %>)'></td>
+        <td class='title'>Loyalty Card</td>
+        <td>&nbsp;</td>
+        <td>Generic Cards</td>
+        <td>Branded Cards</td>
+      </tr>
+      
+      <tr id='plan_buttons'>
+        <th colspan='5'>
+          <%= link_to(image_tag("signup/plan_summary_trial.png"), advertiser_signup_path, :method => :put, :class=>'plan_button') %>
+        </th>
+      </tr>
+    </table>
+    <p class='fine_print'>
+      * We allow you to create an Online-only offer to go live on our site for a 24-hour FREE trial to allow you to see how easy our site is to use and edit.  Because of the short trial period, we cannot provide the Point of Sale (POS) materials for the trial.  Content is subject to approval.  Objectionable content will be disabled at the discretion of management.
+    </p>
+    <p class='fine_print'>
+      All new offers created will be contacted by our local sales staff in order to discuss delivery of Point of Sale marketing materials for those who choose to subscribe, payment options and Generic/Branded card opportunities available in your market area.
+    </p>
+    <p class='fine_print'>
+      For more information on availability, <%= link_to "Contact a Representative", contact_path, :target => "_blank" %>.
+    </p>
+    <div id='hidden_plan_payment'>
+    </div>
+  </div>
+</div>
+<div class='half-page payment_fairy'>
+  <%= render :partial => 'advertiser/signup/signup_fairy', :locals => {:step => 'two'} %>
+</div>
+<div class='clear'></div>
+
+  

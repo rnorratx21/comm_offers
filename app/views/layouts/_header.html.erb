@@ -1,0 +1,44 @@
+<div id="top">
+  <div id="logo">
+  	<% unless @no_links %>
+  	  <%= link_to co_logo, root_path %>
+  	<% else %>
+  	  <%= co_logo %>
+	  <% end %>
+  </div>
+  <% unless @no_links %>
+	<div id='mainMenu'>
+  	<ul class="topNav sf-menu sf-js-enabled sf-shadow">
+  		<% if current_user %>
+        <% if session[:admin_id] %>
+          <li><%= link_to "Unpose", unpose_admin_users_path, :method => :post %></li>
+        <% end %>
+        <% if !current_user.force_signup_flow? %>
+          <% if current_user.admin? %>
+            <li><%= link_to "Admin", admin_root_path %></li>
+          <% end %>
+  <!-- <li><%# user_header_name %></li> TODO: Figure out alignments -->
+          <li><%= link_to "Account", account_path %></li>
+        <% elsif not_signup_controller? %>
+          <li><%= link_to "Complete Sign-up", advertiser_signup_path %></li>
+        <% end %>
+        <li><%= link_to "Sign Out", logout_path %></li>
+  		<% else %>
+        <li><%= raw link_to "For Merchants", advertise_path %></li>
+        <li><%= raw link_to "Login", login_path %></li>
+  		<% end %>
+  	</ul>
+  </div>
+	<ul class="social_networks">
+		<li class="twitter">
+			<%= link_to "Twitter", $twitter_url, :target => "_blank" %>
+		</li>
+		<li class="facebook">
+			<%= link_to "Facebook", $facebook_url, :target => "_blank" %>
+		</li>
+		<% if false %>
+		<li class="rss"><a href="#">RSS</a></li>
+		<% end %>
+	</ul>
+  <% end %>
+</div>

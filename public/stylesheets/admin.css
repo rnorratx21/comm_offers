@@ -1,0 +1,15 @@
+/* This rule needs to be targeted to avoid wrecking the css for admin menus (menu.css) */
+
+/*#admin .nav li {
+  display: inline;
+}
+*/
+#contentWrap { padding-top: 0; }
+#search_query_block #admin_search_query
+	{ width: 150px; }
+#search_query_block
+	{ width: 250px; float: right; clear: none; display: block; text-align: right; margin: 0 30px;}
+
+div.suggested { font-style: italic;}
+
+textarea { height: 8em;}

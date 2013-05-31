@@ -1,0 +1,845 @@
+0 Degrees	405 E 7th St. Austin Texas	30.267862	-97.738891
+12th Street Books	827 W. 12th St. Austin Texas	30.276048	-97.74893
+208 Group	600 East 3rd St Austin Texas	30.263686	-97.738183
+Abito	3801 N. Capital of Texas HWy. Austin Texas	30.33646	-97.805157
+Adelante boutique	1206 W. 38th St. Austin Texas	30.306145	-97.744868
+Agave	415 E. 6th St. Austin Texas	30.266904	-97.739141
+Ambassador Limousine Service	402-A West Palm Valley Blvd., Suite #361 Round Rock Texas	30.51779	-97.685532
+Antone's Records	2928 Guadalupe Austin Texas	30.296327	-97.742408
+Art House	700 Congress Avenue Austin Texas	30.269126	-97.742522
+Asian Living	2135 W. Anderson Ln. Austin Texas	30.354929	-97.728702
+Aussie's	306 Barton Springs Road Austin Texas	30.258975	-97.747807
+Austin Childrens Museum	201 Colorado Austin Texas	30.264776	-97.745385
+Austin Furniture Consignment	1661 W Fifth St Austin Texas	30.274258	-97.764343
+Austin Galleries	1219 W. 6th St. Austin Texas	30.272973	-97.758194
+Austin History Center	810 Guadalupe St. Austin Texas	30.271128	-97.745675
+Austin Mopeds	500 San Marcos St. #104 Austin Texas	30.264582	-97.732927
+Austin Nature and Science Center	301 Nature Center Dr. Austin Texas	30.272345	-97.774926
+B.D. Rileys	204 E. 6th St. Austin Texas	30.267745	-97.741299
+Barker roofing	P.O. Box 17008 Austin Texas	30.41311	-97.682149
+Bead It	2041 S. Lamar Austin Texas	30.248467	-97.769471
+Bella Home	1221 W. 6th St. Austin Texas	30.272986	-97.758211
+Broken Spoke	3201 S. Lamar Austin Texas	0	0
+Brown Bar	201 W. 8th St. Austin Texas	30.270232	-97.743578
+Cain & Abel's	3213 Rio Grande St. Austin Texas	30.29724	-97.743129
+Cindie's	14106 N. I35 Austin Texas	30.431108	-97.67074
+Clarksville Pottery	4001 N. Lamar Blvd. Austin Texas	30.307916	-97.741244
+Club De Ville	900 Red River Street Austin Texas	30.269416	-97.736205
+Coburn Law Firm	100 Congress Avenue Austin Texas	30.263866	-97.744492
+Complete Clothing	106 E. 8th St. Austin Texas	30.269988	-97.741856
+Continental Club	1315 S. Congress Austin Texas	30.250634	-97.749149
+Cream Vintage	2532 Guadalupe Ave. Austin Texas	30.289706	-97.741501
+Creatures Boutique	1206 S. Congress Austin Texas	30.252033	-97.748936
+Crofts Original Boutique	1714 B. S. Congress Ave. Austin Texas	30.278954	-97.738907
+Crown Clothing	3100 S. Congress Ave. Austin Texas	30.231734	-97.759046
+Donn's Depot Piano Bar & Saloon	1600 W. 5th St. Austin TX Texas	30.267599	-97.742981
+Due Maternity	3801 North Capital of Texas Hwy Austin Texas	30.33646	-97.805157
+Dylan Brooks Salon	2110 Slaughter Ln. Austin Texas	30.174038	-97.826739
+Eco-Wise	1110 W. Elizabeth Austin Texas	30.25283	-97.759159
+Ego's	510 S. Congress Ave. Austin Texas	30.256803	-97.747081
+Estancia Churrascaria	4894 Highway 290 West Sunset Valley Texas	30.23398	-97.814778
+Feathers Boutique	1700 B. S. Congress Ave. Austin Texas	30.278839	-97.738882
+Flirt	2405 Nueces St. Austin Texas	30.288006	-97.742924
+Fortney's	1116 W. 6ht St. Austin Texas	30.264795	-97.731198
+Friends	208 E. 6th St. Austin Texas	30.267759	-97.741256
+Gallery Soco	1714-A S. Congress Ave. Austin Texas	30.246862	-97.750844
+Giada Rocco	704 W 6th St Austin Texas	30.270088	-97.74961
+Girl Next Door	250 W 2nd. St. Austin Texas	30.264995	-97.746032
+Good Morning Austin	W. 5th St. Austin Texas	30.26886	-97.749304
+Haven Gallery & Fine Gifts	1122 W 6th St Austin Texas	30.272353	-97.755748
+Hog Wild	100 E. North Loop Austin Texas	30.317765	-97.722156
+Hole in the Wall	2538 Guadalupe St. Austin Texas	30.289899	-97.741495
+Hot Boddies Mens Club	4134 Felter Lane Austin Texas	30.196828	-97.705643
+Hovercraft!	1115 S. Congress Austin Texas	30.25297	-97.748279
+Hurst Harbor Marina	16405 Marina Point Austin Texas	30.267605	-97.742984
+Jackson Ruiz Salon & Spa	500 N. Lamar Austin Texas	30.270455	-97.754664
+La Zona Rosa	612 W. 4th St. Austin Texas	30.267934	-97.749237
+Lakeway Marina	103 A. Lakeway Dr. Austin Texas	30.373945	-97.987161
+Madewell	The Domain Austin Texas	30.405562	-97.7208
+Maya	1508 S. Congress Austin Texas	30.24878	-97.750146
+Mercury	507 W. Mary St. Austin Texas	30.246182	-97.75544
+Mimi's Cafe	10515 N. Mopac Austin Texas	30.393306	-97.732531
+Montage Clothing	207 E. 53rd. St. Austin Texas	30.317538	-97.721104
+Myron's Prime Steakhouse	136 N. Castell New Braunfels Texas	29.702418	-98.125904
+Pangaea	2712B Guadalupe Austin Texas	30.292339	-97.741461
+Parts & Labour	1604 S. Congress Ave. Austin Texas	30.247871	-97.750448
+Peyton's Place	215 Lavaca St. Austin Texas	30.265191	-97.746406
+Peyton's Place	215 Lavaca St. (in 2nd district) Austin Texas	30.265191	-97.746406
+Pink Hair Salon & Gallery	1204 S. Congress Austin Texas	30.252046	-97.748914
+Red Eyed Fly	715 Red River Austin Texas	30.267599	-97.736636
+Roadhouse Relics	1720 S. 1st St. Austin Texas	30.248276	-97.755696
+Rue's Antiques	1500 S. Congress Austin Texas	30.248825	-97.750069
+Ruggle's Grill	701 South Capitol of Texas Hwy austin Texas	30.291823	-97.828043
+Salon Bloom	608 Rio Grande St. Austin Texas	30.270142	-97.749587
+Saxon Pub	1320 S. Lamar Blvd. Austin Texas	30.253527	-97.763226
+Sky Lounge	416 Congress Ave. Austin Texas	30.266451	-97.743555
+Sparks cards & gifts	1014 W 6th St Austin Texas	30.271763	-97.754151
+State Capitol	15th and Congress Austin Texas	30.27685	-97.739539
+Storyville Boutique	5015 Duval St. Austin Texas	30.313329	-97.720308
+Tesoros Trading Company	209 Congress Ave. Austin Texas	30.264445	-97.743956
+The Flower Studio	1406 W. 6ht St. Austin Texas	30.267605	-97.742984
+The Great Outdoors Garden Center	2730 S. Congress Austin Texas	30.235199	-97.756801
+The Jackalope	406 E. 6th St. Austin Texas	30.267168	-97.739116
+The Stash	2209-D S. 1st St. Austin Texas	30.244212	-97.757694
+Trophy's Sports Bar	2008 S. Congress Ave. Austin Texas	30.243673	-97.75201
+Turquoise Door	1208 S. Congress Austin Texas	30.252021	-97.748957
+Urban Living	7727 Burnet Rd. Austin Texas	30.353817	-97.732058
+VIP Marina	16107 B FM 2769 Leander Texas	30.441511	-97.912355
+Whisky Bar	303 W. 5th St. Austin Texas	30.267766	-97.745862
+Whitefire  Diamonds & Fine Jewelry	7600 Burnet Rd Ste 520 Austin Texas	30.352394	-97.733299
+Yacht Harbor Marina	16406 Stewart Rd. Austin Texas	30.380871	-97.959437
+Your Living Room	220 S. Congress Austin Texas	30.259505	-97.746109
+Hyatt Regency Lost Pines Resort & Golf	575 Hyatt Lost Pines Road, Lost Pines Texas	30.164772	-97.446317
+Pioneer Farms	11418 Sprinkle Cut Off Road Austin Texas	30.355554	-97.648209
+TownePlace Suites	10024 N. Capital of Texas Hwy Austin Texas	30.390841	-97.738323
+Trudy's	South Star Austin Texas	30.191251	-97.781522
+Velveeta Room	521 East Sixth St Austin Texas	30.266584	-97.738012
+311 Club	311 E. 6th St. Austin Texas	30.267207	-97.740244
+34th St. Cafe	1005 W. 34th St. Austin Texas	30.302773	-97.745201
+Acquire Group	4409 fairstone dr Fairfax Texas	38.858004	-77.400564
+Austin Audio Tour	201 East 2nd Street Austin Texas	30.263845	-97.742774
+Austin Motel	1220 S. Congress Av Austin Texas	30.251921	-97.748994
+Austin Taxi Cab Service	1209 Afghan Path Round Rock Texas	30.539587	-97.656393
+Barton Springs Pool	2100 Barton Springs Road Austin Texas	30.265664	-97.766076
+Black Cat Lounge	309 E. 6th St. Austin Texas	30.267213	-97.740261
+Budget Rent A Car	3300 Manor Rd. Austin Texas	30.287053	-97.702463
+Club Inferno	222 E. Sixth Street Austin Texas	30.267726	-97.741134
+Conseco Medical Insurance Company	303 North Main Street Rockford Texas	42.273238	-89.092905
+Econo Lodge Northwest	9102 Burnet Rd. Austin Texas	30.374706	-97.726333
+Electric Lounge	302 Bowie Road Austin Texas	30.268734	-97.753842
+Flamingo Cantina	515 East Sixth Street Ausitn Texas	30.267599	-97.742981
+Fun Werks	7417 I-35 North Austin Texas	30.335442	-97.701747
+Harry Ransom Humanities Research Center	21st & Guadalupe Austin Texas	30.283515	-97.738204
+Inn at Pearl Street	809 W. Martin Luther King Austin Texas	30.283069	-97.74677
+Joe's Generic Bar	315 E. 6th St. Austin Texas	30.267198	-97.74021
+Kyoto	315 Congress Avenue Austin Texas	30.265419	-97.743622
+La Quinta Inn Round Rock	2004 N. IH 35 Round Rock Texas	30.529256	-97.691414
+Liberty Lunch	405 West 2nd Street Austin Texas	30.265279	-97.747815
+Meneo	217 Congress AVe. Austin Texas	30.264505	-97.743936
+Mercury	503 E. 6th St. Austin Texas	30.266663	-97.738151
+Michael Baumer	1717 W  6th Street Austin Texas	30.275691	-97.764198
+Morrison Homes	1101 South Capital of Texas Highway Austin Texas	30.283891	-97.823468
+Musashino	3407 Greystone Austin Texas	30.35678	-97.747408
+O'Henry Museum	409 East 5th Street Austin Texas	30.266014	-97.739523
+Park West Inn	2607 S. IH 35 Austin Texas	30.229364	-97.743126
+Plush	617 Red River Austin Texas	30.267048	-97.736906
+Rockin R. Toob Rides & Store	193 S. Liberty New Braenfels Texas	29.708574	-98.120136
+Texas Sports Bar	9504 North IH-35 Austin Texas	30.360986	-97.686857
+The Governor's Mansion	1010 Colorado St. Austin Texas	30.272626	-97.742621
+The Upper Crust Bakery	4508 Burnet Austin Texas	30.315882	-97.741411
+Truman's	121 E. 5th Street Austin Texas	30.266935	-97.742826
+Wildseed Farms	100 Legacy Drove Fredericksburg Texas	30.221655	-98.767681
+Zan Ray Salon	1114 W. 5th Street Austin Texas	30.27118	-97.756466
+Zax Pints & Plates	312 Barton Springs Austin Texas	30.258967	-97.747843
+The Clay Pit	1601 Guadalupe Austin Texas	30.278921	-97.742533
+Turquoise Trading Post	6009 Burnet @ Koenig Austin Texas	30.336031	-97.73946
+Saxon Pub	1320 S. Lamar Austin Texas	30.253527	-97.763226
+Northcross Suites	7685 Northcross Drive Austin Texas	30.353511	-97.735499
+Coleman Spas	9070 Research Austin Texas	30.373683	-97.728212
+Lakeway Yaupon Golf Course	100 Clubhouse Drive Austin Texas	30.359017	-97.967243
+300 Austin Bowling	9504 North I-H 35 Austin Texas	30.360986	-97.686857
+La Traviata	314 Congress Ave Austin Texas	30.265505	-97.743917
+Embassy Suites Austin Arboretum	9505 Stonelake Blvd. Austin Texas	30.385771	-97.739133
+Emeralds	6224 N. Lamar Austin Texas	30.330675	-97.723546
+Fat Tuesday	508 East Sixth Austin Texas	30.266866	-97.73802
+The Vibe	508 E. 6th Street Austin Texas	30.266866	-97.73802
+Red Velvet Events	5926 Balcones Drive, Suite 290 Austin Texas	30.342331	-97.754096
+Sheraton	701 E. 11th St. Austin Texas	30.270733	-97.734256
+Cork & Company	308 Congress Austin Texas	30.265461	-97.743934
+Massage Harmony	4477 S. Lama Blvd Austin Texas	30.231957	-97.79995
+Byram Properties	510 S Congress Austin Texas	30.256803	-97.747081
+Austin VIP Transporation	7309 McNeil Road Austin Texas	30.435286	-97.766439
+Aziz Salon & Day Spa	710 West 7th Street Austin Texas	30.271056	-97.749301
+Lovejoy's	604 Neches St. Austin Texas	30.266954	-97.738321
+Kisma Hair Company and Day Spa	10225 Research Blvd. Austin Texas	30.394982	-97.745759
+Goodie Two Shoes	1111 S. Congress Ave. Austin Texas	30.25299	-97.748271
+Prima Dora	1912 S. Congress Ave. Austin Texas	30.245049	-97.751523
+Malibu Grand Prix	7417 N. IH-35 Austin Texas	30.335442	-97.701747
+Colovista Country Club	100 Country Club Drive Bastrop Texas	30.054979	-97.26638
+Off The Wall	1704 S. Congress Austin Texas	30.246931	-97.750791
+Austin Convention & Visitors Bureau	201 E. 2nd Street Austin Texas	30.263845	-97.742774
+Austin Steam Train Association	PO Box 1632 Austin Texas	30.28811	-97.759799
+Twin Peaks - South	701 E. Stassney Lane Austin Texas	30.201144	-97.769838
+Stanberry & Associates	1101 S. Capital of Texas Hwy Austin Texas	30.283891	-97.823468
+Library	407 E. 6th Street Austin Texas	30.266935	-97.739205
+The Simplifiers	6603 Bradley Drive Austin Texas	30.315215	-97.679188
+Star Bar	600 West 6th Street Austin Texas	30.269752	-97.748515
+Tree House Italian Grill	2201 College Avenue Austin Texas	30.241557	-97.751902
+Salon 505	10000 Research Blvd. Austin Texas	30.392759	-97.747082
+A Perfect Touch Wedding and Event Coordination	2900 N. Quinlan Park Road, Ste. B-240, No. 125 Austin Texas	0	0
+Celis Brewary	2431 Forbes Drive Austin Texas	30.333133	-97.669953
+24 Hour Fitness	5100 Beltline Rd. Dallas Texas	32.953964	-96.821687
+Blackmail	1200 S. Congress Austin Texas	30.252232	-97.748793
+State Senator District 14	P.O. Box 12068 Austin Texas	30.141913	-97.829336
+Law office of Michael Baumer	1717 west sixth suite 290 Austin Texas	30.275691	-97.764198
+Kenichi	419 Colorado St. Austin Texas	30.266753	-97.74459
+Horseshoe Bay Resort Marriott	200 Hi Circle North Horseshoe Bay Texas	30.549481	-98.323059
+Jaspers	The Domain Austin Texas	30.405562	-97.7208
+Taj Palace	6700 Middle Fiskville Road Austin Texas	30.328608	-97.707071
+Blind Pig Pub	317 E. 6th St. austin Texas	30.267193	-97.740193
+CityView TV	3201 Duval Road Austin Texas	30.410032	-97.717014
+Texas Land & Cattle South	1101 South Mopac Austin Texas	30.26348	-97.786937
+Hills Cafe	4700 South Congress Ave. Austin Texas	30.214315	-97.769554
+Payless Car Rental	3600 Manor Road Austin Texas	30.289225	-97.698426
+Bellagio Italian Bistro	6507 Jester Blvd Austin Texas	30.369469	-97.801591
+Fabulous Creations	12116 Metric Blvd Austin Texas	30.404672	-97.698434
+Round Rock Express	P.O. Box 5309 Round Rock Texas	30.46388	-97.651659
+Robert W. Berry	3301 Northland Dr. Ste. 407 Austin Texas	30.33686	-97.756445
+Capra & Cavelli	509 East 5th St. Austin Texas	30.265715	-97.738467
+Texas Ski Ranch	I35 Austin Texas	30.447257	-97.666808
+Deming Real Estate	3509 Bee Caves Road Austin Texas	30.277068	-97.804578
+Extended Stay America Austin Arboretum	2700 Gracy Farms Austin Texas	30.406534	-97.712827
+Austin American Statesman	PO Box 670 Austin Texas	30.14628	-97.827889
+Paradox	311 E. 5th Street Austin Texas	30.266306	-97.740568
+Highland Mall	6001 Airport Blvd Austin Texas	30.324371	-97.715675
+Elizabet Ney Muesuem	304 EAst 44 Street Austin Texas	30.306664	-97.727056
+Arboretum Shopping	10000 Research Blvd. Austin Texas	30.392759	-97.747082
+The Domain	11410 Century Oaks Terrace, Suite 210 Austin Texas	30.400817	-97.726742
+Austin Hotel & Lodging Association	5750 Balcones Drive Austin Texas	30.338621	-97.75646
+Antique Mall of Texas	1601 S. IH35 Round Rock Texas	30.495812	-97.678493
+Ruby Tuesday	10614 Research Blvd. Austin Texas	30.398922	-97.746643
+Austin Steam Train	610 Brazos St., Suite 210 Austin Texas	30.267899	-97.741569
+Shadow Glen Golf Club	12801 Lexington St. Manor Texas	30.351968	-97.556956
+Homestead Studio Suites Arboretum	9100 Waterford Centre Blvd Austin Texas	30.377073	-97.729825
+California Pizza Connection	The Domain Austin Texas	30.405562	-97.7208
+Blanton Museum of Art	The University of Texas at Austin Austin Texas	30.267599	-97.742981
+Austin Dogtown	537 Woodward St. Austin Texas	30.226441	-97.753837
+Backyard	Hwy 71 @ 620 Austin Texas	30.21146	-97.655509
+Kristal Limousine	1200 Settlers Valley Drive Pflugerville Texas	30.439989	-97.633469
+Aussie's	306 Barton Springs Road Austin Texas	30.258975	-97.747807
+AMLI Residential	201 Lavaca Austin Texas	30.265104	-97.7465
+Hyde Park Grill	4206 Duval Street Austin Texas	30.303997	-97.726612
+Avery Ranch	10500 Avery Club Drive Austin Texas	30.50275	-97.770437
+Capital of Texas Properties, Inc.	8012 Bee Caves Road Austin Texas	30.312055	-97.850086
+Grapat Group	10670 North Central Expressway Dallas Texas	32.892997	-96.768624
+Crowne Plaza	6121 N. IH 35 Austin Texas	30.323997	-97.705616
+Austin Home Search	4106 Medical Parkway Austin Texas	30.310066	-97.742769
+Touch of Sass	500 N. Lamar Blvd. Austin Texas	30.270455	-97.754664
+Daybreak Boat Rentals	5971 Hi-Line Austin Texas	30.431633	-97.941193
+Kerbey Lane	12602 Research Blvd. Austin Texas	30.431255	-97.764693
+Eastside Cafe	2113 Manor Road Austin Texas	30.284165	-97.719672
+Rio Grande Mexican Restaurant	301 San Jacinto Blvd Austin Texas	30.264628	-97.741354
+Green Pastures	811 West Live Oak St. Austin Texas	30.245308	-97.760853
+Lucky Lizard	412 E. 6th St. Austin Texas	30.267164	-97.73906
+Spa Django (Hyatt Lost Pines)	575 Hyatt Lost Pines Road Lost Pines Texas	30.164772	-97.446317
+Skydive San Marcos	PO Box 306 Fentress Texas	29.754929	-97.777913
+SoCo Salon	5311 S. Congress Austin Texas	30.208127	-97.773124
+Austintexas.org	301 Congress Avenue, Ste. 200 Austin Texas	30.265332	-97.743718
+Courtney Caplan Events	1502 B West Avenue Austin Texas	30.267605	-97.742984
+Silicon Software	1301 Capital of TexasHwy. Austin Texas	30.316993	-97.824058
+Legacy Hills Golf Club	309 Del Webb Boulevard Georgetown Texas	30.712976	-97.719138
+AMLI Management Company	15303 Dallas Parkway Dallas Texas	32.958223	-96.821775
+Austin Zoo	10807 Rawhide Trail Austin Texas	30.257168	-97.936577
+Super Shuttle	P.O. Box 6170 Austin, Texas	30.23835	-97.696667
+Metro	505 East 6th Street Austin Texas	30.266647	-97.738138
+Casino El Camino	517 E. 6th Austin Texas	30.266593	-97.738046
+Round Rock Premium Outlets	4401 N. IH-35 Round Rock Texas	30.565685	-97.692006
+208 Group	600 East 3rd St Austin Texas	30.263686	-97.738183
+Hooters	425 W. Riverside Austin Texas	30.25929	-97.749059
+Galaxy Cafe Clarksville	1000 West Lynn Austin Texas	30.279159	-97.759896
+Remax	13276 Research Blvd. Austin Texas	30.442912	-97.785635
+Chinatown	3407 Greystone Austin Texas	30.35678	-97.747408
+Bess Bistro	500 W. 6th St. Austin Texas	30.26946	-97.747454
+Siena Ristorante Toscana	6203 Capital of Texas Hwy Austin Texas	30.360128	-97.790589
+Oak Inn	1212 W Ben White Blvd. Austin Texas	30.228179	-97.777536
+Sun Lite	3601 N. IH 35 Austin Texas	30.293449	-97.720014
+Ginger Man	304 West 4th Austin Texas	30.267026	-97.746041
+Parkside	301 E. 6th St. Austin Texas	30.267279	-97.740312
+Darwin's Pub	223 E. 6th St. Austin Texas	30.267469	-97.741225
+Just For Fun Boat Rental	5973 Hiline Road Austin Texas	30.431683	-97.941267
+Gables Residential Services	11282 Taylor Draper Lane Austin Texas	30.411082	-97.753554
+Inner Space Cavern	PO Box 451 Georgetown Texas	30.659576	-97.689411
+Wolfdancer Golf Club (Hyatt Lost Pines)	575 Hyatt Lost Pines Road Lost Pines Texas	30.164772	-97.446317
+Austin Children's Museum	201 Colorado Street Austin Texas	30.264776	-97.745385
+Reed's	9901 Capitol of Texas Highway Austin Texas	30.390395	-97.74109
+The Grove	Southpark Meadows Austin Texas	30.23479	-97.880199
+Hilton Garden Inn Downtown	500 N. IH 35 Austin Texas	30.265058	-97.735431
+Austin CityGuide	8803 Ravello Pass Austin Texas	30.199825	-97.849695
+Austin City Guide	1518-A Treadwell Street Austin Texas	30.257454	-97.763962
+Crystal Falls Golf Course	3400 Crystal Falls Parkway Leander Texas	30.535833	-97.884055
+Vaughn Management Company	PO Box 201238 Austin Texas	30.14057	-97.829489
+Springhill Suites North Mopac	10936 Stonelake Blvd. Austin Texas	30.399064	-97.733476
+San Marcos Prime Outlets	I H 35 South Exit 200 Cedar Point road San Marcos Texas	29.84296	-97.968164
+Feats of Clay	4630 Burnet Road Austin Texas	30.317634	-97.740338
+Cafe Caprice	900 W. 10th St. Austin Texas	30.274506	-97.75047
+The Oasis	6550 Comanche Trail. Austin Texas	30.404636	-97.872811
+Esther's Follies	525 East Sixth Street Ausitn Texas	30.267599	-97.742981
+Marriott North at Roundrock	2600 La Frontera Blvd. Round Rock Texas	30.484135	-97.686956
+Perfect 10 Men's Club	16511 Bratton Lane Austin Texas	30.4703	-97.67447
+Capital City Comedy Club	8120 Research Blvd. Austin Texas	30.353171	-97.715059
+Keller Williams	1801 S. Mopac Austin Texas	30.259613	-97.794127
+Steamboat	403 East 6th Street Austin Texas	30.266969	-97.739231
+Marriott Austin Airport South	4415 South IH-35 Austin Texas	30.210893	-97.753968
+Turnquist Partners Realtors, Inc.	2901 Bee Caves Rd. Austin Texas	30.270458	-97.791723
+By George	524 north lamar austin Texas	30.27133	-97.754142
+Spanish Oaks	13443 HWY. 71 West Austin Texas	30.308156	-97.949802
+Plum Creek	750 Kohler's Crossing Road Kyle Texas	29.98837	-97.877369
+Montana	1211 Parkway Austin Texas	30.27789	-97.751285
+Hampton Inn Round Rock	110 Dell Way Round Rock Texas	30.48678	-97.673695
+The Arboretum	10000 Research Blvd. Austin Texas	30.392759	-97.747082
+Cibo	918 Congress Ave. Austin Texas	30.27113	-97.741828
+Crestwood Suites Austin Northwest	12989 US 183 Austin Texas	30.43913	-97.777804
+Things Celtic	1806 W. 35th St. Austin Texas	30.308361	-97.753162
+Austin Overtures	16104 Fisher Hollow Trail Leander Texas	30.481826	-97.887328
+Davis Gallery and Framing	837 West 12th Austin Texas	30.276078	-97.749043
+Blazer Tag	1701 Ben White Blvd Austin Texas	30.215471	-97.748939
+Hampton Inn Austin South	4141 Governor's Row Austin Texas	30.214336	-97.749421
+El Sol y la Luna	1224 S Congress Ave Austin Texas	30.251888	-97.749007
+Carrabba's Italian Grill	6406 N. IH-35 Austin Texas	30.325247	-97.707217
+Carrabba's Italian Grill	11590 Research Blvd. Austin Texas	30.415427	-97.746786
+Trajen Flight Support	4309 General Aviation Avenue Austin Texas	30.188868	-97.663425
+JLD Properties	PO Box 81531 Austin Texas	30.14057	-97.829489
+Ramada Inn Austin North	9121 N. IH 35 Austin Texas	30.35463	-97.689711
+Austin Java Co	1608 Barton Springs Rd. Austin Texas	30.262649	-97.762059
+Austin Business Journal	111 Congress Av. Austin Texas	30.263827	-97.744179
+Bob Bullock Texas State History Museum	PO Box 12874 Austin Texas	30.41311	-97.682149
+APS	PO Box 130 Marble Falls Texas	30.576612	-98.273142
+Sushi Sake	9503 Research Blvd. Austin Texas	30.385606	-97.742016
+APH Management	12151 N. IH 35 Austin Texas	30.394636	-97.671188
+Speakeasy	412-D Congress Avenue Austin Texas	30.26642	-97.743566
+Vicci	404 Colorado Street Austin Texas	30.266721	-97.744904
+Capital Metro	2910 East 5th Street Austin Texas	30.256311	-97.709855
+Dreyfus Antiques Brocante	1901 N Lamar Austin Texas	30.283881	-97.752209
+Compu USA	5601 Brodie Lane Austin Texas	30.226739	-97.821945
+Canvas	105 E. 5th Street Austin Texas	30.266981	-97.742998
+Malaga	208 West 4th Street Austin Texas	30.266707	-97.744943
+Fin and Porter Austin	500 E. 4th St. Austin Texas	30.264978	-97.738807
+North Austin	6911 N Interregional Hwy Austin Texas	30.267605	-97.742984
+Kenobi	10,000 Research Blvd, Building A Austin Texas	30.43899	-97.779239
+Your Very Own Fairy Godmother	106 Chandler Crossing Trail Round Rock Texas	30.539382	-97.647541
+Northcross Mall (MRO N Cross)	2525 West Anderson Lane Austin Texas	30.357305	-97.73373
+AIMCO	5608 Parkcrest Austin Texas	30.337717	-97.758969
+First Worthing	8144 Walnut Hill Lane Dallas Texas	32.88167	-96.76578
+Courtyard by Marriot Austin South	4533 S IH 35 Austin Texas	30.210279	-97.754411
+Fetish	1112 N. Lamar Blvd. Austin Texas	30.27622	-97.751873
+Underwear	916 W. 12th St. Austin Texas	30.276662	-97.750166
+Lake Austin Spa Resort	1705 S. Quinlan Park Road Austin Texas	30.328159	-97.926684
+Joe's Bar and Grill	506 West Avenue Austin Texas	30.269493	-97.751002
+Louie's 106	106 E. 6th Street Austin Texas	30.26812	-97.742573
+Prototype Vintage Design & Style	1700 1/2 S. Congress at Milton Austin Texas	30.246954	-97.750752
+Stephen F. Austin	701 Congress Avenue Austin Texas	30.269072	-97.742338
+Logan's Roadhouse	701 E. Stassney Austin Texas	30.201144	-97.769838
+E Events	5100 Dull Knife Drive Austin Texas	30.415365	-97.739224
+Austin Weddings & Events	PO Box 2055, Pflugerville Texas	30.44872	-97.645109
+Fix-A-Dent	800 West 6th Street Austin Texas	30.270427	-97.750696
+Suzi's Kitchen	1152 South Lamar Austin Texas	30.255324	-97.762107
+McCormick & Schmick's	401 Congress Avenue Austin Texas	30.26626	-97.743353
+Baby Acapulco Restaurants	1628 Barton Springs Rd. Austin Texas	30.262766	-97.762185
+Schlitterbahn Waterpark Resort	3150 IH-35 South New Braunfels Texas	29.67637	-98.152536
+Lago Vista Golf Clubs	PO Box 4500 Lago Vista Texas	30.43623	-98.015149
+Lakeline Mall	11200 Lakeline Mall Dr. Cedar Park Texas	30.473704	-97.79778
+Certified Folder	1120 Joshua Way Vista Texas	31.5247	-98.211899
+Ricar & Associates	8400 N. Mopac Austin Texas	30.371043	-97.742046
+Joe's Crab Shack	600 East Riverside Drive Austin Texas	30.25254	-97.742126
+Rick's Cabaret Austin	8110 Springdale Road Austin Texas	30.325015	-97.657466
+Bella Flora Creative	P.O. Box 151434 Austin Texas	30.14057	-97.829489
+Austin Chronicle	4000 N. IH-35 Austin Texas	30.296736	-97.718721
+Iron Works BBQ	100 Red River Austin Texas	30.168311	-98.005106
+Antone's	213 West 5th Street Austin Texas	30.267644	-97.745157
+Alite Laser	504 West 17th Street Austin Texas	30.280178	-97.74349
+Grey Rock Golf Course	7401 Highway 45 Austin Texas	30.183476	-97.906445
+Twin Peaks - Round Rock	100 Louis Henna Blvd. Round Rock Texas	30.481234	-97.671708
+PF Changs Downtown	201 San Jacinto Austin Texas	30.263733	-97.74162
+Staybridge Suites	10201 Stonelake Blvd. Austin Texas	30.39454	-97.739595
+Waterloo Brewing Company	401 Guadalupe Street Austin Texas	30.267256	-97.746876
+Austin Premium Limousine	P.O. Box 82241 Austin Texas	30.14057	-97.829489
+Bayou Lounge	500A E. 6th St. Austin Texas	30.266838	-97.738106
+J Black's	710 W. 6th St., Suite B Austin Texas	30.270126	-97.749653
+Macaroni Grill	701 E. Stassney Austin Texas	30.201144	-97.769838
+Wi-Fi Texas	815-A Brazos Austin Texas	30.269702	-97.740578
+Solid Gold	1601 E. 5th St. #102 Austin Texas	30.261894	-97.726601
+Star Ranch	2500 SM 685 Hutto Texas	30.505903	-97.579022
+Paramount Theatre	713 Congres Avenue Austin Texas	30.269145	-97.742248
+Shepler's Western Wear	6001 Middle Fiskville Road Austin Texas	30.32245	-97.710736
+QUA	213 West 4th St., Suite 203 Austin Texas	30.266482	-97.745074
+Federal Rent-A-Car	805 S. Mays Street Austin Texas	30.267605	-97.742984
+Bradford Home Suites	10001 N. Capital of Texas Hwy Austin Texas	30.390456	-97.738989
+Cuba Libre	409 Colorado Austin Texas	30.266676	-97.744619
+Imperia	310 Colorado Austin Texas	30.26586	-97.745245
+Capitol Brasserie	310 Colorado Street Austin Texas	30.26586	-97.745245
+Hill Country Salon & Spa	8497 Bee Caves Road Austin Texas	30.314943	-97.856679
+State Preservation Board	201 E. 14th Austin Texas	30.275312	-97.738042
+Texas Land & Cattle	5510 S. I-35 Austin Texas	30.200761	-97.762883
+Elite Weddings	4408 C Burnet Road Austin Texas	30.31457	-97.742278
+FYI Body Salon	210 West Riverside Dr. Austin Texas	30.258093	-97.747878
+La Quinta Inns & Suites Austin Mopac North	11901 N. Mo-Pac Austin Texas	30.407007	-97.719822
+Austin Skydiving Center	10556 PR 7022 Lexington Texas	30.40856	-96.966029
+Ringers	415 Colorado St. Austin Texas	30.266722	-97.744601
+Renaissance Austin Hotel	9721 Arboretum Boulevard Austin Texas	30.393352	-97.749717
+Lincoln Properties	11615 Angus Rd Austin Texas	30.413904	-97.744045
+Eddie V's Austin Arboretum	9400 Arboretum Blvd Austin Texas	30.38959	-97.752117
+Eddie V's Austin Downtown	301 East 5th St. Austin Texas	30.266378	-97.740635
+Roaring Fork	701 Congress Avenue Austin Texas	30.269072	-97.742338
+Carpe Diem	115 E. 6th Street Austin Texas	30.26784	-97.742582
+Austin Elite Tours	P.O. Box 90503 Austin Texas	30.14057	-97.829489
+Spaghetti Warehouse	117 W. 4th Street Austin Texas	30.266139	-97.743853
+Lennar Homes	12301 Research Blvd. Austin Texas	30.427203	-97.754158
+Cafe Serrano's	Corporate Office Austin Texas	30.390111	-97.756079
+Graystar Multi Family Services	111 Congress Austin Texas	30.263827	-97.744179
+Touch Screen Marketing of Texass	1303 B Cuernavaca Austin Texas	30.336245	-97.865217
+Sparkling Engagements	PO Box 200461 Austin Texas	30.14057	-97.829489
+Atomique Boutique	2310 S. Lamar Suite 104 Austin Texas	30.247478	-97.774746
+Volente Beach	16107 FM 2769 Leander Texas	30.441511	-97.912355
+Austin Art Glass	1608 S. Congress Ave. Austin Texas	30.247848	-97.750486
+Austin Convention & Visitors Bureau	201 E. 2nd Street Austin Texas	30.263845	-97.742774
+City Manager's Office	124 West 8th Street Austin Texas	30.270156	-97.742458
+Bikini's	6901 IH-35 Austin Texas	30.329731	-97.704902
+Holiday Inn Northwest Plaza	8901 Business Park Drive Austin Texas	30.378817	-97.74103
+Residence Inn by Marriott Round Rock	2505 S IH35 Round Rock Texas	30.484903	-97.674677
+Falconhead Golf Club	15201 Falconhead Blvd. Austin Texas	30.320755	-97.968993
+Texspresso South	3421 William Cannon Austin Texas	30.18396	-97.755171
+Ravenwood Properties	815 Brazos Austin Texas	30.269702	-97.740578
+Source Wellness Center	3355 Bee Cave Rd. Suite 508 Austin Texas	30.275506	-97.802056
+Daddy's	218 E. Sixth Austin Texas	30.267736	-97.741168
+Hill Country Galleria	4005 FM 620 South Bee Cave Texas	30.312352	-97.946665
+Best Western Seville Plaza Inn	4323 South IH-35 Austin Texas	30.212016	-97.753165
+Holiday Inn Express Southwest	4892 Highway 290 West Austin Texas	30.233985	-97.814713
+Barton Creek Square Mall	2901 Capital of Texas Hwy Austin Texas	30.327863	-97.81064
+Austin Bergstrom International Airport	2716 Terminal Drive Austin Texas	30.213202	-97.665859
+KVUE Channel 24	3201 Steck Av. Austin Texas	30.36599	-97.738116
+Joy	3105 S. IH-35 Austin Texas	30.225434	-97.745471
+In Style Weddings and Destinations	P.O. Box 342125 Austin Texas	30.14057	-97.829489
+Emos	603 Red River Austin Texas	30.266701	-97.736955
+Austin Apartment Store	3407 Wells Branch Parkway Austin Texas	30.439744	-97.696635
+Matt's El Rancho	2613 S. Lamar Austin Texas	30.245517	-97.779423
+Hawthorn Suites Austin Airport	7800 East Riverside Drive Austin Texas	30.216759	-97.689646
+Barbara's Brides	1102 Rowley Drive Cedar Park Texas	30.485974	-97.855829
+Saba Blue Water Cafe	208D West 4th Street Austin Texas	30.266707	-97.744943
+River Place Country Club	4207 River Place Blvd Austin Texas	30.369334	-97.861307
+Zilker Botanical Gardens	2220 Barton Springs Road Austin Texas	30.266169	-97.76795
+Creative Consultants	701 Rio Grande, Suite B Austin Texas	30.270944	-97.749018
+Extended Stay America Downtown Austin	600 Guadalupe Street Austin Texas	30.269176	-97.746345
+Special Events Division	3501 South 1st Street Austin Texas	30.231315	-97.766261
+Cowboy Harley Davidson	10917 South IH-35 Austin Texas	30.142197	-97.794713
+Kiki Nass	812 W. 12th St. Austin Texas	30.276264	-97.748681
+Uchi	801 S Lamar Blvd Austin Texas	30.257594	-97.759931
+Austin Convention Center	500 East Caesar Chavez Austin Texas	30.262235	-97.739906
+Monkey See, Monkey Do!	1712 S. Congress Ave. Austin Texas	30.246877	-97.750839
+Ulta	9607 Research Blvd. Austin Texas	30.387993	-97.743227
+Plumblossom Wellness	1700 S. Lamar Austin Texas	30.250696	-97.765877
+Fuddruckers	Corporate Austin Texas	30.390111	-97.756079
+Cedar Door	201 Brazos Street Austin Texas	30.264032	-97.742728
+Partee Corp.	P.O. Box 511 Alto Texas	31.651215	-95.072969
+Comida Deluxe	1623 Toomey Austin Texas	30.264107	-97.760366
+Hula Hut	Lake Austin Blvd. Austin Texas	30.294819	-97.783702
+Kismet	4410 Medical pkwy. Austin Texas	30.313952	-97.742163
+Tan It All Salon	2025 Guadalupe St. Austin Texas	30.282972	-97.741848
+Homewood Suites By Hilton South	4143 Governor's Row Austin Texas	30.214303	-97.749439
+Dub King	2105 Justin Lane Austin Texas	30.344235	-97.735197
+Shiki	225 West 2nd St. Austin Texas	30.264672	-97.745903
+Fonda San Miguel	2330 W. North Loop Blvd. Austin Texas	30.325451	-97.74273
+Roux Cajun Con-Fusion	214 East 6th Street Austin Texas	30.267745	-97.741203
+Indian Palace	3616 Far West Blvd. Austin Texas	30.35469	-97.755337
+Stress Express, Inc.	The Spectrum Center Austin Texas	30.267605	-97.742984
+Buca di Beppo	Buca Inc. Minneapolis Texas	44.979031	-93.264931
+Babe's	208 East Sixth Austin Texas	30.267759	-97.741256
+Sugars Uptown Cabaret	404 Highland Mall Blvd. Austin Texas	30.328654	-97.710735
+Granite Properties	808 W. 10th Austin Texas	30.274138	-97.749335
+Expose	3615 S. Congress Austin Texas	30.227539	-97.76132
+Dessau Music Hall	134222 Dessau Rd. Austin Texas	30.41125	-97.634709
+Apple Bar	120 West 5th St. Austin Texas	30.267385	-97.743449
+Musashino Sushi Dokoro	3407 Greystone Dr. Austin Texas	30.35678	-97.747408
+Sullivans	300 Colorado St. Suite 200 Austin Texas	30.265772	-97.745213
+Ego's	510 S. Congress Austin Texas	30.256803	-97.747081
+Premier Event Source	1806 Kenwood Avenue Austin Texas	30.24171	-97.741761
+Joe's Crab Shack	11680A Research Boulevard Austin Texas	30.418294	-97.747329
+Bennigan's Grill & Tavern	301 Barton Springs Rd. Austin Texas	30.258724	-97.74769
+Elephant Room	315 Congress Austin Texas	30.265419	-97.743622
+Lyndon B. Johnson National Historical Park	P.O. Box 329 Johnson City Texas	30.27673	-98.411429
+Thai Passion	620 Congress Avenue Austin Texas	30.268346	-97.742881
+Austin Property Management	917 W. Anderson Ln Austin Texas	30.348476	-97.715118
+Austin Ambassador Hotel	7800 N IH 35 Austin Texas	30.340356	-97.700103
+Moxie and Compound	909 W. Mary, Suite B! Austin Texas	30.247803	-97.760959
+Logan's On Sixth	200 E. Sixth Street Austin Texas	30.26773	-97.741342
+Howard Johnson	2711 S IH35 Austin Texas	30.37062	-97.747569
+Dona Emilia's	101 San Jacinto Blvd Austin Texas	30.262739	-97.742095
+Kiosk USA, Ltd.	764-C Airport Blvd. Austin Texas	30.254807	-97.692868
+Anne Kelso Salon	3018 N. Lamar Austin Texas	30.299731	-97.746713
+Catfish Parlour North Corporate Offices	PO Box 14686 Austin Texas	30.41311	-97.682149
+90 Proof	333 E. 2nd Street Austin Texas	30.263513	-97.741681
+Doubletree	1617 N. IH 35 Austin Texas	30.276589	-97.730065
+Red Roof Inn Austin North	8210 North IH 35 Austin Texas	30.344903	-97.696986
+Residence Inn by Marriott North	12401 Lamar Blvd. Austin Texas	30.405982	-97.678393
+Ten Thousand Villages	1317 S. Congress Austin Texas	30.25059	-97.749166
+Cowboy	9515 N. Lamar Austin Texas	30.364637	-97.695971
+Robinson Management	1508 S Lamar Austin Texas	30.2522	-97.764416
+Capstone Real Estate Services, Inc.	210 Barton Springs Road Austin Texas	30.25911	-97.747219
+Kick Pleat	910 S. First St. Austin Texas	30.25453	-97.752602
+Eighteenth Over Austin	500 N IH 35 Austin Texas	30.265058	-97.735431
+Romeo's	1500 Barton Springs Rd. Austin Texas	30.261711	-97.760088
+Central Market	4001 N. Lamar Austin Texas	30.307916	-97.741244
+Pango Tea Bar	718 Congress Avenue Austin Texas	30.269275	-97.742526
+Therapy	1113 S. Congress Austin Texas	30.25298	-97.748275
+Showplace Lanes	9504 North IH-35 Austin Texas	30.360986	-97.686857
+Bad Boys	16511 Bratton Lane Austin Texas	30.4703	-97.67447
+La Quinta Inn Austin I-35 South at Ben White	4200 S. IH 35 Austin Texas	30.214204	-97.753586
+Fairfield Inn & Suites Austin Northwest	11201 N. Mopac Expressway Austin Texas	30.398873	-97.730374
+Fogo da Chao	309 E. 3rd St. Austin Texas	30.264402	-97.741304
+TGI Friday's Arboretum	10,000  Research Blvd. Austin Texas	30.43899	-97.779239
+Omni Southpark	4140 Governors Row Austin Texas	30.214572	-97.74974
+Alamo Drafthouse Cinema	409 Colorado Austin Texas	30.266676	-97.744619
+Boiling Pot	700 East 6th Austin Texas	30.266263	-97.736008
+Austin Mattress	7208 McNeil Drive Austin Texas	30.435958	-97.7652
+Lamar Realty	PO Box 33156 Austin Texas	30.14057	-97.829489
+Joie de Vie	713 E. 6th Street Austin Texas	30.265964	-97.735416
+Topaz Salon 1	1509 S Lamar Blvd Austin Texas	30.252034	-97.76417
+Sedans, Inc.	9801 Stonelake Blvd.  Ste. 732 Austin Texas	30.388957	-97.738827
+Springhill Suites Austin South	4501 S. IH-35 Austin Texas	30.21057	-97.754198
+Golden Wok	500 Canyon Ridge Austin Texas	30.403416	-97.672882
+The Cleaning Authority	5555 North Lamar Blvd Austin Texas	30.323811	-97.727506
+Holiday Inn Express Austin Airport	7601 East Ben White blvd Austin Texas	30.21759	-97.691747
+Austin Area Limousines	4822 E. Cesar Chavez St. Austin Texas	30.251859	-97.70204
+Hem Jeans	908 W. 12th St. Austin Texas	30.276634	-97.750067
+Bell Dame Du Lac	107 RR 620 S Lakeway Texas	30.366119	-97.950972
+Guero's	1412 S. Congress Avenue Austin Texas	30.249696	-97.749817
+Cantina Laredo	201 West 3rd Street Austin Texas	30.265598	-97.745311
+Priceless Car Rental	2810 Manchaca Austin Texas	30.243653	-97.781592
+Halcyon	218 West 4th Street Austin Texas	30.266752	-97.745023
+Crossland West (Economy Suites)	12621 Hyemeadow Austin Texas	30.458077	-97.791491
+Room Service Vintage	107 E North Loop Blvd Austin Texas	30.317544	-97.722158
+Churchill Forge Properties	11712 Spotted Horse Drive Austin Texas	30.411588	-97.733109
+El Interior	1009 West Lynn Austin Texas	30.279226	-97.759599
+Mi Casa	1700 S. Congress Ave. Austin Texas	30.246954	-97.750752
+Carmelo's	5412 Alexis Cove Austin Texas	30.230184	-97.712
+Daily Grill	11506 Century Oaks Terrace Austin Texas	30.401973	-97.726213
+Amy's Platinum Weddings Coordinating	P.O. Box 200698 Austin Texas	30.14057	-97.829489
+IMAX	1800 N. Congress Ave Austin Texas	30.279705	-97.738556
+Austin Duck Adventures	1605 West 5th Austin Texas	30.273759	-97.763678
+Joe DiMaggio's Italian Chophouse	11410 Century Oaks Terrace Austin Texas	30.400817	-97.726742
+Austin Music Hall	208 Nueces Austin Texas	30.178041	-97.963975
+Bates Motel	317 East Sixth Austin Texas	30.267193	-97.740193
+PF Chang's Arboretum	10114 Jollyville Road Austin Texas	30.396187	-97.750126
+Carlos 'N Charlie's	5973 Hi Line Rd Austin Texas	30.431683	-97.941267
+Iron Cactus on 6th	606 Trinity Austin Texas	30.267276	-97.739411
+Iron Cactus Arboretum	10001 Stonelake Blvd. Austin Texas	30.392108	-97.739222
+Umi Sushi Bar	5510 South IH-35 Austin Texas	30.200761	-97.762883
+Touche Showbar	417 E. 6th Street Austin Texas	30.266899	-97.739123
+Habitat Suites Hotel	500 Highland Mall Blvd Austin Texas	30.328356	-97.710126
+Garbo, A Salon & Spa	7739 Northcross Drive, Ste. K Austin Texas	30.354595	-97.736008
+Castle Hill Cafe	1101 W. 5th Austin Texas	30.270834	-97.756324
+Episcopal Diocese of Texas	PO Box 1703 Austin Texas	30.28811	-97.759799
+Candlewood Suites Austin South	4320 IH35 South Austin Texas	30.37175	-97.750019
+Miguel's Imports	524 N. Lamar Boulevard Austin Texas	30.27133	-97.754142
+KTBC Fox Channel 7	119 E. 10th St. Austin Texas	30.271543	-97.741135
+Tree Masters	1512 Buell Avenue Austin Texas	30.3632	-97.728989
+Anderson Group	5716 Hwy 290 West Austin Texas	30.23669	-97.846838
+Security Capital Group Reality Service	8801 Wall St. Austin Texas	30.340251	-97.671445
+Archstone	8801 Wall Street Austin Texas	30.340251	-97.671445
+Holiday Inn Austin Town Lake	20 N IH 35 Austin Texas	30.254205	-97.737042
+Dave & Busters of Austin	9333 Research Blvd Austin Texas	30.383407	-97.740929
+Fivelements Acupuncture Clinic	6214 Cameron Rd Austin Texas	30.319546	-97.697338
+Lucky Lounge	209 W. 5th St. Austin Texas	30.267652	-97.745134
+Kona Grill	11410 Century Oaks Terrace Austin Texas	30.400817	-97.726742
+Brick Oven Restaurant	1209 Red River Austin Texas	30.272564	-97.734858
+Light Bar	408 Congress Avenue Austin Texas	30.266388	-97.743578
+Hertz Rent A Car	3737 Airport Blvd. Austin Texas	30.28686	-97.706364
+Vinny's Italian Cafe	1003 Barton Springs Rd Austin Texas	30.259787	-97.754574
+Drury Inn & Suites	6711 IH-35 N Austin Texas	30.328407	-97.705248
+Hickory Street Grill	800 Congress Avenue Austin Texas	30.270047	-97.742166
+First Place Realty Inc.	3307 Northland Dr. Austin Texas	30.336856	-97.756506
+John McDuff Attorney at Law	100 Congress Avenue Austin Texas	30.263866	-97.744492
+Outback Steakhouse	4211 S Lamar Blvd. Austin Texas	30.235699	-97.792913
+Lamberts	401 W. 2nd St. Austin Texas	30.265286	-97.747794
+Residence Inn by Marriott Northwest	3713 Tudor Blvd. Austin Texas	30.384584	-97.738813
+Catfish Parlour North	11910 Research Blvd. Austin Texas	30.424149	-97.750265
+Omni Austin Downtown	700 San Jacinto Austin Texas	30.268438	-97.740127
+KXAN Channel 36	908 W. MLK Blvd Austin Texas	30.283503	-97.747717
+Manuel's	310 Congress Avenue Austin Texas	30.265476	-97.743929
+Austin Cab Company	1135 Gunther Austin Texas	30.269152	-97.6969
+Andiamo Ristorante	2521 Rutland Drive Austin Texas	30.3829	-97.722874
+Benihana	9070 Research Blvd Austin Texas	30.373683	-97.728212
+La Zona Rosa	612 West 4th Street Austin Texas	30.267934	-97.749237
+Antonio's	7522B N IH35 Austin Texas	30.34928	-97.688759
+Austin Land and Cattle Company	1205 N. Lamar Blvd Austin Texas	30.277588	-97.750968
+Days Inn	3105 N. IH 35 Austin Texas	30.288753	-97.723034
+Old Alligator Grill	3003 S. Lamar Austin Texas	30.242658	-97.783423
+Hampton Inn & Suites Downtown	200 San Jacinto Blvd Austin Texas	30.263716	-97.741813
+Extended Stay America Austin North Central	8221 N. IH-35 Austin Texas	30.344573	-97.696105
+Lakeway Live Oak Golf Course	100 Clubhouse Drive Austin Texas	30.359017	-97.967243
+Super 8 North Austin	8128 North I-35 Austin Texas	30.344441	-97.697122
+Macaroni Grill	9828 Great Hills Trail Austin Texas	30.394382	-97.749245
+Soho Lounge	217 E. Sixth Austin Texas	30.267483	-97.741278
+Ceramic Mug	520 west 6th Street Austin Texas	30.269556	-97.747606
+Dollar Rent A Car	2963 Manor Road Austin Texas	30.285821	-97.708402
+Neiman Marcus Last Call	4115 S. Capital of Texas Highway Austin Texas	30.241066	-97.800203
+Flirt	Court of the three sisters Austin Texas	30.320837	-97.784193
+Balcones Country Club	8600 Balcones Club Drive Austin Texas	30.437003	-97.781938
+Studio 6 Austin Midtown	937 Camino La Costa Austin Texas	30.327863	-97.702598
+Hyatt Place	7522 N IH-35 Austin Texas	30.336838	-97.702256
+Salon Monique	6806 Bee Caves Road Austin Texas	30.299769	-97.838054
+Pappadeaux's Seafood Kitchen	6319 N IH-35 Austin Texas	30.325343	-97.705441
+Courtyard by Marriot Central	5660 N IH 35 Austin Texas	30.317226	-97.707949
+Something to Celebrate	P.O. Box 1823 Round Rock Texas	30.46388	-97.651659
+Avalon	Sixth Street at Lamar Austin Texas	30.267599	-97.742981
+Residence Inn by Marriott South	4537 S IH-35 Austin Texas	30.210238	-97.754411
+The Steeping Room	The Domain Austin Texas	30.405562	-97.7208
+Wellesy Inn & Suites	1001 S IH-35 Austin Texas	30.245829	-97.734416
+KEYE 42	Metric Austin Texas	30.421377	-97.683317
+Allstate Insurance	12400 Amhurst Dr. #124 Austin Texas	30.420724	-97.716315
+Candlewood Suites Round Rock	521 S IH-35 Round Rock Texas	30.504156	-97.68311
+Studio 6 Austin Northwest	11901 Pavilion Blvd Austin Texas	30.424853	-97.755147
+Suburban Extended Stay Austin South	2501 IH 35 Austin Texas	30.285056	-97.725411
+Austin Management Group, Inc.	3301 Northland Drive Austin Texas	30.33686	-97.756445
+Desperado	9515 N. Lamar Austin Texas	30.364637	-97.695971
+Paradise Cafe	401 E. Sixth Street Austin Texas	30.266986	-97.739243
+Crazy Lady	3701 N. IH-35 Austin Texas	30.293995	-97.719655
+Roy's	340 E. Second St. Austin Texas	30.2637	-97.741598
+Garcia and Associates	9205 Colberg Austin Texas	30.212694	-97.889757
+Shine	2210 South First Austin Texas	30.244324	-97.757978
+Takeout Taxi	600 W. 28th Austin Texas	30.293414	-97.742763
+Hampton Inn & Suites Southeast	7712 E. Riverside Dr. Austin Texas	30.218047	-97.690226
+Fredericksburg	106 N. Adams Street Fredericksburg Texas	30.275358	-98.872243
+Mongolian Grill	Corner of 2nd and San Jacinto Austin Texas	30.26364	-97.741779
+Spiros	611 Red River Austin Texas	30.26703	-97.736935
+Shangby	10 Sundown Pkwy Austin Texas	30.288467	-97.822327
+Habana calle 6	709 East 6th Street Austin Texas	30.265946	-97.73571
+Candle Factory	4411 S. Ih-35 Georgetown Texas	30.605454	-97.685729
+Back Room	2015 East Riverside Austin Texas	30.240827	-97.727796
+Broken Spoke	3205 South Lamar Austin Texas	30.241192	-97.785469
+Wildflower Salon and Spa	3300 Bee Caves Rd. Austin Texas	30.274603	-97.800512
+La Taverna	258 E 2nd St Austin Texas	30.263904	-97.742191
+Fishtank Marketing	2813 Rio Grande Austin Texas	30.294336	-97.743884
+3 Forks	111 Lavaca Street Austin Texas	30.264029	-97.746927
+BRSG Austin	701 Brazos Austin Texas	30.268695	-97.741002
+Camp Mabry	PO Box 5218/AGTX-E Austin Texas	30.267605	-97.742984
+South Austin Gym	randy@southaustingym.com Austin Texas	30.267605	-97.742984
+Homewood Suites Northwest	3912 W Braker Lane Austin Texas	30.397073	-97.734929
+Rain	217 W. Fourth Austin Texas	30.266492	-97.745109
+Opal Divines	700 W Sixth St. Austin Texas	30.270054	-97.749585
+Comfort Suites	13681 US Hwy 183 North Austin Texas	30.455467	-97.791253
+Days Inn South	4220 S. IH 35 Austin Texas	30.214067	-97.753668
+Country Inn & Suites Round Rock	1560 North IH-35 Round Rock Texas	30.522726	-97.689928
+Quality Inn	2751 East Hwy 71 Del Valley Texas	30.210552	-97.653297
+Comfort Suites Round Rock	609 Chisolm Trail Round Rock Texas	30.512167	-97.689098
+Days Inn	820 E. Anderson Lane Austin Texas	30.338212	-97.697477
+Country Inn & Suites	7400 North IH-35 Austin Texas	30.335535	-97.703093
+Econo Lodge	6201 E. Hwy 290 Austin Texas	30.234852	-97.85728
+La Quinta Austin North	7622 N. IH 35 Austin Texas	30.337901	-97.701743
+Comfort Inn Austin	700 Delmar Avenue Austin Texas	30.3368	-97.703254
+Comfort Suites South IH-35	1701 East St. Elmo Road Austin Texas	30.21213	-97.751749
+One World Theatre	7701 Bee Caves Road Austin Texas	30.309867	-97.845377
+Wink	1014 N Lamar Blvd Suite E Austin Texas	30.275234	-97.752346
+Hilton Austin Downtown	503 Neches Austin Texas	30.26598	-97.738453
+Iron Rock Raceway	13020 New Airport Drive Austin Texas	30.267605	-97.742984
+Lone Star Riverboat	River Austin Texas	30.33051	-97.929131
+Walking Tours (AVIC)	201 E. 2nd Street Austin Texas	30.263845	-97.742774
+Sagra	1610 San Antonio Austin Texas	30.279573	-97.743639
+Capps Van & Car Rental	4300 Airport Blvd. Austin Texas	30.297987	-97.709448
+Yellow Rose	6534 B North Lamar Austin Texas	30.267605	-97.742984
+Crystal Visions Technology	2130 South Yale Street Santa Anna Texas	33.34961	-96.551204
+Driskill Grill	604 Brazos Street Austin Texas	30.267846	-97.74156
+Gold's Gym	7800 N. Mopac Austin Texas	30.361548	-97.745277
+Radisson North	6000 Middle Fiskville Road Austin Texas	30.322501	-97.710836
+Hyatt Regency Austin	208 Barton Springs Road Austin Texas	30.259112	-97.747207
+Red Roof Inn Austin South	4701 South IH-35 Austin Texas	30.208333	-97.755575
+S & S Wedding Services	1212-A Chicon Austin Texas	30.273939	-97.720097
+Focus on Events	2616 Crownspoint Dr Austin Texas	30.182469	-97.831209
+North	The Domain Austin Texas	30.405562	-97.7208
+Cal-Tex	614 S. First Austin Texas	30.257616	-97.750577
+Clink Events	1008 E. 43rd Street Austin Texas	30.30202	-97.719297
+Beso Cantina	307-b w. 5th street Austin Texas	30.267881	-97.746067
+Doubletree Hotel Austin North	6505 N. IH 35 Austin Texas	30.326869	-97.705345
+Springhill Suites Austin North	12520 N. IH35 Austin Texas	30.36031	-97.692509
+Tropical Isle	600 East 6th Street Austin Texas	30.266547	-97.737049
+Cross Press Printing	5555 N Lamar Austin Texas	30.323811	-97.727506
+Gumbo's Louisana Style Cafe	710 Colorado Austin Texas	30.269577	-97.743877
+Clarksville Pottery & Galleries	4001 N. Lamar Blvd Austin Texas	30.307916	-97.741244
+Rowing Dock	P.O. Box 685162 Austin Texas	30.14057	-97.829489
+Courtyard Austin Downtown Convention Center	300 East 4th Street Austin Texas	30.265558	-97.740948
+Discount Electronics	1738 West Anderson Lane Austin Texas	30.352934	-97.723865
+Quality Inn Central	909 E. Koenig Austin Texas	30.320836	-97.709135
+Camden Property Trust	12349 Metric Blvd Austin Texas	30.409245	-97.696436
+Comfort Suites Austin Airport	7501 East Ben White Austin Texas	30.217085	-97.693323
+Texas Land & Cattle North	6007 IH-35 North Austin Texas	30.320646	-97.706452
+Forbidden Fruit	108E. North Loop Austin Texas	30.34928	-97.688759
+Green Mesquite BBQ	1400 Barton Springs Rd Austin Texas	30.261126	-97.759025
+Scholz Garten	1607 San Jacinto Blvd Austin Texas	30.277264	-97.73658
+Chez Nous	510 Neches St. Austin Texas	30.266111	-97.738681
+Embassy Suites North	5901 North IH 35 Austin Texas	30.319741	-97.706522
+Gliding Revolution	12507-B Turtle Rock Roads Austin Texas	30.447843	-97.775126
+Ibahn	10301 FM 2222 Austin Texas	30.391989	-97.837925
+Kemp Management	500 West Sixth Austin Texas	30.26946	-97.747454
+36th Street Events	P.O. Box 92075 Austin Texas	30.14057	-97.829489
+Lucie's Weddings & Events	PO Box 279 Austin Texas	30.226727	-97.764366
+The Landing Strip	745 S. Bastrop Hwy Austin Texas	30.233508	-97.684231
+Synermark	5929 Balcones Austin Texas	30.342207	-97.753819
+Maggie Maes	323 E. 6th Street Austin Texas	30.267179	-97.740142
+Kenny Luna's Ivory Cats	300 East 6th Street Austin Texas	30.267439	-97.740254
+Iguana Grill	2900 N. RM 620 Austin Texas	30.391161	-97.938485
+Larry Peel	1006 Mopac Circle Austin Texas	30.266375	-97.783827
+Northeast Media Ventures, LLC	10 West Street Austin Texas	30.26707	-97.751769
+Nasty's	606 Maiden Lane Austin Texas	30.301777	-97.739099
+Firehouse	605 Brazos Austin Texas	30.267777	-97.741317
+Austin Suites Hotel	8300 N. IH 35 Austin Texas	30.345997	-97.696301
+Fadó Irish Pub	214 West 4th Street Austin Texas	30.266741	-97.744988
+Woodward Conference Center	3401 S. IH 35 Austin Texas	30.223523	-97.746562
+Courtyard by Marriott Austin Northwest	9409 Stonelake Blvd Austin Texas	30.385271	-97.741789
+Ice Bats	7311 Decker Lane Austin Texas	30.298019	-97.623433
+Perfect Beginnings	PO Box 203154 Austin Texas	30.14057	-97.829489
+Texas Land & Cattle NW	14010 N. US 183 Austin Texas	30.475212	-97.800508
+Austin CityGuide	8803 Ravello Pass Austin Texas	30.199825	-97.849695
+Doubletree Guest Suites Hotel	303 W. 15th St. Austin Texas	30.277524	-97.742087
+Bob Popular	402 East 6th Street Austin Texas	30.267154	-97.739159
+Hilton Garden Inn	11617 Research Blvd. Austin Texas	30.416132	-97.745747
+Shakespeare's	314 East 6th Street Austin Texas	30.267455	-97.740117
+Buffalo Billiards	201 East Sixth Street Austin Texas	30.267567	-97.7414
+Capitol Visitor Center	112 E. 11th Street Austin Texas	30.272649	-97.740672
+Wild About Music	721 Congress Avenue Austin Texas	30.269203	-97.742225
+Phoenix & Dragon	1203 E 7th St Austin Texas	30.265172	-97.72999
+Radisson Hotel on Town Lake	111 E Cesar Chavez St. Austin Texas	30.263164	-97.744392
+Melting Pot	13343 HWY. 183N. Austin Texas	30.444986	-97.786916
+Dallas Night Club	7113 Burnet Rd Austin Texas	30.347644	-97.735943
+Zoot	509 Hearn St. Austin Texas	30.278637	-97.772943
+Patsy's Cowgirl Cafe	5001 E Ben White Austin Texas	30.213527	-97.726951
+Four Seasons Hotel	98 San Jacinto Blvd. Austin Texas	30.262664	-97.742235
+Golf 512	710 West Avenue Austin Texas	30.271395	-97.750304
+Ruth's Chris Steak House	107 West Sixth Street Austin Texas	30.267984	-97.743084
+Popular Talent	600 W. 28th St. Austin Texas	30.293414	-97.742763
+Capital Cruises	7511 Delafield Austin Texas	30.340734	-97.712021
+Soigne Boutique	4800 Burnet Rd #410 Austin Texas	30.319059	-97.739448
+Austin Corporate Planners	3355 Bee Caves Road Austin Texas	30.275506	-97.802056
+Red Fez	209-B West 5th Street Austin Texas	30.267652	-97.745134
+Glenborough	10603 Harris Branch Pkwy Austin Texas	30.335111	-97.607379
+Buffet Palace	4608 W Gate Blvd. Austin Texas	30.230011	-97.801109
+Gruv	101 W. 5th Street austin Texas	30.2671	-97.743319
+The Melting Pot Downtown	305 E. 3rd St Austin Texas	30.264435	-97.74133
+City of Austin New Airport Department	2716 Terminal Drive Austin Texas	30.213202	-97.665859
+Citiview	1405 E. Riverside Austin Texas	30.247379	-97.733826
+Cosmic Cafe	1110 West Lynn St. Austin Texas	30.279893	-97.759427
+Soirée Event Production	P.O. Box 4203 Austin Texas	30.42185	-97.730699
+Clarion Inn & Suites	2200 S. IH 35 Austin Texas	30.235633	-97.740585
+Mars	1610 San Antonio Austin Texas	30.279573	-97.743639
+Tuscany Market & Vineyards	12221 Riata Trace Pkwy Austin Texas	30.428475	-97.751651
+Clayton, Williams, and Sherwood	10711 Burnet Road Austin Texas	30.391544	-97.721541
+Macaroni Grill	701 Capital of Texas Hwy West Lake Hills Texas	30.291823	-97.828043
+Holiday Inn Express	8500 N IH 35 Austin Texas	30.348377	-97.694725
+Katz's Deli	618 W. 6th Street Austin Texas	30.269844	-97.748651
+Koreana	12196 N. Mopac Austin Texas	30.414424	-97.707594
+Pappasito's Cantina	6513 N IH-35 Austin Texas	30.326934	-97.705343
+Moonshine Patio Bar and Grill	303 Red River Austin Texas	30.263755	-97.738065
+Embassy Suites Downtown	300 S. Congress Avenue Austin Texas	30.258876	-97.746279
+SoLa	2005 S. Lamar Austin Texas	30.248681	-97.768546
+Texas Lottery Commission	P.O. Box 16630 Austin Texas	30.506794	-97.741041
+S and S Creative Events	710 Bent Wood Place Round Rock Texas	30.568331	-97.678365
+Warehouse District Association	1200 Barton Hills Drive Austin Texas	30.26177	-97.773796
+Holiday Inn Express Pflugerville	14620 IH-35 Austin Texas	30.436354	-97.669806
+Bettysport	916 W. 12ht St. Austin Texas	30.272146	-97.730756
+Bennigan's Grill & Tavern North	7604 IH-35 Austin Texas	30.337706	-97.701832
+High Beam Events	1007 East 40th Austin Texas	30.29718	-97.720067
+Lognhorn Delivery	600 W 28th Street Austin Texas	30.293414	-97.742763
+Continenetal Club	1315 S. Congress Austin Texas	30.250634	-97.749149
+Palazio	501 E. Ben White Blvd Austin Texas	30.21965	-97.758765
+Super 8 at University	5526 N. IH 35 Austin Texas	30.316081	-97.708099
+TGI Friday's in the Radisson	111 E. Cesar Chavez Austin Texas	30.263164	-97.744392
+Austin Outbound Inc.	P.O. Box 50527 Austin Texas	30.14057	-97.829489
+Upstairs Mens Apparel	2208 South Lamar Austin Texas	30.247687	-97.773131
+Fino	2905 San Gabriel st. Austin Texas	30.297887	-97.747503
+Priceless Convertibles	817 West 5th Street. Austin Texas	30.269269	-97.751481
+China Star	6134 Hwy 290 E Austin Texas	30.322825	-97.703896
+Longhorn Car-Truck Rental	4812 N. IH-35 Austin Texas	30.306396	-97.712829
+CitySearch	701 Brazos St. Austin Texas	30.268695	-97.741002
+Thistle Cafe	300 W Sixth St Austin Texas	30.268862	-97.745305
+SegCity	621 E. 6th Street Austin Texas	30.266296	-97.736957
+Hilton Austin Airport	9515 New Airport Drive Austin Texas	30.267605	-97.742984
+Arbor Car Wash	10401 Jollyville Rd. Austin Texas	30.398539	-97.749565
+Event Envy	3208 Bratton Ridge Crossing Austin Texas	30.461328	-97.680756
+Z Tejas Grill Arboretum	9400 Arboretum Blvd. Austin Texas	30.38959	-97.752117
+Z Tejas Grill on 6th	1110 West 6th Street Austin Texas	30.272286	-97.755572
+The Cheesecake Factory	10000 Research Blvd. Austin Texas	30.392759	-97.747082
+Maiko Sushi Lounge	311 W 6th St Austin Texas	30.268678	-97.745468
+Third Base Downtown	1717 West 6th Street Austin Texas	30.275691	-97.764198
+Cafe Josiey	1200 West 6th Street Austin Texas	30.272829	-97.757192
+Daiquiri Factory	408 E. Sixth Austin Texas	30.267174	-97.739094
+Threadgills	Riverside at Barton Springs Austin Texas	30.25868	-97.748489
+Gallery Shoal Creek	1500 W. 34th St. Austin Texas	30.305711	-97.750435
+Bone Daddy's House of Smoke	11617 Research Blvd. Austin Texas	30.416132	-97.745747
+Razzoo's Cajun Cafe	11617 Research Blvd. Austin Texas	30.416132	-97.745747
+Baymont Inn Highland Mall	7100 N. IH 35 Austin Texas	30.332256	-97.705077
+La Quinta Inn Austin Highland Mall	5812 N. IH 35 Austin Texas	30.319047	-97.707824
+Club DeVille	900 Red River Austin Texas	30.269416	-97.736205
+Metric Property Management	13747 Montfort Drive Dallas Texas	32.935424	-96.81372
+Teravista Golf Course	4333 Teravista Club Drive Round Rock Texas	30.571795	-97.671572
+Martine Properties	7035 Bee Cave Rd Austin Texas	30.30222	-97.839861
+LBJ Wildflower Center	4801 La Crosse Avenue Austin Texas	30.185863	-97.870875
+Elegant Weddings by Lily	PO Box 341735 Austin Texas	30.14057	-97.829489
+McCormick and Schmicks - Domain	The Domain Austin Texas	30.405562	-97.7208
+University of Texas Microelectronic Research Cente	10100 Burnet Road, Austin Texas	30.385906	-97.723702
+Austin Natural Soap	P.O. Box 160332 Austin Texas	30.14057	-97.829489
+Austin Toros	7800 Shoal Creek Blvd. Austin Texas	30.358842	-97.74089
+Starlite	407 Colorado St. Austin Texas	30.266663	-97.744633
+Signature Flight Supplies	4321 General Aviation Avenue Austin Texas	30.188817	-97.663424
+Driskill Hotel	604 Brazos Street Austin Texas	30.267846	-97.74156
+Truluck's Austin Arboretum	10225 Research Blvd. Austin Texas	30.394982	-97.745759
+Truluck's Austin Downtown	400 Colorado Street Austin Texas	30.266682	-97.744887
+Hyatt Place Arboretum	3612 Tudor Blvd. Austin Texas	30.384295	-97.737446
+North by Northwest	10010 Capitol of Texas Hwy N Austin Texas	30.390882	-97.738782
+Lakeway Resort Spa	100 Lakeway Drive Austin Texas	30.373891	-97.986814
+Austin Visitor Information Center	201 E. 2nd Street Austin Texas	30.263845	-97.742774
+Cool River	4001 Parmer Lane Austin Texas	30.425108	-97.714927
+Pete's Dueling Piano Bar	421 E. 6th Street Austin Texas	30.266889	-97.739089
+Forest Creek Golf Club (OnCourse Strategies)	99 Twin Ridge Parkway Round Rock Texas	30.518291	-97.600686
+Play Golf Austin	P.O. Box 42095 Austin Texas	30.14057	-97.829489
+Riverside Golf Course (OnCourse Strategies)	1020 Grove Blvd. Austin Texas	30.235722	-97.704088
+Paggi House	200 Lee Barton Dr. Austin Texas	30.26297	-97.757013
+Best Western Atrium North	7928 Gessner Dr. Austin Texas	30.34333	-97.703099
+D & L Property Management	1212 Westheimer Austin Texas	30.325844	-97.694824
+Roy's Taxi	90 East Avenue Austin Texas	30.260275	-97.737268
+Fairfield Inn by Marriot Austin South	4525 S. IH 35 Austin Texas	30.210509	-97.75431
+Live Love Paddle	506 East Live Oak Street Austin Texas	30.240549	-97.749037
+La Quinta Inn Austin Oltorf	1603 E. Oltorf Austin Texas	30.233431	-97.74028
+Austin's Pizza	1950 Rutland Drive suite A Austin Texas	30.379254	-97.712742
+State Comptroller	111 E . 17th Street Austin Texas	30.2786	-97.738718
+Barton Creek Resort & Country Club	8212 Barton Club Dr. Austin Texas	30.291147	-97.859941
+Acupuncture Plus	3410 Far West Blvd Ste 301 Austin Texas	30.352212	-97.750077
+Silhoutte Bar and Restaurant	718 Congress Avenue Austin Texas	30.269275	-97.742526
+Cru Wine Bar	238 W 2nd St Austin Texas	30.264963	-97.745926
+Stubb's	801 Red River Austin Texas	30.268424	-97.736385
+Congress Avenue Card & Gift Shop	615 Congress Austin Texas	30.268217	-97.742602
+Shoreline Grill	98 San Jacinto Blvd. Austin Texas	30.262664	-97.742235
+Element	301 East 5th Street Austin Texas	30.266378	-97.740635
+Jeffrey's Restaurant	1204 West Lynn Austin Texas	30.280303	-97.759123
+Congress Avenue Souvenirs	615 Congress Avenue Austin Texas	30.268217	-97.742602
+St. Michael's Plaza Hotel	7800 N. IH 35 Austin Texas	30.340356	-97.700103
+Arbor Property Management, Inc	4807 Spicewood Springs Rd Austin Texas	30.376421	-97.763924
+Hawthorn Suites Austin Central	935 Posada Dr. Austin Texas	30.325192	-97.703784
+219 West	219 W. 4th St. Austin Texas	30.266498	-97.745126
+La Quinta Inn & Suites Austin Airport	7625 East Ben White Blvd. Austin Texas	30.217681	-97.69148
+Whaley Massage	5301 Summer Drive Austin Texas	30.231977	-97.71161
+Candlewood Suites Austin Northwest	9701 Stonelake Blvd. Austin Texas	30.387643	-97.738021
+Ravenwood Apartments	815 Brazos Suite 400 Austin Texas	30.269702	-97.740578
+Bella Hair & Makeup Studio	1221 W 6th Street Austin Texas	30.272986	-97.758211
+Hampton Inn Austin North	7619 N. IH 35 Austin Texas	30.337183	-97.700518
+Marquis Management	5323 Spring Valley Dallas Texas	32.93971	-96.817243
+Hampton Inn	3908 W Braker Lane Austin Texas	30.397063	-97.734906
+All Occassions Planning	106 Banner Avenue, Leander Texas	30.574862	-97.863274
+Wiser Management	11940 Jollyville Rd. Austin Texas	30.424822	-97.75752
+Ranch 616	616 Nueces St. Austin Texas	30.2699	-97.748497
+Draught Horse Pub	4112 Medical Parkway Austin Texas	30.310129	-97.742767
+Extended Stay America Austin Northwest	12424 Research Blvd. Austin Texas	30.427969	-97.758011
+La Quinta Inns & Suites Austin Southwest	4525 Gaines Ranch Rd. Austin Texas	30.241191	-97.81816
+Ramada Limited	919 E Koenig Lane Austin Texas	30.320861	-97.709051
+Aquarelle	606 Rio Grande Austin Texas	30.270123	-97.749579
+Austin Rock Gym	4401 Freiderich Lane Austin Texas	30.209323	-97.749854
+Uncommon Objects	1512 S. Congress Ave. Austin Texas	30.248751	-97.750157
+23rd St Artists Market	23rd St. at Guadalupe Austin Texas	30.285325	-97.733994
+Silver Dollar Dance Hall	2201 E. Ben White Blvd Austin Texas	30.215484	-97.741061
+Fleming's	320 East Second Street Austin Texas	30.263686	-97.741639
+La Quinta Inn & Suites Round Rock South	150 Parker Drive Austin Texas	30.474289	-97.673473
+The Marq	422 Congress Ave. Austin Texas	30.266498	-97.743538
+The Westbank Salon	3010 Bee Caves Rd Austin Texas	30.271368	-97.794019
+Guardian 2000	1101 S. Cap of Tx. Hwy.  F-200 Austin Texas	30.267605	-97.742984
+Onion Creek	2510 Onion Creek Parkway Austin Texas	30.136151	-97.78982
+Old Pecan Street Cafe	310 East 6th Street Austin Texas	30.267464	-97.740151
+Ritz Lounge	320 East Sixth Street Austin Texas	30.267441	-97.740066
+Park City Week	701 E. Plano Parkway Plano Texas	33.008169	-96.70488
+La Quinta Inn Austin Capitol	300 E. 11th St. Austin Texas	30.272058	-97.738624
+Fairfield Inn & Suites Austin Central	959 Reinli Street Austin Texas	30.319088	-97.708801
+JPI	98 San Jacinto Blvd Austin Texas	30.262664	-97.742235
+Pure	419 E. Sixth Street Austin Texas	30.266894	-97.739106
+Treasure Island	413 E. 6th St. Austin Texas	30.266909	-97.739158
+Trademotion Automotive	115 E. 5th Street, Suite 200 Austin Texas	30.266952	-97.74289
+Limbo	4600 Placid Place Austin Texas	30.32283	-97.753464
+Cannoli Joe's	4715 Hwy 290 W. Austin Texas	30.232931	-97.811927
+County Line on the Hill	6500 Bee Caves Austin Texas	30.296876	-97.834499
+County Line on the Lake	5204 FM. 2222 Austin Texas	30.356485	-97.783428
+Kaya Blue	621 East 6th Street Austin Texas	30.266296	-97.736957

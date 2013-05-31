@@ -1,0 +1,11 @@
+<div id="payment_methods">
+  <ul>
+    <% if offer.accepted_payment_types and offer.accepted_payment_types.any? %>
+        <% offer.accepted_payment_types.each do |payment| %>
+          <li id='type_<%= payment %>'><%= payment_method(payment) %></li>
+        <% end %>
+    <% else %>
+      <%= h offer.payment_methods %>
+    <% end %>
+  </ul>
+</div>

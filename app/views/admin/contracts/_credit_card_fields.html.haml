@@ -1,0 +1,68 @@
+- f.fields_for :credit_card do |credit_card|
+  %fieldset
+    %div.field
+      = credit_card.label :number, "Credit card number"
+      %span.required *
+      %br
+      %span.hint
+        Cards Accepted: Visa, Master Card, American Express
+      %br
+      = credit_card.text_field :number
+      - if credit_card.object.display_number
+        %br
+        %small
+          Card on file: 
+          = credit_card.object.display_number
+  
+    %div.field
+      = credit_card.label :expires_on
+      %span.required *
+      = credit_card.date_select :expires_on, :include_blank => true, :discard_day => true, :start_year => Date.today.year, :end_year => Date.today.year+10, :add_month_numbers => true
+  
+    %div.field
+      = credit_card.label :verification_value
+      %span.required *
+      %br
+      = credit_card.text_field :verification_value
+  
+    %div.field
+      = credit_card.label :first_name
+      %span.required *
+      %br
+      = credit_card.text_field :first_name
+    %div.field
+      = credit_card.label :last_name
+      %span.required *
+      %br
+      = credit_card.text_field :last_name
+
+    %div.field
+      = credit_card.label :address1
+      %span.required *
+      %br
+      = credit_card.text_field :address1
+
+    %div.field
+      = credit_card.label :address2
+      %br
+      = credit_card.text_field :address2
+
+    %div.field
+      = credit_card.label :city
+      %span.required *
+      %br
+      = credit_card.text_field :city
+
+    %div.field
+      = credit_card.label :state
+      %span.required *
+      %br
+      = credit_card.select :state, US_STATES
+
+    %div.field
+      = credit_card.label :zip_code
+      %span.required *
+      %br
+      = credit_card.text_field :zip_code
+
+

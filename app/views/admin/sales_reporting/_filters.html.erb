@@ -1,0 +1,28 @@
+<h2>Filters</h2>
+<div class='filters'>
+<% if @sales_report.errors.any? %>
+  <ul class='errors'>
+    <% @sales_report.errors.each do |error| %>
+      <li><%= error[1] %></li>
+    <% end %>
+  </ul>
+<% end %>
+<% form_for @sales_report, :url => report_admin_sales_path, :html => { :method => :get } do |f| -%>
+  <p><span class='label'>Invoice Due From: </span>
+    <%= f.text_field :range_start, :class => 'datepicker' %> to <%= f.text_field :range_end, :class => 'datepicker' %>
+  </p>
+  <p><span class='label'>Salesperson:</span> <%= select :sales_report, :salesperson_id, salesperson_filters %></p>
+  <p><span class='label'>Sales Area:</span> <%= select :sales_report, :sales_area_id, sales_area_filters %></p>
+  <p>
+    <span class='label'>Status(es):<span class='hint'>Hold down Ctrl/Cmd to select multiple</span></span> 
+    <%= select_tag 'sales_report[statuses]', status_filters, {:multiple => true} %> <br>
+    
+  </p>
+  <p><%= f.submit "Get Summary", :disable_with => 'Running...' %> | <%= link_to "Download Invoice Details (CSV)", report_admin_sales_path(:csv), :id => 'report_csv_run' %></p>
+<% end -%>
+</div>
+
+<% content_for :head do %>
+  <%= javascript_include_tag 'sales_reporting' %>
+  <%= stylesheet_link_tag 'sales_reporting' %>
+<% end %>

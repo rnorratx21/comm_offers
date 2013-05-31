@@ -1,0 +1,55 @@
+--- !ruby/object:Gem::Specification 
+name: mad_mimi_mailer
+version: !ruby/object:Gem::Version 
+  version: 0.0.8
+platform: ruby
+authors: 
+- Dave Hoover
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-01-04 00:00:00 -06:00
+default_executable: 
+dependencies: []
+
+description: Use Mad Mimi to send beautiful HTML emails using the ActionMailer API.
+email: dave@obtiva.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/mad_mimi_mailer.rb
+has_rdoc: true
+homepage: http://developer.madmimi.com/
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "1.2"
+  version: 
+requirements: []
+
+rubyforge_project: mad_mimi_mailer
+rubygems_version: 1.3.5
+signing_key: 
+specification_version: 3
+summary: Extending ActionMailer::Base for Mad Mimi integration.
+test_files: []
+

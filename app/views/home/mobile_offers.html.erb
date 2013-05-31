@@ -1,0 +1,31 @@
+<% content_for :title do %>Mobile Offers | <% end %>
+<%= head_text "Mobile Community Offers" %>
+<h2 class='mobile_offers'>Don't have our loyalty card? Take our offers with you on your cell phone.</h2>
+<div id='mobile_offers_wrapper'>
+  <div id='mobile_gallery_wrapper'><%= render :partial => 'shared/mobile_gallery' %></div>
+  <div id='mobile_offers_content'>
+    <p>At Community Offers, we have three ways to take our offers with your on the go!</p>
+    <ol id='mobile_steps'>
+      <li id='one'>Download our <%= link_to "Android", android_app_path, :target => "_blank" %> 
+        or <%= link_to "iPhone", iphone_app_path, :target => "_blank"  %> App  to quickly find deals located near you.<br />
+        <%= render :partial => "shared/apps" %>
+      </li>
+
+      <li id='two'>
+        Use your smart phone to scan our unique QR codes (by downloading any free QR code reader app) to view a specific merchant offer.
+        <div class='qr_wrapper'>
+          <div>
+            <div><%= image_tag "qr_codes/co_qr_code.jpg" %></div>
+            Scan this code to get all of these offers on your smart phone or go to:
+            <div class='qr_url'><%= link_to "http://bit.ly/cIYZZE", "http://bit.ly/cIYZZE", :popup => :true %></div>
+          </div>
+        </div>  
+      </li>
+      <li id='three'>Send text message of any offer found at www.CommunityOffers.com to your phone via SMS <span class='sms'>46786</span> </li>
+    </ol>
+    <p>We make it easy for you to get the savings you want the most!</p>
+  </div>
+</div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'mobile_offers' %>
+<% end -%>

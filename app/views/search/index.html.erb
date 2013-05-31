@@ -1,0 +1,75 @@
+<% title @search.is_personalized ? "#{current_user.first_name}'s Personalized Offers" : "Offers for #{@search.search_text}" %>
+<% body_id "search_index" # more than one page may use this view %>
+
+<% content_for :head do %>
+	<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+
+	<script type="text/javascript">
+    $(document).ready(function() {
+
+  		$(function() {
+  			initSearchResults();
+  			$('.searchInput').focus();
+  		});
+    });
+	</script>
+<% end %>
+
+<% content_for :pageHead do %>
+<div id='headerWrap' <%= "class='personalized'" if is_personalized_search? %>>
+  <div class='full-page'>
+    <% unless is_personalized_search? %>
+    <div id="search" class="rounded {top-left}">
+    	<% form_for @search, :url => search_path, :html => { :method => :get } do |form| %>
+    		<%= form.label :zip_code, "Find Deals By Location" %>
+    		<%= form.text_field :search_text, :name => :search_text, :class => "search_input" %>
+          <%= form.submit "Search" %>
+    	<% end %>
+      <div class='account_invite left'>
+    	<% if current_user and current_user.consumer? %>
+          You can also <%= link_to "view offers based on your preferences", personalized_search_path %>.
+      <% elsif !current_user %>
+       <%= link_to "Sign up", new_consumer_user_path %> or <%= link_to "login", login_path %> to see personalized offers.
+    	<% end %>
+      </div>
+      <div class='clear'></div>
+    </div>
+    <% else %>
+      <%= render :partial => "personalized_search_header" %>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
+<% if is_personalized_search? and !@search_results.mappable? %>
+  <h3 id='no_personalized_offers'>No offers were found matching your preferences.  Try adding more categories or expanding your preferred zip codes by <%= link_to "editing your preferences", consumer_preferences_path %>.</h3>
+<% end %>
+<div class='half-page'>
+  <div class="search_results">
+  	<%= render :partial => "search/search_results", :object => @search_results %>
+  </div>
+
+  <div>
+  	<div id="legend">
+  		<p id="retail_legend">
+  			Retail locations are plotted on the map below.
+  			<%= image_tag "legend_red_marker.png" %>
+  		</p>
+  		<p id="service_legend">
+  			For in-home services (contractors, delivery) click on search result listing to review their service areas.
+  			<%= image_tag "legend_mobile_service.gif" %>
+      </p>
+  	</div>
+  </div>
+</div>
+
+<div class='half-page'>
+	<%= render :partial => "shared/map", :locals => { :search_results => @search_results } %>
+	<%= render :partial => "facets" %>
+</div>
+
+<%= will_paginate @search_results.offers %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'search-index', 'search-results' %>
+<% end %>

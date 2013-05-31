@@ -1,0 +1,15 @@
+<% head_text "Downloads" %>
+<%= render :partial => "admin/nav" %>
+<p>Click the links below to access all raw data records for the areas listed. <strong>NOTE: It may take several minutes to download each file.</strong></p>
+<h2>Raw Records</h2>
+<ul>
+  <li><%= link_to "Advertisers (CSV)", advertisers_admin_downloads_path(:csv) %></li>
+  <li><%= link_to "Contracts (CSV)", contracts_admin_downloads_path(:csv) %></li>
+  <li><%= link_to "Invoices (CSV)", invoices_admin_downloads_path(:csv) %></li>
+  <li><%= link_to "Payments (CSV)", payments_admin_downloads_path(:csv) %></li>
+</ul>
+<h2>QuickBooks Exports</h2>
+<ul>
+  <li><%= link_to "Offers (Contact Records) (CSV)", quickbooks_offers_admin_downloads_path(:csv) %></li>
+  <li><%= link_to "Invoices and Payments (CSV)", quickbooks_invoices_admin_downloads_path(:csv) %> <span class='hint' style='font-style:italic; display:inline'>Note: This may take up to 3 minutes.  Please click only once.</span></li>
+</ul>

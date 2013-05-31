@@ -1,0 +1,31 @@
+#middle {
+	background-color: #fff;
+	min-height: 450px;
+	margin-bottom: 20px;
+	margin-top: 7.5px;
+}
+
+#footer {
+	width: 100%;
+	min-height: 15px;
+	clear: both;
+	margin-top: 20px;
+}
+
+#footer p {	margin: 0 0 0 0; }
+#footer div.main_wrapper { text-align:center;}
+
+#footer ul { list-style: none; margin: 0 0 0 0; }
+#footer li { margin-top: 0; margin-bottom: 0; }
+#footer ul.main { width: 700px; margin: 0 auto;}
+#footer ul.main li { float: left; }
+#footer ul.main li a { color: #3C72A0; font-weight: bold; font-size: 1.1em; }
+#footer ul.main li a:hover { text-decoration: none; }
+
+#footer #sub_footer { margin-top: 2em;}
+#footer #sub_footer > div.left { width: 48%;}
+#footer #sub_footer ul.sub_menu { margin-right: 2em; }
+#footer #sub_footer ul.sub_menu a { color: #000; text-decoration: none; font-size: .9em; }
+#footer #sub_footer ul.sub_menu a:hover { text-decoration: underline; }
+#footer #sub_footer div.site_philosophy p { font-size: .9em; margin-bottom: 1em; }
+#footer #sub_footer p#copyright { color: #000; }

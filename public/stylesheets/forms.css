@@ -1,0 +1,215 @@
+/* @override http://localhost:3000/stylesheets/forms.css */
+
+.admin form fieldset {
+  border: 1px solid #ddd;
+  padding: 19px;
+  margin: 0 0 20px 0;
+  background: #fbfbfb;
+}
+
+.admin form fieldset legend{
+  font: bold 1.3em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1px 15px; 
+  color: #333; 
+}
+
+.admin form fieldset p, .admin form fieldset div { margin: 0 0 14px 0; float: left; width: 100%;  }
+
+.admin form fieldset label {
+  padding: 7px 0 0;
+  font-weight:bold;
+}
+
+.admin form fieldset p label {
+  display: block;
+}
+
+.admin form fieldset .text-long {
+  border: 1px solid #ddd;
+  font: bold 1.1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 5px 7px;
+  width: 650px;
+  margin: 0;
+}
+
+.admin form fieldset .text-medium {
+  border: 1px solid #ddd;
+  font: bold 1.0em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 5px 7px;
+  width: 50%;
+  margin: 0;
+}
+
+.admin form fieldset .text-small {
+  border: 1px solid #ddd;
+  font: bold 0.9em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 5px 7px;
+  width: 100px;
+  margin: 0;
+}
+
+.admin form fieldset p input.large{
+  font-size: 2em;
+}
+
+.admin form fieldset .text-long:focus, 
+.admin form fieldset .text-medium:focus,
+.admin form fieldset .text-small:focus,
+.admin form fieldset textarea:focus { 
+  border-color: #999;
+}
+
+.admin form fieldset textarea {
+  border: 1px solid #ddd;
+  font: normal 0.9em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  padding: 5px 7px;
+  width: 364px;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* @group Stylized */
+
+/* ----------- stylized ----------- */
+/* 
+  Credit where credit is due: 
+  http://woork.blogspot.com/2008/06/clean-and-pure-css-form-design.html
+*/
+
+fieldset.stylized{
+  border:solid 2px #b7ddf2;
+  background:#ebf4fb;
+}
+fieldset.stylized h1 {
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+fieldset.stylized p{
+  font-size:11px;
+  color:#666666;
+  margin-bottom:20px;
+  border-bottom:solid 1px #b7ddf2;
+  padding-bottom:10px;
+}
+form fieldset.stylized label{
+  display:block;
+  font-weight:bold;
+  text-align:right;
+  width:120px;
+  float:left;
+  padding: 5px 6px 0 0;
+}
+
+fieldset.stylized .small{
+  color:#666666;
+  display:block;
+  font-size:11px;
+  font-weight:normal;
+  text-align:right;
+  width:140px;
+}
+fieldset.stylized .tiny{
+  color:#666666;
+  display:block;
+  font-size:11px;
+  font-weight:normal;
+  text-align:right;
+  width:40px;
+}
+
+fieldset.stylized input, fieldset.stylized select.stylized{
+  float:left;
+  font-size:12px;
+  padding:4px 2px;
+  border:solid 1px #aacfe4;
+  width:200px;
+  margin:2px 0 20px 10px;
+}
+
+/* @end */
+
+/* Icons */
+
+a.remove_fields{
+  background: transparent url(/images/icons/fugue/minus-circle.png) no-repeat center left;
+  padding-left: 18px;
+  display: block;
+  line-height: 26px;
+  height: 26px;
+  float:left;
+  font-size: 85%;
+}
+a.add_fields{
+  background: transparent url(/images/icons/fugue/plus-circle.png) no-repeat center left;
+  padding-left: 18px;
+  display:block;
+  line-height: 26px;
+  height: 26px;
+  float:left;
+  font-size: 85%;
+}
+
+/* @group Invoice Form */
+
+.admin form fieldset.invoice {
+  border: 1px solid #bbb;
+  padding: 19px;
+  margin: 0 0 20px 0;
+  background: #eee;
+  
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+fieldset.invoice .left{
+	float: left;
+	width: auto;
+	margin-right: 1em;
+	padding-right: 0;
+}
+fieldset.invoice .fields{
+	float: left;
+	display: inline;
+	width: auto;
+	clear: left;
+	margin: 0;
+}
+fieldset.invoice .fields input.text-medium{
+	margin-right: 2em;
+}
+fieldset.invoice .fields input.quantity{
+	width:  60px;
+}
+fieldset.invoice .fields input.description{
+	width: 200px;
+}
+fieldset.invoice .fields input.amount{
+	width: 100px;
+}
+
+.admin form fieldset.invoice a.remove_fields,
+.admin form fieldset.invoice a.add_fields{
+	float: left;
+	margin:0;
+	display: inline;
+}
+.admin form fieldset.invoice a.remove_fields{
+  text-indent: -10000px;
+	padding: 0;
+	width: 26px;
+}
+
+/* @end */
+
+
+td input{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+}

@@ -1,0 +1,45 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+
+<h2><%= @title %></h2>
+
+<table class="dataset jumptable striped">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Template</th>
+      <th>Title</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @affiliate_offers.each do |affiliate_offer| %>
+    <tr>
+      <% if affiliate_offer.active? %>
+        <td> <%= link_to "public", affiliate_offer %></td>
+      <% else %>
+        <td>&nbsp;</td>
+      <% end %>
+
+      <td> 
+			<% if @can_update %>
+			  <%= link_to "edit", edit_admin_affiliate_offer_path(affiliate_offer) %>
+			<%end%>
+			</td>
+      <td> <%= h affiliate_offer.name %> </td>
+      <td> <%= affiliate_offer.view_content %> </td>
+      <td> <%= h affiliate_offer.title %> </td>
+      <td> <%= affiliate_offer.state %> </td>
+      <% if affiliate_offer.active? and @can_update %>
+        <td> <%= link_to "Disable", disable_admin_affiliate_offer_path(affiliate_offer), :method => :post %> </td>
+      <% else %>
+        <td> <%= link_to "Enable", enable_admin_affiliate_offer_path(affiliate_offer), :method => :post %> </td>
+      <% end %>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to "new", new_admin_affiliate_offer_path %>

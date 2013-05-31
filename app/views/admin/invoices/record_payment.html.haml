@@ -1,0 +1,6 @@
+- body_id "admin"
+= render 'admin/nav'
+
+%h2
+  = link_to("Contract #{@invoice.contract.id}", admin_contract_path(@invoice.contract))
+

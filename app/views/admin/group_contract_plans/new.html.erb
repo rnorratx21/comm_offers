@@ -1,0 +1,10 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h2>New Group Contract Plan</h2>
+
+<% form_for @group_contract_plan, :url=>admin_group_contract_plans_path  do |f| %>
+  <%= f.error_messages %>
+	<%= render :partial => 'form', :locals => {:f => f} %>
+      <%= f.submit 'Create' %>
+<% end %>
+

@@ -1,0 +1,13 @@
+<h1>Parent Categories</h1>
+<p>
+  <%= link_to "JSON", parents_api_categories_path(:format => :json) %> | 
+  <%= link_to "XML", parents_api_categories_path(:format => :xml) %>
+</p>
+<table class='table table-striped tablesorter'>
+<thead><tr><th><%= js_sort_link "id" %></th><th><%= js_sort_link "name" %></th></tr></thead>
+<tbody>
+<% @category_types.each do |parent| %>
+  <tr><td><%= parent.id %></td><td><%= parent.name %></td></tr>
+<% end %>
+</tbody>
+</table>

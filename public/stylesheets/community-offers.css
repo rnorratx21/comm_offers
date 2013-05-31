@@ -1,0 +1,72 @@
+/* OVERRIDE SOME FRESHFIRE THEME OPTIONS*/
+#content_wrap > #content > .full_page {width: 970px;}
+#contentWrap img {
+   background: none;
+   border: none;
+   padding: 0;
+}
+.hidden { visibility: hidden;}
+
+h2,h3,h4 { line-height: 100%;}
+li, p { font-size: 105%; }
+form input[type='radio'], form input[type='checkbox'] { height: auto; }
+
+.half-split { width: 47%; }
+
+#flash { width: 100%; font-weight: bold; text-align: center; margin: 0 0 20px; }
+#flash div { padding: 10px; margin: 0 auto; }
+#flash_notice {	color: #fff; background-color: #0E70A3; }
+#flash_error { border: 2px solid #900; background-color: #990000; color: #fff;}
+
+.required { color: #990000; }
+
+#logo { padding-top: 30px; height: auto; margin-left: 0;}
+.social_networks {
+/*	margin-bottom: 18px;*/
+	list-style: none;
+	margin-top: 5px;
+	float: right;
+}
+.social_networks li { float: left; margin: 0 0 10px; }
+.social_networks li a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+.social_networks .twitter {	background: url(../images/social_nav_twitter.png) 0 0 no-repeat; }
+.social_networks .facebook { background: url(../images/social_nav_facebook.png) 0 0 no-repeat; }
+.social_networks .rss {	background: url(../images/social_nav_rss.gif) 0 0 no-repeat; }
+
+button.go-button {
+	width: 83px;
+	height: 56px;
+	background: url(../images/go_button.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+	margin: 0 0px 0 0;
+	border: none;
+	cursor: pointer;
+}
+
+.apps img { margin-right: 15px; }
+
+input.empty { color: #ccc; font-weight:normal; font-style:italic; }
+input[type=text].narrow { width: 10em; }
+
+.hint { display:block; }
+.sub { font-size: 80%; font-style:italic;}
+.model_label {
+	font-weight: bold;
+}
+
+div#agreement_terms { width: 90%; font-size: 95%; border: 3px #ccc solid; padding: 1em; margin-bottom: 20px; }
+div#agreement_terms h2 { font-size: 120%; font-weight: bold; }
+div#agreement_terms p { margin-bottom: 1.5em;}
+
+ul.errors { background-color: #990000; padding:10px; }
+ul.errors li { color: #fff; }
+
+#contentWrap div.step_header h2 { background-color: #F26C51; color: #fff; padding: 10px; font-size: 1.5em; font-style:italic; }
+#contentWrap div.step_header p { font-weight: normal; font-size: .9em; }
+

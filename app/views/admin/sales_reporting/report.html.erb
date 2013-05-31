@@ -1,0 +1,31 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<%= render :partial => "admin/sales_reporting/nav" %>
+<% head_text "Sales Invoice Reports" %>
+<%= render :partial => 'admin/sales_reporting/filters' %>
+
+<% if @sales_report.valid? %>
+  <h2>Results | <span class='count'><%= pluralize(@sales_report.invoices.size, "Invoice") %> Found</span></h2>
+  <h2 class='overall'>Total Amount: <span class='total'><%= number_to_currency(sales_report_total) %></span></h2>
+
+  <% if @sales_report.invoices.any? %>
+    <h3>By Sales Area:</h3>
+    <table class='totals'>
+    <% SalesArea.by_name.each do |area| %>
+      <% total = @sales_report.total_for(:sales_area, area) %>
+      <% if total %>
+        <tr><td><%= area.name %></td><td class='total'><%= number_to_currency total %></td></tr>
+      <% end %>
+    <% end %>
+    </table>
+    <h3>By Salesperson:</h3>
+    <table class='totals'>
+    <% User.salespeople.each do |user| %>
+      <% total = @sales_report.total_for(:salesperson, user) %>
+      <% if total %>
+        <tr><td><%= user.display_name %></td><td class='total'><%= number_to_currency total %></td></tr>
+      <% end %>
+    <% end %>
+    </table>
+  <% end %>
+<% end %>

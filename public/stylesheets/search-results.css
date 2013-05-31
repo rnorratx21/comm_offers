@@ -1,0 +1,119 @@
+.full-page { width: 990px; }
+#search_index #headerWrap, #contentWrap { width: 990px; }
+#search_index #headerWrap form { width: 70%; float:left; }
+#search_index #headerWrap .account_invite { width: 28%; margin-top: 28px; color: #fff; size: 120%;}
+#search_index #headerWrap .account_invite a { color: #fff; text-decoration: underline;}
+#search_index #headerWrap.personalized { height: 180px; }
+/*#search_index #headerWrap #personalized_header { height: 180px;}*/
+/*#search_index #personalized_header h2, h3 { color: #fff; }*/
+#search_index #personalized_header h2 { font-size: 180%; margin-top: 10px; color: #fff; }
+#search_index #personalized_header h3 { font-size: 130%; margin-top: 5px; color: #fff; }
+#search_index #personalized_header p {height:auto; color: #000; margin-bottom: 0; font-size: 115%;}
+#search_index #personalized_header p a { color: #D43D4F;}
+#search_index #personalized_header #preferences > .left.zips { width: 30%;}
+#search_index #personalized_header #preferences > .left.categories { width: 66%;}
+#search_index #no_personalized_offers { 
+	padding: 10px; 
+	font-size: 150%; 
+	color: #777; 
+	margin: 20px; 
+	border: 1px #555 solid; 
+	background-color: #ffffcc; 
+}
+
+#search_index #contentWrap { background-color: #fff; margin: 20px auto; padding-top: 15px;}
+
+.search_results { background-color: #fff;}
+.offer .icons {	width: 36px; padding-top: 10px; float: left;}
+.icons .map_marker { margin: 0 0 5px 6px; }
+.offer { padding: 12px 8px; margin-bottom: 10px; background: transparent url(/images/offer_badge_bg.jpg) repeat-y center top;}
+.offer .badge { font-family: "Georgia", "Times New Roman", Times, serif; }
+.offer .badge .logo { float: left; width: 100px; height: 100px; margin-right: 10px; }
+#contentWrap .offer .body { float:left; width: 295px;}
+#contentWrap .offer .badge h3, #contentWrap .offer .badge h4 { margin-bottom: 2px;}
+#contentWrap .offer .badge h3.headline { color: #96C5D3; font-weight:bold; font-size: 150%; }
+#contentWrap .offer .badge h4.advertiser { font-size: 130%; }
+#contentWrap .offer .badge p { line-height: 110%; margin-bottom: 4px;}
+#contentWrap .offer .badge p.phone_number { color: #96C5D3; font-weight: bold; font-size: 110%;}
+
+#contentWrap .offer .badge .go_button { margin-top: 10px;}
+#contentWrap .offer .badge .favorite { margin-top: 10px;}
+#contentWrap .offer .badge a.get_offer { 
+	background: url("/images/btn-get-offer.png") no-repeat scroll left top transparent;
+	border: medium none;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	line-height: 24px;
+	padding-bottom: 6px;
+	text-align: center;
+	text-shadow: 0 1px 0 #666666;
+	width: 120px;
+	text-transform: uppercase;
+}
+
+div#facets  { margin-top: 50px; }
+div#facets h3 { font-size: 160%;}
+
+.paginator {
+	width: 100%;
+	height: 49px;
+	background: #a62a0a url(../images/bg_pagination.gif) 0 0 repeat-x;
+}
+
+.pagination {
+	height: 49px;
+	line-height: 49px;
+	float: left;
+}
+
+.pagination span, .pagination a {
+	float: left;
+}
+
+.pagination .current {
+	background: url(../images/pagination_current.gif) 0 0 no-repeat;
+	width: 22px;
+	height: 38px;
+	display: block;
+	float: left;
+	position: relative;
+	top: 11px;
+	text-align: center;
+	line-height: 29px;
+	margin: 0 5px 0 5px;
+}
+
+.pagination a {
+	width: 22px;
+	height: 38px;
+	display: block;
+	float: left;
+	position: relative;
+	top: 11px;
+	text-align: center;
+	line-height: 29px;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 5px 0 5px;
+}
+
+.pagination a:hover {
+	background: url(../images/pagination_current.gif) 0 0 no-repeat;
+}
+
+.prev_page, .next_page{
+   width: auto;
+   margin: 0 5px 0 5px;
+}
+
+a.next_page, a.prev_page{
+   width: auto;
+}
+
+a:hover.next_page, a:hover.prev_page{
+   background-image: none;
+   color: #000;
+}
+

@@ -1,0 +1,10 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h2>New Feature</h2>
+
+<% form_for @feature, :url=>admin_features_path  do |f| %>
+  <%= f.error_messages %>
+	<%= render :partial => 'form', :locals => {:f => f} %>
+      <%= f.submit 'Create' %>
+<% end %>
+

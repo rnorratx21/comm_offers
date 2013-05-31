@@ -1,0 +1,24 @@
+<li class="offer" data-featured="false"> 
+<div class="icons"></div>
+<div class="badge rounded">
+<div class="logo"> 
+  <img alt="Directory Listing" height="65" src="images/advertiser_logo_place_holder_normal.png" width="65" /> 
+</div> 
+	<div class="body">
+		<p class="offer-badge-advertiser"><%= h directory.name %></p>
+		<div class="contact">
+			<p class="phone_number"><%= h directory.phone_number %></p>			
+			<p class="address"><%= h directory.address.street %></p>
+		</div>
+	</div>
+	<div class="value rounded {right}">
+		<div class="middler">
+			<p class="headline">Directory Listing</p>
+			<div class="go_offer_button">
+				<% activate_go_button ||= false %>
+					<%= image_tag "go_offer_button.gif", :alt => "Go" %>
+			</div>
+		</div>
+	</div>
+</div>
+</li>

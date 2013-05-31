@@ -1,0 +1,16 @@
+%hr
+%h3 Transaction Details
+%dl
+  - if transaction_details.authorization
+    %dt Transaction ID
+    %dd= link_to transaction_details.authorization, "https://vault.trustcommerce.com/report-transid.php?transid=#{transaction_details.authorization}"
+    
+  - if transaction_details.response
+    %dt Response
+    %dd
+      / = debug transaction_details.response
+      - if transaction_details.response
+        = transaction_details.response.params["status"]
+        \:
+      = transaction_details.description
+

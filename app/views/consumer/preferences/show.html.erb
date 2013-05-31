@@ -1,0 +1,26 @@
+<% head_text "My Preferences" %>
+
+<p>Manage your preferences for Community Offers below.  Here you can set up preferences to customize offers you see, as well as emails you receive.  You can also <%= link_to "manage your account information", account_path %>.</p>
+<p>You can also <%= link_to "see offers that match these preferences", personalized_search_path %>.</p>
+<h2>Preferred Zip Codes</h2>
+<%= render :partial => "manage_zip_codes" %>
+
+<% form_for @profile, :url => consumer_preferences_path do |f| %>
+  <h2>Preferred Categories</h2>
+  <%= render :partial => "manage_preferred_categories", :locals => {:f => f} %>
+
+  <h2>Email Subscriptions</h2>
+  <div>
+    <%= f.check_box :do_email_offer_updates %>
+    <%= f.model_label :do_email_offer_updates, "Yes, send me regular updates of offers that match my preferences.  I can always change my preferences later." %>
+  </div>
+  <%= f.submit "Update", :disable_with => 'Updating...' %>
+<% end %>
+
+<% content_for :stylesheet do %>
+<%= stylesheet_link_tag 'preferences' %>
+<% end %>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'preferences' %>
+<% end %>

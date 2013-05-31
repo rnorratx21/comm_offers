@@ -1,0 +1,40 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+= render 'admin/invoices/nav'
+
+
+.invoice-summary
+  %h1 Invoice Summary
+  %dl
+    %dt Total Expected
+    %dd= @invoice.total_amount_formatted
+    %dt Total Paid
+    %dd= @invoice.payments_total_formatted
+    %dt Total Outstanding
+    %dd= @invoice.outstanding_total_formatted
+  .clear
+  = render :partial => "admin/contracts/credit_card", :object => @invoice.contract.credit_card
+  
+%hr
+
+.invoice
+  %h2
+    Status: 
+    = @invoice.status
+    = "(PAID)" if @invoice.paid?
+  
+  - if @invoice.paid?
+    %h1.paid
+      PAID
+  = render_invoice(@invoice)
+  
+- if @invoice.payments.any?
+  = render :partial => "admin/invoices/payment", :collection => @invoice.payments
+    
+- else
+  .left
+    = button_to "Pay Now (card on file)", pay_admin_contract_invoice_path(@contract, @invoice), :method => :post, :confirm => "Charge the credit card on file now?"
+  .left
+    = button_to "Record Manual Payment", new_admin_contract_invoice_payment_path(@contract, @invoice), :method => :get
+  .clear

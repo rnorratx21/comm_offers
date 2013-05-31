@@ -1,0 +1,40 @@
+<div id="offer_info" class="rounded">
+	<table>
+	<tbody>
+		<tr class="odd_row">
+			<td class="model_label odd_row">Business Hours</td>
+			<td class="model_data"><span id='hours'><%= h offer.hours %></span></td>
+		</tr>
+		<tr>
+			<td class="model_label">Valid Days &amp; Hours</td>
+			<td class="model_data"><span id='effective'><%= h offer.effective %></span></td>
+		</tr>
+		<tr class="odd_row">
+			<td class="model_label">Disclaimers</td>
+			<td class="model_data"><span id='disclaimers'><%= h offer.disclaimers %></span></td>
+		</tr>
+		<tr>
+			<td class="model_label">Payment Methods</td>
+			<td class="model_data">
+			  <%= render :partial => 'offers/payment_methods', :locals => {:offer => offer} %>
+			</td>
+		</tr>
+		<tr class="odd_row">
+			<td class="model_label">Expires</td>
+			<td class="model_data">
+				<% if offer.expired? %>
+					<span class="expiry_warning">
+						This offer has expired
+					</span>
+        <% else %>
+          <span id='expires_on'>
+            <% if offer.expires_on %>
+    			    <%= h offer.expires_on.strftime("%A, %B %d, %Y") %></span>
+            <% end %>
+          </span>
+				<% end %>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>

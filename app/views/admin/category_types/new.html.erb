@@ -1,0 +1,11 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+
+<h2>Create a new category type</h2>
+
+<% form_for [:admin, @category_type] do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.submit "Create" %>
+<% end %>
+

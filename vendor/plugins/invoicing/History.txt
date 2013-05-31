@@ -1,0 +1,31 @@
+== 0.2.1
+
+* 2 minor enhancements:
+  * Added option to LedgerItem#account_summary which enables inclusion of open/pending
+    ledger items in the summary
+  * Improved robustness and documentation for test suite
+* 2 bugfixes:
+  * Compatibility with recent versions of ActiveRecord
+  * Cleaned up unnecessary gem dependencies (mocha, uuid)
+
+== 0.2.0 2009-04-20
+
+* 4 major enhancements:
+  * New associated gem invoicing_generator for generating an invoicing component in a Rails project
+    (script/generate invoicing_ledger)
+  * Generated controller and views for rendering statements and ledger
+  * Comes with a nice default stylesheet out of the box
+  * More flexible formatting of currency values
+* 1 bugfix:
+  * Accidental overwriting of total_amount value on payment LedgerItems without LineItems
+
+== 0.1.0 2009-02-10
+
+* 2 major enhancements:
+  * Core API is now usable
+  * RCov reports 100% test coverage
+
+== 0.0.1 2009-01-05
+
+* 1 major enhancement:
+  * Initial public release

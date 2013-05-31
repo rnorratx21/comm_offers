@@ -1,0 +1,5 @@
+# Incremental backup every 10 minutes
+*/10 * * * *  root  /root/mysql_s3_backup/incremental_backup.rb
+# Full backup every day at 05:01
+1 5 * * *  root  /root/mysql_s3_backup/full_backup.rb
+

@@ -1,0 +1,8 @@
+- body_id "admin"
+= render 'admin/nav'
+
+%h2 Advertisers
+
+%ul
+  - for advertiser in @advertisers
+    %li= link_to advertiser.name, [:admin, advertiser]

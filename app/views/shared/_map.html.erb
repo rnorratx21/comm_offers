@@ -1,0 +1,12 @@
+<% if search_results.mappable? %>
+	<div id="map">Loading Map with Offers!</div>
+<% else %>
+	<div id="map_substitute">
+  	<p id="no_mappables">
+	  	Your search results have found offers that are
+	  	fulfilled via in-home service or delivery. For 
+	  	more details click on the individual offers.
+	  </p>
+	  <img id="no-mappables-image" src="../images/map.jpg" />
+	</div>
+<% end %>

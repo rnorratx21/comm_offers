@@ -1,0 +1,31 @@
+%table.dataset.jumptable.striped
+  %thead
+    %tr
+      = sort_link 'ID', :id
+      = sort_link 'E-Mail', :email
+      = sort_link 'Last Login', :last_login_at
+      %th Display&nbsp;Group
+      %th Role(s)
+      = sort_link 'Advertiser', :advertiser_name
+      %th &nbsp;
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td.title
+          - if user.advertiser
+            = link_to user.id, [:admin, user]
+          - else
+            = user.id
+        %td
+          = link_to user.email, admin_user_path(user)
+          = "(DISABLED)" if user.is_disabled?
+        %td
+          = user.last_login_at
+        %td
+          = user.display_group
+        %td
+          = user.display_role    
+        %td
+          = user.advertiser_name                            
+               
+= will_paginate @users

@@ -1,0 +1,20 @@
+<% head_text "Connecting..." %>
+
+<%= render :partial => 'wifi_soft/connecting_message' %>
+<h4>Otherwise click the button below:</h4>
+
+<% form_for @wifi_login, :url => "http://www.wifi-soft.com/login/co/login" do |f| %>
+  <% WifiLogin::WIFI_SOFT_PARAMS.each do |attr| %>
+    <%= f.hidden_field "wifi_#{attr}".to_s, :name => attr %>
+  <% end %>
+  <%= f.hidden_field :wifi_username, :name => "UserName", :value => WifiLogin::WIFI_SOFT_USERNAME %>
+  <%= f.hidden_field :wifi_password, :name => "Password", :value => WifiLogin::WIFI_SOFT_PASSWORD %>
+  <%= hidden_field_tag "button", "Login"  %>
+  <%= f.submit "Complete Connection" %>
+<% end -%>
+
+<script type='text/javascript'>
+  $(document).ready(function() {
+    $("form.edit_wifi_login").submit();
+  });
+</script>

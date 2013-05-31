@@ -1,0 +1,26 @@
+span.count { color: #000000; font-weight:bold; } 
+#contentWrap h3 { background-color: #0288D6; color: #fff; padding: 10px 15px; font-size: 120%;}
+#contentWrap h4 { font-size: 110%; font-weight:bold; padding: 5px 0;}
+
+#num_offers { color: #000; font-size: 120%; }
+#offers_capsule { width: 75%;}
+#offers_capsule .url { font-size: 75%; }
+#offers_capsule .actions > div { margin: 10px 0 0;}
+#offers_capsule .actions a img { float:left; padding-right: 3px; } 
+span.status { font-style:italic; font-weight:bold; }
+span.headline { color: #333;}
+#dashboard_menu { width: 20%; background-color: #fff; }
+#dashboard_menu li { border-bottom: 1px solid #ccc; padding: 3px 6px;}
+
+.reporting { background-color: #F8F8F8; margin-left: 50px;}
+.gender { font-family: "Helvetica", "Arial", sans-serif; margin: 20px 0; }
+.gender > .results { margin-top: 6px; margin-left: 8px; }
+.gender.male { color: #00BDF7; margin-left: 20px;}
+.gender.female { color: #F8309D; }
+.gender_percentage { font-size: 230%; font-weight: bold; }
+.gender_label { font-size: 110%; }
+
+ul.merchant_reporting { color: #000; margin-left: 20px; width: 90%;}
+ul.merchant_reporting li { border-bottom: 1px solid #CCCCCC; margin-bottom: 8px; }
+
+.coming { font-style: italic; color: #444;}

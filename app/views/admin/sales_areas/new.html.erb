@@ -1,0 +1,6 @@
+<%= render 'admin/nav' %>
+<% head_text "New Sales Area" %>
+<% form_for [:admin, @sales_area] do |f| %>
+  <%= f.label :name, "Name:" %> <%= f.text_field :name %>
+  <%= f.submit "Save", :disable_with => 'Saving...' %>
+<% end %>

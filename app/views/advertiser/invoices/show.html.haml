@@ -1,0 +1,20 @@
+= head_text "Invoice Details"
+
+= link_to "Back to Contract Details", advertiser_contract_path(@invoice.contract)
+ 
+- if @invoice.paid?
+  - for payment in @invoice.payments
+    .invoice
+      %h1.paid PAID
+      %h2
+        Status: 
+        = payment.status
+      = render_payment(payment)
+- else
+  %h2
+    Status: 
+    = @invoice.status
+  = render_invoice(@invoice)
+
+- content_for :stylesheet do
+  = stylesheet_link_tag 'invoice'

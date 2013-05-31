@@ -1,0 +1,101 @@
+<script type="text/javascript">
+$(function() {
+  $("#concepts").accordion({ autoHeight: false, collapsible: true, active: false });
+  $("#users").accordion({ autoHeight: false, collapsible: true, active: false });
+});
+checked=false;
+function checkAll(){
+  if (checked == false){
+    checked = true
+  }
+  else{
+    checked = false
+  }
+	var doc = document.getElementById("concepts");
+	var elms = doc.getElementsByTagName("*");
+  for (var i =0; i < elms.length; i++){
+		if (elms[i].type == "checkbox"){
+		  if (elms[i].name != "checkall") {
+	  	  elms[i].checked = checked;
+			}
+		}
+  }
+}
+</script>
+<p>
+  <label for="name">Name  <%= f.text_field  :name, :value => @role.name  %></label>
+</p>
+<% unless @concepts.empty?%>
+	<div id="concepts">
+	  <h3><a href="#">Permissions</a></h3>
+		<div>
+			<b>All <input type='checkbox' name='checkall' onclick='checkAll();'></b>
+			<hr>
+	    <%@concepts.each do |concept|%>
+        <h4><%=concept.name%></h4>
+        <% concept.activities.each do |activity| %>
+		      <%= check_box_tag(
+		      "role[activity_concept_list][#{concept.id}][#{activity.id}]", 
+		      "1", 
+		      @activities[concept.id].nil? ? false : @activities[concept.id].detect{|d| d == activity.id}) %>
+		      <%= "#{activity.name}"%> 
+        <% end %>
+        <hr>
+      <%end%>
+    </div>
+  </div>
+<% end %>
+<br>
+<div id="users">
+  <% unless @role_users.empty?%>
+    <h3><a href="#">Users in <%=@role.name%></a></h3>
+    <div>
+    <% @role_users.each do |user| %>
+      <p><%= check_box_tag(
+        "role[user_list][#{user.id}]", 
+        "1", 
+        @role.users.detect{|d| d == user}) %>
+      <%= "#{user.display_name}"%> 
+      </p>
+      <% end %>
+    </div>
+  <%end%>
+
+   <% unless @users.empty?%>
+  <h3><a href="#">Unassigned Users</a></h3>
+  <div>
+  <% @users.each do |user| %>
+    <p><%= check_box_tag(
+      "role[user_list][#{user.id}]", 
+      "1", 
+      @role.users.detect{|d| d == user}) %>
+    <%= "#{user.display_name}"%> 
+   </p>
+    <% end %>
+    </div>
+  <%end%>
+<!--
+   <% unless @other_users.empty?%>
+  <h3><a href="#">Users Assigned to Other Roles</a></h3>
+  <div>
+  <% @other_users.each do |user| %>
+    <p><%= check_box_tag(
+      "role[user_list][#{user.id}]", 
+      "1", 
+      @role.users.detect{|d| d == user}) %>
+    <%= "#{user.display_name}"%> 
+    <% if user.roles %>(
+      <% user.roles.each_with_index do |role, i|%>
+        <%if i > 0%>
+          ,&nbsp; 
+        <%end%>
+        <%= "#{role.name}"%>
+      <%end%> )
+    <% end %>
+   </p>
+    <% end %>
+    </div>
+  <%end%>
+	-->
+</div>
+<br>

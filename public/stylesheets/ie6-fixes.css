@@ -1,0 +1,8 @@
+.middle {
+   position: static;
+   margin: -3px 10px 17px 10px;   
+}
+
+.value .middler {
+   left: 0px;
+}

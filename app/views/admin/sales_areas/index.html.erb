@@ -1,0 +1,13 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<%= render :partial => "admin/sales_reporting/nav" %>
+<% head_text "Sales Areas" %>
+
+<h2>Sales Areas</h2>
+<ul>
+  <% @sales_areas.each do |area| %>
+      <li><h3><%= link_to area.name, edit_admin_sales_area_path(area) %></h3></li>
+  <% end %>
+  
+</ul>
+<%= link_to "New Sales Area", new_admin_sales_area_path %>

@@ -1,0 +1,22 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+= render 'admin/invoices/nav'
+
+%h1
+  Edit Invoice for Contract
+  = @contract.id
+
+= render :partial => "form"
+  
+
+%hr
+
+/ = debug @invoice
+
+.invoice
+  - if @invoice.paid?
+    %h1.paid
+      PAID
+
+  = render_invoice(@invoice)

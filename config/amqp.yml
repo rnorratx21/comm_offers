@@ -1,0 +1,21 @@
+common: &common
+  host: localhost
+  port: 5672
+  user: guest
+  pass: guest
+  vhost: /
+  timeout: 3600
+  logging: false
+  ssl: false
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+  
+review:
+  <<: *common
+
+production:
+  <<: *common

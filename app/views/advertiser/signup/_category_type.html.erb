@@ -1,0 +1,14 @@
+<% unless category_type.categories.empty? %>
+  <div class="category_type">
+  	<h3 <%= "class='selected'" if current_category_type_selected?(category_type) %>>
+  	  <span class='expander'><a href="javascript:void(0)"><%= image_tag("#{current_category_type_selected?(category_type) ? 'collapse' : 'expand'}.png") %></a></span><a href='javascript:void(0)'><%= category_type.name %></a></h3>
+    <ul class='categories<%= ' selected' if current_category_type_selected?(category_type) %>'>
+  	<% category_type.categories.each do |category| %>
+  	  <li>
+  		<%= form.radio_button :category_id, category.id %>
+  		<%= label_tag "advertiser_category_id_#{category.id}", category.name.gsub("&", "&amp;"), :class => 'inline' %>
+    </li>
+  	<% end %>
+    </ul>
+  </div>
+<% end %>

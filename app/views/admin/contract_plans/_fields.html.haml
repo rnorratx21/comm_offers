@@ -1,0 +1,50 @@
+%fieldset
+  %legend 
+    = f.label :name, "Contract Plan Name"
+  %p
+    = f.text_field :name, :class => "text-long large"
+  
+%fieldset
+  %legend Costs
+  
+    
+  %div
+    = f.label :setup_amount
+    $
+    = f.text_field :setup_amount, :class => "text-small"
+    
+  %div
+    = f.label :installment_amount
+    $
+    = f.text_field :installment_amount, :class => "text-small"
+    
+    = f.label :period, "per"
+    = f.select :period, ["month"]
+
+  
+  %div
+    = f.label :discount_amount
+    $
+    = f.text_field :discount_amount, :class => "text-small"
+
+  %div
+    = f.label :payment_bypass_code, "Payment Bypass Code for Admin"
+    = f.text_field :payment_bypass_code, :class => "text-small narrow"
+
+%fieldset
+  %h2 Schedule
+
+  %div
+    = f.label :due_on_day, "Due on the"
+    = f.select :due_on_day, (1..28).collect{|i| [i.ordinalize, i]}, :class => "text-small"
+    day of the month
+    / , or 
+    / = f.label :start_after, "start billing after"
+    / = f.text_field :start_after, :class => "text-small"
+    / days
+    
+  %div
+    End after
+    = f.text_field :installments, :class => "text-small"
+    = f.label :installments
+

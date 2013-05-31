@@ -1,0 +1,25 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+<%= render 'admin/contract_plans/nav' %>
+<h1><%= h @group_contract_plan.name %> </h1>
+<%unless @group_contract_plan.group_contract_plan_features.empty? %>
+<h3>Features</h3>
+  <ul>
+    <% @group_contract_plan.group_contract_plan_features.each do |plan| %>
+      <li><%= link_to "#{plan.feature.title}", admin_feature_path(plan.feature.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+<%unless @group_contract_plan.group_contract_plan_discounts.empty? %>
+<h3>Discounts</h3>
+  <ul>
+    <% @group_contract_plan.group_contract_plan_discounts.each do |plan| %>
+      <li><%= link_to "#{plan.discount.promo_code}", admin_discount_path(plan.discount.id.to_s) %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to "Back to Regional Plans", admin_group_contract_plans_path %> 
+<%if @can_update %>
+| <%=link_to "Edit", edit_admin_group_contract_plan_path(@group_contract_plan.id.to_s)%>
+<%end%>

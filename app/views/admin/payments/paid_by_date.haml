@@ -1,0 +1,36 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+
+%h2 
+  Paid Invoices by Date
+
+- day_one = @payments.first.created_at
+- (Payment.first.created_at.to_date..Date.today).each do |date|
+- date_for_query = date.to_time
+  %h3
+    $
+    = Payment.paid_on(date_for_query).sum("total_amount")
+    on
+    = date.to_s
+    - cnt = Payment.paid_on(date_for_query).count
+    = "(#{(cnt == 1) ? '1 payment' : cnt.to_s + ' payments' })"
+  %table.dataset.jumptable
+    %thead
+      %tr
+        %th Amount
+        %th Invoice ID
+        %th Contract ID
+        %th Offer
+        %th Advertiser
+    %tbody
+      - Payment.paid_on(date_for_query).each do |invoice|
+        %tr
+          %td.title= invoice.total_amount_formatted
+          %td= link_to invoice.id, [:admin, invoice]
+          %td= link_to invoice.contract_id, [:admin, invoice.contract]
+          %td
+            - for offer in invoice.contract.offers
+              = link_to truncate(offer.title, :length => 16), [:admin, offer]
+          %td= link_to truncate(invoice.contract.advertiser.name, :length => 16), [:admin, invoice.contract.advertiser]
+

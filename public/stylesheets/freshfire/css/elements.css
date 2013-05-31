@@ -1,0 +1,582 @@
+/* **************************** */
+/* IMAGE / VIDEO GALLERY AND PORTFOLIO */
+/* **************************** */
+div.gallery p,
+div.portfolio.grid p {
+	clear: both;
+}
+
+#content div.gallery img,
+#content div.portfolio.grid img {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+
+div.gallery ul,
+div.portfolio ul {
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+div.gallery li,
+div.portfolio.grid li {
+	float: left;
+	width: 290px;
+	min-height: 170px;
+	background-image: url(../images/general/image-placeholder.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding: 5px 5px 20px 5px;
+}
+
+div.gallery li.image div,
+div.portfolio li.image div {
+	background-image: url(../images/general/icon-zoom-image.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 290px;
+	height: 140px;
+	overflow: hidden;
+}
+
+div.gallery li.vimeo div,
+div.gallery li.youtube div,
+div.portfolio li.vimeo div,
+div.portfolio li.youtube div {
+	background-image: url(../images/general/icon-zoom-video.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 290px;
+	height: 140px;
+	overflow: hidden;
+}
+
+div.gallery li img,
+div.portfolio li img {
+	padding: 5px;
+	background-color: #ebebeb;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+
+/* **************************** */
+/* ****** PORTFOLIO CSS *********/
+/* **************************** */
+#content.portfolio h4 {
+	margin: 5px 0;
+}
+
+/* for the grid */
+div.portfolio.grid li {
+	min-height: 350px;
+	position: relative;
+}
+
+#contentWrap div.portfolio.grid h4 {
+	padding-top: 25px;
+}
+
+div.portfolio.grid p {
+	overflow: hidden;
+	height: 105px;
+}
+
+div.portfolio.grid span.info {
+	position: absolute;
+	bottom: 45px;
+	left: 5px;
+	font-size: 91.6%;
+}
+
+div.portfolio span.date,
+div.portfolio span.tags,
+div.portfolio span.client,
+div.portfolio span.place,
+div.portfolio span.url {
+	padding: 3px 0 5px 25px;
+	margin-right: 12px;
+}
+
+div.portfolio span.date,
+#content-slider span.date {
+	background: url(../images/icons/icon-tick.png) no-repeat top left;
+}
+
+div.portfolio span.tags,
+#content-slider span.tags {
+	background: url(../images/icons/icon-tag.png) no-repeat top left;
+}
+
+div.portfolio span.client,
+#content-slider span.client {
+	background: url(../images/icons/icon-user.png) no-repeat top left;
+}
+
+div.portfolio span.place,
+#content-slider span.place {
+	background: url(../images/icons/icon-marker.png) no-repeat top left;
+}
+
+div.portfolio span.url,
+#content-slider span.url {
+	background: url(../images/icons/icon-globe.png) no-repeat top left;
+}
+
+/* **************************** */
+/* ******* PORTFOLIO IN CONTENT SLIDER  ****** used for portfolio and other pages like services */
+/* **************************** */
+#content-slider span.date,
+#content-slider span.tags,
+#content-slider span.client,
+#content-slider span.place,
+#content-slider span.url {
+	clear: both;
+	display: block;
+	padding: 8px 0 5px 35px;
+	background-position: 0 6px;
+	min-height: 10px;
+}
+
+/* **************************** */
+/* ***** PAGE NAVIVAGTION ****** used for gallery, portfolio and blog */
+/* **************************** */
+#page-nav {
+	margin-left: 30px;
+}
+
+#page-nav a {
+	padding: 6px 10px 6px 10px;
+	margin-right: 4px;
+	text-align: center;
+	background: #F6F6F6;
+	background: -moz-linear-gradient(top, #f9f8f3, #f9f8f3 50%, #e8e5db);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(.5, #FFF), to(#EFEFEF));
+	border: 1px solid #c6c6c6;
+	border-bottom:1px solid #BFBFBF;
+	 -moz-border-radius: 5px;
+	 -webkit-border-radius: 5px;
+	 border-radius: 5px;
+}
+
+#page-nav a.current {
+	padding:7px 11px 7px 11px;
+	font-weight:bold;
+	color: #FFF;
+	border: none;
+	background: #999;
+	background: -moz-linear-gradient(top, #999, #777 5%, #AFAFAF);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #777), color-stop(.05, #555), to(#999)); 
+	box-shadow: inset 0px 2px 5px #444, 0 1px 0px #DDD;
+	-webkit-box-shadow: /*inset 0px 2px 5px #444,*/ 0 1px 0px #DDD;
+	-moz-box-shadow: inset 0px 2px 7px #444, 0 1px 0px #DDD;
+}
+
+#page-nav .pages {
+	float: right;
+}
+
+/* **************************** */
+/* ***** LIST STYLE TYPES *******/
+/* **************************** */
+ol {
+	padding-left: 20px;
+}
+
+ul.bullets {
+	padding-bottom: 15px;
+}
+
+ul.bullets li {
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	padding-left: 25px;
+	background-image: url(../images/icons/bullet_black.png);
+}
+
+ul.bullets.arrow li {
+	background-image: url(../images/icons/bullet_arrow.png);
+}
+
+ul.bullets.blue li {
+	background-image: url(../images/icons/bullet_blue.png);
+}
+
+ul.bullets.green li {
+	background-image: url(../images/icons/bullet_green.png);
+}
+
+ul.bullets.red li {
+	background-image: url(../images/icons/bullet_red.png);
+}
+ul.bullets.star li {
+	background-image: url(../images/icons/bullet_star.png);
+}
+
+/* **************************** */
+/* *** QUOTEBOX IN COLUMN CSS ***/
+/* **************************** */
+div.quotebox {
+	width: 285px;
+	height: 118px;
+	background-image: url(../images/general/quote-bg.png);
+	background-repeat: no-repeat;
+	font-size: 110%;
+	font-family: Georgia;
+	color: #adadad;
+	text-align: center;
+	padding: 10px 10px 10px 5px;
+	position: relative;
+}
+
+div.quotebox p.author {
+	position: absolute;
+	bottom: 0;
+	right: 40px;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda,sans-serif, Arial, Helvetica, Garuda, sans-serif;
+	color: #6f9077;
+}
+
+
+/* **************************** */
+/* ******* INFOBOXES *********/
+/* **************************** */
+div.box-error {
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	background: url("../images/icons/box-error.png") no-repeat 15px 20px #FFCECE;
+	border: 1px solid #DF8F8F;
+	color:#883333;
+	padding: 25px 15px 25px 75px;
+	font-size: 108.3%;
+	margin: 2px 0 15px 0;
+}
+
+div.box-information {
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	background: url("../images/icons/box-info.png") no-repeat 15px 20px #DEEEF7;
+	border: 1px solid #82C3E6;
+	color:#2F81B0;
+	padding: 25px 15px 25px 75px;
+	font-size: 108.3%;
+	margin: 2px 0 15px 0;
+}
+
+div.box-notification {
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	background: url("../images/icons/box-note.png") no-repeat 15px 20px #FFFBCC;
+	border: 1px solid #E6DB55;
+	color:#8f8838;
+	padding: 25px 15px 25px 75px;
+	font-size: 108.3%;
+	margin: 2px 0 15px 0;
+}
+
+div.box-download {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: url("../images/icons/box-download.png") no-repeat 15px 20px #E3F4DE;
+	border: 1px solid #A2D392;
+	color:#599847;
+	padding: 25px 15px 25px 75px;
+	font-size: 108.3%;
+	margin: 2px 0 15px 0;
+}
+
+
+/* **************************** */
+/* ** QUOTEBOX IN CONTENT CSS ***/
+/* **************************** */
+.quotebox-right {
+	border-right:6px solid #DDDDDD;
+	float:right;
+	font-size:15px;
+	line-height:22px;
+	margin:22px 0 22px 22px;
+	padding:0 15px 0 0;
+	width:22%;
+}
+
+.quotebox-left {
+	border-left:6px solid #DDDDDD;
+	float:left;
+	font-size:15px;
+	line-height:22px;
+	margin:22px 22px 22px 0;
+	padding:0 0 0 15px;
+	width:22%;
+}
+
+/* **************************** */
+/* ****** PRICE TABLE CSS *******/
+/* **************************** */
+#price-table .pack {
+	width: 191px;
+	float: left;
+	text-align: center;
+}
+
+#price-table div.service-list .header-bg {
+	background-image: url(../images/general/price-table-header.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 4px;
+}
+
+#price-table h2 {
+	padding-top: 10px;
+}
+
+#price-table .service-list li {
+	font-weight: bold;
+}
+
+#contentWrap #price-table .service-list p {
+	text-shadow: 0 0;
+}
+
+#price-table div.odd li.odd {
+	background-color: #dddacf;
+}
+
+#price-table .pack p.intro {
+	height: 65px;
+	padding: 0 10px 20px 10px;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#price-table .pack li {
+	height: 25px;	
+	padding: 5px 0 0 10px;
+}
+
+#price-table .pack li.odd {
+	background-color: #e4e1d7;
+}
+
+#price-table .pack li.buy {
+	height: 35px;
+	padding-top: 15px;
+}
+
+#price-table .pack li.buy a.graph {
+	float: none;
+	margin: 0 auto;
+}
+
+#price-table .pack img {
+	background-color: transparent;
+	padding: 0;
+	border: 0;
+}
+
+#price-table.v2 .service-list .pt-header,
+#price-table.v2 .service-list.odd li,
+#price-table.v2 .service-list h2 {
+	background-color: #3a3a3a;
+	color: #ffffff;
+	text-shadow: 0 0;
+}
+
+#price-table.v2 .service-list p.intro {
+	height: 61px !important;
+}
+
+#price-table.v2 .service-list li {
+	font-weight: normal;
+}
+
+#price-table.v2 .service-list.odd li.odd {
+	background-color: #5c5c5c;
+}
+
+/* **************************** */
+/* ****** CONTENT TOGGLE *******/
+/* *************************** */
+#contentWrap h4.toggle {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#contentWrap h4.toggle a {
+	display: block;
+	height: 34px;
+	width: 570px;
+	background-image: url(../images/general/content-slider-btn.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	color: #353535;
+	padding: 15px 0 0 60px;
+	font-size: 85%;
+}
+
+#contentWrap h4.toggle.active a {
+	background-position: bottom left;
+}
+
+div.toggle_div {
+	background-color: #f9f9f7;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	-moz-border-radius:6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	padding: 20px;
+	border: 1px solid #e4e1d7;
+}
+
+/* ***************************** */
+/* ***** CONTENT SLIDER **** */
+
+#content-slider {
+    width: 630px;
+    margin: 0 auto;
+    position: relative;
+	margin-left: 30px;
+	padding: 0;
+}
+
+#content-slider div.frame {
+	width: 562px;
+	height: 228px;
+	background: url(../images/general/portfolio-list-frame.png) no-repeat top left;
+	overflow: hidden;
+}
+
+#content #content-slider div.img {
+	width: 549px;
+	height: 192px;
+	overflow: hidden;
+	padding: 5px 0 0 6px;
+}
+
+#content #content-slider div.img img {
+	border: 0;
+	background-color: transparent;
+	padding: 0;
+}
+
+#contentWrap #content-slider h2 {
+	padding-top: 15px;
+}
+
+#content-slider .slider-fader {
+	z-index: 99;
+	width: 39px;
+	height: 800px;
+	z-index: 9;
+}
+
+#content-slider .slider-fader.left {
+	position: absolute;
+	top: 0;
+	left: -9px;
+	background: url(../images/general/portfolio-fader-left.png) repeat-y top left;
+}
+
+#content-slider .slider-fader.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/general/portfolio-fader-right.png) repeat-y top left;
+}
+
+#content-slider .scroll {
+    width: 630px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+}
+
+#content-slider .scrollContainer div.panel {
+    width: 570px;
+	padding: 0 30px;
+}
+
+#content-slider .scrollButtons {
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+}
+
+#content-slider .scrollButtons.left {
+    left: -20px;
+	display: none;
+}
+
+#content-slider .scrollButtons.right {
+    display: none;
+}
+
+#content-slider .hide {
+    display: none;
+}
+
+#content-slider div.hr {
+	margin-left: 0;
+}
+
+/* **************************** */
+/* ***** CSS FOR DEMO PAGES *****/
+/* *************************** */
+
+code, pre {
+	background: url("../images/general/template-example-pre-bg.gif") repeat scroll 0 0 #E8EBEC;
+	border: 1px dotted #BBBBBB;
+	color: #333333;
+	font: 13px/18px Consolas,"Courier New",Courier,monospace;
+	padding: 18px 5px;
+	margin-bottom: 15px;
+}
+
+code {
+	background-image: none;
+	padding: 1px 3px;
+}
+
+#contentWrap img.demo {
+	padding: 0;
+	border: 0;
+	background-color: transparent
+}
+
+div.seperator {
+	width: auto;
+	height: 8px;
+	background-color: #dfdede;
+	margin: 20px 0;
+}
+
+#mainMenu ul.mainNav ul li .skinDemo {
+	z-index: 99999;
+}
+
+#mainMenu ul.mainNav ul li .skinDemo li {
+	padding: 0 !important;
+	margin: 0;
+	width: 150px;
+	z-index: 99999;
+}
+
+#mainMenu ul.mainNav ul li .skinDemo li a {
+	padding: 10px !important;
+	margin: 0;
+	width: 150px;
+	background-color: #ffffff;
+	z-index: 99999;
+}
+
+#mainMenu ul ul ul.skinDemo {
+	width: 220px;
+}
+
+#mainMenu ul ul ul.skinDemo li a:hover,
+#mainMenu ul ul li.sfHover ul.skinDemo li a:hover {
+	background-image: none !important;
+	background-color: transparent !important;
+}

@@ -1,0 +1,301 @@
+/* { margin: 15px 20px; }*/
+p.desc { margin-left: 5px;}
+div.signup_content { padding: 10px 20px; background-color: #fff;}
+.half-page.signup_fairy { margin-left: -50px; width: 480px;}
+.half-page.payment_fairy { width: 425px; }
+div#contentWrap { padding-top: 30px;}
+#contentWrap div.step_header {margin-top: 20px;}
+#contentWrap div.step_header h2 { background-color: #F26C51; color: #fff; padding: 10px; font-size: 1.5em; font-style:italic;  min-height: 28px;}
+#contentWrap div.step_header p { font-weight: normal; font-size: .9em; }
+#contentWrap span.step_image { float:left; margin-left: 7px;}
+#contentWrap span.step_txt { float:left; margin-left: 15px; margin-top: 3px;}
+#contentWrap h3 { font-size: 1.2em; }
+h3.sub_head { font-style:italic; margin: 10px 0 15px; }
+h3.sub_head span { font-style:normal; }
+#contentWrap label, .hidden_payment_form label { display:block; }
+#contentWrap label, .hidden_payment_form label { font-size: 120%; color: #000; }
+#contentWrap label.inline {display:inline;}
+#contentWrap span.required {margin: 0 5px 0 -10px;}
+#contentWrap hr.fields_section { border: 1px dotted #999;}
+#contentWrap textarea { 
+ font-family: 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif; 
+ font-size: 125%;
+ width: 25em;
+}
+p.field { margin-bottom: 10px; }
+p.field .hint { font-size: .75em; font-weight: normal; color: #777; }
+
+.multi_col {padding-right: 20px;}
+span.label_for_field_with_errors * { color: #990000; font-style:italic;}
+span.field_with_errors > * { border: 3px #990000 solid; }
+.field_with_errors_message { color:#990000; font-style:italic; display:block; }
+
+div#taskflow { margin: 2em 0 2em;}
+div#advertiser_signup #taskflow {
+	width: 883px;
+	height: 82px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#signup_steps { list-style-type: none; margin-left: 70px;}
+#signup_steps li { margin: 0; float: left; }
+
+ul#signup_steps li div { 
+  background-color:#CCCCCC;
+  font-size:0.85em;
+  height:45px;
+  margin-right:1.95em;
+  padding:1em 1.75em;
+  text-align:center;
+  width:65px;
+}
+ul#signup_steps li div.active { background-color: #555; color: #fff; font-weight:bold;}
+a.cancel { color: #000099; font-size: .9em;}
+
+/****   FORM BUTTONS   ****/
+div.form_buttons { text-align:right; margin-right: 2.5em; margin-top: 1.5em;}
+div.form_buttons a { color: #000099; font-size: .85em; text-decoration:none; }
+div.form_buttons a:hover { text-decoration: underline;}
+div.form_buttons span.sep { margin: 0 .7em; color: #ededed; }
+
+
+/****************   PITCH  *****************/
+.pitch { margin-left: 20px;}
+#contentWrap .pitch h3.three_steps { font-size: 180%; margin: 20px 0;}
+.pitch ul { margin-left: 40px; list-style-type: disc; color: #000; font-size: 115%;}
+.pitch li.previous { color: #ccc; font-style:italic; }
+.pitch li.current { color: #FF5C3E; }
+.pitch li img { float:right; position:relative; display:block; left: -425px; }
+.signup_fairy li.current img { left: -425px; }
+.payment_fairy li.current img { left: -396px; }
+.pitch li { clear:both;}
+.pitch h2.start { font-style:italic; margin: 20px 0 0 30px;}
+.pitch img { float: right; }
+
+/****************   CREATE ACCOUNT ***************/
+/*div#create_account_wrapper .account_fields { width: 52%; }
+div#create_account_wrapper .pitch { width: 45%; }
+*/
+/*div#create_account_wrapper .half-page { margin-left: 0; }*/
+
+/*ul#steps li {list-style-image: url(/images/signup/welcome_arrow.jpg);}*/
+
+/****************   PAYMENT   **********************/
+div.plan_grid { width: 480px; }
+table.grid tr th.plan_head { min-width: 100px; font-size: 130%;}
+table.grid { width: 100%; border: 1px solid #999;}
+table.grid tr * { text-align: center; }
+table.grid tr th { font-size: 110%; background-color: #77B695; color: #fff; padding: 8px 0;}
+table.grid tr th .installment { padding-top: 5px; }
+table.grid tr td { background-color: #fff; padding: 10px 0; }
+table.grid tr.odd td { background-color: #DFEEE5; }
+table.grid tr td.icon { width: 70px; background-position: center center; background-repeat: no-repeat; }
+table.grid tr td.title { text-align:left; padding-left: 0px; font-weight: bold; }
+table.grid .plan_button { padding: 0 10px;}
+div.plan_grid p.fine_print { font-size: 90%; color: #000; }
+
+h2#plan_head { background-color: #77B695; font-size: 130%; color: #fff; margin: 20px 0 0; padding: 12px; }
+
+div.hidden_payment_form { padding: 1.25em 2em; width: 800px; border: 3px solid #999; background-color: #fff; color: #444; }
+div.hidden_payment_form div { text-align:left; margin: 1em;}
+div.hidden_payment_form h1 { background-color: #77B695; font-size: 200%; color: #fff; padding: 12px;}
+div.hidden_payment_form #confirm_agreement_wrapper { font-size: 150%;}
+
+#bypass { width: 100%; text-align:right;}
+#bypass input { font-size: 90%; height:auto; width: 5em; }
+
+.upgrade_headline { font-style:italic; font-size: 200%; color: #F26C51; margin-top: 12px;}
+.upgrade_notes { font-size: 125%; list-style-type: disc; margin: 20px 10px 20px 30px; }
+.upgrade_notes .bold { font-weight:bold;}
+.upgrade_notes li { margin-bottom: 14px;}
+
+/****************   OFFER   **********************/
+div.offer_wrapper { margin-top: 20px;}
+div.offer_wrapper .left { width: 42%;}
+div.offer_wrapper .right {width: 52%;}
+
+div.offer_advertiser .half-page { margin-left: 0;}
+
+div.offer_wrapper h3 { font-style: italic; color: #444;}
+div.offer_pitch_wrapper { margin-left: 20px;}
+
+div#address_map { 
+	background-color: white;
+  border: 3px solid #F26C51;
+  left: 490px;
+  position: relative;
+  top: -330px;
+  width: 450px;
+	z-index: 100;
+	margin-bottom: -340px;
+}
+
+#contentWrap #content button.show_hide_map { float:right;}
+/*#contentWrap a.show_hide_map:hover { text-decoration: underline;}*/
+
+input.url { width: 20em;}
+input.zip_code[type="text"] { width: 5em;}
+input[type="submit"], button { font-size: 1.1em; color: #3C72A0;}
+div#advertiser_sites p.field { padding-right: 20px;} 
+p#tabbed_out  {padding-top: .5em;}
+p#tabbed_out > span.left {padding-right: .5em;}
+
+/*div#address_wrapper { min-height: 500px;}*/
+div.address_fields { padding: 0 5px;}
+div.address_fields hr.fields_section { margin-right: 20px;}
+div.address_map {width: 48%; padding: 0 5px; }
+div.map_update { text-align: right;}
+div.map_update a { color: #000099; font-weight: normal; font-size: .9em;}
+
+
+div#offer_address { border: 1px #777 solid; padding: 20px;}
+div#offer_address h4 { font-size: 1.1em; color: #AB2B0D; margin-bottom: 5px;}
+div#offer_address p.instructions { font-size: .9em;}
+div#existing_offer_address div.address { font-weight: bold; }
+
+.preview { border: 1px dotted #999; padding: .7em;}
+/*.previews h2.title {font-size: 1.5em; font-style:italic; text-align:center;}*/
+/*.previews div#offer_preview {margin-top: 1em; background-color: #fff; }*/
+
+/****************   CATEGORY   **********************/
+div#hidden_expand_collapse { display:none;}
+div.cat_type_grouping { float:left; width: 300px; font-size: 1em;}
+#signup_category h2 { background-color: #77B695; font-size: 130%; color: #fff; margin: 20px 0 0; padding: 12px; }
+#signup_category ul.categories { display:none; }
+#signup_category ul.categories li { list-style-type: none; margin-left: 15px; border-bottom: 1px solid #EDEDED;}
+#signup_category ul.selected { display:block; }
+
+#signup_category div.category_type * { text-decoration:none;}
+#signup_category span.expander { margin-right: .5em;}
+#signup_category h3 > a {color: #000099;}
+#signup_category h3 > a:hover { text-decoration:underline;}
+#signup_category h3.selected {  margin-left: -10px; padding: 4px 10px; } /*border-bottom: 1px #000099 solid;*/
+/*#advertiser_signup #signup_category h3.selected > a {color: #fff }*/
+#signup_category h3 { font-size: .95em; font-weight: normal;}
+#signup_category li label { font-size: .9em; font-weight:normal; color: #000; }
+/*#advertiser_signup #signup_category li {  }*/
+
+/****************   PLAN   **********************/
+/*div#plan_summary_wrapper { margin-left: 1.1em;}
+div#plan_summary_wrapper ul.plan_summary > li { 
+  float:left; 
+  width: 250px;
+  list-style-type: none;
+  margin: 0;
+  margin-right: 2.35em;
+}
+
+div#plan_summary_wrapper ul.plan_summary > li div.summary div.summary_content { height: 22.5em;} 
+div#plan_summary_wrapper ul.plan_summary > li#gold_summary div.summary div.summary_content { height: 32.5em;} 
+div#plan_summary_wrapper ul.plan_summary > li > div.plan_title { width: 100%; text-align: center; margin-bottom: 1em;}
+div#plan_summary_wrapper ul.plan_summary > li div.summary { min-height: 41em; border: 1px solid #ccc; padding: 0 .5em 0 1.35em; }
+div#plan_summary_wrapper ul.plan_summary > li div.summary div.desc { font-family: "Arial Narrow", Arial, inherit; color: #999; margin: .25em 0 .7em; font-size: 1.25em; line-height: 1.2em;}
+div#plan_summary_wrapper ul.plan_summary > li h4 { font-size: 1.2em; margin: .5em 0 0; color: #555;}
+div#plan_summary_wrapper ul.plan_summary > li ul.features > li { font-size: .9em; margin-left: 1em;}
+div#plan_summary_wrapper ul.plan_summary > li ul.features span.addon_price { color: #000099; font-weight:bold;}
+div#plan_summary_wrapper ul.plan_summary > li ul.features span.includes_other_plan { font-weight: bold; text-transform: uppercase; color: #F5A045; }
+
+div#plan_summary_wrapper div.price { font-family: "Arial Black", Arial, inherit; color: #F5A045; font-size: 3em; font-weight:bold;}
+div#plan_summary_wrapper div.price span.period { font-family: Arial, sans-serif; color: #000; font-weight: normal; font-size: 70%;}
+div#plan_summary_wrapper div.base { color: #ccc; font-size: 75%; text-decoration: line-through;}
+div#plan_summary_wrapper div.plan_selection_buttons { text-align: center; margin: .75em 0 .5em;}
+div.plan_selection_buttons input { font-size: 1em; }
+div#plan_addon_wrapper { margin-top: 30px; border: 1px solid #ccc; padding: 0 .5em 0 1.35em; }
+div#plan_addon_wrapper ul { list-style-type: square;}
+div#plan_addon_wrapper li { margin-top: 1em; font-weight: bold;}
+div#plan_addon_wrapper li span.addon_amount { display:block; color: #000099; font-weight: bold; }
+table#plan_grid { border-collapse: collapse; border: 0; margin-top: 3em; border-top: 5px solid #efefef;}
+table#plan_grid tr { border: 0; color: #555; }
+table#plan_grid tr th { border-left: 1px solid #ccc; border-right: 1px solid #ccc; padding: 1em 0;} 
+table#plan_grid tr th.plan_feature_comparison { font-size: 1.75em; font-weight: normal; color: #F5A045;}
+table#plan_grid tr th.plan { 
+  font-family: "Trebuchet MS", "Trebuchet", Arial, sans-serif, inherit; 
+  color: #555;
+  font-size: 1.7em; 
+}
+
+table#plan_grid td { font-size: 1.1em; background-color:#fff; border: 1px solid #ccc; padding: .5em .75em; }
+table#plan_grid td.benefit { color: #555; }
+table#plan_grid td.plan { width: 160px; text-align: center; color: #000;}
+
+div#plan_selectors {text-align: center; width: 100%;}
+div#plan_selectors span { display:block; float:right; width: 170px;}
+
+span.plan_price { font-size: 1.5em; font-weight:bold; color: #000099; display:inline;}
+div.discount { color: #990000; }
+div.discount_special_offer { font-style:italic; margin-top: 1em;}
+div.discount_special_offer span.promo_code { font-weight: bold; text-transform: uppercase; font-size: 1.2em; color: #990000; }
+*/
+/****************   DISCOUNT_COUPONS  *********************/
+/*div.coupon { border: 3px dashed #990000; width: 320px; margin-left: 40px;}
+div.coupon > div.scissors { position:relative; top: -12px; left: 30px; min-height: 25px; padding: 0; margin: 0; background: transparent url('/images/scissors.jpg') no-repeat left; }
+div.coupon > div.content { padding: 0 20px 10px; }
+div.coupon div.special_offer {text-align:center; margin-bottom: .5em;}
+div.coupon div.pitch span.city {font-weight: bold; color: #000099; }
+div.coupon div.pitch span.plan { color: #000099; }
+div.coupon div.discount_offer { text-align:center; color: #000099; font-weight: bold; font-size: 1.85em;}
+div.coupon div.discount_offer span.value { text-transform: uppercase;}
+*/
+/****************   ADDONS  *********************/
+div.addon > div.check { width: 4%; }
+div.addon > div.price { width: 10%; }
+div.addon > div.desc { width: 84%; }
+div.addon { background-color: #efefef; border-bottom: 2px #fff solid; padding: 20px 5px;}
+div.addon:hover { background-color: #ededed;}
+div.addon > div.price > span.amt  { font-size: 1.5em; }
+div.addon div.content {margin-left: 30px;}
+#zip_codes ul { list-style: none; margin: 0; }
+#zip_codes ul li {
+	display: inline-block;
+	padding: 3px 6px 3px 6px;
+	border: 1px solid #D8D8D8;
+	margin-left: 5px;	
+	margin-bottom: 7px; }
+
+#zip_codes ul li img {
+  background-image:url(/images/close.gif);
+  background-position:center center;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  display:inline;
+  height:10px;
+  margin-left:3px;
+  width:10px;
+}	
+#zip_codes ul li .zip_code { color: #555; font-size: 1em; font-weight: bold; }
+div.zips { margin-left: 100px; }
+div.zips label { font-size: 1.2em;}
+/*div#add_zips { text-align: center; }*/
+
+/*****************   PREVIEW  *********************/
+.preview { border-top: 1px dotted #444; border-bottom: 1px dotted #444; padding: 20px 5px;}
+div#badge_preview { min-height: 150px; background-color: #fff;}
+div#offer_preview { margin-top: 20px;}
+/*****************   DISCOUNT  *********************/
+div.discount_reminder { margin-left: 30px;}
+div.discount_reminder h3.prompt { margin-left: 50px; margin-bottom: 20px; font-size:2.5em; color: #F5A045; font-style:italic;}
+/*****************   AGREEMENT  *********************/
+#agreement_wrapper h2 span.change_plan { font-size: .8em; color: #000099; font-weight:normal;}
+#agreement_wrapper h2 span.change_plan a { color: #000099; text-decoration:none; }
+#agreement_wrapper h2 span.change_plan a:hover { text-decoration: underline;}
+
+/*****************   ORDER  *********************/
+#advertiser_signup div.discount_code_wrapper { margin-bottom: 2em;}
+#advertiser_signup #order { margin-bottom: 20px; border: 1px solid #999; padding: 12px; width: 360px;}
+#advertiser_signup h3.item_recurrence {	font-size: 1.4em; color: #F26720; margin: 20px 0 20px 0;}
+#advertiser_signup table.order { margin: 0 0 10px 0; width:100%; }
+#advertiser_signup table.order tbody tr { border-top: 1px solid #a0a0a0; border-bottom: 1px solid #a0a0a0; }
+#advertiser_signup table.order tbody tr.discount td { font-style: italic; color: #B57654; }
+#advertiser_signup table.order td { color:#5F3E2C; font-size:1.2em; font-weight:bold; }
+#advertiser_signup table.order td.name { padding: 3px; width: 290px; }
+#advertiser_signup table.order td.price {	text-align: right; }
+#advertiser_signup table.order td.total {	font-size: 1.3em; color: #F26720; text-align:right;}
+#advertiser_signup table.order tr.last { border-top: 3px solid #a0a0a0;	}
+#advertiser_signup p.platinum_warning {	color: #F26720;	font-size: 1.2em; font-weight: bold;}
+
+/* NOTE - agreement terms moved to communityoffers.css - since they can show up in multiple places */
+/****************   PAYMENT   **********************/
+/*div#payment_wrapper .payment_fields { width: 45%;}
+div#payment_wrapper .order_summary_box { padding: 0 20px;}
+div#offer_preview #offers_show { width: 550px; font-size: 90%;}
+*/

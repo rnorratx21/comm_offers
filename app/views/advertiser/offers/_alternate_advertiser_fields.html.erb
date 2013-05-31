@@ -1,0 +1,56 @@
+<div class='advertiser_info'>
+  		<div class="field">
+  		  <div class='current'><span class='label'>Business Name Shown:</span> <%= @offer.business_name %> 
+  	      <%= link_to "Edit", "javascript:void(0)", :class=>'edit_toggle' %>
+		</div>
+  		  <div class='editable'>
+		  <%= form.label :alternate_business_name, "New Business Name to use for this Offer:" %>
+		  <%= form.text_field :alternate_business_name %>
+    </div>
+  		</div>
+  		<div class="field">
+  		  <div class='current'><span class='label'>Business Website Linked:</span> <%= @offer.website_url %> 
+  	      <%= link_to "Edit", "javascript:void(0)", :class=>'edit_toggle' %>
+		</div>
+  		  <div class='editable'>
+		  <div>
+  		  <%= form.check_box :skip_website_url %>
+  		  <%= form.label :skip_website_url, "This offer has no website.  Please remove website for this offer." %>
+      </div>
+		  <div>
+  		  <%= form.label :alternate_website_url, "This Offer has a Different Website:" %>
+  		  <%= form.text_field :alternate_website_url, :class => 'url_suggest' %>
+      </div>
+    </div>
+  		</div>
+  		<div class="field">
+  		  <div class='current'><span class='label'>Facebook Page Linked:</span> <%= @offer.facebook_url %> 
+      <%= link_to "Edit", "javascript:void(0)", :class=>'edit_toggle' %>
+		</div>  		  
+  		  <div class='editable'>
+		  <div>
+  		  <%= form.check_box :skip_facebook_url %>
+  		  <%= form.label :skip_facebook_url, "This offer has no Facebook page.  Please remove for this offer." %>
+      </div>
+		  <div>
+  		  <%= form.label :alternate_facebook_url, "This Offer has a Different Facebook Page:" %>
+  		  <%= form.text_field :alternate_facebook_url, :class => 'url_suggest'  %>
+      </div>
+    </div>
+  		</div>
+  		<div class="field">
+  		  <div class='current'><span class='label'>Twitter Page Linked:</span> <%= @offer.twitter_url %> 
+  	      <%= link_to "Edit", "javascript:void(0)", :class=>'edit_toggle' %>
+		</div>
+  		  <div class='editable'>
+		  <div>
+  		  <%= form.check_box :skip_twitter_url %>
+  		  <%= form.label :skip_twitter_url, "This offer has no Twitter page.  Please remove for this offer." %>
+      </div>
+		  <div>
+  		  <%= form.label :alternate_twitter_url, "This Offer has a Different Twitter Page:" %>
+  		  <%= form.text_field :alternate_twitter_url, :class => 'url_suggest'  %>
+      </div>
+    </div>
+  		</div>
+</div>

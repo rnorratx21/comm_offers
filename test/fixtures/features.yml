@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+addl_zip_block:
+  title: Add more zip codes to your plan
+  amount: 49
+  system_key: addl_zip_block
+
+sms:
+  title: Comprehensive marketing etc
+  amount: 99
+  system_key: sms

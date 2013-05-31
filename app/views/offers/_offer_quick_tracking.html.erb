@@ -1,0 +1,9 @@
+<% if show_tracked_offer_options? %>
+<div class='offer_quick_tracking'>
+  <% if tracked_offer = is_tracking?(offer) %>
+    <%= image_tag 'favorite_remove_small.png' %> <%= link_to "Remove from Favorites", quick_remove_consumer_tracked_offer_path(tracked_offer), {:method => :delete}, :confirm => "Are you sure?" %>
+  <% else %>
+    <%= image_tag 'favorite_add_small.png' %> <%= link_to "Add to Favorites", quick_add_consumer_tracked_offers_path(:offer_id => offer), {:method => :post} %>
+  <% end %>
+</div>
+<% end %>

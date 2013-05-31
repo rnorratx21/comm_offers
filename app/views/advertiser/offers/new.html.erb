@@ -1,0 +1,25 @@
+<%= head_text "New Offer for #{@offer.business_name}" %>
+
+<p>
+	<%= link_to 'return to your account', account_path, :class => "action" %>
+</p>
+
+<div class="rounded section">
+	
+	<% form_for [:advertiser, @offer] do |form| %>
+    <h2>Advertiser Info</h2>
+    <p><%= edit_advertiser_fields_instructions %></p>
+    <%= render :partial => 'advertiser/offers/alternate_advertiser_fields', :locals => {:form => form} %>
+	  
+	  <h3 class="section">Offer</h3>
+		<%= render :partial => 'offer_fields', :locals => {:form => form} %>   
+		<%= form.submit "Create", :confirm => "By clicking OK, you are authorizing us to create a new contract and immediately bill you for this new offer. " %> | 
+  	<%= link_to 'Cancel', account_path, :class => "action" %>
+    
+	<% end %>
+</div>
+
+<%= link_to 'return to your account', account_path, :class => "action" %>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin_offer' %>
+<% end %>

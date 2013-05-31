@@ -1,0 +1,11 @@
+- head_text "Update Billing Information"
+
+= error_messages_for :contract
+
+.admin
+  - form_for [:advertiser, @contract] do |f|
+    = render :partial => "admin/contracts/credit_card_fields", :locals => {:f => f}
+    %p.actions
+      = f.submit
+      or 
+      = link_to "cancel and go back", :back

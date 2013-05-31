@@ -1,0 +1,16 @@
+<% head_text "Offer Report - #{offer_page_title(@offer)}" %>
+<div><%= offer_return_link %></div>
+<%= render(:partial => 'merchant_dashboard/dashboard_metrics', :locals => {:obj => @offer}) if @offer %>
+<% if @all_offers %>
+  <h3>Your Other Offers</h3>
+  <%= render(:partial => 'merchant_dashboard/offers_capsule', :locals => {:all_offers => @all_offers}) %>
+<% end %>
+<div><%= offer_return_link %></div>
+
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'merchant' %>
+<% end %>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'merchant' %>
+<% end %>

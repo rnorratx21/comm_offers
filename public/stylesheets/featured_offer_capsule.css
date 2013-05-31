@@ -1,0 +1,35 @@
+#featured_offer { width: 250px; height: 240px; padding-top: 0; }
+#featured_offer .bookend { background-color: #313131; padding: 5px; text-align: center; }
+#featured_offer .title { color: #fff; font-size: 120%; margin-bottom: 5px;}
+#featured_offer .feature_action { font-size: 120%; }
+#featured_offer .featured_go { float:right; display:block; margin-left: -5px;
+    margin-right: 8px; }
+#featured_offer .coupon { 
+	background: url('/images/home/dashed_outline.png') no-repeat scroll center center #fff; 
+	color: #000;
+	text-align: center;
+	padding: 5px 10px;
+	height: 240px;
+}
+#featured_offer .coupon .wrapper { padding: 6px 10px; }
+#featured_offer .coupon .headline { font-size: 150%; }
+#featured_offer .coupon .fineprint { font-size: 80%; line-height: 1.2em; margin-top: 10px; }
+
+
+/*#headerWrap #featured_offer { width: 250px; height: 240px; padding-top: 0; }
+#headerWrap #featured_offer .bookend { background-color: #313131; padding: 5px; text-align: center; }
+#headerWrap #featured_offer .title { font-size: 120%; margin-bottom: 5px;}
+#headerWrap #featured_offer .feature_action { font-size: 120%; }
+#headerWrap #featured_offer .featured_go { float:right; display:block; margin-left: -5px;
+    margin-right: 8px; }
+#headerWrap #featured_offer .coupon { 
+	background: url('/images/home/dashed_outline.png') no-repeat scroll center center #fff; 
+	color: #000;
+	text-align: center;
+	padding: 5px 10px;
+	height: 240px;
+}
+#headerWrap #featured_offer .coupon .wrapper { padding: 6px 10px; }
+#headerWrap #featured_offer .coupon .headline { font-size: 150%; }
+#headerWrap #featured_offer .coupon .fineprint { font-size: 80%; line-height: 1.2em; margin-top: 10px; }
+*/

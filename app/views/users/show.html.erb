@@ -1,0 +1,6 @@
+<% if @user.consumer? %>
+  <%= render :partial => 'consumer_dashboard' %>
+<% else %>
+  <%= render :partial => 'merchant_dashboard' %>
+<% end %>
+

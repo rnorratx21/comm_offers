@@ -1,0 +1,80 @@
+/* @override http://localhost:3000/stylesheets/menu.css */
+
+/*
+This menu was created by David Appleyard. David Appleyard (http://www.davidappleyard.net/) is an award winning freelance designer based in the UK. He's the man behind 13 Styles and also runs several other design and CSS websites. A big Apple fan, he's the chief editor of AppStorm (http://mac.appstorm.net/) and a regular contributor to The Apple Blog (http://www.theappleblog.com/).
+
+http://13styles.com/css-menus/matte/
+
+*/
+.menu {
+  margin: 10px 0;
+  padding: 0 0 0 10px;
+  list-style-type: none;
+  background: #eee;
+  height: 30px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+/*  font: bold 90% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+}
+#contentWrap .menu li {
+  float: left;
+  margin: 0;
+  
+}
+#contentWrap .menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 0 18px;
+  line-height: 30px;
+  color: #fff;
+}
+.menu li a:hover, .menu li.active a {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #DDD;
+  color: #fff;
+}
+
+/* Black Menu */
+.menu.black {
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  background: #333;}
+.menu.black a {color: #CCC;}
+.menu.black li a:hover, .menu.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
+
+
+/* Blue Menu */
+.menu.blue {
+  border-top: 2px solid #356AA0;
+  border-left: 2px solid #356AA0;
+  border-bottom: 2px solid #204061;
+  border-right: 2px solid #204061;
+  background: #356AA0;}
+.menu.blue a {color: #fff;}
+.menu.blue li a:hover, .menu.blue li.active a {color: #90CDFF; background: #3D7BBB; border-bottom: 2px solid #356AA0;}
+
+/* Red Menu */
+.menu.red {
+  border-top: 2px solid #660000;
+  border-left: 2px solid #660000;
+  border-bottom: 2px solid #450000;
+  border-right: 2px solid #450000;
+  background: #660000;}
+.menu.red a {color: #fff;}
+.menu.red li a:hover, .menu.red li.active a {color: #F27F84; background: #990000; border-bottom: 2px solid #660000;}
+
+/* Orange Menu */
+.menu.orange {
+  border-top: 2px solid #d15600;
+  border-left: 2px solid #d15600;
+  border-bottom: 2px solid #B44500;
+  border-right: 2px solid #B44500;
+  background: #d15600;}
+.menu.orange a {color: #fff;}
+.menu.orange li a:hover, .menu.orange li.active a {color: #FA9B5B; background: #B44500; border-bottom: 2px solid #d15600;}

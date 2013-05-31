@@ -1,0 +1,10 @@
+<% if @current_step %>
+<div id="taskflow">
+	<ul id="signup_steps">
+		<li><%= signup_step_tab "Payment", "payment" %></li>
+		<li><%= signup_step_tab "Build Your Offer", "offer", ["logo"] %></li>
+		<li class="last"><%= signup_step_tab "Preview Your Offer", "preview" %></li>
+	</ul>
+</div>
+<div class="clear"></div>
+<% end -%>

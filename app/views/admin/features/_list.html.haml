@@ -1,0 +1,16 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      %th ID
+      %th Name
+      -if @can_update
+        %th Edit
+      
+  %tbody
+    - for feature in features
+      %tr
+        %td.title= feature.id
+        %td.title= link_to feature.title, admin_feature_path(feature.id)
+        -if @can_update
+          %td= link_to "Edit", edit_admin_feature_path(feature.id)
+

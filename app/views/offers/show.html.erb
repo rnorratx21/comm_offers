@@ -1,0 +1,23 @@
+<% content_for :title do %><%= "#{offer_page_title(@offer)} | " %><% end %>
+<% body_id "offers_show" %>
+<% head_text offer_page_title(@offer) %>
+<% content_for :head do %>
+  <meta name="description" content="<%= offer_meta_description %>" />
+	<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+
+	<script type="text/javascript">
+
+	$(function() {		
+		var serviceAreaMappablesData = <%= zip_code_mappables_data(@offer.zip_codes).to_json %>		
+		initOfferDetailsMap(serviceAreaMappablesData);		
+	});
+
+	</script>
+<% end %>
+
+<% if @referrer %>
+  <div id='referrer' class='clear'><%= link_to "Back to Offers", @referrer %></div>
+<% end %>
+<div id='offer_wrapper'>
+  <%= render "offers/show", :offer => @offer %>
+</div> <!-- offer_wrapper -->

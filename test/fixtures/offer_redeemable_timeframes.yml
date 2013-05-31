@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  day: MyString
+  start_minute: 1
+  end_minute: 1
+
+two:
+  day: MyString
+  start_minute: 1
+  end_minute: 1

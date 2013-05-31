@@ -1,0 +1,45 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'nav'
+
+= head_text @title
+#search_query_block
+  - form_tag "", :method => "get" do
+    = text_field_tag :query, params[:query], { :maxlength => 50, :id => "admin_search_query" }
+    = submit_tag "Find", { :id => "admin_search_submit", :disabled => true  }
+
+%h2
+  = @title
+  
+.clear
+
+%table.dataset.jumptable.striped
+  %thead
+    %tr
+      = sort_link 'ID', :id
+      = sort_link 'Advertiser', :advertiser_name  
+      = sort_link 'Name', :business_name  
+      = sort_link 'Title', :title  
+      = sort_link 'Expires', :expires_on, :css=>'date'  
+      = sort_link 'Created', :created_at, :css=>'date'  
+      = sort_link 'Modified', :updated_at, :css=>'date'  
+        
+  %tbody
+    - @offers.each do |offer|
+      %tr
+        %td.title
+          = link_to offer.id, [:admin, offer]
+        %td
+          = h offer.advertiser_name
+        %td
+          = h offer.business_name  
+        %td
+          = h offer.title
+        = render_expires_date(offer)
+        %td.date
+          = date_format offer.created_at
+        %td.date
+          = date_format offer.with_advertiser_updated_at
+
+
+= will_paginate @offers

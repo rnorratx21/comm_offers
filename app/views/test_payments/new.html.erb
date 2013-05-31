@@ -1,0 +1,31 @@
+<% form_for @test_payment, :url => test_payments_path, :html => { :method => :post } do |form| %>
+  <p>
+    <%= form.label :email %><br />
+    <%= form.text_field :email %>
+  </p>
+  <p>
+    <%= form.label :first_name %><br />
+    <%= form.text_field :first_name %>
+  </p>
+  <p>
+    <%= form.label :last_name %><br />
+    <%= form.text_field :last_name %>
+  </p>
+  <p>
+    <%= form.label :credit_card_number %><br />
+    <%= form.text_field :credit_card_number %>
+  </p>
+  <p>
+    <%= form.label :zip_code %><br />
+    <%= form.text_field :zip_code %>
+  </p>
+  <p>
+    <%= form.label :month %><br />
+    <%= form.text_field :month %>
+  </p>
+  <p>
+    <%= form.label :year %><br />
+    <%= form.text_field :year %>
+  </p>
+  <%= form.submit "Go" %>
+<% end %>

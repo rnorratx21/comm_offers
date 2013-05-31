@@ -1,0 +1,34 @@
+<% content_for :head do %>
+<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+<script>
+$(document).ready(function() {
+	$(".phone_number").mask("(999) 999-9999", {placeholder:" "});
+	var mapManager = new MapManager( { 
+		divId: 'map_canvas', 
+		lngInputId: 'advertiser_address_attributes_lng', 
+		latInputId: 'advertiser_address_attributes_lat', 
+		lat:<%= @advertiser.address.lat %>, 
+		lng:<%= @advertiser.address.lng %>, 
+		supportMarkerDragging: true, 
+		locateAddressId: 'locateAddress', 
+		getCurrentAddress: function() {  
+			var address = $('#advertiser_address_attributes_street').val();
+			var state = $('#advertiser_address_attributes_state').val();
+			var city = $('#advertiser_address_attributes_city').val();
+			return address + ", " + city + ", " + state + ", USA"; 
+		} 
+	} );
+});
+</script>
+<% end %>
+
+<%= head_text "Edit Your Merchant Information" %>
+
+<% form_for @advertiser, :url => advertiser_path, :html => { :method => :put } do |f| %>
+  <%= render :partial => "fields", :locals => {:f => f} %>
+	<%= f.submit "Save" %>
+	<span class="secondary_action">
+		or
+		<%= link_to 'return to your account', account_path %>
+	</span> 
+<% end %>

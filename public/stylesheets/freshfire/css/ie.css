@@ -1,0 +1,65 @@
+#headerWrap p {
+	*height: 151px; /* fix for ie7 */
+}
+
+#mainMenu ul ul li {
+	*display: inline;
+}
+
+/* jQuery Cycle fix */
+#slideshow li {
+	height: 348px;
+	overflow: hidden;
+}
+
+/* PAGE NAVIGATION */
+#page-nav a {
+	-moz-border-radius: 0;
+	background: none;
+	background-color: #f8f7f5;
+	border: 0;
+	margin-right: 4px;
+	text-align: center;
+	display: block;
+	float: left;
+	border: 1px solid #e5e2d8;
+}
+
+#page-nav a.current {
+	background-color: #e1ded1;
+	border: 1px solid #d4d0c0;
+	padding: 6px 10px;
+}
+
+/* CONTENT TOGGLE */
+#contentWrap h4.toggle {
+	margin: 0 0 0 0\9; /* fix for IE8 */
+	padding: 0 0 10px 0\9;
+}
+
+#contentWrap h4.toggle {
+	*margin: 0 0 10px 0; /* set it back for IE7 */
+	*padding: 0 0 0 0;
+}  
+
+/* FORM CSS */
+form fieldset p input,
+form fieldset p textarea {
+	padding: 12px 5px 0 5px;
+}
+
+
+/* PAGE NAV */
+#page-nav a {
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#E6E6E6'); /* IE6,IE7 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#E6E6E6')"; /* IE8 only */
+}
+
+#page-nav a.current {
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#AFAFAF'); /* IE6,IE7 only */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#777777', EndColorStr='#AFAFAF')"; /* IE8 only */
+}
+
+.full-width #slideshow {
+	background-color: transparent !important; /* overrule javascript inline stylesheet */
+}

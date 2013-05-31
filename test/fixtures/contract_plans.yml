@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+magenta:
+  system_key: magenta
+  name: Magenta
+  setup_amount: 100
+  installment_amount: 200
+  due_on_day: 27
+  installments: 12
+  period: month
+  is_default: true
+
+jade:
+  system_key: jade
+  name: The Jade
+  setup_amount: 0
+  installment_amount: 25
+  due_on_day: 20
+  installments: 12
+  period: month
+  is_default: false
+  
+# gold:
+#   name: Gold
+#   installment_amount: 59
+# 
+# platinum:
+#   name: Platinum
+#   installment_amount: 199

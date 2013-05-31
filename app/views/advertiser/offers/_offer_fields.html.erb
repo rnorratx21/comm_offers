@@ -1,0 +1,41 @@
+<%= form.labeled_text_field :headline, :label => offer_label_for(:headline), :required => true, :hint => "eg: \"10% Off\" (~3 words)", :class => "narrow" %>
+<%= form.labeled_text_field :title, :label => offer_label_for(:title), :required => true, :hint => "eg: \"Best Deal on Home Theatre\" (~8 words)" %>
+<%= form.labeled_text_area :description, :label => offer_label_for(:description), :required => true, :hint => "(~40 words)" %>
+<%= form.labeled_text_field :hours, :label => offer_label_for(:hours), :required => true, :hint => "(~40 words)" %>
+<%= form.labeled_text_field :effective, :label => offer_label_for(:effective), :required => true, :hint => "eg: \"Weeknights After 5pm\"" %>
+<%= form.labeled_text_field :disclaimers, :label => offer_label_for(:disclaimers), :required => false, :hint => "eg: \"Limit one use per day\"" %>
+
+<p class="field">
+  <%= form.label :expires_on, offer_label_for(:expires_on) %>
+  <span class="required">*</span><br />
+  <%= form.date_select :expires_on, :start_year => Date.today.year %>
+</p>
+<p class="field">
+  <% unless @offer.new_record? or @offer.payment_methods.blank? %>
+    <strong>Payment Methods</strong> (old string value): <%= @offer.payment_methods %>
+  <% end %>
+</p>
+<p class="field">
+	<%= render :partial => 'advertiser/offers/offer_accepted_payment_types', 
+	    :locals => {:form_helper => form, :offer => @offer,
+	                :field_param => 'offer[accepted_payment_types][]'} %>
+</p>
+
+<p class="field">
+  <%= label_tag :mobile, "Do you provide in-home or delivery service in your service area?", :class => "model_label" %>
+  <% checked = @offer.mobile %>
+  <%= form.radio_button :mobile, "yes", :checked => checked %>
+  <%= label :"#{form.object_name}_mobile", 'yes', nil, :class => "model_label" %>
+  &nbsp;
+  <%= form.radio_button :mobile, "no", :checked => !checked %>
+  <%= label :"#{form.object_name}_mobile", 'no', nil, :class => "model_label" %>
+</p>
+
+<% if current_admin %>
+	<%= form.labeled_text_field :sms_marketing_info, :label => "SMS Marketing Info", :required => true, :hint => "eg: \"OFFERS PIZZA to 46786\"" %>
+<% end %>
+
+<p class="field">
+  <%= form.label :category, "Category", :class => "model_label" %>
+  <%= form.collection_select :category_id, @categories, :id, :name %>
+</p>

@@ -1,0 +1,15 @@
+%table.dataset.jumptable
+  %thead
+    %tr
+      %th ID
+      %th Name
+      -if @can_update
+        %th Edit
+      
+  %tbody
+    - for group_contract_plan in group_contract_plans
+      %tr
+        %td.title= group_contract_plan.id
+        %td.title= link_to group_contract_plan.name, admin_group_contract_plan_path(group_contract_plan.id)
+        -if @can_update
+          %td= link_to "Edit", edit_admin_group_contract_plan_path(group_contract_plan.id)

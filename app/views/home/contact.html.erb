@@ -1,0 +1,34 @@
+<%= head_text "Contact Us" %>
+<p><strong>Please let us know how we can assist you:</strong></p>
+<h3>Consumers:</h3>
+<p>
+	<%= mail_to "customersupport@communityoffers.com" %>
+</p>
+
+<h3>Our Advertisers:</h3>
+<p>
+	For questions about advertising: <%= mail_to "sales@communityoffers.com" %><br />
+	For billing questions: <%= mail_to "billing@communityoffers.com" %><br />
+	For business development: <%= mail_to "info@communityoffers.com" %><br />
+</p>
+
+<h3>Our Website:</h3>
+<p>
+	For questions about our privacy policy: <%= mail_to "privacy@communityoffers.com" %><br />
+	For issues with spam: <%= mail_to "spam@communityoffers.com" %><br />
+	For technical issues: <%= mail_to "webmaster@communityoffers.com" %><br />
+</p>
+
+<p>
+  <strong>You can also reach us during our regular business hours:</strong><br /> 
+	<%= render :partial => 'phone_contact_us_text' %>
+</p>
+<p>
+<strong>Or via mail:</strong><br />
+Community Offers<br />
+12400 Highway 71 W, Suite 350<br />
+Austin, TX 78738<br />
+</p>
+<p>
+	Link to us on <%= link_to "Twitter", $twitter_url, :target => "_blank" %> and <%= link_to "Facebook", $facebook_url, :target => "_blank" %>.  We welcome your feedback.
+</p>

@@ -1,0 +1,26 @@
+<%= head_text "Offer Zip Codes" %>
+<div id="flash"><%= flash[:key] %></div>
+<div class="rounded section">
+  <h3 class="section">Existing Zip Codes</h3>
+  <% if @offer.zip_codes? %>
+		<ul class="points">
+		  <% @offer.zip_codes.each do |zip_code| %>
+		    <li><span class="model_data"><%= zip_code.zip_code %></span>&nbsp;&nbsp;<%= link_to "remove", delete_zip_advertiser_offer_path(@offer, :zip_id => zip_code.id), :class => 'action'%></li>
+		  <% end %>
+		</ul>
+	<% end %>
+</div>
+
+<% form_for [:advertiser, @offer], :url => update_zip_advertiser_offer_path(@offer), :html => { :method => :put } do |form| %>
+
+  <div class="rounded section">
+		<h3 class="section">Add New Zip Code</h3>
+		<% fields_for :zip_codes do |z_form| %>
+		    <%= z_form.labeled_text_field :zip_code, :text => "Zip" %>
+		<% end %>
+		<%= form.submit %>
+	</div>
+
+<% end %>
+
+<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>

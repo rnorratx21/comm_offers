@@ -1,0 +1,135 @@
+/* @override http://localhost:3000/stylesheets/text.css */
+
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+hr.tall{
+  margin:2em 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 19px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 15px;
+}
+
+h1.short, h2.short, h3.short, h4.short, h5.short {
+  margin-bottom: 0;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 20px;
+}
+
+.small, small{font-size: 85%; font-weight:normal;}
+.grey{color: grey;}
+
+dl dt, dl dd{float: left; margin: 0;}
+dl dd{margin-left: 0.5em}
+dl dt{clear: left;}
+dl{clear:both;float: left; width: 100%; margin:0 0 0.5em;}
+
+div.invoice{
+  position: relative;
+  background: #eeeeee;
+  border: 1px solid #bbb;
+  padding: 2em;
+  clear: both;
+  margin: 0 0 2em 0;
+}
+div.payment div.credit_note{
+  background: white;
+}
+.invoice h1.paid{
+  position:absolute;
+  left: 20px;
+  top: 200px;
+  font-size: 700%;
+  color: #7FC07F;
+  -webkit-transform: rotate(-20deg); 
+  -moz-transform: rotate(-20deg);	
+
+}
+.invoice.payment h1.invoice{
+  color: green;
+}
+.invoice.credit_note h1.invoice{
+  color: red;
+}
+
+h1 small, h2 small, h3 small{font-weight: normal; font-size: 70%;}
+.grey{color: #555;}
+
+.red{color: red;}

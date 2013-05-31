@@ -1,0 +1,145 @@
+<% body_id "advertiser_signup" %>
+<% nav_step 4 %>
+<div class="step_header">
+	<%= signup_step_header(7, "Choose a Plan") %>
+	<p>Compare the benefits of each plan below, and choose the one that makes the most sense for your business.	</p>
+</div>
+<div class="clear"></div>
+
+<%= render_group_contract_plan_discount_coupons %>
+
+<% gold_plan = ContractPlan.find_by_system_key("gold") %>
+<% platinum_plan = ContractPlan.find_by_system_key("platinum") %>
+<% diamond_plan = ContractPlan.find_by_system_key("diamond") %>
+
+<div id='plan_wrapper'>
+<% signup_update_form do |advertiser_form| %>	
+  <%= current_step_tag %>
+
+<div id='plan_summary_wrapper'>
+  <ul class='plan_summary'>
+    <li id='gold_summary'>
+      <%= plan_summary_title(gold_plan) %>
+      <div class='summary'>
+        <div class='summary_content'>
+          <div class='desc'>Perfect for local businesses looking for extra web exposure in their community!</div>
+          <h4>Included Benefits</h4>
+          <ul class='features'>
+            <li>Establish a neighborhood presence in your immediate zip code area</li>
+            <li>Searchable, printable, special offer coupon on the Community Offers web site</li>
+            <li>Social media integration</li>
+          </ul>
+        </div>
+        <%= plan_summary_price_line(gold_plan) %>
+        <%= plan_selection_line(advertiser_form, gold_plan) %>
+      </div>
+    </li>
+    <li id='platinum_summary'>
+      <%= plan_summary_title(platinum_plan) %>
+      <div class='summary'>
+        <div class='summary_content'>
+          <div class='desc'>For local businesses looking for extra exposure, online and offline, in their local market area</div>
+          <h4>Included Benefits</h4>
+          <ul class='features'>
+            <li>All the benefits of the <span class='includes_other_plan'><%= gold_plan.name %>.</span></li>
+          </ul>
+          <h4>PLUS:</h4>
+          <ul class='features'>
+            <li>Inclusion on our exclusive Community Offers loyalty card for your area.</li>
+            <li>Inclusion on our unique area-of-town QR code and mobile apps.</li>
+            <li>SMS texting of coupons with unique Keyword string for your business.</li>
+          </ul>
+        </div>
+        <%= plan_summary_price_line(platinum_plan) %>
+        <%= plan_selection_line(advertiser_form, platinum_plan) %>
+      </div>
+    </li>
+    <li id='diamond_summary'>
+      <%= plan_summary_title(diamond_plan) %>
+      <div class='summary'>
+        <div class='summary_content'>
+          <div class='desc'>For businesses seeking a total marketing and customer experience, online and offline</div>
+          <h4>Included Benefits</h4>
+          <ul class='features'>
+            <li>
+              All the benefits of the <span class='includes_other_plan'><%= gold_plan.name %></span>
+              and <span class='includes_other_plan'><%= platinum_plan.name %></span>.</li>
+          </ul>
+          <h4>PLUS:</h4>
+          <ul class='features'>
+            <li>Personalized QR code and individual mobile site for your business.</li>
+            <li>Personalized push marketing programs with opt-in email and texting opportunities</li>
+          </ul>
+        </div>
+        <%= plan_summary_price_line(diamond_plan) %>
+        <%= plan_selection_line(advertiser_form, diamond_plan) %>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class='clear'></div>
+<div id='plan_addon_wrapper'>
+  <h3>Optional Add-On's to Upgrade Your Plan</h3>
+  <ul>
+    <% addons_available_for_all_plans.each do |feature| %>
+      <li><%= feature.description %> <span class='addon_amount'>(add $<%= feature.amount %>/month)</span></li>
+    <% end -%>
+  </ul>
+</div>
+<table id='plan_grid'>
+  <tr>
+    <th class='plan_feature_comparison'>Plan Feature Comparisons</th>
+    <th class='plan'><%= gold_plan.name %></th>
+    <th class='plan'><%= platinum_plan.name %></th>
+    <th class='plan'><%= diamond_plan.name %></th>
+  </tr>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Additional Service Area Zips",
+    :specific_details => {:gold => "Up to 3", :platinum => "Up to 5", :diamond => "Up to 10" }
+    } 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "An online, searchable coupon on communityoffers.com",
+    :plans => %w[gold platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Address and phone number for a single retail location",
+    :plans => %w[gold platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Upload your logo",
+    :plans => %w[gold platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Links to your website, twitter and facebook pages",
+    :plans => %w[gold platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Add personalized coupon offers",
+    :specific_details => {:gold => "Only one offer allowed", :platinum => "Up to 3", :diamond => "Up to 5", }
+  }
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Inclusion on your neighborhood loyalty card",
+    :plans => %w[platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Inclusion on our QR code with neighborhood mobile app",
+    :plans => %w[platinum diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Personal QR code for your details page and marketing use plus personalized mobile app",
+    :plans => %w[diamond]} 
+  %>
+  <%= render :partial => 'plan_table_benefit', :locals => {
+    :text => "Personalized, integrated push marketing campaigns with SMS text and mobile apps",
+    :plans => %w[diamond]} 
+  %>
+
+</table>
+<p>For larger programs, multiple cities, to start a neighborhood loyalty card in your neighborhood or personalized plans, contact us for additional pricing and options.</p>
+  <div style='padding-top: 2em;'>
+	  <%= render 'signup_form_buttons', :form => advertiser_form, :skip_next => true %>
+  </div>
+  <% end %>
+</div> <!-- plan_wrapper -->

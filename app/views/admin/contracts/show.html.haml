@@ -1,0 +1,141 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+
+= head_text "Contract Details"
+
+%h1 
+  Contract
+  %small
+    -if @can_update
+      | 
+      = link_to "Edit", edit_admin_contract_path(@contract)
+
+/ = debug @contract.zip_codes
+
+%h2
+  Contract Value: 
+  = @contract.total_formatted
+  %small.grey= "(#{@contract.total_paid_formatted} paid, #{@contract.total_outstanding_formatted} outstanding)"
+
+- if advertiser
+  %table.dataset.vertical.jumptable
+    %tr
+      %th Advertiser: 
+      %td
+        %div
+          %strong= advertiser.name
+        %dl
+          %dt Address:
+          %dd= address.street
+          %dd= address.city
+          %dd= address.state
+          %dd= address.zip_code
+      %td.edit-link
+        -if @can_update_advertiser
+          = link_to "edit", [:edit, :admin, @contract.advertiser]
+
+    %tr
+      %th Offers: 
+      %td
+        - for offer in offers
+          %div= link_to offer.title, admin_offer_path(offer)
+          %div
+            Zip codes covered:
+            = offer.address.zip_code
+      %td.edit-link
+        edit
+    %tr
+      %th Billing: 
+      %td
+        - if @contract.credit_card
+          %dl
+            %dt Name: 
+            %dd= @contract.credit_card.name
+            %dt Authorization: 
+            %dd= @contract.credit_card.authorization
+            %dt Vault Token:
+            %dd= @contract.credit_card.billing_token
+            %dt Card Number: 
+            %dd= @contract.credit_card.display_number
+            %dt Expiration: 
+            %dd= @contract.credit_card.expires_on.to_s(:expires_on)
+        - else
+          .red
+            No billing information available
+      %td.edit-link
+        -if @can_update
+          = link_to "edit", credit_card_admin_contract_path(@contract)
+    - if @contract.file
+      %tr.contract
+        %th Scanned contract image
+        %td
+          = link_to "View", scanned_image_admin_contract_path(@contract), :target => "_blank"
+        %td &nbsp;
+    %tr
+      %th Sales: 
+      %td
+        = suggested_sales_area
+        = "<div>Sales Area: #{@contract.sales_area.name}</div>" if @contract.sales_area
+        = "<div>Salesperson: #{@contract.salesperson.display_name} </div>" if @contract.salesperson
+        = "<div>Sales Mgr: #{@contract.sales_manager.display_name} </div>" if @contract.sales_manager
+      %td.edit-link
+        -if @can_update
+          = link_to "edit", edit_admin_contract_path(@contract)
+
+    %tr
+      %th Wifi Soft Configuration
+      %td
+        = @contract.wifi_nasid
+      %td.edit-link
+        -if @can_update
+          = link_to "edit", edit_admin_contract_path(@contract)
+
+.clear
+
+#contract
+  %table.dataset.jumptable.striped
+    %thead
+      %tr
+        %th Invoice Amount
+        %th Items
+        %th Period Covered
+        %th Due
+        %th Paid
+        
+    %tbody
+      - for invoice in @contract.invoices
+        %tr
+          %td.title
+            = link_to invoice.total_amount_formatted(:digits => 0), admin_contract_invoice_path(@contract, invoice)
+            %small.grey= "PAID" if invoice.payments.any?
+            = invoice.status
+          
+          %td
+            - for line_item in invoice.line_items
+              %div
+                = line_item.description
+                \:
+                = line_item.net_amount_formatted(:digits => 0)
+
+          %td
+            = invoice.period_start.to_s(:short)
+            to
+            = invoice.period_end.to_s(:short) rescue ""
+          %td
+            = invoice.due_date.to_s(:short)
+            .small.grey
+              = time_ago_in_words(invoice.due_date)
+              = future?(invoice.due_date.to_time) ? "from now" : "ago"
+              
+
+          %td
+            - for payment in invoice.payments
+              %div
+                = link_to "#{payment.total_amount_formatted(:digits => 0)} on #{payment.created_at.to_s(:short)}", admin_contract_payment_path(@contract, payment)
+                .small.grey
+                  = time_ago_in_words(payment.created_at)
+                  = future?(payment.created_at.to_time) ? "from now" : "ago"       
+%hr
+  
+  

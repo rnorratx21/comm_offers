@@ -1,0 +1,121 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'nav'
+=head_text "Edit Offer"
+%p
+  This offer is currently:
+  %strong= @offer.state.titlecase
+- if @can_update
+  - form_for [:admin, @offer] do
+    - @offer.aasm_events_for_current_state.each do |event|
+      %button{ :name => "event", :value => event.to_s }
+        = event.to_s.titlecase
+
+%hr.tall
+%h2 
+  = link_to "Report (from Merchant Dashboard)", offer_report_merchant_dashboard_path(:offer_id => @offer) 
+
+%hr.tall
+.offers
+  %h2 Preview
+  .offer.rounded
+    = render "search/offer_badge", :offer => @offer, :origin => @location, :activate_go_button => true
+.clear
+
+%hr.tall.tall
+
+%h2 Contract
+- if @offer.contract
+  = render :partial => "admin/contracts/list", :object => [@offer.contract]
+- else
+  %p 
+  - if @offer.advertiser.group
+    No contract on file. Build one now: 
+    &nbsp; | &nbsp;
+    - for plan in ContractPlan.by_group([@offer.advertiser.group_id]).all
+      %strong= link_to plan.name, new_admin_contract_path(:contract_plan_id => plan.id, :contract => {:offer_ids => [@offer.id]})
+      &nbsp; | &nbsp;  
+%hr.tall
+
+%h2 Offer Info
+%dl
+  %dt This offer was created at:
+  %dd= @offer.created_at.to_s(:admin)
+  %dt This offer was last updated at:
+  %dd= [ @offer.updated_at, @offer.advertiser.updated_at ].max.to_s(:admin)
+
+
+%hr.tall
+%h2 Advertiser Contact Info
+%dl
+  %dt Address
+  %dd= h @offer.address.full
+  %dd= h @offer.address.phone_number
+  %dt Is TabbedOut Customer?
+  %dd= show_toggle_tabbed_out
+
+%hr.tall
+%h2 Users Associated with this Offer
+%table.dataset.jumptable.striped
+  %thead
+    %tr
+      %th ID
+      %th Email
+      %th &nbsp;
+  %tbody
+    - @offer.advertiser.users.each do |user|
+      %tr
+        %td= link_to user.id, [:admin, user]
+        %td= user.email
+        -if @can_pose
+          %td= pose_as_user_link(user)
+
+%hr.tall
+%h2 Most Recent Changes
+%table.dataset.striped
+  %thead
+    %tr
+      %th Action
+      %th Time
+      %th User
+  %tbody
+    - @offer.audits.all(:limit => 5, :order => "created_at desc").each do |audit|
+      %tr
+        %td
+          = audit.action
+          = "(#{link_to "details", [:admin,@offer,audit]})"
+        %td= audit.created_at.to_s(:short)
+        - if audit.user_id 
+          %td= link_to audit.user.email, [:admin,audit.user] 
+= link_to "all", [:admin,@offer,:audits]
+
+%hr.tall
+%h2 Post about this offer on Facebook
+=link_to 'Update Facebook', edit_facebook_path
+
+%hr.tall
+%h2 Contract Plan Info
+- if @offer.contract and @offer.contract_plan
+  %dl
+    %dt Plan
+    %dd= @offer.contract_plan.name
+- else
+  %p
+    No plan yet
+  = link_to "create", new_admin_offer_plan_path(@offer)
+
+%hr.tall
+%h2 Cheddar Getter Credit Card Transactions
+%table.dataset.striped
+  %thead
+    %tr
+      %th Type
+      %th Time
+      %th Amount
+  %tbody
+    - @offer.transactions.each do |t|
+      %tr
+        %td= t.invoice_type
+        %td= t.transaction_at.to_s(:admin)
+        %td= number_to_currency(t.amount)
+    

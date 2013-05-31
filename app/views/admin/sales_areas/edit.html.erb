@@ -1,0 +1,19 @@
+<%= render 'admin/nav' %>
+<%= render 'admin/sales_reporting/nav' %>
+<% head_text "Manage #{@sales_area.name} Sales Area" %>
+
+<% form_for [:admin, @sales_area] do |f| %>
+  <p>
+    <%= f.label :name %>: <%= f.text_field :name %> <%= f.submit "Update Name", :disable_with => 'Updating...' %>
+  </p>
+<% end %>
+
+<h2>Zip Codes in Sales Area</h2>
+<% form_tag 'add_zip_code', :url => add_zip_code_admin_sales_area_path(@sales_area) do %>
+  <% @sales_area.sales_area_zip_codes.by_zip.each do |sales_zip| %>
+    <% zip = sales_zip.zip_code %>
+    <li><%= zip.zip_code %> (<%= zip.city %>, <%= zip.state %>) | <%= link_to "Remove", remove_zip_code_admin_sales_area_path(@sales_area, :sales_area_zip_code_id => sales_zip), :confirm => "Are you sure you want to remove zip code #{zip.zip_code}?", :method => :delete %></li>
+  <% end %>
+  <%= text_field_tag :zip_code %>
+  <%= submit_tag 'Add' %>
+<% end %>

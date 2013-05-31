@@ -1,0 +1,20 @@
+<%= head_text "Edit Offer" %>
+<p>
+	<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>
+</p>
+<div class="section">
+	<% form_for [:advertiser, @offer], :url => advertiser_offer_path(@offer), :html => { :method => :put } do |form| %>
+    <h2 class="section">Advertiser Info</h2>
+    <p><%= edit_advertiser_fields_instructions %></p>
+    <%= render :partial => 'advertiser/offers/alternate_advertiser_fields', :locals => {:form => form} %>
+	  <h2 class="section">Offer</h2>
+		<%= render :partial => 'offer_fields', :locals => {:form => form} %>   
+		<%= form.submit "Save" %>
+	<% end %>
+</div>
+
+<%= link_to 'return to your offer', advertiser_offer_path(@offer), :class => "action" %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'admin_offer' %>
+<% end %>

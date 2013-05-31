@@ -1,0 +1,21 @@
+<div class='pitch'>
+  <h3 class='three_steps'>Three steps to finding new customers!</h3>
+	<ul id="steps">
+		<li class='one <%= "current" if step == 'one'%> <%= 'previous' if %(two three).include? step %>'>
+      <%= signup_arrow if step == 'one' %>
+		  Create an Account
+		</li>
+		<li class='two <%= "current" if step == 'two'%> <%= 'previous' if step == 'three' %>'>
+      <%= signup_arrow if step == 'two' %>
+		  Choose your plan options
+		</li>
+		<li class='three <%= "current" if step == 'three'%>'>
+		  <%= signup_arrow if step == 'three' %>
+		  Add your offer for a FREE 24-hour trial! <span class='sub'>No Credit Card Required</span>
+		</li>
+	</ul>
+	<% if step == 'one' %>
+  	<h2 class='start'>Let's get started...</h2>
+  <% end %>
+  <%= image_tag 'fairy.png' %>
+</div>

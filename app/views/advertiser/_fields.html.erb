@@ -1,0 +1,29 @@
+<div class='left'>
+  <%= f.labeled_text_field :name, :text => "Business Name", :required => true %>
+  <% f.fields_for :address do |address| %>
+  	<%= address.labeled_text_field :street, :text => "Address", :required => true %>
+  	<%= address.labeled_text_field :city, :required => true %>
+  	<%= address.labeled_select_field :state, state_select_options, :required => true %>
+  	<%= address.labeled_text_field :zip_code, :value=>@advertiser.address.zip_code, :required => true %>
+  	<%= address.labeled_text_field :phone_number, :text=> "Phone Number", :required => true, :class => "narrow phone_number" %>
+  	<%= address.hidden_field :lat %>
+  	<%= address.hidden_field :lng %>
+  	<p class="field">
+  		<%= address.check_box :lat_lng_set_manually %>
+  		<%= address.label :lat_lng_set_manually, "Set address on the map" %>
+  	</p>
+  <% end %>
+</div>
+<div class='left'>
+  <div id="map_canvas" style="height: 300px; width: 450px; "></div>
+	<a id="locateAddress" href="javascript:void(0);">Show on the map</a>
+</div>
+<div class='clear'></div>
+
+<%= f.labeled_text_field :website_url, :text => "Website URL", :hint => "eg: http://communityoffers.com" %>
+<%= f.labeled_text_field :facebook_url, :text => "Facebook URL", :hint => "eg: http://facebook.com/communityoffers" %>
+<%= f.labeled_text_field :twitter_url, :text => "Twitter URL", :hint => "eg: http://twitter.com/communityoffers" %>
+
+<div class='clear'></div>
+
+

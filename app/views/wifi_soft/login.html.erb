@@ -1,0 +1,29 @@
+<% head_text "You're only a few seconds away from being online!" %>
+
+<% if is_wifi_linked_to_merchant? %>
+  <div class='featured_offer_panel right'>
+    <%= render :partial => 'offers/featured_offer_capsule', :locals => {:featured_offer_title => "Today's Offer"} %>
+  </div>
+  <h2><%= "#{@returning ? 'Welcome Back!' : 'Welcome!'}" %></h2>
+  <div><%= textilize_without_paragraph @wifi_login.contract.wifi_login_page_message %></div>
+    <div id='login_form'>
+      <% form_for @wifi_login, :url => complete_registration_wifi_soft_path(:wifi_login_id => @wifi_login), :html => {:method => :post} do |f| %>
+        <%# if returning, just allow "connect/submit button" %>
+        <% unless @returning %>
+          <p><%= f.label :first_name %> <%= f.text_field :first_name %></p>
+          <p><%= f.label :last_name %> <%= f.text_field :last_name %></p>
+          <p><%= f.label :mobile_phone %> <%= f.text_field :mobile_phone %></p>
+          <p><%= f.label :email %> <%= f.text_field :email %></p>  
+        <% end %>
+        <p class='submit_btn'><%= image_submit_tag "wifi/connect.png" %></p>
+      <% end %>
+    </div>
+  <div class='clear'></div>
+<% else %>
+  <p>Oops, it looks like we're having a problem identifying the devise you're connecting to.  Please close your browser and try again, or you can contact us for assistance:</p>
+  <%= render :partial => "home/phone_contact_us_text" %>
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag  'wifi', 'featured_offer_capsule' %>
+<% end %>

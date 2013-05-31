@@ -1,0 +1,16 @@
+%ul.black.menu
+  %li{:class => ("active" if params[:controller] == "admin/contracts")}
+    = link_to "Contracts", admin_contracts_path
+
+  %li{:class => active_if({:controller => "admin/invoices", :action => "index"})}
+    = link_to "Coming Due", admin_invoices_path
+
+  %li{:class => active_if({:controller => "admin/invoices", :action => "past_due"})}
+    = link_to "Past Due", past_due_admin_invoices_path
+
+  %li{:class => active_if({:controller => "admin/payments", :action => "index"})}
+    = link_to "Paid", admin_payments_path
+
+  %li{:class => active_if({:controller => "admin/payments", :action => "paid_by_date"})}
+    = link_to "Paid by Date", paid_by_date_admin_payments_path
+    

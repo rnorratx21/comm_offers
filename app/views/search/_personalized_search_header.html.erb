@@ -1,0 +1,16 @@
+<% @body_class = "mid_bg" %>
+<div id='personalized_header'>
+  <h2><%= image_tag "04_maps_tiny.png" %> Suggested Offers for <%= current_user.first_name %>.</h2>
+  <p class='desc'>We've listed offers based on your preferences.  <%= link_to "Edit your preferences", consumer_preferences_path %> or <%= link_to "Begin a New Search", search_path(:search_text => current_user.profile.home_zip_code.zip_code) %></p>
+  <div id='preferences'>
+    <div class='left zips'>
+      <h3>Your Preferred Zip Codes</h3>
+      <p><%= list_preferred_values("zip_codes") %></p>
+    </div>
+    <div class='left categories'>
+      <h3>Your Preferred Categories</h3>
+      <p><%= list_preferred_values("categories") || "All Categories" %></p>
+    </div>
+    <div class='clear'></div>
+  </div>
+</div>

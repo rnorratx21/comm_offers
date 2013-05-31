@@ -1,0 +1,21 @@
+<%= head_text "My Account" %>
+
+<%= dashboard_salutation %>
+<ul class='links'>
+  <li><%= link_to "User Information", edit_account_path %></li>
+  <li><%= link_to "Account Preferences", consumer_preferences_path %></li>
+</ul>
+<div class='wrapper to_wrap'>
+  <div class='tracked_offers'>
+    <%= render :partial => 'consumer/shared/tracked_offers', :locals => {:tracked_offers => @user.tracked_offers} %>  
+  </div>
+</div>
+<div class='wrapper so_wrap'>
+  <div class='suggested_offers'>
+    <h2><%= link_to "See Personalized Offers Based on Your Preferences", personalized_search_path %></h2>
+  </div>
+</div>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'account','consumer' %>
+<% end %>

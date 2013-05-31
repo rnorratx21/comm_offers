@@ -1,0 +1,10 @@
+- body_id "admin"
+= render "admin/nav"
+%h2
+  Category Types
+%ul.dataset.big
+  - @category_types.each do |category_type|
+    %li
+      = link_to category_type.name, [:admin, category_type, :categories]
+-if @can_create  
+  = link_to 'new', new_admin_category_type_path

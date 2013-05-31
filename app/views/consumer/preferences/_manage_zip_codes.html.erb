@@ -1,0 +1,10 @@
+<% if @profile.preferred_zip_codes.any? %>
+  <ul class='zip_codes'>
+  <% @profile.preferred_zip_codes.each do |pz| %>
+    <li><%= pz.value %> (<%= "#{pz.zip_code.city}, #{pz.zip_code.state}" %>) | <%= link_to "Remove", remove_zip_code_consumer_preferences_path(:id => pz.id), :method => :delete, :confirm => "Are you sure you want to remove the zip code #{pz.value}?" %></li>
+  <% end %>
+  </ul>
+<% end %>
+<% form_tag(add_zip_code_consumer_preferences_path) do %>
+  <%= text_field_tag "zip_code", '', :size => 6 %> <%= submit_tag "Add Zip Code" %>
+<% end %>

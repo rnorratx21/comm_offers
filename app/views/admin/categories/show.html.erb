@@ -1,0 +1,13 @@
+<% body_id "admin" %>
+<%= render 'admin/nav' %>
+
+<h2>Offers in <%= h @category.name %> </h2>
+<% if @offers.empty? %>
+  <p>No offers in this category.</p>
+<% else  %>
+  <ul>
+    <% @offers.each do |offer| %>
+      <li><%= link_to offer.business_name, offer %></li>
+    <% end %>
+  </ul>
+<% end %>

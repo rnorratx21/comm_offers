@@ -1,0 +1,9 @@
+$.modal("<%= escape_javascript(render(:partial => "consumer/users/terms_popup")) %>",{ 
+  opacity: 25, 
+  overlayCss: {backgroundColor:"#000"},
+  overlayClose: true
+});
+
+$("a.close_modal").click(function(){
+  $.modal.close();
+});

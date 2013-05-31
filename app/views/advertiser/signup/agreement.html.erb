@@ -1,0 +1,99 @@
+<% body_id "advertiser_signup" %>
+<% nav_step 5 %>
+
+<div class='step_header'>
+  <%= signup_step_header(10, "Agreement") %>
+</div>
+<div id='agreement_wrapper' class='signup_content'>
+  <% signup_update_form do |form| %>
+    <%= current_step_tag %>
+    <%# render 'platinum_warning' %>
+  <h2>You are about to agree to a 12-month Advertising Agreement</h2>
+    <p>
+      
+    </p>
+  <h2>Your Plan <span class='change_plan'>| <%= link_to "change", plan_advertiser_signup_path %></span></h2>
+  <%= render :partial => 'order', :object => @order %>
+  <div class='discount_code_wrapper'>
+    <div class='discount_entry left'>
+      <h3>Apply Discount Code</h3>
+      <%= text_field_tag "discount_code", nil, :class => 'narrow' %>  <%= form.submit "Apply" %>
+    </div>
+    <div class='discount_reminder left'>
+      <% if !@offer.contract.contract_discount and @offer.get_discount %>
+        <h3 class='prompt'>Don't Forget!</h3>
+        <%= render_discount_reminder %>
+      <% end -%>
+    </div>
+    <div class='clear'></div>
+  </div>
+  <h2>Agreement</h2>
+  <div id='agreement_terms'>
+    <% if @selected_plan == "gold" %>
+      <p>
+        <strong>Gold Package</strong> includes an online searchable coupon to be placed within the agreed upon zip codes on the 
+        communityoffers.com Web site. Web site is promoted via distribution locations and in advertising placed in local 
+        Real Estate and/or Apartment Publications.
+      </p>
+    <% else %>
+      <p>
+        <strong>Platinum Package</strong> includes placement of your offer on the Community Offers Loyalty Card. 
+        The Loyalty Card is distributed through 16 local merchants in the card area as well as other retail locations including select area grocery stores. 
+        The Loyalty Card offers Platinum Advertisers exclusivity for their defined business category, on the loyalty card within their assigned area. 
+        Loyalty cards are updated and printed three times annually. Community Offers will also provide Platinum Advertisers an online searchable coupon 
+        to be placed within a geographical offers section on the CommunityOffers.com Web site.
+      </p>
+    <% end -%>
+    <p>
+      I understand that this agreement is for a twelve (12) month term and will continue thereafter until I give Community Offers 
+      a ninety (90) day written notice of termination, sent via Certified Mail. I will be charged for my plan prior to the first of each month. 
+      The initial month's fee and setup costs will be charged upon your first invoice. Credit card, debit card and electronic funds transfer (EFT), 
+      or check payments must be received by us to begin listing your offer. We will notify you in writing by email or mail should your payment 
+      not be received on time. Unpaid amounts beyond thirty (30) days are subject to 2% interest per month and a late fee of $25 per month. 
+      This Agreement shall be binding upon Advertiser’s successors and assigns and such successors and assigns must continue to honor the Agreement 
+      for the remainder of its then current term.
+    </p>
+    <p>
+      Any failure to honor the loyalty card, web coupons, SMS texting coupons or coupons on the accompanying Community Offers mobile sites 
+      will be deemed to be a business libel to Community Offers which will cause irreparable harm to the business and reputation of 
+      Community Offers and its other advertisers and may result in litigation. In such event this Agreement shall be terminated immediately 
+      and all amounts due under the Agreement for the remainder of the then current term shall be immediately due and payable to Community Offers. 
+      If Advertiser does not correct this or any other default under this Agreement within 14 days of the date Community Offers sends written notice
+      thereof by mail, then this Agreement shall terminate and all amounts due hereunder for the remainder of the then current term shall be immediately
+      due and payable to Community Offers.
+    </p>
+    <p>
+      <strong>For Platinum Advertising Packages:</strong>Community Offers will place a display rack inside the Advertiser’s place of business 
+      in a location acceptable to Community Offers and Advertiser. Community Offers will maintain, repair and replace such display racks as necessary
+      to keep the rack in good condition. The display rack will contain only such publications and materials as shall be furnished by Community Offers, 
+      its designated employees or agents. Advertiser agrees to indemnify and hold harmless Community Offers and any and all store location Owners/Managers 
+      from any liabilities whatsoever arising from or relating to Advertiser’s advertising materials.
+    </p>
+    <p>
+      This agreement shall be governed by the laws of the state of Texas. If necessary for enforcement of the agreement, suit may be brought by either party
+      and venue shall lie only in Travis County, TX. This agreement contains the entire agreement of the parties and there are no other promises or conditions
+      in any other agreement whether oral or written.
+    </p>
+    <h2>Authorization to Advertise</h2>
+    <p>
+      You acknowledge that you have read and accepted our Terms of Use and Privacy Policy available on our website at www.communityoffers.com as part of this
+      Advertising Agreement.
+    </p>
+    <p>
+      Final authorization for the use of your content on the Community Offers website, SMS text coupons, mobile sites and in print will be provided to you in writing
+      by mail or email by us upon our acceptance of your submitted material.
+    </p>
+    <p>
+      You acknowledge that any changes to your content or offers on the Community Offers website or in print must reviewed by Community Offers for our acceptance.
+    </p>
+  </div>
+    <button name='signup_action' value='agree'>
+      I Accept the Agreement. Submit My Offer.
+    </button>
+    <button name='signup_action' value='cancel'>
+      I Do Not Accept the Agreement. Cancel My Offer.
+    </button>
+    <span class='secondary_action'> or <%= link_to "make changes", offer_advertiser_signup_path %></span>
+  <% end %>
+</div>
+<div class='clear'></div>

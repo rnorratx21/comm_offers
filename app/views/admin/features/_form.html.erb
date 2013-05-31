@@ -1,0 +1,93 @@
+
+<script type="text/javascript">
+  $(function() {
+
+    $("#group_plans").accordion({ autoHeight: false, collapsible: true, active: false });
+		$("#plans").accordion({ autoHeight: false, collapsible: true, active: false });
+  });
+  </script>
+  <p>
+    <label for="name">Title  <%= f.text_field  :title, :value => @feature.title  %></label>
+  </p>
+	  <p>
+    <label for="name">Description  <%= f.text_field  :description, :value => @feature.description  %></label>
+  </p>
+	<p>
+    <label for="name" >Amount  $<%= f.text_field  :amount, :value => @feature.amount, :maxlength=>'6', :style=>"width: 4em;"%></label>
+  </p>
+
+<div id="plans">
+	
+	  <% unless @contract_plans.empty?%>
+	  <h3><a href="#">Contract Plans accepting this feature </a></h3>
+    <table><tr>
+    <th>Active </th>
+    <th>Plan&nbsp;&nbsp;</th>
+    <th>&nbsp;&nbsp;Addon&nbsp;&nbsp;</th>
+    </tr>
+	  <% @contract_plans.each do |plan| %>
+		<tr><td >
+	   <%= check_box_tag(
+        "feature[plan_list][#{plan.id}]", 
+        "1", 
+        @feature_plans.detect{|d| d == plan}) %>
+				</td><td>&nbsp;&nbsp;
+				<%= "#{plan.display_name}"%>
+				      &nbsp;&nbsp;</td><td>&nbsp;
+	     <%= check_box_tag(
+        "feature[addon_plan_list][#{plan.id}]", 
+        "1", 
+        @addon_plans.detect{|d| d == plan}) %>
+        &nbsp;&nbsp;</td><td>
+          <% if @feature.id && ContractPlanFeature.find_by_contract_plan_id_and_feature_id(plan.id, @feature.id) && ContractPlanFeature.find_by_contract_plan_id_and_feature_id(plan.id, @feature.id).quantity %>
+          <%quty = ContractPlanFeature.find_by_contract_plan_id_and_feature_id(plan.id, @feature).quantity%>
+          <%else%>
+          <%quty = 0%>
+          <%end%>
+          <%= text_field_tag  "feature[feature_quantity][#{plan.id}]", quty  , :maxlength=>'3', :style=>"width: 2.5em;"%>
+        </td></tr>
+	  <% end %>
+		      </table>
+  <% end %>
+</div>
+
+<div id="group_plans">
+  
+    <% unless @group_plans.empty?%>
+    <h3><a href="#">Regional Contract Plans accepting this feature </a></h3>
+    <table><tr>
+    <th>Active </th>
+		<th>Region</th>
+		<th>&nbsp;&nbsp;Plan&nbsp;&nbsp;</th>
+		<th>&nbsp;&nbsp;Addon&nbsp;&nbsp;</th>
+		</tr>
+    <% @group_plans.each do |plan| %>
+		<tr><td >
+     <%= check_box_tag(
+        "feature[group_plan_list][#{plan.id}]", 
+        "1", 
+        @group_feature_plans.detect{|d| d == plan}) %>
+		  </td><td>&nbsp;&nbsp;
+        <%= "#{plan.group.name}"%> 
+     &nbsp;&nbsp;</td><td>&nbsp;&nbsp; 
+			  <%= "#{plan.contract_plan.display_name}"%> 
+			&nbsp;&nbsp;</td><td>&nbsp;
+				<%= check_box_tag(
+        "feature[addon_group_list][#{plan.id}]", 
+        "1", 
+        @group_addon_plans.detect{|d| d == plan}) %>
+				&nbsp;&nbsp;</td><td>
+          <% if @feature.id && GroupContractPlanFeature.find_by_group_contract_plan_id_and_feature_id(plan.id, @feature.id) && GroupContractPlanFeature.find_by_group_contract_plan_id_and_feature_id(plan.id, @feature.id).quantity %>
+          <%quty = GroupContractPlanFeature.find_by_group_contract_plan_id_and_feature_id(plan.id, @feature).quantity%>
+          <%else%>
+          <%quty = 0%>
+          <%end%>
+          <%= text_field_tag  "feature[group_feature_quantity][#{plan.id}]", quty  , :maxlength=>'3', :style=>"width: 2.5em;"%>
+        </td></tr>
+    <% end %>
+		</table>
+  <% end %>
+</div>
+
+<br>
+

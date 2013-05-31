@@ -1,0 +1,267 @@
+<% body_id "advertiser_signup" %>
+
+<% content_for :javascript do %>
+<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+  // $(".phone_number").mask("(999) 999-9999", {placeholder:" "});
+  var mapManager = new MapManager( { 
+  	divId: 'map_canvas', 
+  	lngInputId: 'advertiser_offers_attributes_0_address_attributes_lng', 
+  	latInputId: 'advertiser_offers_attributes_0_address_attributes_lat', 
+  	lat:<%= (@offer.address and @offer.address.lat?) ? @offer.address.lat : 30 %>, 
+  	lng:<%= (@offer.address and @offer.address.lng?) ? @offer.address.lng : -97 %>, 
+  	supportMarkerDragging: true, 
+  	locateAddressId: 'locateAddress', 
+  	getCurrentAddress: function() {  
+  		var address = $('#advertiser_offers_attributes_0_address_attributes_street').val();
+  		var state = $('#advertiser_offers_attributes_0_address_attributes_state').val();
+  		var city = $('#advertiser_offers_attributes_0_address_attributes_city').val();
+  // alert(address + ", " + city + ", " + state + ", USA");
+  		return address + ", " + city + ", " + state + ", USA"; 
+  	}
+  } );
+
+});
+</script>
+<% end %>
+
+<% signup_update_form(:multipart => true) do |advertiser_form| %>	
+<% advertiser_form.fields_for :offers do |offer_form| %>
+<% offer_form.fields_for :address do |address| %>
+  <% offer = offer_form.object %>
+  <%= current_step_tag %>
+
+
+  <div class="step_header">
+  	<%= signup_step_header(3, "Add Your Offer") %>
+  </div>
+  <div class="clear"></div>
+
+  <div class='offer_advertiser'>
+    <div class='half-page signup_content'>
+      <p class="field">
+    		<%= required_label advertiser_form, :name, 'Business Name' %>
+    		<%= advertiser_form.text_field :name %>
+    	</p>
+
+      <div class='address_fields left'>
+        <h3 class='sub_head'>Business Address<span id='show_map_option'>
+          <%# link_to "Show Map", "javascript:void(0)", :class => 'show_hide_map' %>
+          <button type='button' class='show_hide_map'>Show Map</button>
+          </span>
+          <%# link_to "Show Map", "javascript:void(0)", :class => 'show_hide_map' %></span>
+        </h3>
+    		<p class="field">
+          <%= required_label address, :street, "Business Street Address" %>
+    			<%= address.text_field :street %><br />
+    		</p>
+    		<p class="field multi_col left">
+          <%= required_label address, :city %>
+    			<%= address.text_field :city, :class => :narrow %>
+    		</p>
+    		<p class="field multi_col left">
+          <%= required_label address, :state %>
+    			<%= address.select(:state, state_select_options) %>
+    		</p>
+    		<div class='clear'></div>
+    		<p class="field multi_col left">
+          <%= required_label address, :zip_code, "Zip Code" %>
+    			<%= address.text_field :zip_code, :class => "narrow zip_code", :size => 5, :maxlength => 5 %>
+    		</p>
+    		<p class="field multi_col left">
+          <%= required_label address, :phone_number, "Business Phone Number" %>
+    			<%= address.text_field :phone_number, :class => "phone_number narrow" %>
+    		</p>
+    		<div class='clear'></div>
+      </div>
+      <div class='clear'></div>
+    
+      <div id='address_map' class='address_map'>
+      		<%= address.hidden_field :lat %>
+      		<%= address.hidden_field :lng %>
+      	<div id="map_canvas" style="height: 300px; width: 450px; "></div>
+  			<div class='map_update'><a id="locateAddress" href="javascript:void(0);">Update Address on Map</a></div>
+      	<p class="field">
+      		<%= address.check_box :lat_lng_set_manually %>
+      		<%= address.label :lat_lng_set_manually, "Pin Current Map Address", :class => 'inline' %>
+      	</p>
+      </div>
+      <div class='clear'></div>
+      <div id='advertiser_sites'>
+        <h3 class='sub_head'>Website and Social Media</h3>
+      	<p class="field left">
+      		<%= advertiser_form.label :website_url, "Your Website<span class='hint'>eg: http://communityoffers.com</span>" %>
+      		<%= advertiser_form.text_field :website_url, :class => "url url_suggest" %>
+      	</p>
+      	<p class="field left">
+      		<%= advertiser_form.label :twitter_url, "Twitter URL<span class='hint'>eg: http://twitter.com/communityoffers</span>" %>
+      		<%= advertiser_form.text_field :twitter_url, :class => "url url_suggest" %>
+      	</p>
+      	<p class="field left">
+      		<%= advertiser_form.label :facebook_url, "Facebook URL<span class='hint'>eg: http://facebook.com/communityoffers</span>" %>
+      		<%= advertiser_form.text_field :facebook_url, :class => "url url_suggest" %>
+      	</p>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class='half-page offer_pitch_wrapper'>
+      <%= render :partial => 'advertiser/signup/signup_fairy', :locals => {:step => 'three'} %>
+    </div>
+    <div class='clear'></div>
+  </div>
+  <div class='clear'></div>
+  <div id="signup_category">
+    <h2>Choose your business category</h2>
+    <div class='signup_content'>
+    	<p class='desc'>
+        <span class='required'>*</span>Please Choose a Category. Every offer on communityoffers.com is grouped into a business category. Your offer's business category helps 
+        customers connect with you when they search for goods and services that you offer.
+      </p>
+      <div id="hidden_expand_collapse">
+        <div id="expand"><%= image_tag "expand.png" %></div>
+        <div id="collapse"><%= image_tag "collapse.png" %></div>
+      </div>
+    	<div class="cat_type_grouping">  	
+      	<% category_types_for_column(1).each do |cat_type| %>
+      		<%= render "category_type", :object => cat_type, :form => offer_form %>
+      	<% end %>
+      </div>
+      <div class="cat_type_grouping">
+      	<% category_types_for_column(2).each do |cat_type| %>
+      		<%= render "category_type", :object => cat_type, :form => offer_form %>
+      	<% end %>
+    	</div>
+      <div class="cat_type_grouping">
+      	<% category_types_for_column(3).each do |cat_type| %>
+      		<%= render "category_type", :object => cat_type, :form => offer_form %>
+      	<% end %>
+    	</div>
+    	<div class='clear'></div>
+    </div>
+  </div>
+  <div class='clear'></div>
+  <div class='offer_wrapper signup_content'>
+    <h3 class='sub_head'>Offer Details</h3>
+    <div class="left">
+  	  <p class="field">
+    		<%= required_label offer_form, :headline, offer_label_for(:headline), 
+    		    :hint => 'Example: "20% off" or "Buy 1 Get 1 Free". Four words or less.' %>
+    		<%= offer_form.text_field :headline, :id => "headline-text" %>
+    	</p>
+    	<p class="field">
+    		<%= required_label offer_form, :title, offer_label_for(:title), 
+		        :hint => 'Example: "Unique products for your home with excellent customer service."<br /> Sum it up in one sentence!' %>
+    		<%= offer_form.text_field :title, :id => "title-text" %>
+    	</p>
+
+    	<p class="field">
+    		<%= required_label offer_form, :description, offer_label_for(:description), 
+    		    :hint => 'Tell us what makes you unique! Use the asterisk for bullets.' %>
+    		<%= offer_form.text_area :description, :rows => "10" %>
+    	</p>
+
+    	<p class="field">
+    		<%= required_label offer_form, :hours, offer_label_for(:hours), 
+    		    :hint => 'eg: "Monday - Friday, 9am - 7pm"' %>
+    		<%= offer_form.text_field :hours %>
+    	</p>
+
+    	<p class="field">
+    		<%= required_label offer_form, :effective, offer_label_for(:effective), 
+    		    :hint => 'eg: "Weeknights After 5pm"' %>
+    		<%= offer_form.text_field :effective %>
+    	</p>
+
+    	<p class="field">
+        <% disclaimer_hint = "<span class=\"hint\">eg: Not valid with other offers</span>" %>
+    		<%= offer_form.label :disclaimers, "#{offer_label_for(:disclaimers)} #{disclaimer_hint}" %>
+    		<%= offer_form.text_field :disclaimers %>
+    	</p>
+
+    	<p class="field">
+    		<%= required_label offer_form, :expires_on, offer_label_for(:expires_on), 
+    		    :hint => "MM/DD/YYYY" %>
+    		<% # select_date(offer.expires_on, :prefix => "advertiser[offers_attributes][0][expires_on]", :prompt => true, :start_year => Date.today.year) %>
+        <%= date_field offer_form, :expires_on, ' narrow ' %>
+    	</p>
+
+    	<p class="field">
+    		<%= render :partial => 'advertiser/offers/offer_accepted_payment_types', 
+    		    :locals => {:form_helper => offer_form, :offer => offer,
+    		                :field_param => 'advertiser[offers_attributes][0][accepted_payment_types][]'} %>
+    	</p>
+
+    	<p class="field">
+    		<%= label_tag "Do you provide in-home or delivery service in your service area?" %>
+    		<% checked = offer.mobile %>
+    		<%= offer_form.radio_button :mobile, "yes", :checked => checked %>
+    		<%= label :"#{offer_form.object_name}_mobile", 'yes', 'Yes', :class => 'inline' %>
+    		&nbsp;
+    		<%= offer_form.radio_button :mobile, "no", :checked => !checked %>
+    		<%= label :"#{offer_form.object_name}_mobile", 'no', 'No', :class => 'inline' %>
+    	</p>
+	  </div> <!-- left -->
+    <div class='right previews'>
+      <h2 class='title'>Previews</h2>
+      <h3>Search Results Preview</h3>
+      <div class="offers">
+      	<div id='badge_preview' class="offer preview">
+          <%= render :partial => "search/offer_badge", :locals => { :offer => offer, :origin => offer } %>
+      	</div>
+        <div class="clear"></div>
+      	<div id='offer_preview' class='preview'>
+        	<div id="offers_show" class="rounded">
+            <h3>Offer Preview</h3>
+            <%= render "offers/advertiser_logo", :offer => offer %>
+            <%= render "offers/advertiser_info", :offer => offer %>
+            <%= render "offers/offer_info", :offer => offer %>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div> <!-- right -->
+    <div class="clear"></div>
+  </div> <!-- offer_wrapper -->
+
+  <div class='logo'>
+    <div class="step_header">
+      <%= signup_step_header(4, "Upload Your Logo") %>
+    </div>
+    <div class='signup_content'>
+      <p class='desc'>
+        Your logo is displayed in search results as well as on your offer page. The logo should be either 
+        a JPG file, a GIF file, or a PNG file. Maximum upload size is 100k. You will have a chance to preview and 
+        edit your logo on the following page.
+      </p>
+      <p class='desc instructions'>
+        NOTE: If you don't have a logo, you can skip this step and upload it later. A generic image will be       
+        substituted until you place your logo.
+      </p>
+      <p class="field">
+    		<%= advertiser_form.file_field :logo %>
+    	</p>
+  		<% unless @advertiser.logo.blank? %>
+  			<div id="logo_preview" class="rounded section">
+  					<h3>This is How Your Logo Will Look in Search Results</h3>
+  					<%= image_tag @advertiser.logo.small.url, :class => "rounded" %>
+  					<h3>This is How Your Logo Will Look on Your Offer Page</h3>
+  					<%= image_tag @advertiser.logo.normal.url, :class => "rounded" %>
+  				<div>
+            <%= advertiser_form.submit "Discard Logo", :id => 'discard_upload', :name => 'discard_upload' %>
+  				</div>
+  			</div>
+  		<% end %>
+    </div>
+  </div>
+	<div class="clear"></div>
+  <div class='form_buttons'>
+    <%= advertiser_form.submit "Done! Go to Preview" %><span class='sep'>|</span><%= cancel_link %>
+  </div>
+<% end %>
+<% end %>
+<% end %>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'search-index', 'search-results', 'offers-show' %>
+<% end %>

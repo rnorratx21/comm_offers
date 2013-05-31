@@ -1,0 +1,932 @@
+Merchant,OrgID,PageID,CouponID,Address
+Bicycle Sport Shop,168,1095,722,517 S. Lamar Blvd.
+Bicycle Sport Shop,168,1095,722,517 S. Lamar Blvd.
+Bicycle Sport Shop,168,1095,722,517 S. Lamar Blvd.
+Black Sheep Lodge,170,1099,723,2108 S. Lamar Blvd.
+Black Sheep Lodge,170,1099,723,2108 S. Lamar Blvd.
+Black Sheep Lodge,170,1099,723,2108 S. Lamar Blvd.
+RunTex,198,1132,747,422 W. Riverside Dr.
+RunTex,198,1132,747,422 W. Riverside Dr.
+RunTex,198,1132,747,422 W. Riverside Dr.
+Austin Land & Cattle Company,199,1133,748,1205 N Lamar Blvd
+Austin Land & Cattle Company,199,1133,748,1205 N Lamar Blvd
+Austin Land & Cattle Company,199,1133,748,1205 N Lamar Blvd
+Paggi House,200,1134,749,200 Lee Barton Drive
+Beets Cafe,201,1135,750,1611 W 5th St
+Beets Cafe,201,1135,750,1611 W 5th St
+Beets Cafe,201,1135,750,1611 W 5th St
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Gibson Bar,203,1137,752,1109 S. Lamar Blvd.
+Mr. Natural,226,1161,762,2414 South Lamar Boulevard
+Mr. Natural,226,1161,762,2414 South Lamar Boulevard
+Kenichi Ausin,227,1162,763,419 Colorado Street
+Kenichi Ausin,227,1162,763,419 Colorado Street
+Kenichi Ausin,227,1162,763,419 Colorado Street
+Kenichi Ausin,227,1162,763,419 Colorado Street
+Kenichi Ausin,227,1162,763,419 Colorado Street
+Kenichi Ausin,227,1162,763,419 Colorado Street
+House Wine,228,1163,764,408 Josephine Street
+House Wine,228,1163,764,408 Josephine Street
+Ostioneria El Capri,229,1164,765,"5516 Fry Road, Suite A"
+Ostioneria El Capri,229,1164,765,"5516 Fry Road, Suite A"
+Ostioneria El Capri,229,1164,765,"5516 Fry Road, Suite A"
+Cornbread & Collin's Greens,231,1166,767,472 South Fry Road
+Cornbread & Collin's Greens,231,1166,767,472 South Fry Road
+Cornbread & Collin's Greens,231,1166,767,472 South Fry Road
+CIELO,236,1172,771,2830 Real Street
+Rain on 4th,237,1173,772,217 West 4th Street
+Kung Fu Saloon,238,1174,773,510 Rio Grande
+Wahoo's Fish Taco,239,1175,774,509-A Rio Grande St.
+Dog & Duck Pub,241,1177,776,406 West 17th Street
+Baker St. Pub & Grill,242,1178,777,3003 South Lamar Blvd.
+Third Base,243,1179,778,1717 West 6th Street
+The Blind Pig Pub,244,1180,780,317 East 6th Street
+Annies West,245,1181,781,706 West 6th Street
+The Iron Bear,246,1182,782,121 West 8th Street
+Opal Divines,247,1183,783,700 West 6th Street
+El Arroyo,257,1193,793,1624 West 5th Street
+Mel's Meals,258,1194,794,507 North Lamar
+Jo's,259,1195,795,242 West 2nd Street
+Medical Uniforms,261,1197,797,16126 Southwest Freeway
+Tacos & Tequila,264,1199,799,507 Pressler
+Royal Blue Grocery,265,1201,800,609 Congress Avenue
+Hut's Hamburgers,266,1203,801,807 West 6th Street
+Amy's Ice Cream,269,1206,802,1012 West 6th Street
+Phil's Ice House,270,1207,803,2901 South Lamar
+59 Diner,272,1209,804,20210 Katy Freeway
+Ranch 616,273,1210,805,616 Nueces
+219 West,274,1211,806,219 West 4th Street
+The Jackalope,275,1212,807,404 East 6th Street
+Casino El Camino,276,1213,808,517 East 6th Street
+Sakura Tokyo,277,1214,809,"24110 NW Freeway, Suite 100"
+ThunderCloud Subs,278,1215,810,2308 Lake Austin Blvd
+Chinatown Downtown,279,1216,811,107 West 5th Street
+Z Tejas Southwestern Grill,280,1217,812,1110 West 6th Street
+Lucy's,281,1218,813,506 West Avenue
+Logan Farms Honey Glazed Hams,282,1221,814,10650 Westhiermer
+Longhorn Collision Center,283,1222,815,1607 South Lamar Boulavard
+Foga De Chao,284,1223,816,309 East 3rd Street
+St. Bernard Sports,285,1224,817,401 West 3rd Street
+Austin Urban Vet Center,286,1225,818,701 West 5th Street
+The Melting Pot,287,1226,819,305 East 3rd Street
+Cedar Door Bar & Grill,288,1227,820,201 Brazos Street
+Frank And Angie's Pizzeria,290,1229,822,508 West Avenue
+Shoal Creek Saloon,291,1230,823,909 North Lamar
+Enzo Austin,292,1231,824,801 West 5th Street
+PM Media,293,1232,825,4330 Bull Creek Road
+Joie De Vie Salon,295,1235,826,713 E. 6th Street
+Play N Trade,297,1242,833,4301 W. William Cannon Bldg E2 Ste 210
+Yanagi Japanese Restaurant and Sushi Bar,303,1243,834,4404 W. William Cannon Dr. Suite B
+Cabo Bob's Burritos,304,1244,835,500 E. Ben White Blvd.
+Wings To Go,305,1245,836,6611 S Mo-pac Expwy #A600
+"Dane's Auto Repair, Inc.",306,1246,837,14008 Huffmeister Rd
+Journey's Hair Studio & Spa Jaeger,307,1247,838,15210 Spring Cypress Rd
+Jade Bamboo,308,1248,839,7029 Barker Cypress Rd
+Vintage Car Wash,309,1249,840,9855 Louetta Rd
+Dave's Hoagie House,310,1250,841,"15202 Mason Rd, Suite 700"
+Taco De Oro,311,1251,842,9740 Barker Cypress
+Anything Trendy,312,1252,843,12930 Grant Rd.
+KB Master Cleaners,313,1253,844,"15210 Spring Cypress Rd., Suite A"
+KB Master Cleaners,314,1254,845,10730 Barker Cypress Rd.
+KB Master Cleaners,315,1255,846,14207 Barker Cypress
+KB Master Cleaners,316,1256,847,9803 Spring Cypress Rd
+Cy-Fair Family Eye Care,317,1257,848,26270 Northwest Fwy
+Fancy Pants Boutique,318,1258,849,18520 Kuykendahl Rd
+Ignite Energy,319,1259,850,18520 Kuykendahl Rd
+Lorever Hair Salon,320,1260,851,"8611 Louetta, Suite 201"
+Rising Hearts Yoga Studio,321,1261,852,"8220 Louetta Rd, #146"
+La Casita,322,1262,853,"5803 N. Fry Rd, Ste 103"
+Red Robin,323,1263,854,22455 State Hwy 249
+K 9 Social Club,324,1264,855,"8320 Louetta Rd, Suite 135"
+d'Vine Wine Bar,325,1265,856,"25202 Northwest Freeway, Suite 100"
+Hero Martial Arts,326,1266,857,7818 Spring Cypress Rd
+El Corral Mexican Restaurant,327,1267,858,22432 Tomball Parkway
+Copperfield Bowl,328,1268,859,15615 Glen Chase Dr.
+The Backyard Grill,329,1269,860,9453 Jones Rd
+Romero's Las Brazas,330,1270,861,15703 Longenbaugh -A
+Steak 'N Shake,331,1271,862,12611 FM 1960 West
+Posh Nail Studio,332,1272,863,25314 FM 2978
+Rain Forest Auto Center,334,1274,865,7110 Barker Cypress Rd
+Cliff's Car Tech,335,1275,866,17525 FM 529
+Simply Splendid Donuts & Ice Cream,336,1276,867,10130 Grant Rd
+Simply Splendid Donuts & Ice Cream,337,1277,868,1797 N Fry Rd
+Sugarland Donuts,338,1278,869,14009-C F.M. 1464
+Simply Splendid Donuts & Ice Cream,339,1279,870,4410 Westway Park Blvd
+4G Guys,340,1280,871,"9150 S. Main, Ste.A"
+Michel Auto Cares,341,1281,872,12205 Holderrieth Rd
+Bling It On Fashion Boutique,342,1282,873,13243 Jones Rd
+Sound Fitness,343,1283,874,12600 FM 1960 W
+Las Fuentes,344,1284,875,6960 FM 1488
+Las Fuentes,345,1285,876,201 Highway 290 E
+Las Fuentes,346,1286,877,18306 FM 1488
+Santikos Silverado IMAX,347,1287,878,24720 Tomball Parkway
+Hand Painted By,348,1288,879,14814 Brown Rd
+Fill Ur Wallet Resale/Consignment Store,349,1289,880,"32015 Tomball Parkway, #119"
+Candlelight Cakes,350,1290,881,"32015 SH 249, # 117"
+Tomball Bowling Center,351,1291,882,14435 FM 2920
+"Aloha Donuts, Inc",352,1292,883,"25435 FM 2978, Suite 106"
+Funkie Flamingo Boutique,353,1293,884,"6911 FM 1488, Ste D"
+Nutrition Depot Sterling Ridge,354,1294,885,"8008 Ashlane Way, Suite 130"
+Maui Wowi,355,1295,886,3715 Washington
+Martinis & More,356,1296,887,311B Sawdust Rd
+The UPS Store,357,1297,888,"7 Switchbud PL, Ste C192"
+Smoothie Factory,358,1298,889,3335 College Park Dr
+Sterling Ridge Pool Supply Plus,359,1299,890,8000 McBeth Way
+Cold Stone Creamery,360,1300,891,"9595 Six Pines Dr., Suite 920"
+Pure Healthy Eatery,361,1301,892,"4223 Research Forest Dr, Ste 350"
+Ashlane Cleaners,362,1302,893,"8008 Ashlane Way, Suite 100"
+Dry Clean Super Center,363,1303,894,33031 FM 2978
+Gozzetti's Pizza,364,1304,895,8000 McBeth Way
+Gozzetti's Pizza,365,1305,896,25919 I-45 North
+Denny's,366,1306,897,26050 Hwy 290
+Denny's,367,1307,898,1579 Fry Road
+Denny's,368,1308,899,11511 West Airport Blvd
+Denny's,369,1309,900,6969 Gulf Frwy
+Potato Shack,370,1310,901,405 A University
+Potato Shack,371,1311,902,"12815 FM 2154, #172"
+7 - 7 Cleaners & Alterations,372,1312,903,1630 Mason Rd
+7 - 7 Cleaners & Alterations,373,1313,904,1201 - G Westheimer Rd
+7 - 7 Cleaners & Alterations,374,1314,905,411 - B Richmond Ave
+Uncle Lee's Cafe II,375,1315,906,22044 Westheimer
+Nikko Sushi & Sake,376,1316,907,410 W. Grand Parkway
+Pinoy Kusina,377,1317,908,873 South Mason Rd
+Christian Brothers Automotive,378,1318,909,3838 N. Fry Rd
+Animal Tales,379,1319,910,"23930 Westheimer Pkwy, Suite 115"
+Stars Sportsbar & Grill,380,1320,911,"414 W Grand Parkway, #190"
+Lotus Nails,381,1321,912,"23930 Westheimer Pkwy, Suite 109"
+Mazzei's Gourmet Pizza,382,1322,913,6868 S. Mason Rd.
+Red Robin,383,1323,914,23318 Mercantile Pkwy
+Sport Clips,384,1324,915,23501 Cinco Ranch Blvd.
+Sport Clips,385,1325,916,22720 Bellaire Blvd
+Sport Clips,386,1326,917,19859 Katy FWY
+Sport Clips,387,1327,918,1998 Katy Mills Blvd
+Woodlands Pros,388,1328,919,16300 Katy Freeway
+Katy Pros,389,1329,920,16300 Katy Freeway
+Check A Pro,390,1330,921,16300 Katy Freeway
+Best Car Wash & Detail Center,391,1331,922,5438 Fry Road
+Curves,392,1332,923,"16427 W. Little York, Suite F"
+Curves,393,1333,924,"3719 N Fry Road, Suite D"
+Fox's Pizza Den,394,1334,925,"3811 N. Fry Road, Suite #3"
+Tank's Paintball,395,1335,926,899 Westgreen Blvd.
+Star Designs,396,1336,927,414 W Grand Parkway
+Tupperware,397,1337,928,22521 Tomball Pkwy
+Church's Chicken,398,1338,929,6201 N. Fry Rd
+PostNet,399,1339,930,"12320 Barker Cypress Road, Suite 600"
+Jackpot Pizza,400,1340,931,"6450 Louetta Rd, Suite 225"
+Skinovative Houston,401,1341,932,"5135 West Alabama, #6010D"
+Table Seven,402,1342,933,700 South Durham Drive
+The Wave,403,1343,934,1525 Silver St.
+River Oaks Cleaners,404,1344,935,5535 Memorial Dr
+River Oaks Cleaners,405,1345,936,5555 Washington Ave
+Fixers Automotive,406,1346,937,147 East 11th St.
+Laurenzo's Restaurant on Washington,407,1347,938,4412 Washington Avenue
+Anytime Fitness,408,1348,939,"1101 Yale Street, Suite 100"
+Big Mamou,409,1349,940,903 Studewood St
+Fresco Seafood House,410,1350,941,1848 Airline Dr
+Tortas El Angel,411,1351,942,1018 N Shepherd Drive
+Golden Island Chinese Buffet,412,1352,943,"901 N Shepherd, Suite A"
+King Biscuit Patio Cafe,413,1353,944,1606 White Oak Drive
+Clear Communications,414,1354,945,6037 Fry Road
+Padthai Thai Restaurant,415,1355,946,401 Louisiana
+Big Frog Custom T-Shirts & More,416,1356,947,7073 Highway 6 North
+Al's Lone Star Steakhouse,417,1357,948,14600 Cypress North Houston
+Red Pier Asian Bistro - Bar,418,1358,949,2704 Milam St. Suite 6C
+Jeannine's Bistro,419,1359,950,106 Westheimer
+Tokyo Live,420,1360,951,16506 FM 529 Suite 101
+Tacos A Go-Go,421,1361,952,3704 Main St.
+Texas Pizzeria,422,1362,953,1853 Richmond Avenue
+Christian's Tailgate Bar & Grill - Midtown,423,1363,954,2000 Bagby Street
+Aladin Buffet & Grill,424,1364,955,16310 FM 529
+Smart Auto Clinic,425,1365,956,2828 Richmond Ave.
+Advanced Nutrition,426,1366,957,16126 SW Freeway
+loggia,427,1367,958,2248 Texas Drive
+ARISTOTLE GRILL,428,1368,959,2109-B Hwy 6
+Time to Chill,429,1369,960,19900 Southwest Fwy
+Sunny Beach Tans,430,1370,961,16525 Lexington
+Taisho Japanese Grill and Bar,431,1371,962,16100 City Walk
+Shogi Hibachi Express,432,1372,963,15977 City Walk
+Bangkok Chef,433,1373,964,6560 Greatwood Pkwy
+Cupcake Cafe of Texas,434,1374,965,16525 Lexington Blvd
+Olive's Martini Bar and Grille,435,1375,966,2268 Texas Drive
+1905 Pizza Bar,436,1376,967,2228 Texas Drive
+Radiance Medspa,437,1377,968,2641 Town Center Blvd. N
+Daylily Hair and Nail Spa,438,1378,969,"12921 Shops Pkwy, #400"
+Dry Clean Express,439,1379,970,27910 State Highway 249
+Pete & Shorty's,440,1380,971,16549 Southwest Freeway
+Trio Life Fitness,441,1381,972,12101 Bee Caves Road
+Johnny Fin's Floatin' Bar & Grill,442,1382,973,16405 Clara Van
+Mizu Prime Steak and Sushi,443,1383,974,3001 Ranch Road 620 South
+Mandola's Italian Market,444,1384,975,"12815 Shops Parkway, Suite 400"
+Mandola's Italian Market,445,1385,976,4700 West Guadalupe St.
+Mandola's Italian Market,446,1386,977,4301 W. William Cannon
+Thai Spice,447,1387,978,1310 RR 620 S
+Thai Spice,448,1388,979,"701 Capital of Texas Hwy, South"
+Rice Thai & Sushi Bar,449,1389,980,"10601 FM 2222, Suite H"
+Waterloo Ice House,450,1390,981,12815 Shops Parkway
+Star of India Restaurant,451,1391,982,2900 W. Anderson Ln
+Bombay Grill Indian Restaurant,452,1392,983,3201 Bee Caves Rd. #148
+The Five One Two,453,1393,984,408 E. 6th Street
+The Donut Hole,454,1394,985,2422 Ranch Road 620 S # 124
+Tropic Tan,455,1395,986,4830 Eck Lane
+NON LA,456,1396,987,"2121 Lohmans Crossing Rd., Suite 500"
+Papa Murphy's,457,1397,988,2303 Ranch Road 620 South
+CoCo's Crepes & Coffee,458,1398,989,"114 Vintage Park Blvd, Ste M"
+Shogun Japanese Grill & Sushi Bar,459,1399,990,"114 Vintage Park Blvd, Ste A"
+5 Star Nails & Spa,460,1400,991,28301 Tomball Pkwy.
+The Good Bike,461,1401,992,2538 Guadalupe
+Fion Wine Pub,462,1402,993,"11715 FM 2244, Ste. 100"
+Fion Wine Pub,463,1403,994,2900 N. Quinlan Park Rd
+Hoppin' House,464,1404,995,"2105 Ranch Road 620 S., Suite 201"
+Hoppin' House,465,1405,996,"4040 South Lamar Blvd, Suite B"
+Spicy Pickle,466,1406,997,404 W 26th St
+Janitzio,467,1407,998,600 W. MLK Blvd.
+Wing Zone,468,1408,999,907 West 24th Street
+The Yogurt Spot,469,1409,1000,2815 Guadalupe
+Smoothie King,470,1410,1001,"504 W. 24th Street, Suite B"
+The Local Pub & Patio,471,1411,1002,2610 Guadalupe
+Dolce Finale,472,1412,1003,2700 Nueces St. Suite 100
+Bite Mi,473,1413,1004,"2002 Guadalupe St, suite B"
+Spring Fitness,474,1414,1005,32350 Hwy 249
+Five Star Car Wash *Lube*Detail,475,1415,1006,1110 RR 620 North
+Nutrition Central,476,1416,1007,6519 FM 1488  #517
+Massage Envy,477,1417,1008,6531 FM 1488  Suite 309
+Clear Communications,478,1418,1009,9635 Spring Cypress Road
+Trio Steakhouse & Bar,479,1419,1010,114 Vintage Park Blvd
+Arpeggio Grill & Tomato Shack,480,1420,1011,2522 Guadalupe
+Tailgators Pub & Grill,481,1421,1012,"8000 Highway 242, Suite 125"
+Sonic,482,1422,1013,14018 FM 2920
+Sonic,483,1423,1014,22601 Tomball Pkwy
+Mellow Mushroom,484,1424,1015,2426 Guadalupe St
+WHICH WICH,485,1425,1016,4700 W. Guadalupe St.
+Bliss Day Spa,486,1426,1017,701 Shepherd Dr #100
+Brazilia Waxing Spa,487,1427,1018,3407 Guadalupe
+Zamani Mediterranean Grill,488,1428,1019,"9440 Louetta Rd, #3"
+Pad Thai (University of Texas Location),489,1429,1020,3208 Guadalupe St Ste A
+Master Gohring's Tai Chi & Kung Fu,490,1430,1021,6611 Airport Blvd
+PITA PIT (UT Campus),491,1431,1022,2350 Guadalupe Street
+D Style Salon,492,1432,1023,27620 Tomball Parkway
+Smart Mobile,493,1433,1024,1511-1 Rayford Road
+Get Sum Dim Sum,494,1434,1025,"4400 North Lamar, Suite 102"
+Kick Butt Coffee,495,1435,1026,4600 Guadalupe
+Kick Butt Coffee,496,1436,1027,5775 Airport Blvd. Suite 725
+Don Juan's Authentic Mexican Cuisine,497,1437,1028,3595 RR 620 South
+Don Juan's Cantina,498,1438,1029,3595 RR 620 South
+Spicy Pickle - South Lamar,499,1439,1030,300 S. Lamar Blvd.
+Zandunga Mexican Bistro,500,1440,1031,1000 E. 11th St.
+The Paradise Cafe,501,1441,1032,401 East 6th Street
+Bond's Sports Grille,502,1442,1033,13131 Louetta Rd.
+Hair International Day Spa,503,1443,1034,1035 Eldridge Rd
+Freddie's Place,504,1444,1035,1703 South 1st Street
+Spruce Salon,506,1446,1037,"12101 Bee Caves Rd, Suite G"
+La Fonda Mexican Food,507,1447,1038,13134 Dairy Ashford
+La Magia Cafe & Pizza,508,1448,1039,3699 Hwy 6
+Ref's Sports Bar & Grill,509,1449,1040,"118 Vintage Park Blvd, Ste A"
+Teahouse & Coffee Tapioca Bar,510,1450,1041,4727 Sweetwater Blvd.
+Woodlands Wine Company,511,1451,1042,"6700 Woodlands Pkwy, Suite 210"
+Mei Wei,512,1452,1043,"30340 FM 2978, Suite 200"
+China Bridge,513,1453,1044,7901 Research Forest Drive
+Berripop,514,1454,1045,3939 Washington Avenue
+Berripop,515,1455,1046,2071 Westheimer
+Berripop,516,1456,1047,"15810 Southwest Freeway, Suite 300"
+Rockin' Tomato,517,1457,1048,3003 S. Lamar Blvd. #150
+Zax Restaurant & Bar,518,1458,1049,312 Barton Springs Road
+Century Payments,519,1459,1050,"7703 N. Lamar, Suite 310"
+Red's Porch,520,1460,1051,3508 S. Lamar Blvd.
+Doc's Bar And Grill,521,1461,1052,1123 S. Congress Ave.
+H2O Hand Car Wash,522,1462,1053,500 S. Lamar Blvd.
+Dominican Joe Coffee Shop,523,1463,1054,515 S. Congress Ave.
+Sushi Box,524,1464,1055,215 Congress Avenue
+Rasta Pasta,525,1465,1056,2100 B Guadalupe
+RunTex (Riverside),526,1466,1057,422 West Riverside Drive
+Rounders Pizzeria,527,1467,1058,1203 West 6th Street
+Trifecta on 3rd,528,1468,1059,360 Nueces #30
+Maria's Taco Xpress,529,1469,1060,2529 South Lamar Boulevard
+Denny's,530,1470,1061,6969 Gulf Frwy
+Denny's,531,1471,1062,6920 FM 1960 East
+Denny's,532,1472,1063,2940 Gulf Frwy
+Denny's,533,1473,1064,6920 S. Fry Rd
+Denny's,534,1474,1065,11221 Broadway St
+Denny's,535,1475,1066,9655 N. Sam Houston Parkway E
+Green Garden Chinese Restaurant,536,1476,1067,19922 Park Row
+Joy Yoga Center,537,1477,1068,4500 Washington Ave
+Candelari's Pizzeria,538,1478,1069,25680 Northwest Fwy
+South Beach Auto Spa,539,1479,1070,126 W. Gray
+Frost Bake Shoppe Cupcakes & More,540,1480,1071,"6777 Woodlands Pkwy, #304"
+Signature Cleaners,541,1481,1072,3060 Fry Rd
+Signature Cleaners,542,1482,1073,"15015 Westheimer, Ste A"
+Signature Cleaners,543,1483,1074,19714 Saums Rd
+S & M Auto Title Services,544,1484,1075,19831 Greenwind Chase Dr.
+Automotive Excellence at Green Trails,545,1485,1076,19831 Greenwind Chase Dr.
+Potato Shack,546,1486,1077,1830 S. Mason Rd
+The Upper Decks,547,1487,1078,301 Barton Springs
+Vanity Salon And Day Spa,548,1488,1079,2118 Oxford Ave.
+Genie Car Wash,549,1489,1080,1311 S Lamar Blvd
+The Woodland,550,1490,1081,1716 South Congress Avenue
+Yo-Way Frozen Yogurt,552,1492,1082,"4301 W. William Cannon Drive, Bldg B, STE 160"
+OliVia,553,1493,1083,2043 South Lamar
+Sugar Mama's Bake Shop,554,1494,1084,1905 South First Street
+Rigby Advanced Dental,557,1496,1085,"12912 Hill Country Blvd, F205"
+Tarbouch Lebanese Grill,558,1497,1086,534 E. Oltorf St.
+Alamo Drafthouse Ritz,559,1498,1087,320 East 6th Street
+FUDDRUCKERS,560,1499,1088,4024 South Lamar
+Uchi,561,1500,1089,801 South Lamar
+SoCo Athletic Club,563,1502,1091,1109 B South Congress Ave.
+KFC,564,1503,1092,26251 NW Freeway
+CHISPAS DEL TIEMPO,567,1510,1094,1504 Airline
+Olga's Beauty Spa,568,1511,1095,"2919 Manchaca Road, Suite 101-A"
+Lofty Dog,571,1519,1097,403 West 2nd Street
+Luke's Inside Out,572,1520,1098,1109 South Lamar Boulevard
+Counter Culture Frozen Yogurt,574,1522,1099,6705 US Hwy 290 West
+Sweet Treets Bakery Cafe,575,1523,1100,6705 Hwy 290 West
+Bella's Sports Pub,577,1524,1102,134 Broadway St
+El Chile Barton Springs,578,1525,1103,1025 Barton Springs
+East Side Show Room,579,1526,1104,1100 EAST 6TH ST
+Bennu Coffee,580,1527,1105,2001 E Martin Luther King Jr Blvd
+Beerland,581,1528,1106,711 1/2 Red River St
+Barbarella,582,1529,1107,615 red river
+Red House Pizzeria and Bar,583,1532,1108,1917 Manor Road
+Shangri La,584,1533,1109,1016 E 6th St
+Liberty Austin,585,1534,1110,1618 1/2 E 6th St
+The Grackle,586,1535,1111,1700 E 6th St
+Cipollina,589,1538,1114,1213 W Lynn St
+Opal Divines Penn Field,591,1540,1116,700 West 6th Street
+The Melting Pot Northwest Austin,592,1541,1117,13343 Research Blvd.
+Safari Champ,594,1545,1119,1400 East Old Settlers Blvd # 200
+Saltgrass Steakhouse,595,1546,1120,2300 N IH 35
+Pluckers Wing Bar,596,1547,1121,"300 Mays Crossing, Suite 300"
+Beluga Japanese,597,1548,1122,661 Louis Henna Blvd
+Rio Grande TEX-MEX,598,1550,1124,1720 N. Mays St.
+Buster's BBQ,599,1552,1125,2125 Lohmans Crossing Road
+Cafe Java-Round Rock,600,1553,1126,2051 Gattis School Road
+Once Upon A Child-Round Rock,601,1554,1127,2051 Gattis School Road
+Round Rock Smoothies,602,1555,1128,1300 Gattis School Rd. Ste. #200
+Chick-fil-A Bee Cave/Lakeway,607,1565,1131,3600 Ranch Road 620 S Ste C
+Oh Yeah!,609,1568,1132,"13011 Shops Pkwy,"
+Gold's Gym,615,1579,1137,12480 Bee Caves Rd.
+FIRE BOWL CAFE,618,1588,1140,5601 Brodie Ln
+Wholy Bagel,619,1589,1141,4404 W. William Cannon Dr. Suite B
+Kip's Texas Barbecue,620,1590,1142,690 Centerpoint Rd
+Top Image Hair Salon,621,1591,1143,402 North Guadalupe St
+Gumby's Pizza,623,1593,1145,403 North Guadalupe Street
+Cedars Mediterranean Restaurant,624,1594,1146,220 N Edward Gary
+The Root Cellar,625,1595,1147,215 N LBJ
+Two P's & Calli's Boutique and Gifts,626,1596,1148,"690 Centerpoint Road, Suite 205"
+Great Tans Tanning Salon,627,1597,1149,748 N. LBJ
+Herbert's Grocery & Taco Hut,628,1598,1150,419 Riverside Dr
+Taproom Pub & Grub,629,1599,1151,129 East Hopkins Street  #120
+Silk Hair Salon,631,1602,1152,9001 Brodie Lane c-6
+Scooters Coffeehouse,632,1603,1153,6611 South Mopac Expressway
+Bath Junkie,633,1604,1154,"5601 Brodie Lane, Suite 950"
+Baklava Cafe,634,1605,1155,1531 Highway 6
+CHISPAS DEL TIEMPO,635,1606,1156,5526 Washington Avenue
+The Burn Lounge,636,1608,1157,700 North LBJ #113
+1379 Family Sports Shop,637,1610,1158,4301 W. William Cannon
+Culver's,639,1612,1159,3424 West William Cannon Drive
+SUBWAY®,640,1613,1160,2303 Ranch Rd 620 S Suite 120
+Taipei,641,1614,1161,18802 Stone Oak Parkway
+Aldaco's,642,1615,1162,20079 Stone Oak Pkwy
+Brasserie Pavil,643,1616,1163,1818 N. Loop 1604 West
+Copa Wine Bar,644,1617,1164,19141 Stone Oak Pkwy
+RoyalCuts For Men,645,1618,1165,14110 Telge Road
+Wyland's Ocean Blue,647,1621,1167,12921 Hill Country Blvd (D-2-120)
+My Fit Foods,648,1622,1168,19202 Stone Oak Pkwy
+Kirby's Steakhouse,649,1623,1169,123 N. Loop 1604 E
+Coco Chocolate Lounge & Bistro,650,1624,1170,18402 US 281 N
+Le Peep Cafe,651,1625,1171,19141 Stone Oak Parkway
+Houlihan's,652,1626,1172,938 N Loop 1604
+Apatite Cafe,654,1630,1173,"12801 Shops Parkway, #200"
+Stone Oak Veterinary Clinic,655,1631,1174,18854 Stone Oak Parkway
+Sharkey's Cuts for Kids,656,1632,1175,18402 Hwy 281N Suite 109
+Hecho en Mexico,657,1633,1176,6001 William Cannon Ste 301
+Guy Harvey's Island Grill,658,1634,1177,12921 Hill Country Blvd (D-2-130)
+Sunlounge Spa,659,1636,1178,"2303 Ranch Road 620 South, Suite 190"
+Uncorked Tasting Room & Wine Bar,674,1651,1193,900 East 7th Street
+ate.cafe,679,1656,1198,"2127 Lohman’s crossing, Suite 310"
+Cafe Layal Midtown,680,1657,1199,207 Gray Street
+Cafesitos Restaurant Bar & Grill,681,1658,1200,3750 South Mason Rd
+DOG AND PONY,682,1659,1201,2712 Guadalupe Street
+Jovita's Restaurante Y Cantina,683,1660,1202,1619 South First St.
+Karate Monkey,684,1661,1203,9635 Spring Cypress Road
+Martinizing Dry Cleaning,685,1662,1204,"12101 Bee Cave Rd., Ste 5A"
+sushi raku,686,1663,1205,3201 Louisiana
+Payday Kings,687,1664,1206,802 Texas Parkway Suite G
+Chicken Express,688,1665,1207,2109 Ranch Road 620 South
+Shades Cafe,689,1666,1208,16410 Stewart Road
+Carlos 'n Charlie's,693,1669,1211,5973  Hiline Road
+House of Wings,694,1672,1212,19314 US Hwy 281N
+Orange Leaf,696,1674,1213,1207 N Loop 1604 W
+Sunny's Pizza,699,1680,1216,Corner of Craddock Ave and RR12
+Wingstop,700,1681,1217,913 Highway 80
+Crazy Good Yogurt,701,1682,1218,"1504 Aquarena Springs, #303"
+Baguette,703,1684,1220,700 N LBJ Dr
+Which Wich,704,1685,1221,302A University Dr.
+Fazoli's,705,1686,1222,927 Highway 80
+Sophias Beauty & Barber,707,1691,1223,1104 N. Thorpe
+Colloquium Bookstore,708,1692,1224,320 University Drive
+Extreme Pita,709,1693,1225,523 Med Ct
+Deluxe Nail & Spa,711,1697,1227,316 N. Edward Gary St.
+Ming Court,714,1702,1229,"1205 N Loop 1604 West, Ste 230"
+Brothers Pizza Parlor,719,1714,1235,25282 NW Freeway
+Firehouse Subs,720,1715,1236,17758 Katy Fwy.
+Fast Inspection & Lube,721,1716,1237,14110 Telge Road
+Suntouch Yoga Studio,722,1718,1238,19708 NW Freeway
+Papa Murphy's Take 'n' Bake,724,1720,1240,1160 N Loop 1604 W
+Massage Heights,725,1721,1241,523 Med Court Suite 101
+Cool Cafe,726,1722,1242,19141 Stone Oak Pkwy
+Roosters,727,1723,1243,12020 FM 1960
+Natural Dawg Cuisine,728,1724,1244,24140 Highway 290
+Massage Envy,729,1725,1245,12246 FM 1960 West
+Grand Hunan,730,1726,1246,9579 Jones Rd.
+Luciano's Italian Restaurant,731,1727,1247,18866 Stone Oak Parkway #108
+The Lion & Rose,732,1728,1248,700 E Sonterra Blvd
+AANIMAL WONDERS,734,1734,1250,1104 Thorpe Lane Suite T
+Little Shoppe of Health,736,1736,1252,306-C N. Edward Gary
+Red Robin,737,1737,1253,4809 W. Highway 290
+Tarka Indian Kitchen,738,1738,1254,5207 Brodie Lane
+IM THAI CUISINE,739,1739,1255,"5207 Brodie Lane, Ste 200"
+Marie Callender's,740,1742,1257,"5601 Brodie Lane, Suite 1500"
+LaVida Massage,741,1743,1258,7010 W Hwy 71 Suite 160
+Dario's American Bistro,742,1744,1259,14315 Cypress Rosehill Rd.
+Image Tan,743,1745,1260,12264 FM 1960 West
+Calcuttas,744,1747,1261,142 N LBJ Dr.
+Fast Kopy,745,1748,1262,145 S. LBJ Dr.
+Simply Richies Tanning Salon,746,1749,1263,123 S. LBJ Dr.
+The Donut Spot,747,1752,1264,2339 E. Evans Rd #105
+Pericos,748,1753,1265,1439 E. Sonterra Blvd.
+Gametime Haircuts,750,1754,1266,12914 FM 1960 West
+Firehouse Subs,753,1758,1269,4301 W. William Cannon Drive
+Cornucopia,754,1759,1270,"1914 Guadalupe St., suite B"
+The Nature Company Salon & Spa,756,1761,1272,"3110 Guadalupe, Ste 100"
+BOOMERANG'S,757,1762,1273,3110 Guadalupe
+The Little Gym,763,1769,1277,"4301 W. William Cannon Building E-1, Suite 150"
+Gametown Pizza,770,1772,1282,"22906 US Hwy 281 N, Ste. 111"
+How Do You Roll?,771,1773,1283,20079 Stone Oak Pkwy. Ste. 1107
+Aspen Leaf Frozen Yogurt,772,1774,1284,22506 US HWY 281 North Ste 101
+Bobcat Laptops & More,773,1776,1285,312 N. LBJ Dr.
+Sugar Blossom Treats,776,1779,1287,12020 FM 1960 West  
+Yogurt Worx,777,1783,1289,7316 Louetta Rd.
+Lions & Tigers & Toys,782,1790,1295,"4301 W. William Cannon Building E-1, Suite 220"
+Swirll Frozen Yogurt,784,1797,1299,2310 Guadalupe St
+Cypress Grill,785,1798,1300,4404 W William Cannon Dr Suite L
+China Palace Super Buffet,786,1799,1301,900 Bugg Lane
+Grand Agave,787,1800,1302,18326 Tuscany Stone
+Dos Gatos Kolache Bakery,788,1804,1304,"700 North LBJ, Suite 102A"
+Tuttle Lumber Company,789,1805,1305,228 South Guadalupe Street
+India Taj Palace,792,1808,1306,20323 Huebner Road
+My Fit Foods,793,1809,1307,4301 W. William Cannon Drive
+Kwik Kar Southwest,794,1810,1308,3416 W. William Cannon
+Baskin Robbins,796,1813,1309,2020821 US Highway 281 N Suite 106
+Earl of Sandwich,798,1815,1310,1160 N Loop 1604 W #110
+Juicy Tart Frozen Yogurt,799,1816,1311,504 West 24th St
+Cabo Seafood & Bar,800,1818,1312,20626 Stone Oak Pkwy
+Double Dave's Pizzaworks,803,1825,1316,"3421 W. William Cannon Drive, Ste 127"
+Expert Nails & Spa,804,1826,1317,4301 W William Cannon Dr #b136
+Backspin,805,1827,1318,5000 W Slaughter Ln Ste 206
+Planet Fitness,806,1828,1319,"7100 W. US Highway 290, Suite A"
+The Hub,808,1830,1321,3815 Dry Creek Drive
+BOND Boutique,809,1831,1322,5700 West Slaughter Lane #250
+Marioli Meals To Gourmet,810,1832,1323,18730 Tuscany Stone
+Massage Envy,811,1833,1324,19178 Blanco Road
+Thai Chili,812,1834,1325,19141 Stone Oak Parkway
+Tinos Greek Cafe,814,1838,1326,9901 Brodie Ln # 190
+My Gym Austin,816,1841,1328,5307 Highway 290 West
+Smoothie Factory,817,1842,1329,330 N. LBJ
+Gil's Broiler,818,1843,1330,328 N. LBJ
+Tilted Kilt,819,1847,1331,2070  Loop 1604
+Yogurt Zone,820,1848,1332,21025 US Hwy 281 #1324
+Vida Mia,821,1849,1333,19141 Stone Oak Parkway Suite 803
+The Strand Salon & Spa,822,1850,1334,"946 N Loop 1604 West, Ste 140"
+Texenza Coffee,830,1858,1342,9911 Brodie Lane
+Wash Day Laundry,832,1860,1344,7626 Hwy 71 West
+NUTRISHOP AUSTIN,833,1861,1345,"5400 Brodie Lane, Suite 250"
+Galaxy Cafe,835,1863,1347,9911 Brodie Lane
+Buffalo Wild Wings,836,1864,1348,"1723 Loop 1604, Ste 209"
+University Federal Credit Union,837,1865,1349,130 East Ben White Blvd
+24 Hour Pizza,844,1867,1356,7620 cherry park dr
+KFC,846,1879,1373,10502 Huffmeister Road
+Palmer's,849,1882,1375,218 Moore Street
+Chimy's Cerveceria,850,1883,1376,217 East Hopkins
+Meineke Car Care Center,851,1884,1377,1252 Highway 123
+Gordo's Burgers and Stuff,852,1885,1378,804 Chestnut Street
+Cafe on the Square,853,1886,1379,126 North LBJ Drive
+Italian Garden,854,1896,1380,415 North LBJ Drive
+Takuma Japanese Grill,855,1897,1381,5200 Louetta Rd.
+Los Cucos,856,1898,1382,1617 Aquarena Springs Drive
+Conley Carwash,857,1899,1383,1200 Thorpe Lane
+Sunset Bowling Lanes,858,1900,1384,1304 State Highway 123
+Gourmet Burger Grill,860,1914,1386,18414 U.S. 281 North
+how do you roll? A maki SUSHI BAR,862,1919,1387,454 West 2nd St.
+D'Blazios,867,1926,1388,1904 Ranch Road 12 #111
+Meadows Insurance Agency,868,1927,1389,"Ste 115, 1904 Old Ranch Road 12"
+Aldino's at the Vineyard,869,1928,1390,1203 NW Loop 1604
+Ounce Steakhouse,870,1929,1391,"1401 N Loop 1604 W, Ste 105"
+Str8 Training,871,1932,1392,"304 East San Antonio Street, Suite101"
+Sundance Records,872,1933,1393,202 University Drive #B
+Frontier $2.25 Cleaners,873,1934,1394,19239 Stone Oak Parkway
+The Hot Spot Salon,874,1942,1395,326 N L B J Dr
+Sean Patrick's,875,1943,1396,202 E. San Antonio St. Ste. 119
+The Jean Bar,876,1944,1397,"1846 N Loop 1604 W #105,"
+Firehouse Subs,877,1945,1398,"1802 N. Loop 1604 E., #104"
+Victory Cleaners,878,1947,1399,102 Wonder World Drive
+Grin's Restaurant,879,1948,1400,802 N. LBJ Drive
+Alvin Ord's,880,1949,1401,204 University Drive
+Rep Up 15 Fitness Center,881,1955,1402,2211 NW Miltary
+Euro Cafe & Market,882,1956,1403,"350 N Guadalupe St., Suite 130"
+Thai Fresh,883,1957,1404,"909 West Mary, Suite B"
+Hon Machi Sushi & Teppanyaki,884,1958,1405,1321 N Loop 1604 E #100
+Izakayanin Japanese Tapas & Sushi,885,1959,1406,20330 Huebner Road
+Thrice Cafe,888,1960,1408,"909 West Mary, Suite"
+The Coffee Groundz,889,1964,1410,2503 Bagby St.
+Pub Fiction,892,1967,1415,2303 Smith St.
+SportClips Haircuts,893,1968,1416,2621 Shepherd Dr.
+Belden's Automotive,895,1970,1418,13811 San Pedro
+Taco Milagro,897,1971,1419,2555 Kirby Drive
+Fish City Grill,898,1972,1420,"18130 U.S. Hwy 281 North, Ste 104"
+The Palm Cafe II,904,1978,1422,504 Broadway Street
+Planet Bike,905,1979,1423,18720 Stone Oak Parkway
+Crickets & Lotz of Shoes,906,1981,1424,302-B University Drive
+Texas Reds Steakhouse,907,1982,1425,120 Grove Street
+The Hub Bicycle Lounge,908,1983,1426,119 E Hopkins Street
+RED ROBIN,910,1986,1429,19433 I-45 S.
+RED ROBIN,911,1987,1430,10465 Richmond Ave.
+Romeo's Italian Grill & Bar,912,1988,1431,115 North Loop 1604 East
+Jack Allen's Kitchen,914,1993,1432,7720 Highway 71 West
+PIZZA GUY,915,1994,1434,9720 Jones Rd.
+Dogadillo,916,1995,1435,12912 Hill Country Boulevard
+Bagel Factory,917,1996,1436,15909 San Pedro
+Lux 77 Boutique,919,2000,1441,"1846 N. Loop 1604 W Suite 108, San Antonio, TX 782"
+Smoothie King,920,2001,1442,1141 N Loop 1604 E
+Schakolad Chocolate Factory,921,2002,1443,"1203 N Loop 1604 W, Ste 117"
+Sassen Boutique,922,2003,1444,12912 Hill Country Blvd
+Springhill Restaurant,924,2005,1446,13212 Hwy. 71 West
+Red Robin,925,2007,1447,22455 State Hwy 249
+SoLa,927,2010,1449,2005 South Lamar Blvd.
+Rhea's Ice Cream,928,2012,1450,318 North LBJ Drive
+The Floral Studio,929,2014,1451,"312 University Drive, Ste D"
+Yum Yum Frozen Yogurt,930,2015,1452,1601 Barton Springs Road
+620 Chiropractic & Wellness Center,933,2017,1453,1603 Ranch Rd (620 N)
+Hollywood Vietnamese & Chinese,934,2018,1454,2409 Montrose Blvd
+Starplex,935,2019,1455,1250 Wonderworld Drive
+Women's Super Fitness,936,2021,1456,2341 NW Military Drive
+La Vie Cafe,937,2022,1457,10003 NW Military
+Exotic Tan,938,2023,1458,30520 Tomball Parkway
+iForce Fitness,939,2024,1459,11300 West Road
+MITCHELL'S SPORTS BAR & GRILL,940,2025,1460,15914 Telge Rd.
+Fruzen Yogurt Bar,942,2028,1461,15614 Huebner Rd Ste 113
+Toucan Tan,943,2030,1462,10003 NW Military
+Buenos Aires Cafe,944,2031,1463,1201 East 6th Street
+Anytime Fitness,945,2035,1464,16535 Huebner Road
+Pack & Mail,946,2036,1465,"15614 Huebner Road, Ste 110"
+The Wash Dawg,947,2037,1466,16600 Huebner Rd Suite 106
+LA VE VEE COUTURE,948,2038,1467,130 Vintage Park Dr.
+Everything Bling,952,2045,1471,112 Commerce Street
+CID,953,2046,1472,701 Rio Grande
+La Portrait Boutique,954,2047,1473,130-A Vintage Park Blvd
+Pearl Hair and Make Up Studio,955,2048,1474,1601 E. Cesar Chavez #101
+GOODYEAR COPPERFIELD,956,2049,1475,8303 Highway 6 N.
+Austin Children's Museum,961,2055,1480,201 Colorado Street
+Park Avenue $2.25 Cleaners,962,2056,1481,"14439 N.W. Military, Ste 102"
+Feelgood Health Foods,964,2058,1483,110 Commerce Street
+Thai Spice - UT Campus,965,2059,1484,2100 Guadalupe
+Froots,967,2062,1485,415 2nd Street
+Flour Power Cafe & Bakery,969,2069,1487,2211 NW Military Hwy
+Santa Catarina Mexican Restaurant,971,2077,1489,1310 RR 620 S
+Tolentino's Italian Kitchen,974,2088,1490,16607 Huebner Road
+Mia Bella,976,2091,1492,110 Vintage Park Blvd.
+Fado Irish Pub & Restaurant,978,2092,1494,214 West 4th Street
+FARMERS,979,2093,1495,21348 Provincial Blvd.
+Manola's Thai & Vietnamese Cuisine,980,2094,1496,7212 Blanco Road
+Los Cucos Mexican Cafe,981,2095,1497,"226 Bitters Road, Ste 126"
+AMF Country Lanes Bowling,982,2096,1498,13307 San Pedro
+PostNet,983,2097,1499,10807 Jones RD
+Texadelphia,984,2098,1500,13111 San Pedro Ave. Suite 101
+Facelogic Essential Skincare SPA,985,2100,1501,8525 Blanco Road
+Tansations,986,2101,1502,2211 N.W. Military Hwy # 117
+HEB,987,2102,1503,5800 Slaughter Lane West
+Pho Thaison - Lakeway,991,2106,1507,"2121 Lohman's Crossing, #500"
+Embassy Miniature Golf,992,2107,1508,500 Embassy Row
+V's Thai Cuisine and Sushi Bar,993,2108,1509,"226 West Bitters Road, Suite 124"
+Sobani Restaurant & Wine Bar,994,2109,1510,1700 N. FM 620
+Lucky Burger,995,2110,1511,2114 N.W. Military Hwy
+Zorbas Greek Mediterranean Cuisine,996,2111,1512,2110 N.W. Military Hwy
+Brother's Pizza,997,2112,1513,9719 Mills RD
+Beyond Bronze,998,2113,1514,16040 West RD
+Trader's Village,999,2116,1515,7979 N. Eldridge RD
+Oblate Cafe,1000,2117,1516,2112 N.W. Military Drive
+Mi Carreta Mexican Restaurant,1001,2118,1517,2313 NW Military Hwy
+Tantra Coffee House,1002,2119,1518,217 West Hopkins
+The Skinny Dip,1003,2120,1519,107 E Hopkins
+BROTHERS PIZZA EXPRESS,1004,2121,1520,6700 Woodlands Parkway
+BURGER GIRL,1005,2122,1521,17117 Tomball Parkway
+Fitness 19,1006,2123,1522,15614 Huebner Rd
+Wing Stop,1007,2124,1523,502 EMBASSY OAKS
+Guido's Pizza Pies,1008,2125,1524,10850 Louetta Road
+Velocity Sports Performance,1009,2126,1525,"2211 NW  Military Hwy, Ste 127 B"
+Mochas and Javas,1010,2127,1526,700 N. LBJ Ste 103-A
+Mazak Music,1011,2128,1527,1236 Highway 123
+HONEY-BEE HAM & DELI,1012,2129,1528,4747 Research Forest
+Cozzoli's Pizza,1013,2130,1529,704 Congress
+India Oven,1014,2131,1530,1031 Patricia
+Hair Review & Nail Salon,1015,2132,1531,13402 West Aveneu
+Blue Water Seafood,1016,2133,1532,12914 Fm 1960 W.
+Texadelphia,1017,2134,1533,12914 Fm 1960 W.
+Green Mesquite BBQ & More,1018,2135,1534,1400 Barton Springs Rd
+Cisco's Salsa Company,1019,2136,1535,209 Commerce St.
+The Popcorn Bag,1021,2138,1536,8765 Spring Cypress RD
+Great Harvest Bread Company,1022,2139,1537,2267 NW Military Hwy #109B
+RICO'S MEXICAN GRILL,1023,2140,1538,314 Sawdust Rd.
+Hungry Howie's Pizza,1024,2142,1539,13486 San Pedro Ave. Ste. 103
+GREEK TONY'S PIZZA & SUB SHOP,1028,2146,1540,438 Sawdust Rd.
+Habanero's Grill,1029,2147,1541,13444 West Avenue
+EAGLE POINT COMMUNICATIONS,1030,2148,1542,20111 FM 2100 Rd.
+Tokyo Steak House,1031,2149,1543,9405 San Pedro Avenue
+Suzi's Chinese Grill,1032,2150,1544,1152 S. Lamar
+GROGAN'S MILL SHELL CAR CARE,1033,2152,1545,2101 Buckthorne Place
+DOUBLE DAVE'S PIZZAWORKS SINCE 1984,1034,2153,1546,2626 Research Forest
+JACK'S PLACE FOOD & DRINK,1035,2154,1547,26710 I-45 North
+CRESCENT MOON WINE BAR,1036,2155,1548,"440 Rayford Road, Suite 115a"
+THE GOOSE'S ACRE BISTRO & IRISH PUB,1037,2156,1549,"21 Waterway Ave., Suite 140"
+Hot Bowl Mongolian Grill,1038,2157,1550,17440 W. Grand Parkway
+WOODLANDS GOLF CENTER,1039,2158,1551,17939 I-45 South
+ONE Photography Studios,1040,2159,1552,7710 Cherry Park Drive
+Bosses Pizza,1042,2161,1553,263 Loop 337
+Wash Tub,1043,2162,1554,1054 N Business IH35
+Garden Buffet,1044,2163,1555,651 Business Loop
+Iron Horse Grill,1045,2164,1556,1030 N Business IH 35
+Philly's Phamous,1046,2165,1557,12054 Blanco Rd
+Sports Clips,1047,2166,1558,"161 Creekside Way, Suite 502"
+Kobe Japanese Steak House,1048,2167,1559,1007 NW Loop 410
+360 Personal Fitness,1049,2168,1560,"651 N. Business IH 35, Suite 1140"
+BUFFALO WILD WINGS,1050,2169,1561,19075 I-45 South
+Flowers By Jeni,1051,2170,1562,"651 N Business IH 35, Suite 820"
+Christian Gifts Outlet,1052,2171,1563,"651 Business IH 35, Suite 230"
+Lazer X,1053,2172,1564,651 N Business IH35 Ste 210
+Schobels,1054,2174,1565,1515 Kuehler Ave.
+Familia Dental,1055,2175,1566,"161 Creekside Way, Suite 102"
+RENOUVEAU SALON AND SPA,1056,2176,1567,Sawdust Road
+PUMP IT UP,1057,2177,1568,536 Sawdust Rd.
+Mr. Jim's Pizza,1058,2178,1569,8475 Hwy 6 N
+Mark Sodovsky Jewelers,1059,2179,1570,"13133 NW Military Hwy, Suite 100"
+Russo's NY Coal-Fired Pizzeria,1060,2180,1571,19817 Northwest Freeway
+TJ's Burgers & More,1061,2182,1572,259 Loop 337
+Longhorn Steakhouse,1063,2184,1573,2963 Cold Spring Drive
+Hacienda Patron Mexican Grill & Seafood,1064,2185,1574,459 McCarty
+BaySeas Fish Market & Seafood Restaurant,1065,2186,1575,7115 Blanco Road
+EDEN CAFE,1066,2187,1576,"33418 Egypt Lane, Suite 16"
+Brandon's Pizza,1067,2188,1577,13416 Greenway Dr.
+Rooster's Men's Grooming Center,1068,2189,1578,13343 N Highway 183 # 215
+Godai Sushi Bar & Japanese Restaurant,1069,2190,1579,11203 West Avenue
+Tooth Time,1070,2191,1580,206 Stone Gate Drive
+IGNITE,1071,2192,1581,17515 Spring Cypress
+Snip-its,1072,2193,1582,9500 S. IH 35 (South Park Meadows)
+Macho Taco,1073,2194,1583,12110 Manchaca Road
+Taqueria Guadalajara,1074,2195,1584,105 S Interstate 35
+"SPRING CHRYSLER, JEEP AND DODGE",1075,2196,1585,21027 N IH-45
+China Kitchen,1076,2197,1586,104 N Business Ih 35
+Carino's,1077,2198,1587,9500 S. IH 35 (South Park Meadows)
+Embroid Me,1078,2199,1588,9001 Brodie Lane #C8
+Taco Bueno,1079,2200,1589,Ih 35 East
+Sabor Latino,1080,2201,1590,1050 South Seguin Avenue
+Chick-fil-A,1081,2202,1591,1031 S Walnut Ave
+Garibaldi Mexican Restaurant,1082,2203,1592,2267 Northwest Military Highway
+Henne Hardware,1083,2204,1593,246 West San Antonio Street
+Megabryt,1084,2205,1594,133 N. Seguin Ave.
+ICON Tickets,1085,2206,1595,13313 Amasia Drive
+BC Tavern,1086,2207,1596,11715 Bee Cave Road
+Double Dave's Pizzaworks,1087,2208,1597,9500 S. IH 35
+STATS Sports Bar and Grill,1090,2211,1599,10850 Louetta Rd.
+Polly's Pet Shop,1091,2212,1600,651 North Business Ih 35
+Wink,1092,2214,1601,"1014 North Lamar, Ste. E"
+BUSTER'S CRAWFISH,1093,2215,1602,9201 FM 1488
+TAILGATORS PUB & GRILL,1094,2216,1603,33418_L Egypt Lane
+Roosters Men's Grooming Center,1095,2217,1604,11905 Bee Cave Road
+CHI-TOWN,1096,2218,1605,2101 Ranch Road 620 North
+Olives Italian Market,1097,2219,1606,215 S. Seguin
+Los Gallos,1098,2220,1607,974 Loop 337
+Texas Harbor,1099,2221,1608,490 S State Highway 46
+Twin Rivers Spa Haus,1100,2222,1609,453 S Seguin Ave
+The Body Shoppe,1101,2223,1610,532 Comal Ave
+Liberty Bistro,1102,2224,1611,200 North Seguin Avenue
+Genghis Grill,1103,2225,1612,4477 South Lamar Blvd. #400
+Naegelin's Bakery,1104,2226,1613,129 South Seguin Avenue
+Marina's Mexican Restaurant,1105,2227,1614,598 Landa Street
+Hanna's Kitchen,1106,2228,1615,1101 North Walnut Avenue
+Spud Ranch,1107,2229,1616,118 Common St.
+Crosswalk Cafe,1108,2230,1617,"1667 W. Hwy 46, Suite 400"
+Quick Align,1109,2231,1618,708 North Walnut Avenue
+Longhorn Cafe,1110,2232,1619,1667 Hwy 46
+"""GOLD'S GYM""",1111,2233,1620,6210 FM 1488
+"""PLANET BEACH CONTEMPO SPA THE WOODLANDS""",1112,2235,1621,6503 FM 1488 #409
+Granzin BBQ,1113,2236,1622,660 West San Antonio
+The Fixx Hair Studio,1114,2237,1623,1435 N. Walnut
+Dylan Brookes Salon,1115,2238,1624,"2110 Slaughter Lane, #174"
+Taqueria El Tapatio,1116,2239,1625,220 South Seguin Avenue
+Fresh & Fruiti Frozen Yogurt,1117,2240,1626,2127 Lohmans Crossing
+GenuWine tasting Room,1118,2241,1627,6503 FM 1488
+True Green Dry Cleaners,1119,2242,1628,"903 Bitters Road, Ste 102"
+McBee's BBQ,1120,2243,1629,508 Landa Street
+"Econo Move & Storage, Inc.",1121,2244,1630,419 E. Carolina
+Cravings,1122,2245,1631,712 West San Antonio Street
+Nails Etc.,1123,2246,1632,1551 N Walnut Ave # 30
+Buddy's Backyard,1124,2247,1633,1440 North Walnut Avenue
+Diggity Dogs,1125,2248,1634,208 Loop 337
+Henry's Puffy Tacos,1126,2249,1635,6030 Bandera
+NOGOYA JAPANESE RESTAURANT & SUSHI BAR,1128,2250,1636,20900 Katy Freeway
+Sports Clips Park North,1129,2251,1637,"754 NW Loop 410, Ste 5"
+"""GOLD'S GYM""",1130,2252,1638,6210 FM 1488
+The Melting Pot San Antonio,1131,2253,1639,"14855 Blanco Road, Ste 110"
+VCA Castle Hills Companion Animal Hospital,1132,2254,1640,13141 N.W. Military Highway
+STADIA SPORTS GRILL,1133,2255,1641,20900 Katy Freeway
+NUTRITION CENTRAL,1134,2256,1642,6519 FM 1488
+Fresh & Fruiti Frozen Yogurt,1135,2257,1643,2127 Lohmans Crossing
+"""CHILD & FAMILY EYE CARE""",1136,2261,1644,7025 FM 1488
+Spring Fitness Center,1137,2262,1645,2400 Fm 2920 Rd
+CREATIVE CHRISTIANS,1138,2263,1646,6875 FM 1488
+KWIK KAR IN MAGNOLIA,1139,2264,1647,33033 FM 2978
+SMOOTHIE KING,1140,2265,1648,6627 F.M. 1488
+Sports Clips Park North,1141,2266,1649,"17224 IH 35 N, Ste 3"
+Chipotle,1142,2267,1650,9600 S IH 35
+The Lion & Rose,1143,2268,1651,700 E Sonterra Blvd
+2tarts Bakery & Catering,1144,2270,1652,139 North Castle Ave. Suite 300
+River Tree Bistro,1145,2271,1653,"16350 Blanco Road, Ste 103"
+El Mercado Uptown,1146,2272,1654,1702 Lavaca Street
+Dr. Mardaga & Dr. Eshelman's Office,1147,2274,1655,1017 W Main St
+Premier Cuts,1149,2278,1657,"1659 Hwy 46 West, Suite 145"
+Classy Canines,1150,2279,1658,2345 Loop 337 Suite 100
+STIR CRAZY FRESH ASIAN GRILL,1151,2280,1659,25 Waterway Ave
+SUBWAY®,1152,2281,1660,7301 Ranch Road 620 North
+SUBWAY®,1153,2282,1661,3909 IH- 35
+SUBWAY®,1154,2283,1662,5419 N IH 35
+SUBWAY®,1155,2284,1663,3407 Wells Branch Pkwy
+SUBWAY®,1156,2285,1664,7711 Burnet Road
+Texas Roadhouse,1157,2286,1665,9300 IH-35 Building F
+Drew's Pastry Place,1158,2287,1666,10300 Louetta RD
+Sam's Club,1159,2288,1667,1350 Leah Avenue
+SWEET & SASSY,1160,2291,1668,9595 Six Pines Dr
+TO THE NINES BOUTIQUE,1161,2307,1669,25282 Northwest Freeway
+Buffalo Wild Wings Grill & Bar,1162,2308,1670,14215 FM 2920
+Buffalo Wings & Rings,1163,2309,1671,983 N Loop St
+Arbor Car Wash & Lube Center,1164,2310,1672,3120 Guadalupe Street
+EL RANCHO MEXICAN RESTAURANT,1165,2311,1673,17754 Katy Freeway
+WINGS 'N MORE,1166,2312,1674,509 S. Mason Rd.
+MONKEY JOE'S,1167,2313,1675,511 S. Mason Rd.
+FIRESTONE COMPLETE AUTO CARE,1168,2315,1676,25951 Northwest Freeway
+DICKEY'S BARBECUE PIT,1169,2316,1677,1911 Taylor Street
+SMOOTHIE KING,1170,2317,1678,1923 Taylor St.
+Players,1171,2319,1679,300 W Martin Luther King Dr
+Artistic Blooms,1172,2336,1680,"7863 Callaghan Rd., #103"
+Jade Ho Chinese Restaurant,1173,2345,1681,11703 Huebner Road #104
+Panda Express,1174,2346,1682,309 West Slaughter Lane
+SOMA SUSHI,1175,2389,1683,4820 Washington Ave.
+PROVISIONRx,1177,2402,1684,17515 Spring Cypress
+Wing Zone,1178,2404,1685,7863 Callaghan Rd
+Domino's Pizza,1179,2405,1686,1900 Guadalupe
+Live Oak Pharmacy,1180,2407,1687,1611 W 5th Street
+THE UPS STORE,1181,2408,1688,565 South Mason Road
+Fuddruckers,1182,2409,1689,9845 IH-10 West
+Firestone Complete Auto Care Store,1183,2410,1690,16711 Champion Forest Dr
+Genghis Grill,1185,2413,1691,"1903 North Loop 1604 E, Ste 1106"
+Thai Lao Orchid Authentic Thai Cuisine & Sushi,1186,2414,1692,"18410 Hwy 281 North, Ste 115"
+Austin's Pizza,1187,2415,1693,2324 Guadalupe Street
+BIG BITE GRILLS & SUSHI,1188,2416,1694,19901 Kingsland Blvd.
+"""MASSAGE ENVY""",1189,2417,1695,6531 FM 1488
+Best Practices Realty,1190,2419,1696,19110 Brannan Bluff
+Schlotzsky's Deli,1191,2420,1697,"111 W. William Cannon Blvd., Ste. 202"
+Chedd's Gourmet Grilled Cheese,1192,2423,1698,4601 North Lamar Boulevard
+Thai Siam,1193,2424,1699,11581 Hwy. 6 south
+JAX Neighborhood Cafe,1194,2425,1700,2828 Rio Grande
+El Greco,1195,2426,1701,3016 Guadalupe St # C200
+"""HUBBELL & HUDSON""",1196,2427,1702,24 Waterway Ave
+"""NORTHSIDE FIAT""",1197,2428,1703,1501 Lake Robbins Dr
+"""CONTEMPO SPA OF LAKE CONROE""",1198,2431,1704,15260 Hwy 105 West
+"""CONTEMPO SPA OF LAKE CONROE""",1199,2432,1705,15260 Hwy 105 West
+Sao Paulo's Restaurante,1200,2436,1706,2809 San Jacinto
+Red Robin,1201,2437,1707,"1750 N Loop 1604, Ste 102"
+Gourmet Burger Grill,1202,2438,1708,"11224 Huebner Rd., Suite 206"
+TEXAS PREMIER GOLD BUYERS,1217,2455,1722,26103 I-45 South
+Red Rooster Cafe,1218,2456,1723,386 W. San Antonio St.
+Rita's,1219,2461,1724,2828 Guadalupe
+EL JARRITO MEXICAN RESTARUANT,1220,2462,1725,21724 Highland Knolls
+HAUERLAND'S,1221,2463,1726,1648 S. Mason Rd.
+FANTASTIC SAMS,1222,2464,1727,555 South Mason Road
+Boston's Restaurant & Sports Bar,1223,2465,1728,1827 North Loop 1604 E
+Zen,1224,2466,1729,1303 South Congress
+Zen,1225,2467,1730,1303 South Congress
+Zen,1226,2468,1731,1303 South Congress
+Zen,1227,2469,1732,1303 South Congress
+The Clay Pit,1228,2470,1733,1601 Guadalupe Street
+POSTAL WEB PLUS,1229,2471,1734,2910 Commercial Center Blvd.
+POSTAL EXPERTS,1230,2472,1735,1251 Pin Oak Road
+PUMP IT UP,1231,2473,1736,923 South Mason Road
+Maui Wowi,1232,2474,1737,10919 Louetta RD
+Cartridge World,1233,2475,1738,940B West San Antonio St
+Hawaiian Retreat Day Spa,1234,2476,1739,8765 Spring Cypress
+KATY KIPS GYMNASTICS CLUB,1235,2477,1740,923 South Mason Road
+BODY & SOL TANNING,1236,2479,1741,1644 South Mason
+Koko FitClub,1237,2480,1742,19903 Stone Oak Parkway Suite 104
+Groomer Seafood Fresh Retail Market,1238,2481,1743,9801 McCullough
+PINOT'S PALETTE,1239,2482,1744,2910 Commercial Center
+TACO GRILL,1242,2483,1745,2004 South Mason Road
+Faces 365 Spa,1243,2484,1746,10927 Louetta RD
+VCA Oak Hills Animal Hospital,1244,2485,1747,6614 Southpoint Street
+VCA Mission Animal Hospital,1245,2486,1748,2822 Pleasanton Road
+STUDIO FITNESS,1246,2487,1749,325  W. 19th Street
+LA FINCA MEXICAN RESTAURANT,1247,2488,1750,23930 Westheimer Parkway
+Vintage Park Salon,1248,2489,1751,10850 Louetta
+TEXAS PREMIER GOLD BUYERS,1249,2490,1752,26103 I-45
+STRATA RESTAURANT & BAR,1250,2491,1753,122 Vintage Park Blvd.
+Strata Restaurant & Bar,1251,2492,1754,122 Vintage Park Blvd
+BERRIPOP,1252,2497,1755,25 Water Way Ave
+C.A.R.S. Complete Auto Repair Service,1253,2498,1756,6135 FM 2920
+C.A.R.S. Complete Auto Repair Service,1254,2499,1757,612 West Phillips ST
+THE EGG & I,1255,2501,1758,1644 Research Forest Dr
+VCA Health Associate Animal Hospital,1257,2502,1759,11214 Iota Drive
+THE GOOSE'S ACRE BISTRO & IRISH PUB,1258,2503,1760,21 Waterway Ave
+VCA Henderson Pass Animal Hospital,1259,2504,1761,2558 Thousand Oaks
+VCA Veterinary Hospital of Leon Springs,1260,2505,1762,19633 IH 10 West
+SMOOTHIE KING,1261,2506,1763,29300 Hempstead Rd.
+Crowe & Kuehler Dentistry,1263,2507,1764,"457 Landa Street Street, Suite D"
+Agape Day Spa,1264,2508,1765,125 N Walnut Ave.
+TOMBOLINI'S WORLD'S GREATEST MEATBALLS,1266,2513,1766,11910 Louetta
+Contempo Spa of Lake Conroe,1267,2514,1767,15260 hwy 105 W
+BARKER CYPRESS CAR WASH,1269,2517,1768,11302 Barker Cypress Rd.
+Massage Heights of Vintage Park,1272,2519,1769,10927 Louetta RD
+E-Z Tan Champions,1273,2520,1770,16634 Champions Forest
+STRATA RESTAURANT & BAR,1274,2521,1771,122 Vintage Park Blvd.
+Strata Restaurant & Bar,1275,2522,1772,122 Vintage Park Blvd
+Craig O's,1276,2523,1773,"4970 Hwy 290 West, Ste 460"
+Baskin Robbins,1277,2524,1774,9911 Brodie Lane Ste. 850
+One30Fitness,1278,2525,1775,27326 Robinson Rd
+A Rowdy Boutique,1279,2526,1776,8312 Louetta RD
+Postal Annex,1280,2531,1777,8765 Spring Cypress
+Gatti Town,1281,2532,1778,9900 S. IH-35
+Delice Chocolatier & Patisserie,1283,2536,1780,"946 N. Loop 1604 W, Ste 145"
+Lemon Grass Thai Restaurant,1284,2537,1781,16666 San Pedro Avenue
+A Shop Around the Corner,1286,2542,1782,125 S. Business IH 35
+2 River Coffee,1287,2543,1783,2351 Loop 337
+Club Group Fit,1288,2544,1784,2320 Gruene Lake Drive
+Pet Adventure Grooming & Spa,1289,2547,1785,19179 Blanco Road
+Sports Clips,1290,2548,1786,23002 US Hwy. 281 North
+Orange Leaf,1291,2549,1787,"18030 HWY 281N, Suite 225,"
+Baby Bugaloo,1292,2550,1788,5700 W. Slaughter Lane #220
+BUFFALO WILD WINGS GRILL & BAR,1293,2551,1789,19910 Park Row
+Lenny's Sub Shop,1295,2555,1791,21202 State Highway 249
+The Yogurt Spot,1296,2560,1792,"20920 Katy Freeway, Suite S"
+Austin's Pizza,1297,2561,1793,2324 Guadalupe Street
+Austin's Pizza,1298,2562,1794,2324 Guadalupe Street
+Austin's Pizza,1299,2563,1795,2324 Guadalupe Street
+Austin's Pizza,1300,2564,1796,2324 Guadalupe Street
+Austin's Pizza,1301,2565,1797,2324 Guadalupe Street
+Austin's Pizza,1302,2566,1798,2324 Guadalupe Street
+Austin's Pizza,1303,2567,1799,2324 Guadalupe Street
+Austin's Pizza,1304,2568,1800,2324 Guadalupe Street
+Austin's Pizza,1305,2569,1801,2324 Guadalupe Street
+Austin's Pizza,1306,2570,1802,2324 Guadalupe Street
+Austin's Pizza,1307,2571,1803,2324 Guadalupe Street
+Rome's Pizza,1308,2572,1804,19298 Stone Oak Parkway
+Orange Leaf,1309,2573,1805,"18030 HWY 281N, Suite 225,"
+Orange Leaf,1310,2574,1806,"18030 HWY 281N, Suite 225,"
+Orange Leaf,1311,2575,1807,"18030 HWY 281N, Suite 225,"
+CUTE AS A BUTTON,1312,2576,1808,16518 House & Hahl Rd.
+Z Pizza,1313,2577,1809,700 E. Sonterra Blvd.  Ste 1103
+The Paddock Bar & Patio,1314,2582,1811,319 South Limestone
+The Paddock Bar & Patio,1315,2583,1812,319 South Limestone
+RND Sounds,1316,2584,1813,137 Ih 35 S
+GANOVIA COFFEE,1317,2585,1814,P.O. Box 41492
+Young Chefs Academy of San Antonio,1318,2586,1815,"20330 Huebner Rd, Ste.110"
+Comfort Dental,1319,2587,1816,203 N. Loop 1604 West
+Planet Beach,1320,2589,1817,18130 US Hwy 281 North
+JK's Hot Dogs,1321,2590,1818,2417 Thousand Oak Dr.
+Tug's BBQ,1322,2591,1819,1113 RR 620 South
+TEXAS PREMIER GOLD BUYERS,1324,2596,1820,26103 I-45
+CULVER'S OF THE WOODLANDS/SHENANDOAH,1325,2597,1821,8800 Six Pines Drive
+Whats's Up Cupcake,1326,2599,1822,632 W. 20th Street
+SMART DRINKS,1327,2601,1823,12343 Barker Cypress
+Waterloo Ice House,1328,2602,1824,12815 Shops Parkway
+Legends Sports Complex,1329,2603,1825,602 Pruitt Rd
+Rainbow Car Care,1330,2604,1826,318 Sawdust Rd.
+La Trattoria Tuscano,1331,2606,1827,4223 Research Forest Drive
+doTerra Essential Oils,1332,2607,1828,190 N. Valley Oaks
+Millennium Medi Spa,1334,2611,1829,651 North Business I35 Suite 720
+Sweet Creations,1335,2616,1830,8116 Fredericksburg Road
+Freddy's Frozen Custard & Steakburgers,1336,2617,1831,16522 Hwy 281 North
+Car-X Tire & Auto,1337,2618,1832,2009 Ranch Road 620N
+TERIYAKI EXPERIENCE,1338,2619,1833,17337 Spring Cypress
+Qdoba MEXICAN GRILL,1339,2620,1834,17400 Spring Cypress
+Studio 3 of The Woodlands,1340,2621,1835,314 Sawdust Road
+China Garden Chinese Restaurant,1341,2622,1836,8742 Wurzbach
+Toastie's Sub Shop,1342,2623,1837,215 South Lamar Blvd.
+ECO EZ-Riders,1343,2624,1838,Woodlands
+Nutrition Epicenter,1344,2625,1839,1102 Yale Street
+Bacon,1347,2626,1840,900 W 10th ST
+WOOF GANG BAKERY,1348,2627,1841,1204 N. Lamar Blvd.
+Nick2,1349,2628,1842,1221 S Congress
+San Antonio Kids Karate,1350,2629,1843,1602 Babcock Road
+CYPRESS STATION GRILL,1351,2630,1844,26010 Hempstead Rd.
+Cantina Laredo,1352,2631,1845,201 West 3rd Street
+Casa Chapala,1353,2632,1846,101 San Jacinto

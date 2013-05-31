@@ -1,0 +1,118 @@
+<% body_id "advertiser_signup" %>
+<% nav_step 1 %>
+<% #raise "ad address: #{@advertiser.address.inspect}" %>
+<% content_for :javascript do %>
+<%= javascript_include_tag "http://maps.google.com/maps?file=api&v=2&key=#{GMAPS_KEY}&hl=en" %>
+<script>
+$(document).ready(function() {
+	$(".phone_number").mask("(999) 999-9999", {placeholder:" "});
+	var mapManager = new MapManager( { 
+		divId: 'map_canvas', 
+		lngInputId: 'advertiser_address_attributes_lng', 
+		latInputId: 'advertiser_address_attributes_lat', 
+		lat:<%= (@advertiser.address and @advertiser.address.lat?) ? @advertiser.address.lat : 30 %>, 
+		lng:<%= (@advertiser.address and @advertiser.address.lng?) ? @advertiser.address.lng : -97 %>, 
+		supportMarkerDragging: true, 
+		locateAddressId: 'locateAddress', 
+		getCurrentAddress: function() {  
+			var address = $('#advertiser_address_attributes_street').val();
+			var state = $('#advertiser_address_attributes_state').val();
+			var city = $('#advertiser_address_attributes_city').val();
+// alert(address + ", " + city + ", " + state + ", USA");
+			return address + ", " + city + ", " + state + ", USA"; 
+		} 
+	} );
+});
+</script>
+<% end %>
+<div class='advertiser_info_content'>
+  <div class="step_header">
+  	<h2>2. Tell Us About Your Business</h2>
+  </div>
+  <div class="clear"></div>
+
+  <div>
+    <div class='signup_content'>
+    	<p>
+    		This information is used to begin building your offer. This information
+    		will also be used for billing, although if your offer address and billing
+    		address are different, you will have an opportunity to give us a different
+    		address for the offer later in the wizard.
+    	</p>
+    	<p>
+    		Changing the contact information in your offer will not change the
+    		billing and business information that you provide here. Please take
+    		the time to fill in this information accurately as errors could delay
+    		your activation.
+    	</p>
+    <% signup_update_form do |form| %>
+      <%= current_step_tag %>
+    	<% # signup_state_tag %>
+    	<p class="field">
+        <%= required_label form, :name, "Business Name" %>
+        <span class="hint">(~40 words)</span><br/>
+    		<%= form.text_field :name %>
+    	</p>
+    	<div class='clear'></div>
+    	<% form.fields_for :address, @advertiser.address do |address| %>
+        <div class='address_fields left'>
+          <hr class='fields_section' />
+          <h3>Business Address</h3>
+      		<p class="field">
+            <%= required_label address, :street, "Address" %>
+      			<%= address.text_field :street %><br />
+      		</p>
+      		<p class="field multi_col left">
+            <%= required_label address, :city %>
+      			<%= address.text_field :city, :class => :narrow %>
+      		</p>
+      		<p class="field multi_col left">
+            <%= required_label address, :state %>
+      			<%= address.select(:state, state_select_options) %>
+      		</p>
+      		<div class='clear'></div>
+      		<p class="field multi_col left">
+            <%= required_label address, :zip_code, "Zip Code" %>
+      			<%= address.text_field :zip_code, :class => "narrow" %>
+      		</p>
+      		<p class="field multi_col left">
+            <%= required_label address, :phone_number, "Phone Number" %>
+      			<%= address.text_field :phone_number, :class => "phone_number narrow" %>
+      		</p>
+      		<div class='clear'></div>
+    			<div class='map_update'><a id="locateAddress" href="javascript:void(0);">Update Address on Map</a></div>
+        </div>
+        <div class='address_map left'>
+      			<%= address.hidden_field :lat %>
+      			<%= address.hidden_field :lng %>
+      		<div id="map_canvas" style="height: 300px; width: 450px; "></div>
+      		<p class="field">
+      			<%= address.check_box :lat_lng_set_manually %>
+      			<%= address.label :lat_lng_set_manually, "Pin Current Map Address", :class => 'inline' %>
+      		</p>
+        </div>
+        <div class='clear'></div>
+    	<% end %>
+    	<hr class='fields_section' />
+      <div id='advertiser_sites'>
+        <h3>Other Sites and Social Media</h3>
+      	<p class="field left">
+      		<%= form.label :website_url, "Your Website<span class='hint'>eg: http://communityoffers.com</span>" %>
+      		<%= form.text_field :website_url, :class => "url" %>
+      	</p>
+      	<p class="field left">
+      		<%= form.label :twitter_url, "Twitter URL<span class='hint'>eg: http://twitter.com/communityoffers</span>" %>
+      		<%= form.text_field :twitter_url, :class => "url" %>
+      	</p>
+      	<p class="field left">
+      		<%= form.label :facebook_url, "Facebook URL<span class='hint'>eg: http://facebook.com/communityoffers</span>" %>
+      		<%= form.text_field :facebook_url, :class => "url" %>
+      	</p>
+      </div>
+    	<div class='clear'></div>
+        <%= render :partial => 'signup_form_buttons', :locals => {:form => form, :skip_previous => true} %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>

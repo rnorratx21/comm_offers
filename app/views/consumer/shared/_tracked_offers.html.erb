@@ -1,0 +1,28 @@
+<h2>Favorite Offers</h2>
+<p>Below are your favorite offers.  If an offer has been updated since your last login, it will have a red background behind the last update date.</p>
+<% if tracked_offers.any? %>
+<table class='dataset'>
+  <tr>
+    <th>Offer</th>
+    <th>Category</th>
+    <th>Zip Code(s)</th>
+    <th>Tracking Since</th>
+    <th>Offer Last Updated At</th>
+  </tr>
+<% current_user.tracked_offers.each do |to| %>
+  <% offer = to.offer %>
+  <%= row_tag_with_updated_tracked_offer_flag(to) %>
+    <td><%= link_to image_tag(offer.logo.small.url), build_offer_permalink_path(offer) %>
+      <h4><%= link_to offer.business_name, build_offer_permalink_path(offer) %></h4>
+      <div><%= link_to "View Offer", build_offer_permalink_path(offer) %> | <%= link_to "Untrack", consumer_tracked_offer_path(current_user.is_tracking?(offer)), :method => :delete, :confirm => "Are you sure you want to stop watching this offer?" %></div>
+    </td>
+    <td><%= offer.category.name %></td>
+    <td><%= offer.address.zip_code %></td>
+    <td><%= date_format to.created_at %></td>
+    <td class='updated_at'><%= offer.updated_at.to_datetime.strftime("%m-%d-%Y %H:%M") %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+You're not currently tracking any offers.
+<% end %>

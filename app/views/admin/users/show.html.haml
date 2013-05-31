@@ -1,0 +1,83 @@
+= head_text "User #{@user.email}"
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/users/nav'
+
+/ - form_for [:admin, @user], :url => { :action => "pose" }, :html => { :method => :post } do |form|
+/   = form.submit "Pose as User"
+
+- if @can_pose
+  %h3
+    = pose_as_user_link(@user, "pose as #{@user.email}")
+
+%div
+  - if @user.is_disabled?
+    =link_to "Enable", activate_admin_user_path(@user), :method => :put
+  - else
+    =link_to "Disable", deactivate_admin_user_path(@user), :method => :put, :confirm => "Are you sure you want to disable this user? They will not be able to login."
+
+%table.dataset.vertical.striped
+  %tr
+    %th E-Mail
+    %td= mail_to @user.email
+  %tr
+    %th Registered
+    %td= @user.created_at.to_s(:admin)
+  %tr
+    %th Current Login
+    %td
+      =@user.try(:current_login_at).try(:to_s, :admin)
+      ="(#{@user.current_login_ip})"
+  %tr
+    %th Last Login
+    %td
+      = @user.try(:last_login_at).try(:to_s, :admin)
+      = "(#{@user.last_login_ip})"
+  %tr
+    %th Number of Logins
+    %td= @user.login_count
+  %tr
+    %th Number of Failed Login Attempts
+    %td= @user.failed_login_count
+
+  - if @user.display_group
+    %tr
+    %th Group
+    %td= @user.display_group
+   
+  - if @user.display_role
+    %tr
+    %th Role(s)
+    %td
+      #role_wrapper
+        = render :partial => "user_roles"
+  - if @user.advertiser 
+    - if @user.advertiser.is_draft?
+      %tr
+        %th Advertiser
+        %td Offer In Process
+    - else
+      %tr
+        -if @user.advertiser
+          %th Advertiser
+          %td= h @user.advertiser.name
+      %tr
+        %th Advertiser Address
+        %td= h @user.advertiser.address.full
+
+%h3 Offers
+
+%table.dataset
+  %thead
+    %tr
+      %th ID
+      %th Name
+  %tbody
+    -if @user.advertiser
+      - for offer in @user.advertiser.offers
+        %tr
+          %td
+            = offer.id
+          %td
+            = link_to offer.title, [:admin, offer]
+         

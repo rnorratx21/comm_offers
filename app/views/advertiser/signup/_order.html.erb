@@ -1,0 +1,67 @@
+<div id='order' class='rounded'>
+  <h3 class='item_recurrence'>Monthly Charges</h3>
+  <% monthly_items = order.items_by_recurrence(:monthly) %>
+  <% one_time_items = order.items_by_recurrence(:once) %>
+  <table id='monthly_items' class='order'>
+    <tbody>
+      <% monthly_items.each do |item| %>
+        <tr class='order_item'>
+          <td class='name'>
+            <%= item[:name] %>
+          </td>
+          <td class='price'>
+            $<%= item[:price] %>
+          </td>
+        </tr>
+      <% end -%>
+      <% if order.discount %>
+        <tr class='discount'>
+          <td class='name'>
+            Instant Discount! (<%= order.discount.promo_code %>) for <%= order.discount.months %> months
+          </td>
+          <td class='price'>
+            <%= "- $#{order_discount(order)}" %>
+          </td>          
+        </tr>
+      <% end -%>
+      <tr class="last"></tr>
+    </tbody>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td class='total'>
+          $<%= order_monthly_total(order) %>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+<% if one_time_items.length > 0 %>
+  <h3 class='recurrence'>One Time Charges</h3>
+  <table id="one_time_items" class='order'>
+    <tbody>
+      <% one_time_items.each do |item| %>
+        <tr class='order_item'>
+          <td class='name'>
+            <%= item[:name] %>
+          </td>
+          <td class='price'>
+            $<%= item[:price] %>
+          </td>
+        </tr>
+      <% end -%>
+      <tr class='last'></tr>
+    </tbody>
+    <tbody></tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td class='total'>
+          $<%= Order.sum_items one_time_items %>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+<% end -%>
+</div>

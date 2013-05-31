@@ -1,0 +1,99 @@
+<div class='hidden_payment_form'>
+  <%= render "layouts/flash", :object => flash %>
+  <div class='payment_content'>
+    <% if contract_upgrade_requested? %>
+      <h1>Platinum Plan and Payment Information</h2>
+      <h3 class='upgrade_headline'>
+        Thank you for your interest in our EXCLUSIVE Platinum Plan!
+      </h3>
+      <ul class='upgrade_notes'>
+        <li>
+          Platinum Plans (including the loyalty card and print promotion) are available to 16 unique merchants 
+          in a defined card area. 
+        </li>
+        <li>
+          Exclusivity for your business category on the card is given to our Platinum Advertisers. 
+          Spaces are limited and available on a "first come, first serve" basis.
+        </li>
+        <li>
+          By selecting this plan, you are signing up <strong>immediately for our Gold Plan including Web/Mobile/App promotion </strong> 
+          and are asking to be placed on the priority list for the first available Platinum Plan available for your business category on a Loyalty Card in your area.  
+          YOU CAN NOT BE PLACED ON A WAITING LIST FOR AN AREA UNLESS YOU ARE A GOLD PLAN ADVERTISER.  
+          WAITING LIST ORDER IS ASSIGNED ON A "FIRST COME, FIRST SERVE" BASIS.
+        </li>
+        <li>
+          A representative will contact you within 72 hours to advise you of Platinum Plan availability for your business in your area and your position on our waiting list 
+          via the email address and phone number you use to create your account.
+        </li>
+        <li class='bold'>
+          You will be charged $<%= ContractPlan::GOLD.installment_amount %> per month until your Platinum Plan space is confirmed 
+          AND YOUR BUSINESS IS PLACED INTO CARD PRODUCTION.
+        </li>
+        <li>
+          Once your business is placed into Loyalty Card production you will be charged $<%= ContractPlan::PLATINUM.installment_amount %> per month 
+          (plus a one-time setup fee of $<%= ContractPlan::PLATINUM.setup_amount %>).  Actual cards will be delivered to your 
+          business and in your local market within 10-15 days after production begins.
+        </li>
+      </ul>
+    <% else %>
+      <h1>Payment Information</h1>  
+    <% end %>
+    <% form_for @contract, { :url => advertiser_signup_path, :html => { :method => :put, :onsubmit => 'return verifyTermsAgreement();'} } do |contract_form| %>
+    <%= contract_form.hidden_field :upgrade_request_date if @contract.upgrade_request_date %>
+    <% contract_form.fields_for :credit_card do |credit_card| %>
+      <%= current_step_tag %>
+      <div id='payment_wrapper'>
+        <div class='payment_fields'>
+          <h2>Payment Information</h2>
+          <p class='field multi_col left'>
+            <%= required_label credit_card, :first_name, "First Name" %>
+            <%= credit_card.text_field :first_name, :class=>'narrow' %>
+          </p>
+          <p class='field multi_col left'>
+            <%= required_label credit_card, :last_name, "Last Name" %>
+            <%= credit_card.text_field :last_name, :class=>'narrow' %>
+          </p>
+          <div class='clear'></div>
+          <p class='field'>
+            <%= required_label credit_card, :number, "Credit Card Number (Visa, Master Card, American Express)" %>
+            <%= credit_card.text_field :number %>
+          </p>
+          <p class='field'>
+            <%= required_label credit_card, :expires_on, "Expiration Date" %>
+            <%= credit_card.date_select :expires_on, :prompt => true, :discard_day => true, :order => [:month, :year], :start_year => Date.today.year, :end_year => (Date.today.year+6) %>
+          </p>
+          <p class='field'>
+            <%= required_label credit_card, :verification_value, "CVV/CVV2 Security Code", :hint => '3-digit code on back of card. Amex is 4-digit code on front.' %>
+            <%= credit_card.text_field :verification_value, :class => 'narrow' %>
+          </p>
+          <p class='field'>
+            <%= required_label credit_card, :address1, "Billing Street Address" %>
+            <%= credit_card.text_field :address1 %>
+          </p>
+          <p class='field multi_col left'>
+            <%= required_label credit_card, :city, "City" %>
+            <%= credit_card.text_field :city, :class => :narrow %>
+          </p>
+          <p class='field multi_col left'>
+            <%= required_label credit_card, :state, "State" %>
+            <%= credit_card.text_field :state, :class => :narrow %>
+          </p>
+          <div class='clear'></div>
+          <p class='field'>
+            <%= required_label credit_card, :zip_code, "Zip Code" %>
+            <%= credit_card.text_field :zip_code, :class => 'narrow' %>
+          </p>
+        </div>
+        <div class='clear'></div>
+        <div id='bypass'><%= contract_form.text_field :bypass_code_param %></div>
+        <%= render :partial => 'advertiser/signup/agreement' %>
+        <div id='confirm_agreement_wrapper'>
+          <%= check_box_tag 'confirm_agreement', 'yes' %>
+          <%= agreement_text %>
+        </div>
+        <%= contract_form.submit "Next" %> | <%= link_to "Cancel", "javascript:void(0)", :id => "close_payment_modal" %>
+      </div>
+    <% end #end fields_for %>
+    <% end #end form %>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+<h2>Create Plan with Credit Card</h2>
+
+<% form_for [ :admin, @offer, @plan ], :url => admin_offer_plan_path(@offer) do |form| %>
+
+  <p class="field">
+    <%= form.label :code, "Plan" %>
+    <span class="required">*</span><br />
+    <%= form.collection_select :code, Plan.credit_card_plans, :code, :name, { :prompt => "Select One" } %>
+  </p>
+  
+  <% fields_for @credit_card do |credit_card| %>
+    <p class="field">
+      <%= credit_card.label :number %>
+      <span class="required">*</span><br />
+      <%= credit_card.text_field :number %>
+    </p>
+    <p class="field">
+      <%= credit_card.label :first_name %>
+      <span class="required">*</span><br />
+      <%= credit_card.text_field :first_name %>
+    </p>
+    <p class="field">
+      <%= credit_card.label :last_name %>
+      <span class="required">*</span><br />
+      <%= credit_card.text_field :last_name %>
+    </p>
+
+    <p class="field">
+      <%= credit_card.label :zip_code %>
+      <span class="required">*</span><br />
+      <%= credit_card.text_field :zip_code %>
+    </p>
+
+    <% if false %>
+    <p class="field">
+      <%= credit_card.label :card_type %>
+      <span class="required">*</span><br />
+      <%= credit_card.select :card_type, credit_card_types, :default => "visa" %>
+    </p>
+
+    <p class="field">
+      <%= credit_card.label :card_verification %>
+      <span class="required">*</span><br />
+      <%= credit_card.text_field :card_verification %>
+    </p>
+    <% end %>
+
+    <p class="field">
+      <%= credit_card.label :expires_on, "Expiration Date" %>
+      <span class="required">*</span><br />
+      <%= select_date @credit_card.expires_on,
+            :prefix => "credit_card[expires_on]",
+            :prompt => true,
+            :discard_day => true,
+            :order => [:month, :year],
+            :start_year => Date.today.year,
+            :end_year => (Date.today.year+6) %>
+    </p>
+
+    <button type="submit">Save</button>
+  <% end %>
+<% end %>
+
+<h2>Create Plan with Check</h2>
+
+<% form_for [ :admin, @offer, @plan ], :url => admin_offer_plan_path(@offer) do |form| %>
+
+  <p class="field">
+    <%= form.label :code, "Plan" %>
+    <span class="required">*</span><br />
+    <%= form.collection_select :code, Plan.check_plans, :code, :name, { :prompt => "Select One" } %>
+  </p>
+  
+  <% fields_for @check do |check| %>
+    <p class="field">
+      <%= check.label :first_name %>
+      <span class="required">*</span><br />
+      <%= check.text_field :first_name %>
+    </p>
+    <p class="field">
+      <%= check.label :last_name %>
+      <span class="required">*</span><br />
+      <%= check.text_field :last_name %>
+    </p>
+
+    <button type="submit">Save</button>
+  <% end %>
+<% end %>
+

@@ -1,0 +1,27 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'nav'
+%h2
+  = @title
+
+%table.dataset.striped
+  %thead
+    %tr
+      = sort_link 'Zip&nbsp;Code', :zip_code
+      = sort_link 'Number&nbsp;of&nbsp;Offers', :offers_count
+      %th
+        Offers in the Zip Code
+  %tbody
+    - @zip_codes.each do |zip_code|
+      %tr
+        %td.title
+          = h zip_code.zip_code
+        %td
+          = h zip_code.offers.count
+        %td
+          %ul
+            -zip_code.offers.each do |offer|
+              %li= link_to offer.title, [:admin, offer]
+
+= will_paginate @zip_codes
+

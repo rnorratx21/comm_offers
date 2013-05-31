@@ -1,0 +1,9 @@
+<div class='form_buttons'>
+  <% unless defined?(skip_next)%>
+    <%= form.submit "Next" %><span class='sep'>|</span>
+  <% end -%>
+  <% if !defined?(skip_next) && show_jump_to_preview? %>
+    <%= form.submit "Preview", :name => 'jump_to_preview' %><span class='sep'>|</span>
+  <% end -%>
+  <%= cancel_link %>
+</div>

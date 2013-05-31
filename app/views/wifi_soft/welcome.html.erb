@@ -1,0 +1,16 @@
+<% head_text "You're Now Connected!" %>
+<h3>You can always <%= link_to "sign up for a FREE Community Offers account", new_consumer_user_path %> to see personalized offers in your area!</h3>
+<div class='featured_offer_panel right'>
+  <%= render :partial => 'offers/featured_offer_capsule', :locals => {:featured_offer_title => "Today's Offer"} %>
+</div>
+<div class='app_teaser right'>
+  <div><%= link_to image_tag('wifi/app_icon.png'), mobile_offers_path %></div>
+  <div>Download the FREE Community Offers App!</div>
+  <div><%= link_to image_tag('wifi/droid_teaser.gif'), android_app_path %></div>
+  <div><%= link_to image_tag('wifi/iphone_teaser.gif'), iphone_app_path %></div>
+</div>
+<div><%= textilize_without_paragraph @wifi_login.contract.wifi_welcome_page_message %></div>
+
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag  'wifi', 'featured_offer_capsule' %>
+<% end %>

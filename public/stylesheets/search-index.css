@@ -1,0 +1,47 @@
+#search { padding-top: 15px; }
+#search label { color: #fff; font-size: 120%; font-weight: bold;}
+#search_index .search_input {
+	padding: 6px 0px 6px 0px;
+	margin-top: 11px;
+}
+
+#search button { 
+/*	height: 29px;
+	padding: 15px 0 0 10px;
+	text-align: left;
+	width: 130px;
+*/}
+
+
+
+#search_index #map {
+	background-color: #eee;
+	width: 450px;
+	height: 335px;
+}
+
+#search_index #map_substitute {
+	background: url(../images/no_mappables_home.png) 0 0 no-repeat;
+	width: 530px;
+}
+
+#search_index #map_substitute #no_mappables {
+	width: 460px;
+	padding-top: 40px;
+}
+
+#search_index #map_substitute #no_mappables img {
+  padding-top: 10px;
+}
+
+#search_index .pagination {
+	width: 100%;
+}     
+
+
+#search_index a.advanced_search_link {
+	color: #fff;
+	width: 60px;
+}
+
+

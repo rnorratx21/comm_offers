@@ -1,0 +1,16 @@
+<div id='featured_offer'>
+  <div class='bookend title'><%= featured_offer_title %></div>
+  <div class='coupon'>
+    <div class='wrapper'>
+      <div class='business_name'><%= @featured_offer.business_name %></div>
+      <div class='headline'><%= @featured_offer.headline %></div>
+      <div><%= offer_logo_for_home(@featured_offer) %></div>
+      <div><%= link_to(image_tag("home/redeem_offer.png"), build_offer_permalink_path(@featured_offer)) %></div>
+      <div class='fineprint'>* <%= @featured_offer.disclaimers %> <%= @featured_offer.hours %></div>
+    </div>
+  </div>
+  <% unless @no_links or params[:controller] == "wifi_soft" %>
+    <div class='bookend feature_action'>Feature My Business <%= link_to image_tag('home/featured_go.png', :class => 'featured_go'), advertise_path %></div>
+  <% end %>
+</div>
+<div class='clear'></div>

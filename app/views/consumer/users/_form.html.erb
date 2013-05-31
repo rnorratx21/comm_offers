@@ -1,0 +1,58 @@
+<p class="field">
+	<%= form.model_label :email, "Email Address" %>
+	<span class="required">*</span><br />
+	<%= form.text_field :email %>
+</p>
+
+<p class="field">
+	<%= form.model_label :password, form.object.new_record? ? nil : "New Password" %>
+	<span class="required">*</span><br />
+	<%= form.password_field :password %>
+</p>
+
+<p class="field">
+	<%= form.model_label :password_confirmation, "Re-Enter Your Password" %>
+	<span class="required">*</span><br />
+	<%= form.password_field :password_confirmation %>
+</p>
+
+<p class="field">
+	<%= form.model_label :first_name %>
+	<span class="required">*</span><br />
+	<%= form.text_field :first_name %>
+</p>
+
+<p class="field">
+	<%= form.model_label :last_name %>
+	<span class="required">*</span><br />
+	<%= form.text_field :last_name %>
+</p>
+
+<p class="field">
+	<%= form.model_label :mobile_phone %>
+	<br />
+	<%= form.text_field :mobile_phone %>
+</p>
+
+<% form.fields_for :profile do |profile_fields| %>
+<p class="field">
+  <%= profile_fields.model_label :is_male, "I am a " %>
+  <%= select_tag "user[profile_attributes][is_male]", "<option value='1'>Male</option><option value='0'>Female</option>" %>
+</p>
+<p class="field">
+  <%= profile_fields.model_label :dob, "Date of Birth:" %>
+  <%= date_select "user[profile_attributes]", "dob", 
+        :order => [:month, :day, :year], 
+        :default => 35.years.ago, 
+        :start_year => Time.now.year-90,
+        :end_year => Time.now.year-14 %>
+</p>
+<p class="field">
+  <%= profile_fields.model_label :home_zip_code_value, "Home Zip Code:" %>
+  <%= profile_fields.text_field :home_zip_code_value, :size => 6 %>
+</p>
+<p class="field">
+  <%= profile_fields.check_box :do_email_offer_updates %>
+  <%= profile_fields.model_label :do_email_offer_updates, "Yes, send me regular updates of offers that match my preferences.  I can always change my preferences later." %>
+</p>
+<% end %>

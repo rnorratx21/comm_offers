@@ -1,0 +1,8 @@
+%ul.black.menu
+  %li{:class => ("active" if current_page?(admin_users_path))}
+    = link_to "All", admin_users_path
+  %li{:class => ("active" if current_page?(active_admin_users_path))}
+    = link_to "Active", active_admin_users_path
+  %li{:class => ("active" if current_page?(disabled_admin_users_path))}
+    = link_to "Disabled", disabled_admin_users_path
+.clear

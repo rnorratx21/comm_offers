@@ -1,0 +1,103 @@
+<%= head_text "Your Account" %>
+<% content_for :javascript do %>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $(".contract_toggle").hide();
+    $(".show_contract").click(function(){
+      $(this).siblings('.contract_toggle').slideDown();
+    });
+  });
+</script>
+<% end %>
+<% if @user.advertiser %>
+
+<div id="offers">
+  <h2>Offers</h2>
+  <ul>
+  <% @user.advertiser.offers.each do |offer| %>
+    <li>
+    	<div class="offer">
+        <%= render :partial => "search/offer_badge", :locals => { :offer => offer, :origin => offer } %>
+        <div class='clear'></div>
+    	</div>
+      <div class='edit'><%= link_to "Edit Offer", advertiser_offer_path(offer) %></div>
+      <div class='status'>Status: <%= h offer.state.titleize %></div>
+      <div>Expires On: <%= h offer.expires_on.strftime("%A, %B %d, %Y") %></div>
+      <%= render :partial => 'users/account_contract_invoices', :locals => {:offer => offer} %>
+      <div>
+        <%= link_to "Show Contract Agreement", "javascript:void(0)", :class => "show_contract" %>
+        (Note: as of 5/1/2011.  For contracts prior to this date, please <%= link_to "contact us", contact_path %>)        
+        <div class='contract_toggle'>
+          <%= link_to "Open in New Window", show_contract_advertiser_offer_path(offer), :class => "contract_new_window", :target => "_blank" %>
+          <%= render :partial => 'advertiser/signup/agreement' %>
+        </div>
+      </div>
+      <div class='backlink'>
+        <h4>Promote Your Offer!</h4>
+        <p>Simply copy and paste the HTML below into your merchant website to offer customers an easy link back to your offer!</p>
+        <div class='backlink_code'>
+          &lt;a href=&#x27;http://communityoffers.com<%= build_offer_permalink_path(offer) %>&#x27;&gt; <br />
+          &nbsp;&nbsp;&lt;img src=&quot;http://communityoffers.com/images/preferred_merchant.gif&quot; alt=&quot;See Our Preferred Merchant Offer!&quot;&gt;
+          <br />&lt;/a&gt;
+        </div>
+        <div class='badge_example'>
+          <h5>How Your Link Will Appear:</h5>
+          <div class='badge'><%= link_to(image_tag('preferred_merchant.gif'), build_offer_permalink_path(offer), :target => "_blank") %></div>
+        </div>
+      </div>
+    </li>
+  <% end %>
+  </ul>
+  <div class='add_offer'><%= link_to 'Add Additional Store Location and Offer', new_advertiser_offer_path, :class => 'action' %> for only $<%= ContractPlan::GOLD.installment_amount %>/month</div>  
+</div>
+
+<% end %>
+
+<div class="section rounded" id="personal_info">
+  <h3 class="section">Community Offers Account Info</h3>
+  <p class="model_data">
+    <%= model_label "Email Address (also your username)" %>
+    <%= model_data @user.email %>
+  </p>
+  <p class="model_data">
+    <%= model_label "Password" %>
+    <%= model_data "*******" %>
+  </p>
+  <%= link_to 'Update email / password', edit_account_path, :class => 'action' %>
+</div>
+<div class="clear"></div>
+
+<div class="section rounded" id="advertiser_info">
+
+	<h3 class="section">Advertiser Info</h3>
+	<% if !@user.advertiser %>
+		<span class="not_applicable">none (you are not an advertiser)</span><br />
+	  <%= link_to 'create an offer', advertise_path, :class => 'action' %>
+	<% elsif !@user.advertiser.address %>
+	<% else %>
+		<p class="model_data">
+			<%= model_name @user.advertiser.name %>
+		</p>
+		<p class="model_data">
+			<%= stacked_model_data @user.advertiser.address.full %>
+			<%= stacked_model_data @user.advertiser.address.phone_number %>
+			<%= stacked_model_data @user.advertiser.website_url %>
+			<%= stacked_model_data @user.advertiser.facebook_url %>
+			<%= model_data @user.advertiser.twitter_url %>
+		</p>
+		<% if @user.advertiser.group and @user.advertiser.group.name.downcase != "default" %>
+  		<p class="model_data">
+        <%= model_label "Group" %>
+        <%= model_data @user.advertiser.group.name %>
+      </p>
+	<%end%>
+	  <p><%# link_to 'change', edit_advertiser_path, :class => 'action' %></p>
+
+
+  <% end %>
+</div>
+<div class="clear"></div>
+<% content_for :stylesheet do %>
+  <%= stylesheet_link_tag 'search-index', 'search-results', 'offers-show', 'account' %>
+<% end %>
+

@@ -1,0 +1,54 @@
+/* @override http://localhost:3000/stylesheets/tables.css */
+
+/* @group Dataset Table */ 
+table.dataset td.title, table.dataset th.title { font: bold 130% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; } 
+table.dataset td.title small { font-weight: normal; font-size: 90%; } 
+table.dataset { border-top: 1px solid #F6F6F6; width: 95%;} 
+table.dataset td { border: solid #ddd; border-width: 1px 0 1px 0; padding: 6px 3px; vertical-align: top;} 
+table.dataset th { border-bottom: 1px solid #eee; text-align: left; padding: 10px 0; border-color: #E0E0E0; cursor: default; vertical-align: top;} 
+table.dataset tr.odd { background: #FFF9F6; } 
+table.dataset tr.even { background: none; } 
+table.dataset thead tr.odd { background: none; }
+table.dataset tbody tr:hover, table.dataset tbody tr.selected { background: #FFFFC1; border-bottom-color: #E7631A; } 
+table.dataset tr td:first-child, table.dataset tr th:first-child, table.dataset td.first, table.dataset th.first { padding-left: 20px; } 
+tr td:last-child, tr th:last-child, td.last, th.last { padding-right: 5px !important; } 
+table.dataset td.title a{display:block; background;}
+/* Vertical dataset table */
+table.dataset.vertical th {border: solid #ddd; border-width: 1px 0 1px 0;}
+/* @end */ 
+
+table.jumptable tr{cursor: pointer;}
+table.jumptable tr td a:hover{ text-decoration: none;}
+table.jumptable tr:hover td:first-child a{text-decoration: none;}
+
+/* Sorting */
+table.dataset th.sorted_desc, table.dataset th.sorted_asc
+	{ background-color: #f5f5f5; }
+table.dataset th.sorted_desc a, table.dataset th.sorted_asc a
+	{ display: block; float: none; clear: none; margin: 0 2px 0 2px; padding: 0 0 0 18px; cursor: pointer; }
+table.dataset th.sorted_desc a
+	{  background: transparent url(/images/desc.png) scroll no-repeat left center; }
+table.dataset th.sorted_asc  a
+	{ background: transparent url(/images/asc.png) scroll no-repeat left center; }
+table.dataset td.nowrap
+	{ white-space: nowrap; }
+
+/* Column Types */
+table.dataset .date { text-align:center; }
+table.dataset td.expired { color: #990000; font-weight: bold;}
+
+/* @group Dataset Unordered List */ 
+ol.dataset, ul.dataset { margin: 0; padding: 0; list-style: none; } 
+ol.dataset li, ul.dataset li { margin: 0; padding: 0; } 
+ol.dataset li a, ul.dataset li a { display: block; margin: 0; padding: .9em 30px; border-bottom: 1px solid #eee; }
+ol.dataset.big li a, ul.dataset.big li a { font: bold 110% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; } 
+ol.dataset li:hover, ul.dataset li:hover { background: #FFFFC1; border-color: #E7631A; } 
+/* @end */
+
+/* @group Dataset Definition List */
+
+dl.dataset dt, dl.dataset dd{ float: none; margin: 0;}
+
+
+
+/* @end */

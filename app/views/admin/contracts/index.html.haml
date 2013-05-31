@@ -1,0 +1,20 @@
+- body_id "admin"
+= render 'admin/nav'
+= render 'admin/contracts/nav'
+= head_text "Contracts"
+
+#search_query_block
+  - form_tag "", :method => "get" do
+    = text_field_tag :query, params[:query], { :maxlength => 50, :id => "admin_search_query" }
+    = submit_tag "Find", { :id => "admin_search_submit", :disabled => true  }
+
+%h2 Contracts
+  
+.clear
+
+= render :partial => "admin/contracts/list", :object => @contracts
+
+-if @can_create
+  = link_to "New contract", new_admin_contract_path
+
+= will_paginate @contracts

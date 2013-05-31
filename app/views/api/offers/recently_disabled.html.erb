@@ -1,0 +1,24 @@
+<h1>Recently Disabled Offers</h1>
+<p>Below are offers in the state of "disabled", last updated in the past <%= @days_ago %> days.</p>
+<p>
+  <%= link_to "JSON", recently_disabled_api_offers_path(:format => :json) %> | 
+  <%= link_to "XML", recently_disabled_api_offers_path(:format => :xml) %>
+</p>
+<table class='table table-striped tablesorter'>
+<thead><tr>
+<% @opts.values.flatten.each do |opt| %>
+  <th><%= js_sort_link opt %></th>
+<% end %>
+</tr></thead>
+<tbody>
+<% @offers.each do |offer| %>
+<tr>
+  <% @opts.values.flatten.each_with_index do |opt,idx| %>
+    <td>
+      <%= offer.send(opt.to_sym) %>
+    </td>
+  <% end %>
+</tr>
+<% end %>
+</tbody>
+</table>

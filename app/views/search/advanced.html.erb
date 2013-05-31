@@ -1,0 +1,40 @@
+<% title "Advanced Search" %>
+
+<!-- ⁃	Zip Code
+⁃	City
+⁃	State
+⁃	Suburban area
+⁃	Category
+⁃	Proximity within: 5, 10, 25, All (Default)
+⁃	Offers added within: 1, 7, 30, 120 days or All (Default) -->
+<% form_for @search, :url => search_path,  :html => { :method => :get } do |f| %>
+
+	<%= f.error_messages %>
+	<p>
+	  <%= f.label :zip_code %><br />
+	  <%= f.text_field :zip_code, :name => :zip %>
+	</p>
+	<p>
+	  <%= f.label :city %><br />
+	  <%= f.text_field :city, :name => :city %>
+	</p>
+	<p>
+	  <%= f.label :state %><br />	
+		<%= f.select(:state, state_select_options, {}, :name => :state)
+		%>
+	</p>
+	<p>
+	  <%= f.label :category_id %><br />
+		<%= f.collection_select :category_id, @categories, :id, :name, { :prompt => "Select One" }, :name => :cat %>
+	</p>
+	<p>
+	  <%= f.label :proximity, "Distance From" %><br />
+		<%= f.select(:proximity, proximity_select_options, {}, :name => :proximity) %>	
+	</p>
+	<p>
+	  <%= f.label :within, "Offers Submitted Within" %><br />
+		<%= f.select(:within, within_select_options, {}, :name => :within) %>	
+	</p>
+	<p><%= f.submit "Submit", :name => nil %></p>
+
+<% end %>

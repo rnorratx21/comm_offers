@@ -1,0 +1,127 @@
+<div class='section recent_activity left half-split'>
+  <h3>Website and Mobile Activity</h3>
+  <h4>Statistics Tracked during life of your program:</h4>
+  <ul id='lifetime_metrics' class='merchant_reporting'>
+    <li id='web_page_views' class='page_reporting'>
+      <%= link_to "View Page View Data", web_page_views_merchant_dashboard_path(:offer_id => @offer), :class => 'hidden path' %>
+      <div class='msg'>Loading Page View Reporting...</div>
+    </li>
+    <li id='web_visitors' class='page_reporting'>
+      <%= link_to "View Visitor Data", web_visitors_merchant_dashboard_path(:offer_id => @offer), :class => 'hidden path' %>
+      <div class='msg'>Loading Unique Visitor Reporting...</div>
+    </li>
+    <li id='qr' class='page_reporting'>
+      <%= link_to "View Mobile QR Scan Data", mobile_qr_scans_merchant_dashboard_path(:offer_id => @offer), :class => 'hidden path' %>
+      <div class='msg'>Loading Mobile QR Code Scan Reporting...</div>
+    </li>
+    <li>You've Had <span class='count'><%= total_trackers_count %></span> "Save to Favorites" (People tracking your offer)</li>
+  </ul>
+  <h4>New Statistics Tracked since 12/14/2011:</h4>
+  <ul id='recent_metrics' class='merchant_reporting'>
+    <li id='redemptions' class='page_reporting'>
+      <%= link_to "View Mobile Redemption Data", mobile_redemptions_merchant_dashboard_path(:offer_id => @offer), :class => 'hidden path' %>
+      <div class='msg'>Loading Mobile Redemptions Reporting...</div>
+    </li>
+    <li id='app_views' class='page_reporting'>
+      <%= link_to "View Mobile App View Data", mobile_app_views_merchant_dashboard_path(:offer_id => @offer), :class => 'hidden path' %>
+      <div class='msg'>Loading Mobile App Views Scan Reporting...</div>
+    </li>
+  </ul>
+
+  <% if obj.has_wifi? %>
+  <h3>Retail Store Activity</h3>
+  <ul class='merchant_reporting'>
+    <li>You Have Had <span class='count'><%= obj.wifi_connections_count(:email) %></span> Users Register Email Addresses</li>
+    <li>You Have Had <span class='count'><%= obj.wifi_connections_count(:wifi_mac) %></span> Devices Connect to Wifi</li>
+  </ul>
+  <% end %>
+  <% unless obj.is_a?(Advertiser) or obj.twitter_handle.blank? %>
+  <h3>Recent Tweets</h3>
+  <script>
+  new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 5,
+    interval: 30000,
+    width: '420',
+    height: 300,
+    theme: {
+      shell: {
+        background: '#ffffff',
+        color: '#646464'
+      },
+      tweets: {
+        background: '#ededed',
+        color: '#525252',
+        links: '#0740eb'
+      }
+    },
+    features: {
+      scrollbar: false,
+      loop: false,
+      live: false,
+      behavior: 'all'
+    }
+  }).render().setUser('<%= obj.twitter_handle %>').start();
+  </script>
+  <% end %>
+  
+  <% if !current_admin_user and !obj.is_a?(Advertiser) %>
+    <h3>Facebook</h3>
+    <div><%= link_to "Post Facebook Status Update", edit_facebook_path(obj) %></div>
+  <% end %>
+</div>
+
+<div class='section reporting left half-split'>
+  <h3>Demographics of People Tracking Your Offer <%= "(#{pluralize(total_trackers_count,'Follower')})" if total_trackers_count > 0 %></h3>
+  <div class='gender male left half-split'>
+    <div class='left'><%= image_tag 'reporting/male.gif' %></div>
+    <div class='results left'>
+      <div class='gender_percentage'><%= render_tracker_percentage male_trackers_count, total_trackers_count %></div>
+      <div class='gender_label'>MALE FOLLOWERS</div>
+    </div>
+  </div>
+  <div class='gender female left half-split'>
+    <div class='left'><%= image_tag 'reporting/female.gif' %></div>
+    <div class='results left'>
+      <div class='gender_percentage'><%= render_tracker_percentage female_trackers_count, total_trackers_count %></div>
+      <div class='gender_label'>FEMALE FOLLOWERS</div>
+    </div>
+  </div>
+  <div class='clear'></div>
+</div>
+<div class='section reporting left half-split'>
+  <% if @offer.tracker_age_report.any? %>
+  <h3>Age Groups of People Tracking Your Offer </h4>
+    <div id='chart_div'></div>
+  <% end %>
+</div>
+<div class='clear'></div>
+
+<% content_for :head do %>
+  <% if @offer.tracker_age_report.any? %>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Age Group');
+        data.addColumn('number', 'Number of Followers');
+        data.addRows([
+          <% @offer.tracker_age_report.each_with_index do |h,idx| %>
+            ['<%= h.keys.first %>', <%= h.values.first %>]<%= "," unless idx == @offer.tracker_age_report.size %>
+          <% end %>
+        ]);
+
+        var options = {
+          width: 450, height: 300
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  <% end %>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<% end %>

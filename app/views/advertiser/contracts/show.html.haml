@@ -1,0 +1,83 @@
+= head_text "Contract and Invoices for #{@contract.advertiser.name}"
+
+%h1 
+  Contract
+  = @contract.id
+
+%table.dataset.vertical.jumptable
+  %tr
+    %th Offers: 
+    %td
+      - for offer in offers
+        %div= "#{offer.business_name} - #{offer.headline}"
+        %div
+          Zip codes covered:
+          = offer.address.zip_code
+  
+  %tr
+    %th Billing: 
+    %td
+      - if @contract.credit_card
+        %dl
+          %dt Name on Card
+          %dd= @contract.credit_card.name
+          %dt Card Number: 
+          %dd= @contract.credit_card.display_number
+          %dt Expiration: 
+          %dd= @contract.credit_card.expires_on.to_s(:expires_on)
+      - else
+        .red
+          No billing information available
+      %p
+        = link_to "update billing", [:edit, :advertiser, @contract]
+
+
+#contract
+  %table.dataset.jumptable.striped
+    %thead
+      %tr
+        %th Invoice Amount
+        %th Items
+        %th Period Covered
+        %th Due
+        %th Paid
+        
+    %tbody
+      - for invoice in @contract.invoices
+        %tr
+          %td.title
+            = link_to invoice.total_amount_formatted(:digits => 0), [:advertiser, @contract, invoice]
+            %small.grey= "PAID" if invoice.payments.any?
+            = invoice.status
+          
+          %td
+            - for line_item in invoice.line_items
+              %div
+                = line_item.description
+                \:
+                = line_item.net_amount_formatted(:digits => 0)
+
+          %td
+            = invoice.period_start.to_s(:short)
+            to
+            = invoice.period_end.to_s(:short)
+
+          %td
+            = invoice.due_date.to_s(:short)
+            .small.grey
+              = time_ago_in_words(invoice.due_date)
+              = future?(invoice.due_date.to_time) ? "from now" : "ago"
+              
+
+          %td
+            - for payment in invoice.payments
+              %div
+                .small.grey
+                  = time_ago_in_words(payment.created_at)
+                  = future?(payment.created_at.to_time) ? "from now" : "ago"
+
+
+  
+            
+%hr
+  

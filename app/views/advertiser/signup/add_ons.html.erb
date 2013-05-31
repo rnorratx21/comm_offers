@@ -1,0 +1,89 @@
+<% body_id "advertiser_signup" %>
+
+<% content_for :head do %>
+<script type="text/javascript" charset="utf-8">
+		$(function() {
+			var form = $("#zip_code_update")
+			$('#zip_codes li').each(function() {
+				var img = $("img", this)
+				var ul = this;
+				var zipCode = $(".zip_code", this).text();
+				img.click(function() {
+					var params = {
+						signup_action : "delete_zip_code",
+						_method : "put",
+						signup_state : "zip_codes",
+						"zip_codes_signup_state[zip_code]" : zipCode
+					};
+					function callback(zip_code) {
+						$(ul).remove();						
+					}
+					$.post(form.attr("action"), params, callback, "text");
+				});
+			});
+		});
+</script>
+<% end %>
+
+
+<div class="step_header">
+  <%= signup_step_header(8, "Add Optional Add-Ons to Your #{selected_plan.name}") %>
+</div>
+<p>
+	Confused? Just skip this step and send us an email at
+	<a href="mailto:<%= $sales_email_address %>"><%= $sales_email_address %></a>
+	and we can walk you through whether this add-on is right for you.
+</p>
+<!-- <div class="clear"></div> -->
+
+<% signup_update_form(:id => "zip_code_update") do |form| %>
+  <%= current_step_tag %>
+	<div class="signup_content">
+	  <% addon_options_for_selected_plan.each do |addon| %>
+  	  <% form.fields_for :addon do |addon_fields| %>
+        <div class='addon' id='addon_<%= addon.feature.system_key %>'>
+          <div class='check left'><%= check_box_tag("add_features[features][#{addon.feature_id}]", 1, feature_selected?(addon)) %></div>
+          <div class='price left'><span class='amt'>$<%= addon.amount %></span> /mo</div>
+          <div class='desc left'><h4><%= addon.feature.description %></h4></div>
+          <div class='clear'></div>
+          <div class='content'>
+            <% if addon.feature.system_key == Feature::ADDL_ZIPS_KEY %>
+              <div id="zip_codes" class="rounded section">
+              	<h3>Zip Codes Already Included With Your Offer</h3>
+              	<ul>
+              		<li><span class="zip_code"><%= @offer.address.zip_code %></span> </li>
+                </ul>
+                <% unless @offer.zip_codes.empty? %>
+                	<h3>Additional Zip Codes Added to Your Service Area (Up to 10)</h3>
+                	<ul>
+                		<% @offer.zip_codes.each do |zip_code| %>
+                			<li><span class="zip_code"><%= zip_code.zip_code %></span> <%= image_tag "clear.gif" %></li>
+                		<% end %>
+                	</ul>
+                <% end -%>
+              </div>
+              <div class="clear"></div>
+            	<p>
+            		Fill in the spaces provided with up to ten zip codes. Filling in
+            		all ten is not necessary. Your business will show up with a service
+            		area in the search results for the specific zip codes you select.
+            	</p>
+        			<% ZipCodeBlock::ATTRIBUTES.each_with_index do |attribute, i| %>
+                <%= "<div class='zips left'>" if i == 0 || i == 5 %>
+          			<p class="field">
+          				<%= label_tag "add_features[zip_code_block][zip_code#{i}]", "Zip Code #{i+1}", :class => "horizontal_label"%>
+          				<%= text_field_tag "add_features[zip_code_block][#{attribute}]", '', :class => "narrow" %>
+          			</p>
+                <%= "</div>" if i == 4 || i == ZipCodeBlock::ATTRIBUTES.size-1 %>
+        			<% end %>
+              <div class='clear'></div>
+            <% end %>
+          </div> <!-- content -->
+        </div>
+      <% end -%>
+    <% end -%>
+	</div>
+  <div class='clear'></div>
+  <%= render :partial => 'signup_form_buttons', :locals => {:form => form} %>
+<% end %>
+<div class="clear"></div>
